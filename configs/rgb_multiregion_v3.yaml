@@ -1,0 +1,48 @@
+schema: msr.rgb_multiregion.v3
+base_config: configs/gamus_rgb_segmenter_v1.yaml
+initial_checkpoint: experiments/20260915T140116654177Z_gamus_rgb_segmenter_v1/checkpoint_best_guarded.pt
+initial_checkpoint_sha256: 4940b2d4ae8817370384ccb54da9f73aee1b6bf3614435d8c077bf3e3363d021
+data:
+  destination: D:/MSRData/training/oem_multiregion_v3
+  train_regions: {aachen: 30, chisinau: 30, accra: 30, kitsap: 30, bogota: 5, niamey: 9}
+  validation_regions: {melbourne: 25, vienna: 25}
+  reserved_final_regions: [rosario, monrovia]
+  diagnostic_exclusions: [christchurch, duesseldorf, dhaka, chiangmai]
+  selection: sha256_filename_order_no_score_or_class_filter
+  source_crosswalk: [255, 0, 4, 0, 3, 5, 2, 255, 1]
+  max_download_bytes: 1100000000
+training:
+  seed: 20260919
+  epochs: 8
+  gamus_draws: 3837
+  oem_draws: 1663
+  batch_size: 4
+  num_workers: 2
+  crop_size: 384
+  source_crop_min: 256
+  source_crop_max: 512
+  encoder_learning_rate: 0.000015
+  decoder_learning_rate: 0.00015
+  weight_decay: 0.01
+  warmup_optimizer_steps: 100
+  minimum_learning_rate_factor: 0.1
+  max_gradient_norm: 1.0
+  precision: bf16
+  class_weights: [1.0, 0.8, 1.5, 1.2, 1.3, 0.8]
+  focal_gamma: 1.5
+  early_stopping_patience: 3
+  early_stopping_min_epochs: 4
+proof:
+  steps: 24
+  minimum_loss_reduction_fraction: 0.1
+evaluation:
+  app_promotion: false
+  height_changes: false
+  gamus_class_f1_max_drop: 0.01
+  gamus_macro_f1_max_drop: 0.005
+  oem_class_f1_max_drop: 0.02
+  oem_macro_f1_min_gain: 0.03
+  oem_weak_class_mean_f1_min_gain: 0.05
+  road_boundary_f1_max_drop: 0.02
+  dark_non_water_false_water_rate_max_increase: 0.005
+  selection: best_oem_region_macro_f1_among_safety_passing_epochs

@@ -1,0 +1,16 @@
+evaluation:
+  output_dir: outputs/evaluation/gamus_head_blend_validation_small_v1
+  blend_manifest: outputs/evaluation/gamus_head_blend_small_sweep_v1/manifest.json
+  expected_alphas: [0.05, 0.10, 0.15, 0.20]
+  stage3_provenance: outputs/stage3_scene_router_records/provenance.json
+  stage3_provenance_sha256: 0f26fb6ecdfeb0c7476f1ec35106c6712c9bf62b202f3cb7797392f38b41d579
+  guard_config: configs/stage3_routed_validation.yaml
+  app_pointer: outputs/runtime/showcase_checkpoint.txt
+  device: cuda
+  precision: bf16
+  # Match the authenticated Stage-3 validation evaluator exactly.
+  batch_size: 1
+  num_workers: 4
+
+# Development validation only. There is deliberately no held-out test path or
+# model-promotion setting in this configuration.

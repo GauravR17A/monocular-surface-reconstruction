@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "monocular-surface-reconstruction"
+version = "0.1.0"
+description = "Reproducible single-image remote-sensing height estimation"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "numpy>=1.26,<2",
+  "Pillow>=10",
+  "PyYAML>=6",
+  "rasterio>=1.4",
+  "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+train = [
+  "h5py>=3.12,<4",
+  "matplotlib>=3.9",
+  "scikit-learn>=1.5",
+  "scipy>=1.14",
+  "timm>=1.0.15",
+  "torch>=2.7,<2.8",
+  "torchvision>=0.22,<0.23",
+  "webdataset>=1.0,<2",
+]
+test = ["pytest>=8.3", "httpx>=0.28"]
+docs = ["reportlab>=4", "Markdown>=3.7", "beautifulsoup4>=4.12", "PyMuPDF>=1.25"]
+foundation = [
+  "transformers>=4.48,<6",
+]
+app = [
+  "fastapi>=0.116,<1",
+  "python-multipart>=0.0.20,<1",
+  "uvicorn[standard]>=0.35,<1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]

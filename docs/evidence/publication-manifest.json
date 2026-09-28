@@ -1,0 +1,3461 @@
+{
+  "status_date": "2026-09-28",
+  "scope": "Public Git candidate bytes; this manifest is excluded from its own inventory",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 124,
+      "sha256": "a2da5929b279fadb2ac439bfde441928a0071a37d6f820d32b5a04bcba9e8089"
+    },
+    {
+      "path": ".github/workflows/verify.yml",
+      "bytes": 1323,
+      "sha256": "3d77cf5d25c88d28c63b8836b90bed5329e6bd6e85941ac97f7c6497c3e0daeb"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 336,
+      "sha256": "6b499d90f24cfa9182d0ab20d04fe88e282431a7581b45fe148ec1173efc7dc5"
+    },
+    {
+      "path": ".python-version",
+      "bytes": 5,
+      "sha256": "7a41a41354ab8049091ef1a00253ca00567f5a1d3f9aef5502c0b4b5ce9ae707"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 778,
+      "sha256": "3b94ca8aed6678771b243b0d698f99b0019cf54774542cacc9dd00bca30981e0"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 813,
+      "sha256": "a520ab62a7ef2bc74014ff03a2548e515254f529999f94949cef0d33d1833585"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5997,
+      "sha256": "60eb19af0a1d7154ead1bce292dc3b2324e831b327368f86b635a2018c61c686"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 844,
+      "sha256": "a7483b48a9015fdacdb12589746a356491f730635aab40621594b389b999fecd"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 4318,
+      "sha256": "e5c424a3eb3dbe97e40f414fb9df12cf6c20aa42c41325a50cd76f82d89429d5"
+    },
+    {
+      "path": "configs/baseline_convnext_tiny.yaml",
+      "bytes": 849,
+      "sha256": "4a9800217bc39df2a9ceed1a2279035e0b6a7910d6754e70c946f06017ae2878"
+    },
+    {
+      "path": "configs/class_assisted_height_development_v1.json",
+      "bytes": 1727,
+      "sha256": "8684440115576735bebe56d4f7d40b5f5165fedf6d9f9a32952aed6b367fe46e"
+    },
+    {
+      "path": "configs/class_assisted_height_fast_v2.json",
+      "bytes": 2338,
+      "sha256": "59f159882bf010b37dbe799fa8da6ac6237ebe29745faa6a8418d8ecbf13b5a1"
+    },
+    {
+      "path": "configs/class_assisted_height_low_surface_v3.json",
+      "bytes": 2864,
+      "sha256": "1f0a436e3fc56e50c281c50bd0532f0293aa662cdde08009570bf60a72ed702f"
+    },
+    {
+      "path": "configs/class_assisted_height_proof_v1.json",
+      "bytes": 2213,
+      "sha256": "9c702266407c58e98a5638857024496cec89e444872785d5ad01bb9fe42bb4d0"
+    },
+    {
+      "path": "configs/corrected_legacy_triplet_v1.yaml",
+      "bytes": 6362,
+      "sha256": "3e02946caa691c298828db7451b68d78e9228186b2ca9c7ee74b96a07a8f449b"
+    },
+    {
+      "path": "configs/external_metric_height_nz_bop_v1.json",
+      "bytes": 9292,
+      "sha256": "923f73ffbb2a16019e57b5534462a437d42a77146a7e93fc84e02a8d9af7f876"
+    },
+    {
+      "path": "configs/external_metric_height_nz_bop_v1.sha256",
+      "bytes": 104,
+      "sha256": "e2c68d1d4a4390f6fc147b3a152db8fc58920002cdd8d8d3ae3e5fd59f9c247c"
+    },
+    {
+      "path": "configs/gamus_head_blend_validation_small_v1.yaml",
+      "bytes": 744,
+      "sha256": "205b124a7b4bfc25cb6a36eb806795bf53b483a438f4292df32bbf6aa7992039"
+    },
+    {
+      "path": "configs/gamus_head_blend_validation_v1.yaml",
+      "bytes": 753,
+      "sha256": "fa72f546f51c793247b68581474d285b8193511e67e7958536ba08d7493d855a"
+    },
+    {
+      "path": "configs/gamus_locked_nyc_evaluation_v1.yaml",
+      "bytes": 2763,
+      "sha256": "221245174200a0f59063d6ae03257812843ec90533451d589efb195eced42c99"
+    },
+    {
+      "path": "configs/gamus_locked_nyc_spatial_refined_evaluation_v1.yaml",
+      "bytes": 2835,
+      "sha256": "91baee2936af66d94a1c99186de31859ee0770554c4169c6077f901e6fccd131"
+    },
+    {
+      "path": "configs/gamus_rgb_segmenter_v1.yaml",
+      "bytes": 4493,
+      "sha256": "2256d5ddfdce1a2efb18ce755bb1ea5b264ddf7f9b752dffd418e7e8e5441c08"
+    },
+    {
+      "path": "configs/gamus_six_class_comparison_v1.yaml",
+      "bytes": 5482,
+      "sha256": "d3a296083f6970b88334f25f04e56ae929a247faf3907f9b414b2754fb37195c"
+    },
+    {
+      "path": "configs/gamus_six_class_decision_bias_v1.yaml",
+      "bytes": 3867,
+      "sha256": "42594174581d3498fea87c3490a44cf643de8b1040fb85d866bedb967891163b"
+    },
+    {
+      "path": "configs/gamus_six_class_spatial_refined_v3_decision_bias_v1.yaml",
+      "bytes": 3880,
+      "sha256": "3c67de2e2594128291b096af73219eff0b0d8200db36b0f04c9693b28295a028"
+    },
+    {
+      "path": "configs/height_band_sampling_v1.json",
+      "bytes": 2291,
+      "sha256": "ff7840a0a1a903f1c0adc3a9b1863243c72caef9da4e36eac94a3d21e42e8184"
+    },
+    {
+      "path": "configs/height_scorecard_v1.sha256",
+      "bytes": 91,
+      "sha256": "22348bdf84a9264a723ada851e211904cd5f22c0644acef2cb7e070221951c1b"
+    },
+    {
+      "path": "configs/height_scorecard_v1.yaml",
+      "bytes": 7963,
+      "sha256": "05b701bcf4136d182b55e11c3d31291c90682a96e29bb2f166a0b5407a710946"
+    },
+    {
+      "path": "configs/highbuild_full_train.yaml",
+      "bytes": 1253,
+      "sha256": "48eb5e9838e8e14e2c3e2fb9065fe5d81ce7f23aeb0fb0db7826602fc59f21f8"
+    },
+    {
+      "path": "configs/highbuild_full_train_batch4.yaml",
+      "bytes": 1260,
+      "sha256": "799a79e41ca733cb5db68c84a0f0843333ac39289ff2653b6913b80ae5896019"
+    },
+    {
+      "path": "configs/highbuild_reviewer_pilot.yaml",
+      "bytes": 906,
+      "sha256": "66b56cf6632e03da0a26359744e70f22595363a140399734a313f9f959ac2722"
+    },
+    {
+      "path": "configs/highbuild_reviewer_train.yaml",
+      "bytes": 908,
+      "sha256": "024ffb52e3cb1ef9e48e137a892f234426ddc67589835048bf71616f4f7d5f30"
+    },
+    {
+      "path": "configs/highbuild_targeted_refinement.yaml",
+      "bytes": 1940,
+      "sha256": "ead187fdde0ab7e0f928d816abda8b6685f21f3b7cfbddd620c9197bdf82ce4b"
+    },
+    {
+      "path": "configs/multidomain_surface_corrected_height_replay_v1.yaml",
+      "bytes": 6678,
+      "sha256": "4fc1956c5861d0b02f8f3e7517ca115ee8e592d6789e4099af8784e7732d86e6"
+    },
+    {
+      "path": "configs/multidomain_surface_gamus_direct_height_pilot.yaml",
+      "bytes": 4963,
+      "sha256": "fac279b88601afdae8323b163bc56183cac0c09b2511174e74dbf00628e222c4"
+    },
+    {
+      "path": "configs/multidomain_surface_gamus_height_safe_v2.yaml",
+      "bytes": 5544,
+      "sha256": "8453628ba0563f50bd484095bddfbdeff93555a7ec778c69b52b6432ac60fd14"
+    },
+    {
+      "path": "configs/multidomain_surface_gamus_six_class_candidate_v1.yaml",
+      "bytes": 6781,
+      "sha256": "7f14cd5ff70cb2b25fa44cf90bac961032ff5864fd0aa5faa3978296b1202e79"
+    },
+    {
+      "path": "configs/multidomain_surface_gamus_six_class_head_only_geographic_v1.yaml",
+      "bytes": 6133,
+      "sha256": "9aa07201646220ae52d4a8447e8e7c6bf2c7ad0eb747135397320a9f1433fc19"
+    },
+    {
+      "path": "configs/multidomain_surface_gamus_six_class_head_only_v2.yaml",
+      "bytes": 5734,
+      "sha256": "f4b13caa6146c0e9de601145a07c1a0cd36d2eb3dce57c85d22f61bb4e127ce5"
+    },
+    {
+      "path": "configs/multidomain_surface_gamus_six_class_hierarchical_v4.yaml",
+      "bytes": 7634,
+      "sha256": "7c8160e09fc244d61f58bb3927aeaa32437ff42e45bc809435b8d3a1598951a9"
+    },
+    {
+      "path": "configs/multidomain_surface_gamus_six_class_spatial_refined_geographic_v1.yaml",
+      "bytes": 6484,
+      "sha256": "f69f35d178d2dc0abf74e94b1eb3bb3763f3ff78a561415be4303ae8bd9b98d2"
+    },
+    {
+      "path": "configs/multidomain_surface_gamus_six_class_spatial_refined_v3.yaml",
+      "bytes": 5579,
+      "sha256": "63f068f4570c5e20373f16ccdb82a62c99753803256ceac7a475d5dac39f1d32"
+    },
+    {
+      "path": "configs/multidomain_surface_gamus_stage1_heads.yaml",
+      "bytes": 2473,
+      "sha256": "f47aec7acdbba440e3a83e65233d4e82e0603969cc9c98f972f8d07c8b3dfa07"
+    },
+    {
+      "path": "configs/multidomain_surface_gamus_stage2_mixed_replay.yaml",
+      "bytes": 4278,
+      "sha256": "a5fa2d8f2a97cb5b4b1de4abe513f1704bf4d1a2d2e4023a4c72669733250e90"
+    },
+    {
+      "path": "configs/multidomain_surface_pilot.example.yaml",
+      "bytes": 1720,
+      "sha256": "e968a78ec4bd7b9965216a4a03e9c037dfee9047efbcba9eb1d6159bc6e2555b"
+    },
+    {
+      "path": "configs/multidomain_surface_v2.yaml",
+      "bytes": 1551,
+      "sha256": "64b33a1668ede343276c799990a78d1cd1cc09b139edb308ac63d8d2228d5e24"
+    },
+    {
+      "path": "configs/multidomain_surface_v3_building_refinement.yaml",
+      "bytes": 2109,
+      "sha256": "bc4497f64f502273bbff6cb0515514296930e4946e3e12ddad418f56dd149e1f"
+    },
+    {
+      "path": "configs/multidomain_surface_v3b_building_head.yaml",
+      "bytes": 2185,
+      "sha256": "fa0eb32199185bf7a922f523763c9d95ce7db5fa7f56047da0197d91d4696cd5"
+    },
+    {
+      "path": "configs/multidomain_surface_v3c_router.yaml",
+      "bytes": 2185,
+      "sha256": "9a48f3762265ffb92b0bb0f34ce4f61b273275c5f201762bde381b1259969aec"
+    },
+    {
+      "path": "configs/multidomain_surface_v4_precision_router.yaml",
+      "bytes": 2255,
+      "sha256": "4325d5f494ebae88d728cb0693f6d0beed530e5d14399aa7e0a1299ee7be7a64"
+    },
+    {
+      "path": "configs/multidomain_surface_v5_canopy_safe.yaml",
+      "bytes": 2469,
+      "sha256": "550d77bebd0cdfbaba0ed9cde82aea716917a19b5b345ae966f92b5dea66fc73"
+    },
+    {
+      "path": "configs/residual_height_v1.yaml",
+      "bytes": 3744,
+      "sha256": "43f5a278d5f0dfce359180ea978b56987ad2bc82c9dccc12905047e82b47a584"
+    },
+    {
+      "path": "configs/rgb_multiregion_v3.yaml",
+      "bytes": 1671,
+      "sha256": "11416c93da5869ccd3ee818b2887872c81291e86caad75f7df4894c2842af375"
+    },
+    {
+      "path": "configs/rgb_sampling_v2.yaml",
+      "bytes": 1529,
+      "sha256": "375dc150848a297f9bd4aaddd645751fb727a5db0c4b9f2beb3f051a75558cc5"
+    },
+    {
+      "path": "configs/semantic_expert_height_proof_v1.json",
+      "bytes": 650,
+      "sha256": "235f1a4757ce3e6b5cd9da2abfbf0653b1e3b1cfb11f6e86a15f4038dd9cb562"
+    },
+    {
+      "path": "configs/semantic_expert_height_v1.json",
+      "bytes": 1591,
+      "sha256": "c62124c4274e6684e9604ab7b4feed27fbca03070f204c2f85964548c17399b3"
+    },
+    {
+      "path": "configs/stage3_routed_validation.yaml",
+      "bytes": 4806,
+      "sha256": "0ef8127d143ed4464fb197ebedceccd6ea6e21654216cb28b7b1dedc63c5ff1d"
+    },
+    {
+      "path": "configs/stage3_scene_router_records.yaml",
+      "bytes": 2442,
+      "sha256": "6ca07bc3af8a174560b825899d9815774fe115444989ed089cc727eddff3e7b2"
+    },
+    {
+      "path": "configs/stage3_scene_router_training.yaml",
+      "bytes": 707,
+      "sha256": "9f795d87c3395a90ffc8447287b14a4164644e5760e372bf742c2d8694e35836"
+    },
+    {
+      "path": "configs/stage3b_scene_domain_router_h128_training.yaml",
+      "bytes": 747,
+      "sha256": "a7f601f1dd72ee171dd9ce3ce830d4cb67f1421f53ca06dde5ccfa519268497f"
+    },
+    {
+      "path": "configs/stage3b_scene_domain_router_h64_training.yaml",
+      "bytes": 744,
+      "sha256": "60c1b39fb8fc198500c6216e26e41b99ab9e8e91c7b4d604f7ffb27947c004cd"
+    },
+    {
+      "path": "configs/stage3b_scene_domain_router_training.yaml",
+      "bytes": 872,
+      "sha256": "d9d4cf61d265834fd15ee3033c715e3eaa9d2a314d18c9eab210ae485bdcbdf7"
+    },
+    {
+      "path": "configs/stage4_dual_router_records.yaml",
+      "bytes": 4044,
+      "sha256": "dabfe3349668d16adf601287e566cc98fcc5a0e58bbe862939cdada34407c5c3"
+    },
+    {
+      "path": "configs/stage4_dual_router_training.yaml",
+      "bytes": 1055,
+      "sha256": "62282e323d8fa7bde9fc29c3cebb395c762d2146c336f96e35e3bf4d64d9c4c8"
+    },
+    {
+      "path": "configs/stage4b_semantic_ood_router.yaml",
+      "bytes": 1180,
+      "sha256": "209174e459e4140b612e59cf59e6fdca77bce77f2a290dead9adc2d5278287b2"
+    },
+    {
+      "path": "docs/API.md",
+      "bytes": 4846,
+      "sha256": "53e8d4fec8c8d8ce4820fa06884d2ea0f2431af7351c8c8d413752acdf3b0636"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 5153,
+      "sha256": "6da18c9ac9977076d15c8f7b7bfb9663c4c192a5c2d9f9e233aaae6388f08dc8"
+    },
+    {
+      "path": "docs/CODE_MAP.md",
+      "bytes": 4372,
+      "sha256": "7b1b71f1126662e517e46e655a125aaf27f1741709c330c7b142c7bef6e81fa5"
+    },
+    {
+      "path": "docs/DATA.md",
+      "bytes": 7863,
+      "sha256": "8eb884218bf7883d7430cb2d08f56527b6475fe283514bbd0f56339f9e38b72d"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "bytes": 5192,
+      "sha256": "4f190c225bd2ad9a28e1dced0c34becc77876c2b92851ef3c15cbcf93a695363"
+    },
+    {
+      "path": "docs/EXPERIMENTS.md",
+      "bytes": 7509,
+      "sha256": "f539492a1d7c8546b44a8efd3c0074706616ff8610fb9485bf41b8632854cc30"
+    },
+    {
+      "path": "docs/FEATURES.md",
+      "bytes": 3541,
+      "sha256": "867df4eab6cf87dacd53b40fc9bcca3172ed3273ea8b26628097fd6f395fc0ad"
+    },
+    {
+      "path": "docs/GLOSSARY.md",
+      "bytes": 2677,
+      "sha256": "ce3ad0f5a690da6a90489900c7a3b5d237e60e63157ce899e4bc9d48935fc616"
+    },
+    {
+      "path": "docs/METHODS.md",
+      "bytes": 6104,
+      "sha256": "e2cf5a47edff9d82ad1f5743c47311ae1664c784319df76aab8b9f9f4929f228"
+    },
+    {
+      "path": "docs/MODEL_CARDS.md",
+      "bytes": 4740,
+      "sha256": "6a7c739228694bdb5f974b163561ac33c6560504afad7ef3a34fc34614c3eae1"
+    },
+    {
+      "path": "docs/Monocular_Surface_Reconstruction_Technical_Documentation.pdf",
+      "bytes": 3990896,
+      "sha256": "cfc6f067a91c4a6be4c6426a240a35d55bf2c7054b5b11836f2de9010da297d3"
+    },
+    {
+      "path": "docs/OVERVIEW.md",
+      "bytes": 4492,
+      "sha256": "7b13ccdb68db358537533ca34f982ed337d201162ab901e3ce0cf1cf7db9fa81"
+    },
+    {
+      "path": "docs/PERFORMANCE.md",
+      "bytes": 4235,
+      "sha256": "07992fbbaadbd6f183862982c1f260bafdee887334ea780fda55c5715963e346"
+    },
+    {
+      "path": "docs/README.md",
+      "bytes": 2839,
+      "sha256": "7491af2c9c8b9b59bb3a55deb988df872ee97861d9cfd82c8b206574f70461d9"
+    },
+    {
+      "path": "docs/REFERENCES.md",
+      "bytes": 4313,
+      "sha256": "6e8163025f0d230d4778f05f7253d0cc5ae302d4e34a05eb006fd3e185011b89"
+    },
+    {
+      "path": "docs/RELEASE.md",
+      "bytes": 3675,
+      "sha256": "f6839411663b4e85b89b6ba1ddcb839866983b78b22fb26e488815bb333d7953"
+    },
+    {
+      "path": "docs/RESULTS.md",
+      "bytes": 6495,
+      "sha256": "b519e6fc53c44e6da088fd706d298ee3f53e47fbb5799768981c4e972664e888"
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "bytes": 3601,
+      "sha256": "14c9e0addf14ce38ff6e9f02f67644d73902f4849ef8c79acc2b3eca33ead0ba"
+    },
+    {
+      "path": "docs/SCIENTIFIC_CONTRACTS.md",
+      "bytes": 5178,
+      "sha256": "38057564ff0818f90397e45d5e3fa7b40c0e2cf8e32c9e500ff2be112e885592"
+    },
+    {
+      "path": "docs/SECURITY_REVIEW.md",
+      "bytes": 4138,
+      "sha256": "d5fd49dd1282dd92ad47f1ccf653b1a16d912327629043708717b464ee47baed"
+    },
+    {
+      "path": "docs/SETUP.md",
+      "bytes": 5457,
+      "sha256": "bca45f3e6685790626a0bfcd210f61215937377319ce377e2501977735ec258d"
+    },
+    {
+      "path": "docs/SOURCE_INVENTORY.md",
+      "bytes": 9431,
+      "sha256": "11fe32535541d229c0937e554b622cd5eca00f347b1fc1bbc5a7849668c658da"
+    },
+    {
+      "path": "docs/USER_GUIDE.md",
+      "bytes": 5510,
+      "sha256": "e90ba5711a61521d939c3f7aeab8b70237c55ca5e47eb9c0ea8045d75124c436"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 4189,
+      "sha256": "9aef5b610493d754d02b5c0aa9bc4cc387eb9f816531132903b221015463fc57"
+    },
+    {
+      "path": "docs/assets/architecture.png",
+      "bytes": 215524,
+      "sha256": "b8c0d2d1ea008d6418b6f40c8196b745665894e434c84c0a07ae13a503011f20"
+    },
+    {
+      "path": "docs/assets/architecture.svg",
+      "bytes": 95378,
+      "sha256": "27c4836e492aee3f6e0d915c2e84cae15bc2b88a9c4b538dbae280a8376bfb6e"
+    },
+    {
+      "path": "docs/assets/height-experiments.png",
+      "bytes": 136180,
+      "sha256": "9604b426b8d6f3ab5753edd211691f01740fc63766e3bcd7e53907594fb40a02"
+    },
+    {
+      "path": "docs/assets/hilly-workspace.png",
+      "bytes": 970485,
+      "sha256": "b9b4b91cb66099db3ae2f60537f84d46c2fe30c5c8a13df59b6a88e34e3f3f21"
+    },
+    {
+      "path": "docs/assets/mobile-workspace.png",
+      "bytes": 270118,
+      "sha256": "b27b53181da7eae61ff927329486e7e56b8e8255457674e7428b4d2c24f0dd61"
+    },
+    {
+      "path": "docs/assets/upload-workspace.png",
+      "bytes": 1106901,
+      "sha256": "deb03214c49b0de5e192b8d70821e1e14c5f54991961339a9b0a2fbaf443fec9"
+    },
+    {
+      "path": "docs/assets/workspace.png",
+      "bytes": 1043219,
+      "sha256": "a5d3c1a719854111ca8b2fc7119988fb08859a587e56f604827e37487053c395"
+    },
+    {
+      "path": "docs/evidence/README.md",
+      "bytes": 1150,
+      "sha256": "1058dcb9c03c4b90e4a86586b8bdd643b3fe63198b6c8857e6a2ffc4dcd077c1"
+    },
+    {
+      "path": "docs/evidence/browser-verification.json",
+      "bytes": 5345,
+      "sha256": "c2707db68deb1b357036be5a3f393214b7b62fe678ea2425daf4ac95c0a05191"
+    },
+    {
+      "path": "docs/evidence/documentation-build.json",
+      "bytes": 13465,
+      "sha256": "f44634d7be8d81b783844bdea2281236da49dacac39da242c50a659e2339e16c"
+    },
+    {
+      "path": "docs/evidence/model-packaging.json",
+      "bytes": 1162,
+      "sha256": "bfa35ad6fc3168c399d0bd23ce6862a3dd653e7150ba05114dfcdab4f6aa80c3"
+    },
+    {
+      "path": "docs/evidence/numerical-verification.json",
+      "bytes": 6251,
+      "sha256": "b5e081ecdbdf60bb68caacd1ed42c64a273eafd94015d8c2cdefc3f5e33ff86b"
+    },
+    {
+      "path": "docs/evidence/raster-publication.json",
+      "bytes": 7103,
+      "sha256": "a3c39d4ef85aba307104f6de810f886d9aa92995fa94ca912745e0e80b3a62b3"
+    },
+    {
+      "path": "docs/evidence/research-metrics.json",
+      "bytes": 1433,
+      "sha256": "607713b8fe6d2ab02ae35eb9910d2ed685d92ab83533da70ee6c6333e6656cd7"
+    },
+    {
+      "path": "docs/evidence/source-inventory.json",
+      "bytes": 16980,
+      "sha256": "42a64499cf3b4fe84c264e3ea5700420b0a06edc6faf52f660b058e33b5380c2"
+    },
+    {
+      "path": "docs/history/ACCURACY_RECOVERY_2026_09_15.md",
+      "bytes": 15056,
+      "sha256": "0c77fd980bf77286fae53086e2aed6d423088f223e935a783500e76419e54488"
+    },
+    {
+      "path": "docs/history/BENCHMARK_PROTOCOL.md",
+      "bytes": 8562,
+      "sha256": "6d0a3707024789cfbf998b7983d60fa2f8c9a0945722a887b81b7a7b9c7022e0"
+    },
+    {
+      "path": "docs/history/CLASS_ASSISTED_HEIGHT_FAST_V2_20260919.md",
+      "bytes": 5073,
+      "sha256": "fbbb35fb81719351ab453954ec35677ab594ac1487a519f833e6b0dc4fa46729"
+    },
+    {
+      "path": "docs/history/CLASS_ASSISTED_HEIGHT_FAST_V2_OUTCOME.md",
+      "bytes": 4891,
+      "sha256": "f86b9b17f15966290ff16cc2531911c9a04550e00cbb10054116de8567e1da73"
+    },
+    {
+      "path": "docs/history/CLASS_ASSISTED_HEIGHT_LAUNCH_20260919.md",
+      "bytes": 3096,
+      "sha256": "bfdfe10a604d4eb9178e143aaf6b9443ca22232adf9210d49dbdb32b600ab6f8"
+    },
+    {
+      "path": "docs/history/CLASS_ASSISTED_HEIGHT_LOW_SURFACE_V3_OUTCOME.md",
+      "bytes": 5636,
+      "sha256": "7851b39ff629fdca4e79c1b084f05b510fa34f25a4ecb922d96fd0c29c3cfe6b"
+    },
+    {
+      "path": "docs/history/CLASS_ASSISTED_HEIGHT_LOW_SURFACE_V3_PROTOCOL.md",
+      "bytes": 4542,
+      "sha256": "1515b02dcfe51737ea53353f88589f3bd1153d184b05f666f658c464ef67d7ed"
+    },
+    {
+      "path": "docs/history/CLASS_ASSISTED_HEIGHT_PILOT_PROTOCOL.md",
+      "bytes": 9372,
+      "sha256": "bd704753d0c8f9822b4223da202d29f83d2a6eed56781b8b00f660ee63030fc2"
+    },
+    {
+      "path": "docs/history/DEMO_RUNBOOK.md",
+      "bytes": 3184,
+      "sha256": "1a545460417faaa455bca9b86eb26445568f7669ce9e2047d42c8fd7b54d9788"
+    },
+    {
+      "path": "docs/history/EXPANDED_GAMUS_PLAN.md",
+      "bytes": 18194,
+      "sha256": "c99ae51f2525c665a310ee0b01a3a2865ab24af3723e0b51d3ae79b889c3722a"
+    },
+    {
+      "path": "docs/history/EXPLORE_MAPPING_2026_09_27.md",
+      "bytes": 3861,
+      "sha256": "94686dd4f017633a5561dc5807566c65b4b2e380881eb35f54e749cde7c72499"
+    },
+    {
+      "path": "docs/history/EXPLORE_WALKTHROUGH_2026_09_19.md",
+      "bytes": 4953,
+      "sha256": "82d157fb200539f19e0d28544ecc1742f238ebe2c6531bb853ba27227021f874"
+    },
+    {
+      "path": "docs/history/EXTERNAL_METRIC_HEIGHT_HOLDOUT.md",
+      "bytes": 6269,
+      "sha256": "e541d07c1ddf1c427ff61d57f125a432685bc3199f6bd62bd195ff4c625ea4cb"
+    },
+    {
+      "path": "docs/history/FULLSCREEN_ESCAPE_2026_09_19.md",
+      "bytes": 2154,
+      "sha256": "2685a1c5453e7b0a26d10475deb74a08ec153849501d732c238fab73f7ada999"
+    },
+    {
+      "path": "docs/history/GAMUS_DIRECT_HEIGHT_PROTOCOL.md",
+      "bytes": 5061,
+      "sha256": "1f06af97647bcd28117a9d9a8dc3702a8979ca11915fd93a851d523fed287a84"
+    },
+    {
+      "path": "docs/history/GAMUS_GEOGRAPHIC_HOLDOUT.md",
+      "bytes": 8854,
+      "sha256": "9366159a4b2c074435138ecaf78adea54679d82bedf6a2e862d2b1b12edd8995"
+    },
+    {
+      "path": "docs/history/GAMUS_HEIGHT_SAFE_V2_PROTOCOL.md",
+      "bytes": 3031,
+      "sha256": "14667b3055f5cdb54c70845e657c78ab29d9e5655aedc84fd2695a0e83babf5b"
+    },
+    {
+      "path": "docs/history/GAMUS_PREPARATION_AUDIT.md",
+      "bytes": 4382,
+      "sha256": "c39ec10ecc6c0f4977d454061dd00ed68cccd40ca8c3eda9e3c84f0bb8e53311"
+    },
+    {
+      "path": "docs/history/GAMUS_SIX_CLASS_DECISION_BIAS_CALIBRATION.md",
+      "bytes": 6513,
+      "sha256": "d7ec8191aa920142b98cc1b35d6155264e95b8985665a414005a7fec8cbe53a1"
+    },
+    {
+      "path": "docs/history/GAMUS_SIX_CLASS_EXPANSION_PROTOCOL.md",
+      "bytes": 8171,
+      "sha256": "a1290c061a663aa18f88d543aba2d1481fa27e4046b4c4d4a49652cb60da7307"
+    },
+    {
+      "path": "docs/history/GAMUS_SIX_CLASS_EXPERIMENT_STATUS.md",
+      "bytes": 12954,
+      "sha256": "9d14672d2890c91507b23115e91c172ff6d7ceb27cd7dbc8620422f0de3d9845"
+    },
+    {
+      "path": "docs/history/GAMUS_SIX_CLASS_V4_HIERARCHICAL_HEAD_DESIGN.md",
+      "bytes": 10708,
+      "sha256": "c70150ea7be9e48377cece14f4f7e88131bf7586a0bc41cc2b297659231c5d1d"
+    },
+    {
+      "path": "docs/history/HEIGHT_BAND_SAMPLING_V1_HANDOFF.md",
+      "bytes": 3645,
+      "sha256": "d15eca5ddde2d42980f5d754543e973fcdf882ba92c6b35901aaceb023427d98"
+    },
+    {
+      "path": "docs/history/HEIGHT_BAND_SAMPLING_V1_OUTCOME.md",
+      "bytes": 2840,
+      "sha256": "c598fa950b16bbbf479f08ecf2098a71ca0ef06deb1d2c5c588ea58b010bbd0b"
+    },
+    {
+      "path": "docs/history/HEIGHT_BAND_SAMPLING_V1_PROTOCOL.md",
+      "bytes": 4894,
+      "sha256": "7f3e08f35524f67717bc8ae6bea655b46a37d8bf488808a37a903610f49a2c4d"
+    },
+    {
+      "path": "docs/history/HEIGHT_PROMOTION_SCORECARD.md",
+      "bytes": 7415,
+      "sha256": "1e210c3887e54143256d4de7ddf9bdf8322bfcaa27535b303af3d862d5af3d7b"
+    },
+    {
+      "path": "docs/history/HIGHBUILD_INSTANCE_EVALUATION.md",
+      "bytes": 5437,
+      "sha256": "025c8d175b2ef93500e6107a231c6859681e983c7a61678c0655ec2b3fd74d67"
+    },
+    {
+      "path": "docs/history/HIGHBUILD_RGB_CLASSIFICATION_AUDIT_2026_09_19.md",
+      "bytes": 8277,
+      "sha256": "edf02d8c3d151de3701a65543b3f6c2ee0dc9bfa2091de9c942dd2ce1f37cef1"
+    },
+    {
+      "path": "docs/history/INSPECT_CLASSES_AND_WALK_POLISH_2026_09_19.md",
+      "bytes": 4288,
+      "sha256": "7c8643a971b442a96ee8e2d358bab310465da90a0ef10598f8bcf6b5f04e5196"
+    },
+    {
+      "path": "docs/history/METRIC_GRID_VIEW_2026_09_19.md",
+      "bytes": 5103,
+      "sha256": "182f4436925073dfc105fc780f541ea84496d57f2614964f1135bacc48dd1119"
+    },
+    {
+      "path": "docs/history/OEM_ALL_SIX_CLASS_TEST_2026_09_19.md",
+      "bytes": 6897,
+      "sha256": "392d0eefde6fa58600eb214b1583d26b4859a94312bbfeac2c758ced847eb998"
+    },
+    {
+      "path": "docs/history/OPENEARTHMAP_CHRISTCHURCH_EXTERNAL_HOLDOUT.md",
+      "bytes": 4623,
+      "sha256": "3e68dc83f0b6466276fb1ab91de46261f8c467a4dcf6b50f74483bb6b01aa1f8"
+    },
+    {
+      "path": "docs/history/OPEN_CANOPY_RICH_LABELS_AND_HOLDOUTS.md",
+      "bytes": 7069,
+      "sha256": "718f1c61a6fba600e43b8e882c3e361b6558b08b98c277d2c1e40626139526ee"
+    },
+    {
+      "path": "docs/history/PROGRESS.md",
+      "bytes": 27972,
+      "sha256": "c1e73a47e0e0a37b8fde8ad95944f20fcb96c826be878ad17c8273149f0830ce"
+    },
+    {
+      "path": "docs/history/RESIDUAL_HEIGHT_POST_RUN.md",
+      "bytes": 4684,
+      "sha256": "1127e3e5f2db3fca449193f4302d6df30b713fc25d8d33d1fbbb783acdb65ad1"
+    },
+    {
+      "path": "docs/history/RESIDUAL_HEIGHT_V1_OUTCOME.md",
+      "bytes": 8633,
+      "sha256": "eace4039662dbb03c43a6c611160f7339114a8382979fa6ad2eb6f5a7be0f99b"
+    },
+    {
+      "path": "docs/history/RGB_MULTIREGION_V3_LAUNCH_2026_09_19.md",
+      "bytes": 2724,
+      "sha256": "49f27cfdc7832a9198ed6fb67ea1fbd6cb938291acb87d99fddce759c580d782"
+    },
+    {
+      "path": "docs/history/RGB_MULTIREGION_V3_OUTCOME.md",
+      "bytes": 3860,
+      "sha256": "330e2cd808801eded4d95521e3bfdd3bff88bf75ed03b69352a86a718b7a203c"
+    },
+    {
+      "path": "docs/history/RGB_MULTIREGION_V3_PROTOCOL.md",
+      "bytes": 7004,
+      "sha256": "7e1229e255d7776ba2146c583f8eb58fa57bb2b1a213710146ed84ffbbf9d815"
+    },
+    {
+      "path": "docs/history/RGB_SAMPLING_V2_OUTCOME.md",
+      "bytes": 5641,
+      "sha256": "7b88182d261806819bb24de70c819f2de49323dc046b824525bc361df88ad524"
+    },
+    {
+      "path": "docs/history/RGB_SAMPLING_V2_PROTOCOL.md",
+      "bytes": 7129,
+      "sha256": "524f50c20e892444bb1697818513094f59098a571efa7735f87faa6ac0f9f2d3"
+    },
+    {
+      "path": "docs/history/RGB_SEGMENTER_V1_CHRISTCHURCH_PROTOCOL.md",
+      "bytes": 5888,
+      "sha256": "3fdb860ab4efb3060327504a7fd427e5c1eeb96eab10c98d632c9d473db088eb"
+    },
+    {
+      "path": "docs/history/RGB_SEGMENTER_V1_CHRISTCHURCH_RESULTS.md",
+      "bytes": 5817,
+      "sha256": "77284a08041e296a6793216e9649402ef011705dbe8f4ce84df0c6d0b20750d0"
+    },
+    {
+      "path": "docs/history/RGB_SEGMENTER_V1_DC_VEGETATION_AUDIT.md",
+      "bytes": 2578,
+      "sha256": "c817107b5d37ced5a586cc1c732c4f8fc3bd42eb7a2f759ac71b25a2bc68b28d"
+    },
+    {
+      "path": "docs/history/RGB_SEGMENTER_V1_OUTCOME.md",
+      "bytes": 5189,
+      "sha256": "bf48d9a62840374bb076dbbd83efeeadca6eb25dd96703134529c79a4c914a70"
+    },
+    {
+      "path": "docs/history/RGB_SEGMENTER_V1_PROTOCOL.md",
+      "bytes": 9104,
+      "sha256": "2d1f0a7c9114877a8ecbea9836ec10374a040a972fcbc17fbf532e77781a5816"
+    },
+    {
+      "path": "docs/history/RGB_SEGMENTER_V1_TEST_REPORT.md",
+      "bytes": 4284,
+      "sha256": "e3a76ed9623f19dcfc9299d1c7028e70a3e3b456d30764d48c1244acbe10f11c"
+    },
+    {
+      "path": "docs/history/ROOFTOP_RELIEF_2026_09_19.md",
+      "bytes": 4732,
+      "sha256": "f3f1296a325096b47c6ef276394312cb5223edf6f9e7c9beb86d7a302f9f54b4"
+    },
+    {
+      "path": "docs/history/ROOF_RECONSTRUCTION_STAGE1_2026_09_19.md",
+      "bytes": 9892,
+      "sha256": "6c938cbeffea83d893053a111f50e4c5adc1c2b59e0cc9086c8dfdf33ef6f19a"
+    },
+    {
+      "path": "docs/history/SCENE_IMAGE_REFERENCE_2026_09_27.md",
+      "bytes": 2051,
+      "sha256": "243d6fff0ad3c26f0a2880813fee3184befdcd9128d9bc92246a4d0978f150a4"
+    },
+    {
+      "path": "docs/history/SELECTION_GLOW_2026_09_27.md",
+      "bytes": 2877,
+      "sha256": "4c5949a1b1c30c5dcf0a2629b36b045da597d0b567e4cd4932a6975311324793"
+    },
+    {
+      "path": "docs/history/SEMANTIC_EXPERT_HEIGHT_V1_HANDOFF.md",
+      "bytes": 3832,
+      "sha256": "9cccb34555374dd02c18ce076f0d443465243fbf5a5a75f791909d3eeecceadf"
+    },
+    {
+      "path": "docs/history/SEMANTIC_EXPERT_HEIGHT_V1_OUTCOME.md",
+      "bytes": 5052,
+      "sha256": "ea97238a24648d478cc778074bed46135d7c622c1347f05a1efa3d8e79d51839"
+    },
+    {
+      "path": "docs/history/SEMANTIC_EXPERT_HEIGHT_V1_PROTOCOL.md",
+      "bytes": 3947,
+      "sha256": "665e750c62aaac31ca1a33fee2b0104d663d57b19a75675bbc99b6bcf737ed68"
+    },
+    {
+      "path": "docs/history/SIX_CLASS_APP_PREVIEW_2026_09_19.md",
+      "bytes": 5286,
+      "sha256": "73908f7ae1bca16a2a52599a07202c405193b5c48b84a45f78efe31b1cf78f72"
+    },
+    {
+      "path": "docs/history/SIX_CLASS_DEFAULT_INTEGRATION_2026_09_20.md",
+      "bytes": 6582,
+      "sha256": "ea26d4fd9621d82205d405554cb77fe2bb2b918ddc6b549a10f043084bf89b96"
+    },
+    {
+      "path": "docs/history/SIX_CLASS_OFFLINE_EXPORT.md",
+      "bytes": 4435,
+      "sha256": "fb36a96ce8a24b645cc41a09d70805830f368ebdfac3fb7d9ee947582665c498"
+    },
+    {
+      "path": "docs/history/SIX_CLASS_SCANNER_AND_HEIGHT_AUDIT_20260919.md",
+      "bytes": 5544,
+      "sha256": "5fe2ae6e2da335786b51fcf784782a18fa09ab1a36611800e40f312ee37dc952"
+    },
+    {
+      "path": "docs/history/SMOOTHNESS_AND_ACCURACY_REVIEW_2026_09_26.md",
+      "bytes": 6440,
+      "sha256": "4deb657e975844302d4fb07e4e70485e9249569d774cfe7bb546d64ea18ed5f3"
+    },
+    {
+      "path": "docs/history/TERRAIN_IMPORT_AND_PROFILE_2026_09_26.md",
+      "bytes": 10583,
+      "sha256": "dcc2c6d394fccdb993df0fd2822d10378ef5aa832e9f377eb04bc8e34e923dd8"
+    },
+    {
+      "path": "docs/history/TERRAIN_VIDEO_STYLE_2026_09_26.md",
+      "bytes": 5762,
+      "sha256": "d27570c462cd4df5dd65672940190ea48ed434aad1dc8e677ba8d9a24f2dc7e5"
+    },
+    {
+      "path": "docs/history/VIEWER_CONTROLS_2026_09_19.md",
+      "bytes": 4247,
+      "sha256": "e8cd2cb12772b5a5cca2070d3a3f456e7b5b0d713f89ae532c4cfcac51afdcfd"
+    },
+    {
+      "path": "docs/history/VIEWPORT_DETAILS_ZOOM_2026_09_27.md",
+      "bytes": 2006,
+      "sha256": "ebe66908a79ac69078fc0a097877c2188dcd445bdaa88f53e575cc388ae35fc9"
+    },
+    {
+      "path": "licenses/APACHE-2.0.txt",
+      "bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "licenses/CONVNEXT_MODEL.txt",
+      "bytes": 20566,
+      "sha256": "9ab7947f327be897e841ce58b90996c4b814c35127897b383f17616510115b9b"
+    },
+    {
+      "path": "licenses/HIGHBUILD_SOURCE_INVENTORY.md",
+      "bytes": 20266,
+      "sha256": "0023c26114d529dc38adb6025877fe7d11f0f77ddcfe21c368c8914f9fe3d67e"
+    },
+    {
+      "path": "licenses/SEGFORMER.txt",
+      "bytes": 4065,
+      "sha256": "f549820c06519e3105e5174a2fd7285224ffd2268a7f879a843b1a255fd04a61"
+    },
+    {
+      "path": "model-artifacts.json",
+      "bytes": 1586,
+      "sha256": "7ba12f3abb753169042ee7013beb901fc8a493ce0fe0d1e61a1036b314516fb7"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 992,
+      "sha256": "5340e02ca80d204da5ed4fdc0a7b71b188b5b245866832b741ec359c1ee8bd3d"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "bytes": 118,
+      "sha256": "ca0d3ab7eab3bf7feb120668f5bd91961311b8c2d32c45564ae4535a49fcff0b"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 259,
+      "sha256": "aa5a7778e762aea9e902654ebb5b8e4c0d211e71e40aca2a1a8a5620a0f8d102"
+    },
+    {
+      "path": "scripts/analyze_building_errors.py",
+      "bytes": 6532,
+      "sha256": "a7fea23ddb868be15c68692905258e9ac3cbd7b738d14306bed4820839e139d1"
+    },
+    {
+      "path": "scripts/analyze_building_fusion.py",
+      "bytes": 10361,
+      "sha256": "8da91d2de9dc282bea754f78b01225b430a4c3790c88ade97a2113eac3962298"
+    },
+    {
+      "path": "scripts/analyze_class_assisted_low_surfaces.py",
+      "bytes": 6257,
+      "sha256": "bb2ae99393f1fae00fab487b64dd8b5ceed970ab13430574cd8b435723c1680f"
+    },
+    {
+      "path": "scripts/analyze_multidomain_checkpoint.py",
+      "bytes": 10590,
+      "sha256": "f8a70af6b9c52cfa656ef6094e46264f3a8b0aa1e7dfe765c762a5b316c38116"
+    },
+    {
+      "path": "scripts/analyze_residual_height_outcome.py",
+      "bytes": 11664,
+      "sha256": "004c9c775c7fa758299c9cda7c7e72dee46ca23e8e5e009234a5522847a022b7"
+    },
+    {
+      "path": "scripts/analyze_validation.py",
+      "bytes": 17595,
+      "sha256": "018521824f687f3b0ed95f1770c5f213cd88b41f7b0fa77dfb73fc902acd13fd"
+    },
+    {
+      "path": "scripts/analyze_vegetation_expert_fusion.py",
+      "bytes": 7329,
+      "sha256": "2e1287e332767c2030bf8e75a17695d58ac2bb6ce5705c83d745b0b49203efae"
+    },
+    {
+      "path": "scripts/analyze_vegetation_fusion.py",
+      "bytes": 8262,
+      "sha256": "d9d6727e500f8f01ab1dd12a5bd5e052a3ad63aa099ce59808ae954f972ee251"
+    },
+    {
+      "path": "scripts/audit_dataset.py",
+      "bytes": 2790,
+      "sha256": "da940c6a66d0364e2b6e7375a0a35079b2ddea203e6d737dba5860c0ab2ca9fd"
+    },
+    {
+      "path": "scripts/audit_gamus_head_only_checkpoint.py",
+      "bytes": 11403,
+      "sha256": "2da34169c0b023a94890f555ed14c6d693e53766c5b8695d775b748eefc54bde"
+    },
+    {
+      "path": "scripts/audit_gamus_hierarchical_v4_checkpoint.py",
+      "bytes": 69765,
+      "sha256": "92def566cc578fdc8756a641a43292a459e7f5d6d6b702d0f4fd58d176aacf89"
+    },
+    {
+      "path": "scripts/audit_gamus_spatial_refined_geographic_checkpoint.py",
+      "bytes": 14666,
+      "sha256": "d8cfaa10b36ddb71cc82372a6115f17d5ca15bdacefdd60a7ff2e411368db4fb"
+    },
+    {
+      "path": "scripts/audit_gamus_spatial_refined_head_checkpoint.py",
+      "bytes": 14346,
+      "sha256": "fd7c0553a8c4bcef3f4b658ce2671a0f5645925989347d2f5fb7c14e4541deda"
+    },
+    {
+      "path": "scripts/audit_height_conditioning_response.py",
+      "bytes": 9964,
+      "sha256": "039952946fe98ea4dad593e32576c51b359a4ceea2a2bfacef5665af09357ec1"
+    },
+    {
+      "path": "scripts/audit_height_crop_context.py",
+      "bytes": 6494,
+      "sha256": "bef390fbf8fea01c26efa9b0a1d7fcb915dc86010d5668ceae904c2f0a92c288"
+    },
+    {
+      "path": "scripts/audit_height_output_identity.py",
+      "bytes": 34009,
+      "sha256": "7f71a8863fdaaeffe1d6560d4840408088dad7246a7cd53947c118efff83320d"
+    },
+    {
+      "path": "scripts/audit_height_training_support.py",
+      "bytes": 11078,
+      "sha256": "51930d5f5de1c6ad51a554ba138a6810122ee39c50ba96e2380e583117cca406"
+    },
+    {
+      "path": "scripts/audit_highbuild_rgb_classifier.py",
+      "bytes": 19561,
+      "sha256": "1b4dee352d1b55c93f72dbcd5002c50e141e326b038434870ef89a289521ed4a"
+    },
+    {
+      "path": "scripts/audit_open_canopy_padding_v1.py",
+      "bytes": 6399,
+      "sha256": "91e9b62553e3905f454a467ced4bced1666ff4fcb180c6666bdad5df1fd7a230"
+    },
+    {
+      "path": "scripts/audit_protected_inference_protocol_v1.py",
+      "bytes": 11546,
+      "sha256": "5c761edd7d4d1ba270327f925472e51d056e1c4cf2400bac9dd49118b4fe0ce8"
+    },
+    {
+      "path": "scripts/audit_rgb_multiregion_v3_data.py",
+      "bytes": 2500,
+      "sha256": "c5e8e60ea4da6301342dcac479d9ea896574917651bbb292f24fcfb7b42713bc"
+    },
+    {
+      "path": "scripts/audit_rgb_training_crops_v2.py",
+      "bytes": 16274,
+      "sha256": "39646b33a2f3a5b52135935d68a44c9da6bee233e5ddb91aea9164a63968db16"
+    },
+    {
+      "path": "scripts/audit_rgb_vegetation_errors.py",
+      "bytes": 7467,
+      "sha256": "370f01871ea465278497c82b6830e6f2cf133d8a475f70f757a962c6627b75f3"
+    },
+    {
+      "path": "scripts/audit_training_annotation_overlaps.py",
+      "bytes": 3794,
+      "sha256": "b51c3245d02ca013778c21e69fb176051f6ac0caf972be1331da2432adfa22fb"
+    },
+    {
+      "path": "scripts/audit_training_prior_replay.py",
+      "bytes": 4618,
+      "sha256": "ca904528af093b456c8a2c9a2b2867c882b9ebb0067fe8285d49e148b1cd9ff2"
+    },
+    {
+      "path": "scripts/benchmark_class_assisted_loader.py",
+      "bytes": 2407,
+      "sha256": "7caedc80409e715c714ea5b21fb9981127ea336d9eee4ec26fd337ea9559f4f3"
+    },
+    {
+      "path": "scripts/benchmarks/run_fusedhe.py",
+      "bytes": 5669,
+      "sha256": "0044e14dbdca38be2d3c348ad10b9c0722a83b7158a511871f82b3ec6bc5e28f"
+    },
+    {
+      "path": "scripts/build_documentation.py",
+      "bytes": 13365,
+      "sha256": "a02512eee998f70d98b6eaf405a00d184f54cd079418d17da692cb22cf8c4306"
+    },
+    {
+      "path": "scripts/build_figures.py",
+      "bytes": 4011,
+      "sha256": "f3fc6232862526c79a07cb864522169678b6aaab4d7e19cd0385609422f99afb"
+    },
+    {
+      "path": "scripts/build_gamus_hierarchical_v4_config.py",
+      "bytes": 12723,
+      "sha256": "c8effca6e9a8f04b33dab9f287a3a5203d87bc60d72d30d08eeb94f07a36868c"
+    },
+    {
+      "path": "scripts/build_height_safe_v2_evaluation_plan.py",
+      "bytes": 6003,
+      "sha256": "8a1658d3bbb59372c39bb142a9503a6c3e709f3769f2382f84490a1a05ddf0b2"
+    },
+    {
+      "path": "scripts/build_hilly_reference_evidence.py",
+      "bytes": 6179,
+      "sha256": "9f08af85b8888442414a193bf7351e6af627e575d90b82bb10798eec10063361"
+    },
+    {
+      "path": "scripts/build_open_canopy_candidate_montage.py",
+      "bytes": 2543,
+      "sha256": "51a934fb53502675852c927fd3cd5c7c1c2fb97e4e0d562376ba5f03a54ac167"
+    },
+    {
+      "path": "scripts/build_roof_geometry_test_fixture.py",
+      "bytes": 1550,
+      "sha256": "0bc5ce1b063bdaf6afd35e6f172d69bc58d53703b15a145be539f46e34b6153e"
+    },
+    {
+      "path": "scripts/build_selected_urban_comparison_20260916.py",
+      "bytes": 2666,
+      "sha256": "f73aad97821d63ad3df12a3db4a6cf4fd52f41f4a018a40ee0a7e56cb875c657"
+    },
+    {
+      "path": "scripts/build_showcase_candidate_sheet.py",
+      "bytes": 3490,
+      "sha256": "aceace2e4068f40e5d69a3e12d22af48f318f7d9b8b549e5268f95ffef735086"
+    },
+    {
+      "path": "scripts/build_stage3_scene_router_records.py",
+      "bytes": 37132,
+      "sha256": "1747879680bc361387ad980a6bd83f6fb7a255d4ed6adfee0e97d0a75905f159"
+    },
+    {
+      "path": "scripts/build_stage4_dual_router_records.py",
+      "bytes": 42699,
+      "sha256": "187b5aaecdc60be47b89b6cf399fdfd28a69f6a12d00f9aa736effdf2de4b58a"
+    },
+    {
+      "path": "scripts/calibrate_gamus_six_class_decisions.py",
+      "bytes": 39496,
+      "sha256": "cddf6a0ee544e4ac3c307418fca0a47dcf0500d9ac3d3a5e890571729c1e7c1a"
+    },
+    {
+      "path": "scripts/check_height_candidate_promotion.py",
+      "bytes": 3077,
+      "sha256": "0947cb9fd057f14b36589a162526fadf3aedc7925df3e2a5527d354857fa1fef"
+    },
+    {
+      "path": "scripts/class_assisted_dashboard.py",
+      "bytes": 24009,
+      "sha256": "cdd53eff77f0bb2e2770e7a3ff56b9432c398764906f010ad6333ecebac0e0fa"
+    },
+    {
+      "path": "scripts/class_assisted_height_proof.py",
+      "bytes": 19782,
+      "sha256": "11650948531a34c8f158f48ed26346ed6ae272e40879643a38a0e4fa74106094"
+    },
+    {
+      "path": "scripts/compare_gamus_six_class_candidate.py",
+      "bytes": 40525,
+      "sha256": "991b6b87b92dbdf6b3569efe6a5031c5bdff048a066e885162caea79df3aa82d"
+    },
+    {
+      "path": "scripts/compose_absolute_dsm.py",
+      "bytes": 2014,
+      "sha256": "a5a51521015cc251f874002108cff2f5436c4138d6869cc2323a8469e7981c34"
+    },
+    {
+      "path": "scripts/continue_full_pipeline.ps1",
+      "bytes": 3683,
+      "sha256": "4116188fe2dc894360f60a3facca7b4a2013fd95dee4416a337b639cb8880669"
+    },
+    {
+      "path": "scripts/create_gamus_head_blend_sweep.py",
+      "bytes": 13365,
+      "sha256": "86b0e347e8047566a3d957b9237836e066f451cbcd0db2a07fa434795bc07efb"
+    },
+    {
+      "path": "scripts/create_vegetation_fusion_checkpoint.py",
+      "bytes": 3310,
+      "sha256": "ebfbff97753df5751281eaa1fec66f939c038819ac1151f161bc0f589a195b63"
+    },
+    {
+      "path": "scripts/data/audit_gamus_dataset.py",
+      "bytes": 37045,
+      "sha256": "590f008be3d1f63be95d0d69f332035f2b87f39feb618a80bfd323b32698f10d"
+    },
+    {
+      "path": "scripts/data/audit_gamus_preparation.py",
+      "bytes": 38984,
+      "sha256": "2b26d838f030c36ddf7942dfae9a1024c2a1d0cb3cf6e00d4757354c8fce143a"
+    },
+    {
+      "path": "scripts/data/audit_open_canopy_provenance.py",
+      "bytes": 10231,
+      "sha256": "62214a23c1c7102cdd8a7bb540ae6b7abf1e71d227e74c4b9f89abc145454d81"
+    },
+    {
+      "path": "scripts/data/backfill_open_canopy_classification.py",
+      "bytes": 13197,
+      "sha256": "bf512895f89ae1d2865eebd1218e3d0adc9683218777156983d390ce25ecedb8"
+    },
+    {
+      "path": "scripts/data/build_highbuild_annotation_masks.py",
+      "bytes": 11243,
+      "sha256": "81e0517bf928c073c7ecd55fefe7f3b53c0140bb368ef420afed4d7e2dcdc0b3"
+    },
+    {
+      "path": "scripts/data/combine_surface_manifests.py",
+      "bytes": 2474,
+      "sha256": "3d9211e2243de64d9c6f6926d377bd2f6e69c00a34da39d751a19dbe9946e6dd"
+    },
+    {
+      "path": "scripts/data/create_import_test_fixtures.py",
+      "bytes": 676,
+      "sha256": "d8764368449d1fbf960c94a85144052bd9b757f8745abe714beb2fd83942f12f"
+    },
+    {
+      "path": "scripts/data/download_gamus_priority.py",
+      "bytes": 6463,
+      "sha256": "d52a8a806926809d004733603b46726556e92a52153b63a5444c05acbf6cf590"
+    },
+    {
+      "path": "scripts/data/download_highbuild_full.py",
+      "bytes": 2010,
+      "sha256": "86a81c763f3c1d8c2efecfdd8db6a037f5d3e02afe4998876f504f43f4bbff67"
+    },
+    {
+      "path": "scripts/data/download_highbuild_reviewer.py",
+      "bytes": 7910,
+      "sha256": "6bc9fe930e9e4f54a0024513c2139cb8075f4dc9769bfb9c7a7ca25f4c376d7b"
+    },
+    {
+      "path": "scripts/data/download_region_test_tiffs.py",
+      "bytes": 7207,
+      "sha256": "e25b6474de049d7301cfed07a74fc1ff0350c0a274db441fefe2fbc731c0ed60"
+    },
+    {
+      "path": "scripts/data/export_highbuild_surface_subset.py",
+      "bytes": 13172,
+      "sha256": "873bc12f9ac1286dabbf8e729c73e0b79841de3213f257a67d52df7ccf6b0f9d"
+    },
+    {
+      "path": "scripts/data/plan_gamus_geographic_holdout.py",
+      "bytes": 14620,
+      "sha256": "3fc95807128b62eef0d1788d392e7f60bda5d3a12de3b4bf10109324456e7dd3"
+    },
+    {
+      "path": "scripts/data/plan_open_canopy_holdout.py",
+      "bytes": 5965,
+      "sha256": "dde9d0f236a7b3407f6c64c19e3b896edeebb16bf049da487ce5693097b80bbc"
+    },
+    {
+      "path": "scripts/data/precompute_gamus_priors.py",
+      "bytes": 4110,
+      "sha256": "c0a0adf69698f6794c323a39f6177ff94476d158cc28bcb5bf35abc58477623c"
+    },
+    {
+      "path": "scripts/data/precompute_surface_priors.py",
+      "bytes": 3209,
+      "sha256": "04db86fe562637d970fd6a7ab97151c16cf4104d5ad291a737aa10c85c84d688"
+    },
+    {
+      "path": "scripts/data/prepare_balanced_city_shards.py",
+      "bytes": 4948,
+      "sha256": "1f76bb98b8d90bc0e3bf1541a509ffa599015dc41b701ff4c91147d2789ad25f"
+    },
+    {
+      "path": "scripts/data/prepare_external_metric_height_holdout.py",
+      "bytes": 5022,
+      "sha256": "4c1d46f215be56b664a38884036a7bfb14d714df5973a18876173a48831fbbb5"
+    },
+    {
+      "path": "scripts/data/prepare_gamus_geographic_candidate.py",
+      "bytes": 8628,
+      "sha256": "5a7f2ea516a5cc216b5f8462dd8a2b11cffe0a876b678d486f9f880b385f1b49"
+    },
+    {
+      "path": "scripts/data/prepare_highbuild_full.py",
+      "bytes": 4989,
+      "sha256": "6e3ab31d996b26ba029a156ba31f4e186832113609aa8295f496bba35ed40830"
+    },
+    {
+      "path": "scripts/data/prepare_landscape_demo_candidates.py",
+      "bytes": 19088,
+      "sha256": "a27de7664ff7dd2101712f84f6c4f6eb90038f2c68efd57a702beabfffa93569"
+    },
+    {
+      "path": "scripts/data/prepare_open_canopy_subset.py",
+      "bytes": 15929,
+      "sha256": "a1117e41638b33fd12e8f8d4525950141a335ae9d0219ffa3a045696d42064f7"
+    },
+    {
+      "path": "scripts/data/prepare_roof3d_reference_pilot.py",
+      "bytes": 5363,
+      "sha256": "348cfce86f4f2887e83c59ee625f4c2e67fb686977cac3b8308bf03fa1ffb8a9"
+    },
+    {
+      "path": "scripts/data/prepare_roof3d_training_masks.py",
+      "bytes": 2936,
+      "sha256": "e65a237c938c1528dc0c7a9ae1aa721d52508fc5fe435dba0249a07fc77fa057"
+    },
+    {
+      "path": "scripts/data/repack_highbuild_full.py",
+      "bytes": 4855,
+      "sha256": "e61965d69aea189dc238def8200dc465729722379b178ea64da395bf3e3d1dff"
+    },
+    {
+      "path": "scripts/data/stage_roof3d_training_pilot.py",
+      "bytes": 6294,
+      "sha256": "50e26923f5aa38dc638a6a8f00a6ff3c4e6efca3c4d28f93a12818b440402075"
+    },
+    {
+      "path": "scripts/data/version_corrected_surface_manifests.py",
+      "bytes": 7288,
+      "sha256": "fd8ee729abce4e91b3d51926676a662e2c2214c0178d8ed607af9de7902ccb35"
+    },
+    {
+      "path": "scripts/diagnose_height_learning_bottlenecks_v1.py",
+      "bytes": 20453,
+      "sha256": "250a0979d9df747636094447b7f28450401e2349475f5369b8d40b7a0f6a14d1"
+    },
+    {
+      "path": "scripts/download_gamus.ps1",
+      "bytes": 2864,
+      "sha256": "4250828bed39485dc5918301a65332531bd87bb366fcc7a6e5c85317a6fddf70"
+    },
+    {
+      "path": "scripts/download_gamus_priority_then_full.ps1",
+      "bytes": 965,
+      "sha256": "0d67878a31103a76145dccab1d3929bbca9fc93d6a5c599915312a166b1dabca"
+    },
+    {
+      "path": "scripts/download_models.py",
+      "bytes": 3285,
+      "sha256": "1a2e561c97ec65eadea6e3d1a39b482164e05355d153e4a296bb261b377799ed"
+    },
+    {
+      "path": "scripts/evaluate_christchurch_rgb_v1.py",
+      "bytes": 13363,
+      "sha256": "6b120080ef2940897429990cb11e54627f2b282cdd83649a902a4fbf6fd193b6"
+    },
+    {
+      "path": "scripts/evaluate_corrected_legacy_triplet.py",
+      "bytes": 59125,
+      "sha256": "f897062287d8ec7b0a83c4864ff8cab6507cbab81d450809e90d2fd4f483bb12"
+    },
+    {
+      "path": "scripts/evaluate_dfc19_showcase_candidates.py",
+      "bytes": 3381,
+      "sha256": "8ba2cc2ac95354951f8d02aad687bf9ab22488bb84813cce8f17e3b6aa6f7513"
+    },
+    {
+      "path": "scripts/evaluate_domains.py",
+      "bytes": 5727,
+      "sha256": "252a4c6ecc692c72c20ba21f541dc7157d22f7798d8602b6360523adca78f697"
+    },
+    {
+      "path": "scripts/evaluate_gamus_dcphl_paired_replay.py",
+      "bytes": 52028,
+      "sha256": "561e680a039ca1281b42d6e0ac5212a8cb004503631be2914682ae1cf72800f9"
+    },
+    {
+      "path": "scripts/evaluate_gamus_head_blends_validation.py",
+      "bytes": 21673,
+      "sha256": "b7dd7c8562507ae0dc396ff78faddca64fdbb1d86172181be22a92c363cb340a"
+    },
+    {
+      "path": "scripts/evaluate_gamus_locked_nyc.py",
+      "bytes": 25521,
+      "sha256": "78ea2e08f4bad7f8b81623f7798f567292e424370ba7ca62fee334c5ffa99154"
+    },
+    {
+      "path": "scripts/evaluate_gamus_semantics.py",
+      "bytes": 11493,
+      "sha256": "97b13a75b66ba7cf762c0fde9a704d30abae9890dc1b7b83f7c5cffa306c0e79"
+    },
+    {
+      "path": "scripts/evaluate_height_safe_v2_candidate.py",
+      "bytes": 5628,
+      "sha256": "5387952f201be468a2077de900dca2f365050a1d12de469a4bc14cdefc5f44c7"
+    },
+    {
+      "path": "scripts/evaluate_highbuild_instances.py",
+      "bytes": 25634,
+      "sha256": "97a87dbad7001e8b95d7b8fde7d72434f1b9b7c107ac20d9f91cd187a45d4145"
+    },
+    {
+      "path": "scripts/evaluate_hybrid.py",
+      "bytes": 7688,
+      "sha256": "9aec6947d03ff6aa6e9d0569b41c7f5805cbf403bef16ab735930f44da67dc0b"
+    },
+    {
+      "path": "scripts/evaluate_locked_benchmark.py",
+      "bytes": 24841,
+      "sha256": "0ead23d68311cf8a564757e3678ae1060b232d65ecb2f4dcc4018a90037758b0"
+    },
+    {
+      "path": "scripts/evaluate_oem_all_six_scenes.py",
+      "bytes": 14217,
+      "sha256": "91a2d2d1554a0dfcc40622ddd54c5ffd9b3367787397d254af89dacdd47701d2"
+    },
+    {
+      "path": "scripts/evaluate_rasters.py",
+      "bytes": 2494,
+      "sha256": "c71082d2d4bdf049dd1e81fb4019156d6f059311718b606e3df1bdd05a03baa0"
+    },
+    {
+      "path": "scripts/evaluate_rgb_segmenter_checkpoint.py",
+      "bytes": 36266,
+      "sha256": "27df86b1a83acd27af9bdf53032e2edb29ef6d573748ff66717ef52eb1269806"
+    },
+    {
+      "path": "scripts/evaluate_routed_surface.py",
+      "bytes": 26737,
+      "sha256": "d47966fc7815e5377dfa82a6f0d0b995b8bf22ae09a16b2ea5f7591b4075f65e"
+    },
+    {
+      "path": "scripts/export_validated_six_class.py",
+      "bytes": 7230,
+      "sha256": "30e2f2cb098a6d6496c9c44ce88f68604a42f675aaecb0085464316dad02ab16"
+    },
+    {
+      "path": "scripts/extract_relative_depth.py",
+      "bytes": 1827,
+      "sha256": "d1ee105af92ced7cea814d45227e93d7c0ddf7e8a140fdd931864f2e58560684"
+    },
+    {
+      "path": "scripts/fit_building_router_calibrator.py",
+      "bytes": 12032,
+      "sha256": "bca53f279023e4d281e2a53a87ed617ad27236583b0379abd133089a6143fad9"
+    },
+    {
+      "path": "scripts/inspect_lidar_demo_candidates.py",
+      "bytes": 3650,
+      "sha256": "5835cc206cb77161b6a48501946011a92d8178ef0006de7de60fcc6bdbe4c84d"
+    },
+    {
+      "path": "scripts/inspect_openearthmap_archive.py",
+      "bytes": 2706,
+      "sha256": "2a9c8d03967dea59e518230af7ccd0c9d43c81756ae0f43798073970b05a6d4a"
+    },
+    {
+      "path": "scripts/package_reviewer_lidar_cases.py",
+      "bytes": 9002,
+      "sha256": "c7f782f15ffb0435988736917b57008133c6b7494c7249b65c049734e81b2c0a"
+    },
+    {
+      "path": "scripts/predict.py",
+      "bytes": 1740,
+      "sha256": "0b7b468572bf075920be783d8f886e071e5eb4e3229a08cdd48626b9a217b8ed"
+    },
+    {
+      "path": "scripts/preflight_corrected_height_replay_v1.py",
+      "bytes": 8980,
+      "sha256": "7d0ae32700ad6abc39c4e5316923ff9f87cb1c0fd4149188c364d345e31c0eaf"
+    },
+    {
+      "path": "scripts/preflight_demo.ps1",
+      "bytes": 3082,
+      "sha256": "07e02621f3b349502ff0c74ffa20ede668a9255517c496edf90e7b8b28089b6d"
+    },
+    {
+      "path": "scripts/preflight_gamus_geographic_candidate.py",
+      "bytes": 1946,
+      "sha256": "aa5cbefaee4fb202a71dec12fb8543dc985a255f47d2749fa9c55ca9bec1c9e6"
+    },
+    {
+      "path": "scripts/preflight_gamus_height_safe_v2.py",
+      "bytes": 7013,
+      "sha256": "e7b5e5801ddcef2cf4989cf825915f79c034052fcc22a539b3ecaf316cf66d31"
+    },
+    {
+      "path": "scripts/preflight_gamus_hierarchical_v4.py",
+      "bytes": 17158,
+      "sha256": "36d89dfe4b7ea7fa70d5c5a75ea2745e0a89ac89183e267a52bc850b9a7a9f82"
+    },
+    {
+      "path": "scripts/prepare_height_band_sampling.py",
+      "bytes": 7044,
+      "sha256": "8d54b048702c5ff0a0ab335080ee97e1d9db10ee2fd428fdbbc4e3b84aae7bcf"
+    },
+    {
+      "path": "scripts/prepare_rgb_multiregion_v3.py",
+      "bytes": 7167,
+      "sha256": "e13390f5abbaec87bf43eb49ae8f9e9c4dd426c675224ea091906b4cc5b52974"
+    },
+    {
+      "path": "scripts/prepare_rgb_segmenter_backbone.py",
+      "bytes": 2765,
+      "sha256": "72ef6eb7ee944da83b17afc9ccae75b0c79adf3c34e4d6aea1451205e5a7c040"
+    },
+    {
+      "path": "scripts/prepare_viewer_mesh.py",
+      "bytes": 2723,
+      "sha256": "3b9cf5f180ea0deb7fe53fd94f1a26272b4ce768d001379ecca528b0d1ea9103"
+    },
+    {
+      "path": "scripts/prove_semantic_expert_height.py",
+      "bytes": 6211,
+      "sha256": "d8360f1d65e41dceb8e48930cc8007ea099c51d9c400b2bb03d72891f5a12e60"
+    },
+    {
+      "path": "scripts/recheck_lidar_showcase_20260916.py",
+      "bytes": 1346,
+      "sha256": "709eea3a35fe17d80e38b2699e8f011b6aa20074de2ae4b854611ddde0ab7ce6"
+    },
+    {
+      "path": "scripts/render_lidar_showcase_20260916.py",
+      "bytes": 3024,
+      "sha256": "a57870bf95caf58f66eed0368fbf4904b47ffbe11ed3e50f0be08e82fe79b61d"
+    },
+    {
+      "path": "scripts/report_class_assisted_low_surface.py",
+      "bytes": 8930,
+      "sha256": "ad7ad6458d2d344b42c92bd86f0a9dc9c0cd3b58fbdc155e0e0c7d014181ea4f"
+    },
+    {
+      "path": "scripts/report_rgb_multiregion_v3.py",
+      "bytes": 3139,
+      "sha256": "0e6f6916cc4abb06f1310440baaa61405e30ff0bfb7cc9329a4340e487d71be3"
+    },
+    {
+      "path": "scripts/resume_training_visible.ps1",
+      "bytes": 973,
+      "sha256": "3ddf25fef7a0362b71128475288f320135be4d4a1416a4876f2ec197a2f978ee"
+    },
+    {
+      "path": "scripts/run_class_assisted_height.ps1",
+      "bytes": 978,
+      "sha256": "f209e706ef6d954028c58d235e17664fa716364a0fca100e71d5b8ce50d0a6f8"
+    },
+    {
+      "path": "scripts/run_class_assisted_height_fast.ps1",
+      "bytes": 761,
+      "sha256": "a096d3e2eb13a807817a44d28361973af528e5283bf05f2d8bde4986414cec54"
+    },
+    {
+      "path": "scripts/run_class_assisted_height_low_surface.ps1",
+      "bytes": 825,
+      "sha256": "dba965f77f91a01aca4f6b246c68876e95078f0121b0a2e5f641ab8c887b029e"
+    },
+    {
+      "path": "scripts/run_corrected_height_replay_v1.ps1",
+      "bytes": 6568,
+      "sha256": "7172b0d8068f48e7906598f892d3d0e2eb0cea20fdcfd8baddce1a96963c8f42"
+    },
+    {
+      "path": "scripts/run_gamus_direct_height_pilot.ps1",
+      "bytes": 6706,
+      "sha256": "75571b4d44e138928f7a374b20b586569d4752102be1d790e07baebbcd730608"
+    },
+    {
+      "path": "scripts/run_gamus_head_only_geographic_v1.ps1",
+      "bytes": 10201,
+      "sha256": "ca6978c681901047c93e271205adc953f120dc09e83cf3590b3c5a13f9befe10"
+    },
+    {
+      "path": "scripts/run_gamus_height_safe_v2.ps1",
+      "bytes": 6917,
+      "sha256": "2fc32ec3d81f13aa1955cff6dba8ff6c80f8ec3e47ac04bb2411956cc1e588f4"
+    },
+    {
+      "path": "scripts/run_gamus_hierarchical_v4.ps1",
+      "bytes": 19765,
+      "sha256": "4f1cfa7df96c3e25d181ca73d45c1da46145153bcf46e240de0c0a97049db47e"
+    },
+    {
+      "path": "scripts/run_gamus_locked_nyc_once.ps1",
+      "bytes": 3616,
+      "sha256": "0f1ff6e991bb88f43ed2ea6c2c5ee369e7b6edbf6f58653c1847de189df4de0d"
+    },
+    {
+      "path": "scripts/run_gamus_six_class_candidate_v1.ps1",
+      "bytes": 10508,
+      "sha256": "54caa5e4817686ddf28f5af65eebbb922077d83d63389946615af5ba5d658fa8"
+    },
+    {
+      "path": "scripts/run_gamus_six_class_head_only_v2.ps1",
+      "bytes": 7449,
+      "sha256": "8718f5c4c791539e693b72a0f07dad402bb89cda572f8ecc78871ab30f2c3f2b"
+    },
+    {
+      "path": "scripts/run_gamus_six_class_spatial_refined_v3.ps1",
+      "bytes": 9584,
+      "sha256": "39a25a9f393fa1702550abf9cd51571ea429a2901c165134ce3d06d93449fb82"
+    },
+    {
+      "path": "scripts/run_gamus_spatial_refined_geographic_v1.ps1",
+      "bytes": 11465,
+      "sha256": "4bf1e46b67e1096183e6664c47ff1dd6d8b45d6bc6eb67eda665ca8e161a5f4c"
+    },
+    {
+      "path": "scripts/run_gamus_spatial_v3_decision_bias.ps1",
+      "bytes": 5997,
+      "sha256": "f4d1da0b655ea7499fdac58e9d55a8e458226b88e6717ef62872f7ff38457f2a"
+    },
+    {
+      "path": "scripts/run_gamus_stage1.ps1",
+      "bytes": 2246,
+      "sha256": "fe99f0cbffc9fa6faa94f811717bcaa47345d809663a0ee8122bfd98826f2dc5"
+    },
+    {
+      "path": "scripts/run_gamus_stage2_mixed_replay.ps1",
+      "bytes": 3431,
+      "sha256": "6dcd6957cc434d3b1ab0deaaed9e5e3ca0e2ba132f2416549a02b427bfa46598"
+    },
+    {
+      "path": "scripts/run_height_band_sampling.ps1",
+      "bytes": 783,
+      "sha256": "2c818ff1005c615f321465e1669318b6ec7d8968b141988f8920dce1fa98e275"
+    },
+    {
+      "path": "scripts/run_multidomain_pilot.ps1",
+      "bytes": 3416,
+      "sha256": "2dd6c5ad55dcb81226d8cf446cbc02caf60dc87cef5e4a29fb6b5347d470fdef"
+    },
+    {
+      "path": "scripts/run_multidomain_v2.ps1",
+      "bytes": 3558,
+      "sha256": "a3c8292e39c8f350bb7f20ae0367867d9de4afbefa9ab67ee355ee32cad9225a"
+    },
+    {
+      "path": "scripts/run_multidomain_v3_building_refinement.ps1",
+      "bytes": 1841,
+      "sha256": "ea543a6790db27e09d0ec6887e492b88ae20eb05615199aa7bd57237d3be0545"
+    },
+    {
+      "path": "scripts/run_multidomain_v3b_building_head.ps1",
+      "bytes": 1833,
+      "sha256": "955668c12f5f9734310c5ec148680e1da7a651baa56b849ebf78709249332027"
+    },
+    {
+      "path": "scripts/run_multidomain_v3c_router.ps1",
+      "bytes": 1805,
+      "sha256": "0bc571137aed602852792f496fc5344225dac888ae7b41f78f41f18576c9ddb3"
+    },
+    {
+      "path": "scripts/run_multidomain_v5_canopy_safe.ps1",
+      "bytes": 1836,
+      "sha256": "4f8aaba158a0f9f36598f465bacee8f3d3428f422c81352185fcd64142385059"
+    },
+    {
+      "path": "scripts/run_pipeline.py",
+      "bytes": 9114,
+      "sha256": "03fdf4422855d62516ccf8cfc6cccea835a053abbdf6d84fe837fbef84082bea"
+    },
+    {
+      "path": "scripts/run_residual_height_v1.ps1",
+      "bytes": 4411,
+      "sha256": "f0a95a2c9f90e126b0afb5980b74f45c442df1eeaf5f6a6cb0ced3f035163a1e"
+    },
+    {
+      "path": "scripts/run_reviewer_lidar_cases.py",
+      "bytes": 3206,
+      "sha256": "f4444d50a584debdb272b89a8f14740f77449af7568b4d1eff09f9f64019d407"
+    },
+    {
+      "path": "scripts/run_rgb_multiregion_v3.ps1",
+      "bytes": 1437,
+      "sha256": "5b6574ca7735351a33da4a162a3b2beae7781a058eb5fcf34b4de942daf749ce"
+    },
+    {
+      "path": "scripts/run_rgb_sampling_v2.ps1",
+      "bytes": 1873,
+      "sha256": "859630940f65dcde4b5fe5e71c6f5cd1c6a931418287ba86495ecea40b810180"
+    },
+    {
+      "path": "scripts/run_rgb_segmenter_v1.ps1",
+      "bytes": 4321,
+      "sha256": "692f444e87da6c96af25ade05a20ec097482ce7f119affeecd8fbb512ac09848"
+    },
+    {
+      "path": "scripts/run_semantic_expert_height.ps1",
+      "bytes": 811,
+      "sha256": "c99b068c8491fba52a7c64d6a695a7bb6bde15d88ae461f97e355a010a496407"
+    },
+    {
+      "path": "scripts/run_stage3_scene_router_records.ps1",
+      "bytes": 2190,
+      "sha256": "499c1b58e5453267db73ab77481a6b235b9da0a4468af2821f62e71c8d6fc092"
+    },
+    {
+      "path": "scripts/run_stage3_scene_router_training.ps1",
+      "bytes": 2501,
+      "sha256": "74bca6dfbc4d02ca7763b88124a6297e7e0443d09b7701e345259c16ad0dc26f"
+    },
+    {
+      "path": "scripts/run_stage3b_scene_domain_router_training.ps1",
+      "bytes": 2893,
+      "sha256": "36400003fd0639fcf6047e2b11f1dc9d00420b819bddfa7f8e4557e9b0121b69"
+    },
+    {
+      "path": "scripts/run_stage4_dual_router_records.ps1",
+      "bytes": 2389,
+      "sha256": "5f6fa6141053a4071d9fd3e5ffb007c427eb9baa06cb8fea18e76bd1d50967c8"
+    },
+    {
+      "path": "scripts/run_stage4_dual_router_training.ps1",
+      "bytes": 2535,
+      "sha256": "e42c217135f4498402132e75d1e67ece9a37312a5ac332b72ef6ed18fb17642e"
+    },
+    {
+      "path": "scripts/run_stage4b_semantic_ood_router.ps1",
+      "bytes": 1357,
+      "sha256": "d18500c21bd6c69179b8d3b65cbd6dc4931042bb67d0a36c120a2dff92a441c9"
+    },
+    {
+      "path": "scripts/seal_gamus_v4_runtime_data.py",
+      "bytes": 48808,
+      "sha256": "e60fd1def26a30a6bdf809e1dca71698c1dbf802a09d64331869200b768cf47c"
+    },
+    {
+      "path": "scripts/select_showcase_checkpoint.ps1",
+      "bytes": 1000,
+      "sha256": "db5beb54ac4b510e559ddd02d25820ae0d6d66d6c8ce6ba083ce17e14afc8c35"
+    },
+    {
+      "path": "scripts/serve_api.py",
+      "bytes": 1061,
+      "sha256": "18009ed0ca9588fff87570f5802e179ac910d9cb29e7df22b373adb390195afa"
+    },
+    {
+      "path": "scripts/stage_christchurch_rgb_holdout.py",
+      "bytes": 7236,
+      "sha256": "54a14fdebc2e9b67eec188f48bd5c320b97e799956a98956ac88ca96a7917e4e"
+    },
+    {
+      "path": "scripts/stage_oem_all_six_scenes.py",
+      "bytes": 11330,
+      "sha256": "74fdc92d10b203fe53c958ff966290b42fbb2d25bbd7c1c28f25e4ff4171559f"
+    },
+    {
+      "path": "scripts/start_local.ps1",
+      "bytes": 402,
+      "sha256": "30369b3c1901d2adb75fe6a37a05964b17a3bcac6275fceecd666e596b180db2"
+    },
+    {
+      "path": "scripts/start_prototype.ps1",
+      "bytes": 4232,
+      "sha256": "3f6ceb8e15a1ae0284a37198eb696e4e36ea3cb47445d682c39738aa11ca0ab4"
+    },
+    {
+      "path": "scripts/stop_prototype.ps1",
+      "bytes": 2376,
+      "sha256": "41547ba847e4a5bcf5d6b9727280fadc547735c69e44b80c29fb6172f68fae7b"
+    },
+    {
+      "path": "scripts/train.py",
+      "bytes": 24267,
+      "sha256": "b964da2e567087927573faacb2abab6c8a06d7e90fa71d2158c37c8e2794e097"
+    },
+    {
+      "path": "scripts/train_class_assisted_height.py",
+      "bytes": 24599,
+      "sha256": "545a9f0cc09af8c03aad7deb0c587df267a4c00e88ae8ec40e65aa875e1021fd"
+    },
+    {
+      "path": "scripts/train_class_assisted_height_fast.py",
+      "bytes": 15419,
+      "sha256": "a5148da97ea07c68d5be8c2c5d1055ce535aead82c5123da55d529c3df84b56c"
+    },
+    {
+      "path": "scripts/train_class_assisted_height_low_surface.py",
+      "bytes": 10124,
+      "sha256": "301cbd3e2cf7b4a3704dac6d7c978260f72d8f4b90e76f300035b3dc28163010"
+    },
+    {
+      "path": "scripts/train_height_band_sampling.py",
+      "bytes": 19977,
+      "sha256": "5a68d1accf3561c7beb85c20d15b2c55175bd541d2c74802b63b0119d1efb99a"
+    },
+    {
+      "path": "scripts/train_multidomain.py",
+      "bytes": 103930,
+      "sha256": "11778717ad749866ce9862f60f253c132a86f458134d9a186c2b888bcb6b17d2"
+    },
+    {
+      "path": "scripts/train_residual_height.py",
+      "bytes": 61667,
+      "sha256": "82e1491a6c5485a68ee43ccfd4f7318a7e85a5b12cd98bf9c62ca02d387b063f"
+    },
+    {
+      "path": "scripts/train_rgb_multiregion_v3.py",
+      "bytes": 21827,
+      "sha256": "6c394a637fbbfded8271cd0780224a28da16422161b4a96cabdff55dc067d647"
+    },
+    {
+      "path": "scripts/train_rgb_sampling_v2.py",
+      "bytes": 22333,
+      "sha256": "b1f26dd652cf75ba86d350e77869a0231d67ffe1d09f4ed78fc61a14343e71a7"
+    },
+    {
+      "path": "scripts/train_rgb_segmenter.py",
+      "bytes": 33560,
+      "sha256": "a1dfe628ad4b07d1c662a7ad9b3f193b734d73e2fafa38b0723adc9dbf8e5d45"
+    },
+    {
+      "path": "scripts/train_scene_router.py",
+      "bytes": 38620,
+      "sha256": "e92a8520ddcb12ab51f1193eb30830b36b13437d17dff2f5707bfee1086f8b1c"
+    },
+    {
+      "path": "scripts/train_semantic_expert_height.py",
+      "bytes": 16620,
+      "sha256": "54d0407ffb62f00026f5df916a6023fdfb9a245fde623e66795a092411b16cf6"
+    },
+    {
+      "path": "scripts/train_stage4_dual_router.py",
+      "bytes": 20383,
+      "sha256": "3f3e076d6e81dd11e1f72120deec3dcac4cb685016658e243acf6c759b83268f"
+    },
+    {
+      "path": "scripts/train_stage4b_semantic_ood_router.py",
+      "bytes": 25952,
+      "sha256": "6ae35e3029d2e8e26415a72bc6459f97ff0412ec7782d9eec3b48399b28766e7"
+    },
+    {
+      "path": "scripts/verify_api_bridge.py",
+      "bytes": 1594,
+      "sha256": "5e1bed5cbf9c8fafeda623c4283f2c77cffbf5a947874b76c0c2e12960e6bb5a"
+    },
+    {
+      "path": "scripts/verify_explore_map.mjs",
+      "bytes": 9168,
+      "sha256": "c37eed67c2ddb3121ab2076d4048f5adb9814efb580f65abcdb45dcb9659860c"
+    },
+    {
+      "path": "scripts/verify_image_imports.mjs",
+      "bytes": 11687,
+      "sha256": "9346438d6c2c3da03673ae4726f2a45a64bd91440574acebc4ebf4eb58839d38"
+    },
+    {
+      "path": "scripts/verify_publication.py",
+      "bytes": 5554,
+      "sha256": "1c05be588e0f3c63f60bed3ceb5c6fa69baa8d870a1ec72a5cbedb3bf69b246b"
+    },
+    {
+      "path": "scripts/verify_scene_image_reference.mjs",
+      "bytes": 8976,
+      "sha256": "64875851956bdc17a677cab9cafd6ef1dd4e222b7a51f1c9109732dd319da90f"
+    },
+    {
+      "path": "scripts/verify_selection_glow.mjs",
+      "bytes": 7601,
+      "sha256": "fe0b4a4ac3e80ad53929f06d79bb98a23ad8a8bb4b710859d64ac385f75fae44"
+    },
+    {
+      "path": "scripts/verify_six_class_integration.mjs",
+      "bytes": 12440,
+      "sha256": "1ffdf0e389cc0cdab74c48f0c4b7154e49d64a4e1c2ec959fe01aa0fe224b26e"
+    },
+    {
+      "path": "scripts/verify_terrain_analysis.mjs",
+      "bytes": 8274,
+      "sha256": "e4f56696812900a3e45b992391e1209d53cc1c08744773f73e69899e3b9eaef9"
+    },
+    {
+      "path": "scripts/verify_terrain_presentation.mjs",
+      "bytes": 9987,
+      "sha256": "d17abb43dd6c7f131a70aa13f792ba4df29c20684a8ea195736e7f74bde4cbe9"
+    },
+    {
+      "path": "scripts/verify_terrain_source.py",
+      "bytes": 4601,
+      "sha256": "9b888c2bda774d39b6aba206b25796be360501494942f7fa7cbae4736918981f"
+    },
+    {
+      "path": "scripts/verify_viewport_details_zoom.mjs",
+      "bytes": 7396,
+      "sha256": "12eeb3f1719946f8f255a57df5f199e6fac7a3dacef0580255d1ff4ac285e82d"
+    },
+    {
+      "path": "scripts/watch_class_assisted_height.ps1",
+      "bytes": 1455,
+      "sha256": "9cc11e4477489cedb539a5c0ca0e1950736283f49db03594d0cb7485c1696a26"
+    },
+    {
+      "path": "scripts/watch_download.ps1",
+      "bytes": 2848,
+      "sha256": "2e323b246f9569ca1e582666b60fb38d2daa295555fc9b5b6ce18975b0eb5fea"
+    },
+    {
+      "path": "scripts/watch_gamus_direct_height_pilot.ps1",
+      "bytes": 4752,
+      "sha256": "3382ba4ff793b8b47bd2b48b4b4d5d9c2aa1ac74f727b84865db85fa4e10d35f"
+    },
+    {
+      "path": "scripts/watch_gamus_download.ps1",
+      "bytes": 3101,
+      "sha256": "d390a4f0dc5029203063bbda358498b547cfc1f851f78c5d1cca49d220bfe82c"
+    },
+    {
+      "path": "scripts/watch_gamus_height_safe_v2.ps1",
+      "bytes": 3471,
+      "sha256": "e9fbf68fc09ac9189ffc29fa84f9cf3a2260aaa369247826dd13bb7ed9e87ac6"
+    },
+    {
+      "path": "scripts/watch_gamus_six_class_candidate_v1.ps1",
+      "bytes": 6520,
+      "sha256": "7daafc935ea82dc2772cec0ddb844408d6445b605bbe9a0130e7f78f61407ff3"
+    },
+    {
+      "path": "scripts/watch_gamus_six_class_head_only_v2.py",
+      "bytes": 11146,
+      "sha256": "5dfdd3f1c9be8ed4a3ad99b5dac95e83d502ee07aee667f437aa76646da9bf79"
+    },
+    {
+      "path": "scripts/watch_gamus_six_class_spatial_refined_v3.py",
+      "bytes": 2698,
+      "sha256": "7c8a9aa3a1de1d29f86d9daeb11b1e6c932bc15df0caa0f021cbe94928c1375b"
+    },
+    {
+      "path": "scripts/watch_multidomain_v2_status.ps1",
+      "bytes": 5909,
+      "sha256": "dd2e31468d0c947af6c7acdc3c9a738c53fcf3eca383a72e75d0f8726530fcaa"
+    },
+    {
+      "path": "scripts/watch_multidomain_v2_training_compact.ps1",
+      "bytes": 3407,
+      "sha256": "df41755d9328c128f758d16dc28a9e44bd41a85eb27d421854a6b912d6602e81"
+    },
+    {
+      "path": "scripts/watch_residual_height_v1.ps1",
+      "bytes": 3460,
+      "sha256": "43ddb09ce6e41db50fdce808db6f41625d2b144e91ed721052806a17d058f84c"
+    },
+    {
+      "path": "scripts/watch_rgb_multiregion_v3.ps1",
+      "bytes": 3329,
+      "sha256": "b3fce66ac87576fc4ebd045886e0060f614e2c9fc7075ece12c05d1228d93c38"
+    },
+    {
+      "path": "scripts/watch_rgb_segmenter_v1.ps1",
+      "bytes": 3631,
+      "sha256": "a95a7a8c860fd2d0462f64d1b2bd93885c5f3f12dfa78d76da49ce050e755dc4"
+    },
+    {
+      "path": "scripts/watch_training.ps1",
+      "bytes": 2718,
+      "sha256": "945e106563d4743df8a47064e7a3798ead00cf413972e803e2efecdd18e39bc0"
+    },
+    {
+      "path": "src/msr/__init__.py",
+      "bytes": 102,
+      "sha256": "b51af5b14f15d88559d181c85be559979fa4205e65a7fad0fb4033468c06b956"
+    },
+    {
+      "path": "src/msr/api/__init__.py",
+      "bytes": 155,
+      "sha256": "3a076a52a8fa2683ef529d54cef4b2a0872ce481c4c2845d0be9d27cb803b611"
+    },
+    {
+      "path": "src/msr/api/app.py",
+      "bytes": 29221,
+      "sha256": "e9d057b5e93b626c1ff3ef838c3bbd105e8ef9f9dde1a61cc9898969cbff5d4d"
+    },
+    {
+      "path": "src/msr/api/classification.py",
+      "bytes": 2588,
+      "sha256": "bad0016cda04e96cc6fc1addeba8bd5f5aa6c11da07e43f0401e3a8cf0f4f35c"
+    },
+    {
+      "path": "src/msr/data/__init__.py",
+      "bytes": 1495,
+      "sha256": "ccf149e8aad4f261c447080c687bc25858642030c2900a2fc23d6548259d9a58"
+    },
+    {
+      "path": "src/msr/data/gamus_dataset.py",
+      "bytes": 22801,
+      "sha256": "a3df885cf9dbe48ea151ebb4ff1333a248ed498a0b4ec272ec216fff35ece8fe"
+    },
+    {
+      "path": "src/msr/data/gamus_geographic_candidate.py",
+      "bytes": 23943,
+      "sha256": "580b1432936136adb8389b3a5137d6d3fc8d9cd7ae3105041de18cda2b21650e"
+    },
+    {
+      "path": "src/msr/data/gamus_geographic_holdout.py",
+      "bytes": 26312,
+      "sha256": "60feb8f57b5f70079ff5e5b1a84cfdbc67c23a126ebb5b53a7ef5dadc237b50e"
+    },
+    {
+      "path": "src/msr/data/gamus_rgb_segmentation.py",
+      "bytes": 19865,
+      "sha256": "252e7958ca567fe3cc0da6414a3558f8805c8d1edc0206771ac29ebd8117779c"
+    },
+    {
+      "path": "src/msr/data/gamus_rgb_targeted_v2.py",
+      "bytes": 15539,
+      "sha256": "c1b760797c8fa438e4f75b63788b7eb717fc360ae16d72651b7ed57202fe9741"
+    },
+    {
+      "path": "src/msr/data/highbuild.py",
+      "bytes": 6618,
+      "sha256": "2e51772d43d59f9bdd1ac1853c2ebdd3aa64c2131ce8dfe4423baba9ba32e07a"
+    },
+    {
+      "path": "src/msr/data/manifest.py",
+      "bytes": 6657,
+      "sha256": "73c00e22b433c1374f93d389b5a7e243f26894549b156bda17e43fa4f6c8a520"
+    },
+    {
+      "path": "src/msr/data/mixed_replay.py",
+      "bytes": 10283,
+      "sha256": "90f03e0c70741565a2c8945487fd99b656c36bdbd37a65e20f99138ceda942e0"
+    },
+    {
+      "path": "src/msr/data/open_canopy.py",
+      "bytes": 6010,
+      "sha256": "0761b775fc0f65abf6f4e3c96deaeaa3aae973155dcced6fb1fd204cdcb21ce4"
+    },
+    {
+      "path": "src/msr/data/open_canopy_classification.py",
+      "bytes": 3699,
+      "sha256": "89b33dd85b4ef5f75427c1e3f1b35df4d4001685c4eda8c99c366c760b62100d"
+    },
+    {
+      "path": "src/msr/data/open_canopy_holdout.py",
+      "bytes": 8044,
+      "sha256": "d432fa3d41dcec4d721f70f567584da3b8908ac802411ed8ee0f894ed2e21a87"
+    },
+    {
+      "path": "src/msr/data/radiometry.py",
+      "bytes": 4272,
+      "sha256": "ecf0062218ee7fbc62bca4766ca7c6841a70f2277c1f66d3d917f72758db26a6"
+    },
+    {
+      "path": "src/msr/data/raster_dataset.py",
+      "bytes": 5874,
+      "sha256": "dd82e3a7f6ebfa4afaced87a2e2412d50cae1313ac3158827b639c03e63d3d9c"
+    },
+    {
+      "path": "src/msr/data/rgb_multiregion_v3.py",
+      "bytes": 5569,
+      "sha256": "a2658b5e39f5307216e11f98c649872f85a2eb144eed26160b3a9ba39d796039"
+    },
+    {
+      "path": "src/msr/data/roof3d.py",
+      "bytes": 3677,
+      "sha256": "ea535a8d02acc4326d2e82c7a3186889e311effdcb748e4c4f70f41cbc5a841d"
+    },
+    {
+      "path": "src/msr/data/surface_dataset.py",
+      "bytes": 21908,
+      "sha256": "18f342b9e5d4f06787c463f50746b7ab15fc06813a8ff1a112e6d6b6b7975056"
+    },
+    {
+      "path": "src/msr/data/webdataset_dataset.py",
+      "bytes": 7916,
+      "sha256": "a5ea5478aba1d38ee2e984c32b39170a76d49adea08b704715b00d57b2e5e838"
+    },
+    {
+      "path": "src/msr/evaluation/__init__.py",
+      "bytes": 1307,
+      "sha256": "6d1470c1262cfc8034a6a5fb7f5ae77437d4f7bfa06a8ced3d4aeb008ef87fbc"
+    },
+    {
+      "path": "src/msr/evaluation/class_assisted_gate.py",
+      "bytes": 2092,
+      "sha256": "f3d72cd011cef9f4f708112f74f56a574cf09131a6553150ae8fb30a34e7eccb"
+    },
+    {
+      "path": "src/msr/evaluation/classification_metrics.py",
+      "bytes": 17542,
+      "sha256": "b0b0035a1c3db4221482fe92736e6b03615133db08180dab2312f6781fc5874a"
+    },
+    {
+      "path": "src/msr/evaluation/decision_bias_calibration.py",
+      "bytes": 20106,
+      "sha256": "2a5125b92a3a146abf1c9046e73a6e1c5433c5521ab8cbf53373818057087569"
+    },
+    {
+      "path": "src/msr/evaluation/domain_metrics.py",
+      "bytes": 6070,
+      "sha256": "54a83371e6f60548242be703fdcf65f24195e2dc85f9a8419a3564e0847afd41"
+    },
+    {
+      "path": "src/msr/evaluation/error_analysis.py",
+      "bytes": 7283,
+      "sha256": "ed31485b787ac43d90b992403d6c33508552c7f7020b6c40430eaf65410d866b"
+    },
+    {
+      "path": "src/msr/evaluation/external_height_holdout.py",
+      "bytes": 35825,
+      "sha256": "bc7cbae509db55df35bd12a767cf716322d6d882e4f53a7c19549a8a53c8d794"
+    },
+    {
+      "path": "src/msr/evaluation/height_scorecard.py",
+      "bytes": 22020,
+      "sha256": "f43dada0bf8ccedab084c88414c555d10309d834ebab384a6e3775117199820f"
+    },
+    {
+      "path": "src/msr/evaluation/highbuild_instances.py",
+      "bytes": 51271,
+      "sha256": "b1bc5240cacc214a90a335adc7c6259c5c3de48b9886f6e323cb43e260fbf6d5"
+    },
+    {
+      "path": "src/msr/evaluation/locked_benchmark.py",
+      "bytes": 14198,
+      "sha256": "2cfcd554b616ce880200c6be60b5e56586ad522e57a1d82b1f79220f82b1585b"
+    },
+    {
+      "path": "src/msr/evaluation/metrics.py",
+      "bytes": 5832,
+      "sha256": "1a67fc04a10cb38350410fb7e12f3ae6a448d6a1d0761de0183c6504b8295903"
+    },
+    {
+      "path": "src/msr/evaluation/raster_validation.py",
+      "bytes": 5722,
+      "sha256": "6b7658c6e5b9c01b3586aa987b30b9d3c55e20a5a8d5196bac0536a271c59e35"
+    },
+    {
+      "path": "src/msr/evaluation/rgb_multiregion_v3.py",
+      "bytes": 3171,
+      "sha256": "0ff64d7ac44c48c5f50bb53a8a8e5795816fb78a2661585cfc595cbaac58155b"
+    },
+    {
+      "path": "src/msr/evaluation/rgb_sampling_v2.py",
+      "bytes": 11810,
+      "sha256": "cbf3091c1e0eb59068ca81ebfe63d6278a3cfff26339256791c847dffa6e6c35"
+    },
+    {
+      "path": "src/msr/evaluation/rgb_segmentation.py",
+      "bytes": 14503,
+      "sha256": "fe95dbe743ac43e7b40a302966229344cc4281d38ccbc083114d00fbe5b727f2"
+    },
+    {
+      "path": "src/msr/evaluation/routed_artifact.py",
+      "bytes": 44380,
+      "sha256": "61b7a69f20460358b7f75164906846fa7f8e27534b5d90a6cb72e3ecb80d8e0b"
+    },
+    {
+      "path": "src/msr/evaluation/routed_validation.py",
+      "bytes": 18422,
+      "sha256": "f1cc88306273d4e6fdd1338b1a296c9359762527dbcea5529bf6563ee2ff808c"
+    },
+    {
+      "path": "src/msr/geospatial/__init__.py",
+      "bytes": 389,
+      "sha256": "9a6f41fea9659a21519ac4a1d6d4e8a67f77f0349624965ebb5a124dbc7e922c"
+    },
+    {
+      "path": "src/msr/geospatial/calibration.py",
+      "bytes": 4851,
+      "sha256": "984f87e13bc6e84b7eb6929e5dbadc1fb243b34c196eabb8776b8b08cbeb7f2d"
+    },
+    {
+      "path": "src/msr/geospatial/gcps.py",
+      "bytes": 2136,
+      "sha256": "54d956a7428417d84b0f8b474c4ba7f13dbf62c985464e389f671dfb27b42271"
+    },
+    {
+      "path": "src/msr/geospatial/public_terrain.py",
+      "bytes": 5962,
+      "sha256": "6d17909f5747c619a4a4e90b4c89fa14b5b81c111a64487bdbe36563bd2bc4f0"
+    },
+    {
+      "path": "src/msr/inference/__init__.py",
+      "bytes": 583,
+      "sha256": "ba8f3c4990d1faebe9f45337e319444563be1eeeab342bf8704ecafde63163a9"
+    },
+    {
+      "path": "src/msr/inference/hybrid.py",
+      "bytes": 2177,
+      "sha256": "7d2de519e2a3a198dc85b71e8c9e7abc258850abf5c7efa07613321992473d91"
+    },
+    {
+      "path": "src/msr/inference/predict.py",
+      "bytes": 17576,
+      "sha256": "c1e19f2f3f0d292c18430c75006ca5d7129f7cbb5d3fc85e672789d1db112cc9"
+    },
+    {
+      "path": "src/msr/inference/relative_depth.py",
+      "bytes": 5067,
+      "sha256": "56ad488a137b382180fbc197c118e546ec16303a8d575d04f3a24add404109b2"
+    },
+    {
+      "path": "src/msr/inference/rgb_preview.py",
+      "bytes": 7299,
+      "sha256": "f4fbb92ad2849e904b108856ae5481fcb1f1e8103a2d1f8ccbff6ab327ccbdd1"
+    },
+    {
+      "path": "src/msr/inference/tiling.py",
+      "bytes": 1382,
+      "sha256": "50bd4118011a4520e4b33cc790316b1bc7023c191082d194a41da45fb44b4d48"
+    },
+    {
+      "path": "src/msr/inference/viewer_mesh.py",
+      "bytes": 17357,
+      "sha256": "96cbc7681761e9f54ec7d9198b3a714931325b050196b3caf3383a2bfb40f6dd"
+    },
+    {
+      "path": "src/msr/io/__init__.py",
+      "bytes": 253,
+      "sha256": "d563264259ad417da41c1f9328b51e0f67ca2b4ad4627a6bdeb5cd0df29ada09"
+    },
+    {
+      "path": "src/msr/io/raster.py",
+      "bytes": 9713,
+      "sha256": "8f39e9c61e5dac892f9d9bb5eb3a794b3c3123ccfe12aff3ea08b9b66af058bc"
+    },
+    {
+      "path": "src/msr/io/six_class_export.py",
+      "bytes": 18566,
+      "sha256": "0794dadbf5990a3386dc18095f6a255b2bddace97753a92cee15a18af7751c29"
+    },
+    {
+      "path": "src/msr/models/__init__.py",
+      "bytes": 1144,
+      "sha256": "374120e0f344e239caa2a970785e7aa6e6b1e9edee0fe598e9530b3313723a6d"
+    },
+    {
+      "path": "src/msr/models/class_assisted_height.py",
+      "bytes": 4035,
+      "sha256": "bb43d944398a47548d8c64df5d0d82ba7195701455d8fcf348cb926839441c43"
+    },
+    {
+      "path": "src/msr/models/domain_surface_net.py",
+      "bytes": 26694,
+      "sha256": "644b5490b61d2778cc0fbc0b242ba18cf8cf2621b137fecbec1ca0e4dffdb3c1"
+    },
+    {
+      "path": "src/msr/models/height_net.py",
+      "bytes": 3590,
+      "sha256": "0f2b90102ffd35c2e4fb3a4393d6bc5721efa063392159cd53e522255f491b7c"
+    },
+    {
+      "path": "src/msr/models/residual_height.py",
+      "bytes": 4355,
+      "sha256": "0f49e447c41759d8ad009e353bf9d245f974c00090b8da46a2b2de902012200f"
+    },
+    {
+      "path": "src/msr/models/rgb_segmenter.py",
+      "bytes": 4300,
+      "sha256": "f5a22841b0d8b340866eaeaa7ee5a3d90d4441d0c11541802329465660144832"
+    },
+    {
+      "path": "src/msr/models/routed_surface.py",
+      "bytes": 26090,
+      "sha256": "28ff26c59e6e1777b63b0e9979070129b6a4688f3cd8de26c9bdf39e84d67415"
+    },
+    {
+      "path": "src/msr/models/semantic_expert_height.py",
+      "bytes": 3735,
+      "sha256": "5062418a9360b1ae560102d0a6af97630e677a4a4d0736ee91c76967ff8ef10f"
+    },
+    {
+      "path": "src/msr/models/stage3_endpoints.py",
+      "bytes": 36486,
+      "sha256": "459af933f5120a02950f2c282958675dff5bf7317b1d91917678d3004b041e54"
+    },
+    {
+      "path": "src/msr/training/__init__.py",
+      "bytes": 122,
+      "sha256": "d55015b4254144ae3a59bf7195697a61c6cfb155a29966aed56e918533aeb245"
+    },
+    {
+      "path": "src/msr/training/balanced_height_loss.py",
+      "bytes": 7508,
+      "sha256": "f9ee9fccced1ee68894d9dbddfd6544b2e4ec406c9fc81841eb631e1dbe73dd4"
+    },
+    {
+      "path": "src/msr/training/height_band_sampling.py",
+      "bytes": 3784,
+      "sha256": "5b026a718edfc53fc8798c572cd825678d7add98466365e8c44649a17efad47e"
+    },
+    {
+      "path": "src/msr/training/losses.py",
+      "bytes": 32778,
+      "sha256": "1066e9f05fedf5a364aff09be31eb2d131a988765dccc96a2df321f7207d33ee"
+    },
+    {
+      "path": "src/msr/training/low_surface_height_loss.py",
+      "bytes": 3460,
+      "sha256": "37e28bdb10b76f718b44e399d3b3d831a0cbfb7bc6446d1c9297eab0372f1167"
+    },
+    {
+      "path": "src/msr/training/scene_router.py",
+      "bytes": 42425,
+      "sha256": "09d8a0fc9d250e682cf6f4e47d6941ab140a301995101566f8423b645d3884e4"
+    },
+    {
+      "path": "src/msr/training/scene_router_record_store.py",
+      "bytes": 25397,
+      "sha256": "4e58ffd7d4936ee98fcd02e65016a5a49504c5bf300ff0e7236ebb899b51145c"
+    },
+    {
+      "path": "src/msr/training/stage4_dual_router.py",
+      "bytes": 51200,
+      "sha256": "c0399e147d48d115de68a51a84a425fc61f4a3227623f8a4d6d610d1e7d7f6ee"
+    },
+    {
+      "path": "src/msr/training/stage4_dual_router_record_store.py",
+      "bytes": 34639,
+      "sha256": "f36d7f47a5bbf54034ba1e0dc0b00bf9c1051a815d1e9761a5814cb7099f33cf"
+    },
+    {
+      "path": "src/msr/training/stage4b_semantic_ood_router.py",
+      "bytes": 38092,
+      "sha256": "7228022db95c5a80da807e1737b6e69c838aff6389255b34f68ab4970ca47006"
+    },
+    {
+      "path": "src/msr/training/stage4c_semantic_features.py",
+      "bytes": 15270,
+      "sha256": "fe19f57a5daeb3c4ff6f0863a567ef58ef337f985e733834094045b3c38b6d82"
+    },
+    {
+      "path": "tests/conftest.py",
+      "bytes": 1064,
+      "sha256": "e045a82993c1ae108f22fc2a00977506ec73fedd8bc7ebb787c0fdc95011e921"
+    },
+    {
+      "path": "tests/historical_archive_checks.json",
+      "bytes": 3157,
+      "sha256": "88ec8caab90da31e232c2c1473b5c14c9538219a65a47ae16685b41fcc3fad68"
+    },
+    {
+      "path": "tests/test_api.py",
+      "bytes": 6095,
+      "sha256": "324539b42a1d70cf3a138024257414508b2ef8b2bc5dfbc3b52b809f1c3994bf"
+    },
+    {
+      "path": "tests/test_audit_gamus_dataset.py",
+      "bytes": 7084,
+      "sha256": "269baea729667b2e20bcb4085ba54dcac8f824aa5eba71417ccc8cd353f7d408"
+    },
+    {
+      "path": "tests/test_audit_gamus_head_only_checkpoint.py",
+      "bytes": 3876,
+      "sha256": "87b6680e952b22be70c6f7adfc83c44a69f3c7d1bf89ed73951c67cd34d1570d"
+    },
+    {
+      "path": "tests/test_audit_gamus_preparation.py",
+      "bytes": 6311,
+      "sha256": "3e6217337ba2058d11fca33fa345187d84248735905c0b1e8dcd98a1577fe708"
+    },
+    {
+      "path": "tests/test_audit_gamus_spatial_refined_geographic_checkpoint.py",
+      "bytes": 3567,
+      "sha256": "4ada37c0908955fbe5e06c58eb92f1beb56fe993a437ddf0f5582a1c71737b05"
+    },
+    {
+      "path": "tests/test_backfill_open_canopy_classification.py",
+      "bytes": 2015,
+      "sha256": "a392be3526c80061b7e4bc97fa41c83ccd7a9989487cee36503ed099dd22a767"
+    },
+    {
+      "path": "tests/test_balanced_height_loss.py",
+      "bytes": 5273,
+      "sha256": "061b0e18ee231c15de618a58a21e3a17d2a2aff5c60166b7bc21333322e6a1be"
+    },
+    {
+      "path": "tests/test_build_gamus_hierarchical_v4_config.py",
+      "bytes": 5096,
+      "sha256": "1ac53f39839739ddb40372bb0e59fba10aa472d6d96936538bad87e74ef9bb73"
+    },
+    {
+      "path": "tests/test_build_height_safe_v2_evaluation_plan.py",
+      "bytes": 693,
+      "sha256": "9920c6c58e9f64f343c6086d7963077010794d3729f1e5f56d23af84d3613d20"
+    },
+    {
+      "path": "tests/test_christchurch_rgb_evaluation.py",
+      "bytes": 2893,
+      "sha256": "c702691099b4bd7a50560966e674c3a58a3b5c5f20f431daace31eb7c4b87977"
+    },
+    {
+      "path": "tests/test_class_assisted_dashboard.py",
+      "bytes": 3974,
+      "sha256": "1d9abf64b9cf85a151063af520aeb6deb0d8ad4c252acfa19e807cd3a920411b"
+    },
+    {
+      "path": "tests/test_class_assisted_development.py",
+      "bytes": 1667,
+      "sha256": "13893986156c19b3c3e9b05d174101619f68332de55308975e8fb02eea419b32"
+    },
+    {
+      "path": "tests/test_class_assisted_fast.py",
+      "bytes": 1023,
+      "sha256": "31867a82f458a930f27fc75372ee76c7cb2155588875d5ebc1c967db654559bc"
+    },
+    {
+      "path": "tests/test_class_assisted_gate.py",
+      "bytes": 1407,
+      "sha256": "1fbecdcb4228aeeb973248565a26a0880ad66065d9072ca1ed4ddf833d59c3f3"
+    },
+    {
+      "path": "tests/test_class_assisted_height.py",
+      "bytes": 2978,
+      "sha256": "d6acdab0c895f9c673cb9cd4cdd8ab9618aa7706722ae2003b8fa341cb19730b"
+    },
+    {
+      "path": "tests/test_class_assisted_height_proof.py",
+      "bytes": 1438,
+      "sha256": "1eb7c1ffba2ce748ea90676028efe1d92f830b80ba04564290ec86aea19b080c"
+    },
+    {
+      "path": "tests/test_class_assisted_low_surface_protocol.py",
+      "bytes": 1711,
+      "sha256": "1f0babb39f91ad43f77a2e7722487f145ee1581e4fb987426c1ac59330fc67d2"
+    },
+    {
+      "path": "tests/test_class_assisted_low_surface_report.py",
+      "bytes": 1105,
+      "sha256": "a2d975e5f25e8b65a696828f1de0302c4dadf1df778d7ebec93f16cadd161951"
+    },
+    {
+      "path": "tests/test_classification_metrics.py",
+      "bytes": 5035,
+      "sha256": "3fd309d50b1f9d4eb91e360516b246074d2163d4ee725f136253f2293b0fc211"
+    },
+    {
+      "path": "tests/test_compare_gamus_six_class_candidate.py",
+      "bytes": 13829,
+      "sha256": "1b550b224c30ac2573eaa0441f3ae134d209355555b3ef64c9a1eee2fcb799b3"
+    },
+    {
+      "path": "tests/test_corrected_height_replay_v1_protocol.py",
+      "bytes": 2530,
+      "sha256": "5b8da58a7f0f47c977954203560a58be094d7e097b2d52b9b2317a3442befabc"
+    },
+    {
+      "path": "tests/test_corrected_legacy_triplet.py",
+      "bytes": 7288,
+      "sha256": "b4d87e40492805cf0b0488690251730307dec2ab7fd4ac7d18f487fc2cfa3c18"
+    },
+    {
+      "path": "tests/test_corrected_surface_manifests.py",
+      "bytes": 3029,
+      "sha256": "971233f2dbc5cf53fa60c90db87e2ec0f8b37973aff63540c98ffe0533efff24"
+    },
+    {
+      "path": "tests/test_create_gamus_head_blend_sweep.py",
+      "bytes": 4276,
+      "sha256": "75f3ac1c4ac9af9db919ffcc4d85c9ae018fdee63972725399259b7584c6b1fb"
+    },
+    {
+      "path": "tests/test_domain_metrics.py",
+      "bytes": 2031,
+      "sha256": "e958074eeaa7c9e0a7a7fbe24af1a4aaffed9e9c70d10a86413a7d1ed5435725"
+    },
+    {
+      "path": "tests/test_domain_surface_model.py",
+      "bytes": 23138,
+      "sha256": "6441c959088c5e1b5bb7da864d5db47075737f5755f8277110e40e62d16b547f"
+    },
+    {
+      "path": "tests/test_error_analysis.py",
+      "bytes": 1700,
+      "sha256": "b509d1536299452c692463b1e1dd4f92c20aeb6e2696d6b02feca0d4dfd4c13f"
+    },
+    {
+      "path": "tests/test_evaluate_gamus_dcphl_paired_replay.py",
+      "bytes": 12335,
+      "sha256": "84bf7df94e4a694cc6e949d155167bae4c1768172c06d4c51b186496648f26f5"
+    },
+    {
+      "path": "tests/test_evaluate_gamus_head_blends_validation.py",
+      "bytes": 4953,
+      "sha256": "ec82b6b38e3ef5e7a463a5d8964a872255f8bb48c14c2c2aee3fa5d5ac2bca75"
+    },
+    {
+      "path": "tests/test_evaluate_gamus_semantics.py",
+      "bytes": 2380,
+      "sha256": "5c6cf0c20fa6f59cd4d6fc8008977a067e4e42aaca27cf432b8bfacd51aac956"
+    },
+    {
+      "path": "tests/test_evaluate_rgb_segmenter_checkpoint.py",
+      "bytes": 11250,
+      "sha256": "571656a0734fd6eeb18e23453c7bfda1797fc782837148b6e4b4447be961a430"
+    },
+    {
+      "path": "tests/test_evaluate_routed_surface.py",
+      "bytes": 10605,
+      "sha256": "2f23f327106e895aab8bd8617086b08307212b930b752cf4561dbdcd4daa3c0b"
+    },
+    {
+      "path": "tests/test_export_highbuild_surface_subset.py",
+      "bytes": 2730,
+      "sha256": "b6ad3848fa5a36e72c4b59baa921e345729933d863fca58a6d80255f645f2aa6"
+    },
+    {
+      "path": "tests/test_external_height_holdout.py",
+      "bytes": 7594,
+      "sha256": "dfdd5ac63d1d83220499b6bd140dd4fce03cae34e2aedbb1f6cf32ef69a34e53"
+    },
+    {
+      "path": "tests/test_gamus_dataset.py",
+      "bytes": 11564,
+      "sha256": "314928802197fd8745c20c6e6bb504faaa771dcd18354b3b83c9b0e86dd08fb5"
+    },
+    {
+      "path": "tests/test_gamus_decision_bias_calibration.py",
+      "bytes": 10310,
+      "sha256": "b9407f779c199e37734f0f18e640f63d92005e7b0aee58b866c3d87672add0e4"
+    },
+    {
+      "path": "tests/test_gamus_geographic_candidate.py",
+      "bytes": 12331,
+      "sha256": "17e89949bdb2c5c7e9c61e85c74ca2dfca269b7e79cbfad7c55159265c5ffa8c"
+    },
+    {
+      "path": "tests/test_gamus_geographic_holdout.py",
+      "bytes": 8439,
+      "sha256": "097be92ba1ac997cabb75c60b03685ff90212182883c9507ae5459a2e07b93cc"
+    },
+    {
+      "path": "tests/test_gamus_height_safe_v2_protocol.py",
+      "bytes": 2340,
+      "sha256": "15babce1f329e23a3f2327fd7954b16fa9d0779a69e8c2ba9d24f9bdd1f2de30"
+    },
+    {
+      "path": "tests/test_gamus_hierarchical_v4.py",
+      "bytes": 5372,
+      "sha256": "40b2e0f83a37d46dcde56350401b19d02925b52b086b50108ddb17e15914a786"
+    },
+    {
+      "path": "tests/test_gamus_hierarchical_v4_protocol.py",
+      "bytes": 19176,
+      "sha256": "028c25dd234b65288a7fa93f314f6d93c9f3c7200d8478ec724df47a086b9479"
+    },
+    {
+      "path": "tests/test_gamus_locked_nyc_protocol.py",
+      "bytes": 5328,
+      "sha256": "8bbcb65622298478c530fe3c8f9918a7839c3d121be93b3c7794f5ad0a3dabe9"
+    },
+    {
+      "path": "tests/test_gamus_rgb_segmentation.py",
+      "bytes": 7976,
+      "sha256": "dd673e3de0a0cce962973e3d3c7e59e6f3ac79337a0d4b660dc7dc55549eaab0"
+    },
+    {
+      "path": "tests/test_gamus_rgb_targeted_v2.py",
+      "bytes": 11957,
+      "sha256": "7cd5b0176d6b3c5b8c79821e72629e1be65b6e84d3c0966f823b68f7df589490"
+    },
+    {
+      "path": "tests/test_gamus_spatial_refined_v3_protocol.py",
+      "bytes": 7039,
+      "sha256": "6ee94829760a0bf46c517bac773afb3a96c729665f267cd8dcd728f736c07de5"
+    },
+    {
+      "path": "tests/test_gcps.py",
+      "bytes": 1166,
+      "sha256": "fdf96ff965bdff4a2369880ffb4e3889143b418cc3dc2b73cf9e6541ba6263d4"
+    },
+    {
+      "path": "tests/test_geospatial_calibration.py",
+      "bytes": 1652,
+      "sha256": "915571affe5f49a068e6d1657766c201ba6e12185aeb13e58fd97309b701e6fd"
+    },
+    {
+      "path": "tests/test_height_band_runner.py",
+      "bytes": 2029,
+      "sha256": "38f2cc14326fcd627a232b78abc43ff1f2feb0ef4f49f31c0c489b732b352b22"
+    },
+    {
+      "path": "tests/test_height_band_sampling.py",
+      "bytes": 2035,
+      "sha256": "b3302b28a90baba046e906f7595665effa438c8efb45e8fd6fa30e7440c8f628"
+    },
+    {
+      "path": "tests/test_height_output_identity_audit.py",
+      "bytes": 8766,
+      "sha256": "84d5e51e7688c016d741f00d31b4a1005621ed819d9a6decdc6d29c3bcf2ca8e"
+    },
+    {
+      "path": "tests/test_height_safe_v2_candidate_evaluator.py",
+      "bytes": 2073,
+      "sha256": "63be3cf2687fe1c391ad4bffc1c07ca6c142e2b215548a5f200d59f272869a67"
+    },
+    {
+      "path": "tests/test_height_scorecard.py",
+      "bytes": 10050,
+      "sha256": "e36c56ed5e0cf5b22677a926fab986771dcfd14dd468c25de1efd6fb3052c20a"
+    },
+    {
+      "path": "tests/test_height_training_support_audit.py",
+      "bytes": 1242,
+      "sha256": "717c3a6b11146a66813b2786c9407e0eef700d454e733f0d5e4d1ac218ea6d24"
+    },
+    {
+      "path": "tests/test_highbuild_annotation_masks.py",
+      "bytes": 8542,
+      "sha256": "bb262ca079a4b7e5c33e9d7125c769777dcda940635205d8e0cc0929b999dfcd"
+    },
+    {
+      "path": "tests/test_highbuild_instance_evaluation.py",
+      "bytes": 18951,
+      "sha256": "f9d78341d6dce0568dc26851770695815d54f633ab2f36a5ae4d5949e1c917d5"
+    },
+    {
+      "path": "tests/test_highbuild_rgb_classifier_audit.py",
+      "bytes": 2178,
+      "sha256": "198bf949143e33e6fc505ad2958dcccc1999bb39065fffa26103ab47f798486b"
+    },
+    {
+      "path": "tests/test_hybrid.py",
+      "bytes": 1380,
+      "sha256": "1d7b39ef7a164c000b45a803a745e1e6b31e04fba19f9cd9e2585f10f2808d48"
+    },
+    {
+      "path": "tests/test_import_formats.py",
+      "bytes": 2756,
+      "sha256": "5e980d638034f88bf7c32b6d5cb93ad67271a3f7d3e69cb6945bc0b54bbe24f7"
+    },
+    {
+      "path": "tests/test_locked_benchmark.py",
+      "bytes": 8198,
+      "sha256": "97e3f0ee75c8262eea3a60f6877c270b96c136315666cb006de7a4034675ff52"
+    },
+    {
+      "path": "tests/test_losses.py",
+      "bytes": 6491,
+      "sha256": "676f2ba67c73a18ac1300ffa682bfe3ec3f150f98f5e0287d80533f432e8abcc"
+    },
+    {
+      "path": "tests/test_low_surface_height_loss.py",
+      "bytes": 3190,
+      "sha256": "f74cf232f464b4b6df059e22131b9092aa914ac16c5349997e91bea21b1ab3d6"
+    },
+    {
+      "path": "tests/test_manifest.py",
+      "bytes": 1017,
+      "sha256": "ab42b3f74f241f01958fe9e57866e948cffca7e13dbe183733bda911ac36e6f9"
+    },
+    {
+      "path": "tests/test_metrics.py",
+      "bytes": 1914,
+      "sha256": "8a77db9632c0811c14ffe7c3341b9cabd6e0a392880b3fee36fd0787831f26e4"
+    },
+    {
+      "path": "tests/test_mixed_replay.py",
+      "bytes": 12617,
+      "sha256": "3869a0e2d4bdc0f3035f9c9926c948b0760c55a2234cc6f96e0cacf7c92693b2"
+    },
+    {
+      "path": "tests/test_model.py",
+      "bytes": 547,
+      "sha256": "11e870e5b6d0adea76763105e5feb1a194964ce6607a9a1a1fc475332fe36e49"
+    },
+    {
+      "path": "tests/test_oem_all_six_evaluation.py",
+      "bytes": 1586,
+      "sha256": "63bcd9579edffa29308c0ccabd0194b0433808561d99ff9636173fecd66d7ce6"
+    },
+    {
+      "path": "tests/test_oem_all_six_selection.py",
+      "bytes": 1480,
+      "sha256": "f94adcba4fc474ea7f921bfc1ee69bdb76f2cf33edc868fc9ae2caceeb82ff91"
+    },
+    {
+      "path": "tests/test_open_canopy.py",
+      "bytes": 2901,
+      "sha256": "92808c53ef09ef94d2c9f66f48d06f06faa339aff6d77cbfa3b7756357601b38"
+    },
+    {
+      "path": "tests/test_open_canopy_classification.py",
+      "bytes": 1560,
+      "sha256": "59754a909457d21a48a4f428e9fd63a062b1b8796a4a2acf211b9697f47184db"
+    },
+    {
+      "path": "tests/test_open_canopy_holdout.py",
+      "bytes": 2314,
+      "sha256": "f70774c693e709612b8e4d632c901624fd337f7e548aeb491739792392363d93"
+    },
+    {
+      "path": "tests/test_open_canopy_provenance.py",
+      "bytes": 4387,
+      "sha256": "3d070a8a34d184d18d7afd54cde96601b0e710daf5a55d9aab69445fe7e0e8c8"
+    },
+    {
+      "path": "tests/test_openearthmap_archive_ranges.py",
+      "bytes": 1627,
+      "sha256": "7ec5d746da4da4b30f0b282a3b5adff62b8844a51c7d37a67d25c4973bb94071"
+    },
+    {
+      "path": "tests/test_prediction.py",
+      "bytes": 8654,
+      "sha256": "4df44c5210509cb0ef814eff01c6d4a33084d1c929ad11e52eaf83dddb969c0d"
+    },
+    {
+      "path": "tests/test_prediction_padding.py",
+      "bytes": 2257,
+      "sha256": "72b995bdd5d7cb540d0845ca7d03aa49ddc63f0273460ea075c6de5037912c22"
+    },
+    {
+      "path": "tests/test_preflight_gamus_hierarchical_v4.py",
+      "bytes": 7179,
+      "sha256": "afe6f89cadc5a45740e732b7d1a012551601f5b64192e96f9ca1b244cd4d47a7"
+    },
+    {
+      "path": "tests/test_prepare_rgb_segmenter_backbone.py",
+      "bytes": 1006,
+      "sha256": "ca6cc2950d9487f543e44897c3a6a65074e1d0a1fbac0cef090e6874393f7162"
+    },
+    {
+      "path": "tests/test_protected_inference_protocol.py",
+      "bytes": 1174,
+      "sha256": "6a597bd89e18014c8922f735072701a1201f854a2e81a9fb8608b300b0d3cd00"
+    },
+    {
+      "path": "tests/test_public_terrain.py",
+      "bytes": 1270,
+      "sha256": "227f70b1e1035d6ec4b945f208aeb941f3351a89d8526c2b5a0b4850353101f2"
+    },
+    {
+      "path": "tests/test_radiometry.py",
+      "bytes": 2242,
+      "sha256": "043c5a058a933e88547281f564fff33edac60168642c6b32bc3bd6dd809ba724"
+    },
+    {
+      "path": "tests/test_raster_io.py",
+      "bytes": 3859,
+      "sha256": "d90a4d28f9938b4a9c741a6be0cc1283a0351269653a5a23fd93c01eff07e610"
+    },
+    {
+      "path": "tests/test_raster_validation.py",
+      "bytes": 2199,
+      "sha256": "e9e9028f02ca00f594d5b46347fff842285cc1952e6ebc968bc536516e9d9a66"
+    },
+    {
+      "path": "tests/test_relative_depth.py",
+      "bytes": 1036,
+      "sha256": "06a8a4ba05bf0935bc10e8cea1d61880dc67c4e7f325df3afadd1bb649104d81"
+    },
+    {
+      "path": "tests/test_repack.py",
+      "bytes": 1543,
+      "sha256": "a2c178b0ecfec7c3d2ef666f866903cb4b5f067b429e64cc05e2570754e648d2"
+    },
+    {
+      "path": "tests/test_residual_height.py",
+      "bytes": 2848,
+      "sha256": "f9d4fe1e1556f368c43ea824acd0ab15f3dbe4334cacf7781e329f306405d18e"
+    },
+    {
+      "path": "tests/test_residual_prediction.py",
+      "bytes": 2982,
+      "sha256": "54ed8df3dc99ee1e9c4f5e62b9c333f2c5028a9dd99e239a00cf3ec8722b62c2"
+    },
+    {
+      "path": "tests/test_rgb_multiregion_v3.py",
+      "bytes": 5750,
+      "sha256": "77535309c8afc83050e1729bf9918158bc02fea94122021bc4d4588631fc1d6b"
+    },
+    {
+      "path": "tests/test_rgb_preview.py",
+      "bytes": 5806,
+      "sha256": "1adda421247f0b085c4877ce336747d41b0461c57fa3b5dbdf530423efe6b3eb"
+    },
+    {
+      "path": "tests/test_rgb_sampling_v2_evaluation.py",
+      "bytes": 8723,
+      "sha256": "0cc0051b439e5fac40c5db6bb391db505cb7c6d89302f78eb5c26fb2e035d75c"
+    },
+    {
+      "path": "tests/test_rgb_segmentation_evaluation.py",
+      "bytes": 5063,
+      "sha256": "531f76abee4a37fe79906407eb893d0e96d8616546102f6b99c627e80ad72a3c"
+    },
+    {
+      "path": "tests/test_rgb_segmenter.py",
+      "bytes": 2518,
+      "sha256": "1869906cbf9a62c1dccb9b04b2eea9dda69ddb7e2fa046d77cb9be3137f581c4"
+    },
+    {
+      "path": "tests/test_rgb_segmenter_launcher.py",
+      "bytes": 932,
+      "sha256": "f3a1f4fc961769d737c47e17699b0cbd348625a8dd0953ff9c83ce7fc16d5c80"
+    },
+    {
+      "path": "tests/test_rgb_vegetation_error_audit.py",
+      "bytes": 1592,
+      "sha256": "f13eb53e94fd14dcde0c82da5b53d40cb01103d10b3fc9d332ce40b8b3f21af1"
+    },
+    {
+      "path": "tests/test_roof3d.py",
+      "bytes": 2377,
+      "sha256": "edec43ca822f6304dc5681ba173a3568df738f01c09d4ea946dedbdf003e96a1"
+    },
+    {
+      "path": "tests/test_routed_artifact.py",
+      "bytes": 28363,
+      "sha256": "dc1cb0605f93f9a4c8782e7a3968a1aa7a66d13a3f8195f48312e79d81c7d9fc"
+    },
+    {
+      "path": "tests/test_routed_surface.py",
+      "bytes": 14490,
+      "sha256": "a4571b716db75d12692c794b5e8969d06e0df95ab4b6373ec6d997ca3cab6ad7"
+    },
+    {
+      "path": "tests/test_routed_validation.py",
+      "bytes": 6047,
+      "sha256": "a84f08642ff53411cbe28e7b8f1e7479c05ab4c61ba4ee6bc6222c2f8a473863"
+    },
+    {
+      "path": "tests/test_run_gamus_hierarchical_v4.py",
+      "bytes": 4425,
+      "sha256": "83aae357f43a7c69c3ee2df6e74e553d7249055a09ef332614f29d9e8533f636"
+    },
+    {
+      "path": "tests/test_scene_router_record_store.py",
+      "bytes": 13476,
+      "sha256": "1c06b70429aa769b52133d5aa4b924e7095a08a5418be91196b1c4fd0c52310f"
+    },
+    {
+      "path": "tests/test_scene_router_training.py",
+      "bytes": 12798,
+      "sha256": "404c6ab5c5623327aef77c6dddd8fa250401067970288da6254b2af36aab7d78"
+    },
+    {
+      "path": "tests/test_seal_gamus_v4_runtime_data.py",
+      "bytes": 17658,
+      "sha256": "26edf32db6b1a2c958638cdb4607bbf48506f7b4c469ada7d90f616e0f9acf22"
+    },
+    {
+      "path": "tests/test_semantic_expert_height.py",
+      "bytes": 3508,
+      "sha256": "4dc783e8b3d9a80c65c233c4e03cf54f483d0bb72ea139d1c5c941081c46834c"
+    },
+    {
+      "path": "tests/test_semantic_expert_runner.py",
+      "bytes": 1561,
+      "sha256": "b235598618db1cc392d7b57677ef07b265636b14bdbffa7cc3f9f281e8f872f1"
+    },
+    {
+      "path": "tests/test_six_class_offline_export.py",
+      "bytes": 10520,
+      "sha256": "8182a2f309b03d7a9f4ba155a1888afe9bdb42cf63617f63b4c74de667ac47a6"
+    },
+    {
+      "path": "tests/test_stage3_endpoints.py",
+      "bytes": 15230,
+      "sha256": "5f22ebe2052975494effa4037cecdb15d9ce6a3f5146b8f48357888bcab3da22"
+    },
+    {
+      "path": "tests/test_stage3_router_record_generation.py",
+      "bytes": 12915,
+      "sha256": "92696e185e310a97418660df57118255cc37884aebb201f10365be1457d66e39"
+    },
+    {
+      "path": "tests/test_stage3b_scene_domain_router.py",
+      "bytes": 10722,
+      "sha256": "f1fa4918215963975697221d6bc2b00f0f1ca1547207c93943f2e9eb6a4a04f4"
+    },
+    {
+      "path": "tests/test_stage4_dual_router.py",
+      "bytes": 9625,
+      "sha256": "5a6a0ea089f92d23d192623ca557f89d59c71989edfe494afffff3b1693a6cbe"
+    },
+    {
+      "path": "tests/test_stage4_dual_router_record_generation.py",
+      "bytes": 11927,
+      "sha256": "a80125a39509ef7668375095c59de22ce90b50bdeff1caa6b211985d0935853d"
+    },
+    {
+      "path": "tests/test_stage4_dual_router_record_store.py",
+      "bytes": 8350,
+      "sha256": "84920b65ed917c05f9b5194ac9c86f15158176e8570b9f4903b5e62add045041"
+    },
+    {
+      "path": "tests/test_stage4b_semantic_ood_router.py",
+      "bytes": 10634,
+      "sha256": "aea0e4087ab2b85e67f914e069ed2edcf094bdb3321d7f8e72a15ca891796b59"
+    },
+    {
+      "path": "tests/test_stage4c_semantic_features.py",
+      "bytes": 11201,
+      "sha256": "39041bf0eded418a8237372c762832ebf639b95575f93767d52bc2ffa6296b7a"
+    },
+    {
+      "path": "tests/test_stage_christchurch_holdout.py",
+      "bytes": 1602,
+      "sha256": "ede7d91627045bc49387d2ef86c68a0920d5dbe0d7a55fecbcc88d8b273217d8"
+    },
+    {
+      "path": "tests/test_surface_dataset.py",
+      "bytes": 9716,
+      "sha256": "fc61b5c313c93363721b277c785556fcbfa6789c4f83ad112217b1a050308627"
+    },
+    {
+      "path": "tests/test_tiling.py",
+      "bytes": 613,
+      "sha256": "cbf527d78a9fcbb21ff2b23bd1ac071ff6bf78310ab48615b46d4ce617a22797"
+    },
+    {
+      "path": "tests/test_train_multidomain_gamus.py",
+      "bytes": 31127,
+      "sha256": "f8690499051ce653fe099d02d5c027ad243eebde59bd82c51bb12ab74f10a7c2"
+    },
+    {
+      "path": "tests/test_train_residual_height.py",
+      "bytes": 8374,
+      "sha256": "d8133f88a488b3bdafb9e836cdd7419629a83b2fbe255356f9ab02a95cd3b6cf"
+    },
+    {
+      "path": "tests/test_train_rgb_sampling_v2.py",
+      "bytes": 4114,
+      "sha256": "3fde62597a961314a747af662a45f3b49a39a2a45de85998db2ee7f9ea780256"
+    },
+    {
+      "path": "tests/test_train_rgb_segmenter.py",
+      "bytes": 10652,
+      "sha256": "d3f6cf58013f18429cb112cb7918d876d9c66b33755a181a77f35259e279264d"
+    },
+    {
+      "path": "tests/test_train_scene_router_provenance.py",
+      "bytes": 5436,
+      "sha256": "f280fe84e8a669a65302a2ff1e1d8b1cf0f418b556585fa8fb23bfe2d1de77e1"
+    },
+    {
+      "path": "tests/test_train_stage4_dual_router.py",
+      "bytes": 5563,
+      "sha256": "4e2f7bead9f9a43f9e90543ae66a922cb82e6d88d2a8b90a7333e982585836da"
+    },
+    {
+      "path": "tests/test_training_prior_replay.py",
+      "bytes": 962,
+      "sha256": "98456761731becc8b8713f8373a2de7457ced5163068d657a4f942062136710b"
+    },
+    {
+      "path": "tests/test_validation_sparse_domains.py",
+      "bytes": 3476,
+      "sha256": "ad11eed3250f838174eb9cbb1952e8c586c0911cabbf133ec135daecb7119006"
+    },
+    {
+      "path": "tests/test_viewer_mesh.py",
+      "bytes": 5244,
+      "sha256": "0f7f2946984de5b3c9fde14cc0214a1a699459d18fb3ad4746207a5c4d490dc5"
+    },
+    {
+      "path": "tests/test_watch_gamus_six_class_head_only_v2.py",
+      "bytes": 3413,
+      "sha256": "bd3aea1644529c8807b4f6c683862538f21dab9f4c2e9e317bbb88248c741294"
+    },
+    {
+      "path": "tests/test_watch_gamus_six_class_spatial_refined_v3.py",
+      "bytes": 4545,
+      "sha256": "542fb181a18a0c6c13402519fc02d40c3b881038402a255742cfd1f68dae9f50"
+    },
+    {
+      "path": "tests/test_webdataset_dataset.py",
+      "bytes": 2567,
+      "sha256": "d8386c95284d425ffcc72e9906301fccb714ec78c0613b7d3f55fe9fca0eb7f1"
+    },
+    {
+      "path": "tests/test_windows_atomic_replacement.py",
+      "bytes": 2861,
+      "sha256": "364e7e3cd353028489be19620c1598b7610b76745f7a43995f13bd0d6bf8e780"
+    },
+    {
+      "path": "viewer/.gitignore",
+      "bytes": 384,
+      "sha256": "14c2d4b7781dcd266e563c4f08880637ae620c7e8a182246a23b138e5f791e8e"
+    },
+    {
+      "path": "viewer/app/building-facades.ts",
+      "bytes": 5480,
+      "sha256": "0bc52c0afc2582c2b435bbd66bdb7132d123efd29ed123c48525beb437457d88"
+    },
+    {
+      "path": "viewer/app/class-focus.ts",
+      "bytes": 2244,
+      "sha256": "1111f1f358ce7faf192cb013f0fd4a9b8c59808e49064e8ae6e75566af0bddd4"
+    },
+    {
+      "path": "viewer/app/explore-map-math.ts",
+      "bytes": 3588,
+      "sha256": "5ab2b323b245dba0ca67d9470843db5a2c8be0689a1a7f41018254404b8453a2"
+    },
+    {
+      "path": "viewer/app/explore-map.tsx",
+      "bytes": 8920,
+      "sha256": "6cf24aee45bddd1d31be5949e5a053bb2881366f69d54214a1d9bbab291a363b"
+    },
+    {
+      "path": "viewer/app/flight-navigation.ts",
+      "bytes": 3281,
+      "sha256": "653280c77d70a509a846569b6ff3a483b16b4ca4ab3bcbedf43ec8dda1d93cc7"
+    },
+    {
+      "path": "viewer/app/fullscreen-navigation.ts",
+      "bytes": 775,
+      "sha256": "e966e81b1837a7f1763e111443f0158a867951c986e2f85bcb2430972e9cf140"
+    },
+    {
+      "path": "viewer/app/globals.css",
+      "bytes": 75099,
+      "sha256": "2ce8a75a6813e8cff57924e66f1cf471cc39f7effa17595f23a5f27a6cf3ba2b"
+    },
+    {
+      "path": "viewer/app/image-import-controls.tsx",
+      "bytes": 8104,
+      "sha256": "a95e1cc30134b6d813a1aba6191cd251e3ce50dd092dff8804005cd2bbc5b82d"
+    },
+    {
+      "path": "viewer/app/image-import.ts",
+      "bytes": 2063,
+      "sha256": "2eb4ee5bf92632998ad1e3f95e4b085e572191782b51aca40a0cdddf295472d6"
+    },
+    {
+      "path": "viewer/app/image-reference-view.ts",
+      "bytes": 1426,
+      "sha256": "f484dcd9fe8b6d7307f4ddc6b6e5a55c7c34e029cf3439b96b06922c3cf2b411"
+    },
+    {
+      "path": "viewer/app/inspection-readout.ts",
+      "bytes": 3725,
+      "sha256": "98e655f1f870512d2f29e2fed2bc41865ae832213f8a7ad59c5512e577de9e2e"
+    },
+    {
+      "path": "viewer/app/landscape-evaluation.tsx",
+      "bytes": 4919,
+      "sha256": "6d671359d198491857d8b572b35bdfd408f41abb02ef574221ecc255375984c0"
+    },
+    {
+      "path": "viewer/app/layout.tsx",
+      "bytes": 747,
+      "sha256": "52bd81eefde3e836b42295e9ec3bbdb43eee3f6e5afcff41687d1f2a0eb47683"
+    },
+    {
+      "path": "viewer/app/metric-grid.ts",
+      "bytes": 10752,
+      "sha256": "639784921fe4a8f8a0039ae64b9f9255baf79a6ab580295ab69512917d5a320a"
+    },
+    {
+      "path": "viewer/app/page.tsx",
+      "bytes": 119,
+      "sha256": "2ea38f1df10adc2fafd03d81a1e5679e098c274a6eb55e7733281b48e9af1816"
+    },
+    {
+      "path": "viewer/app/roof-geometry.ts",
+      "bytes": 6856,
+      "sha256": "2c64c54436352a0f36d5c0fba0c6380cc1822ae876ee6fea57a081c463ce2737"
+    },
+    {
+      "path": "viewer/app/roof-reconstruction.ts",
+      "bytes": 18211,
+      "sha256": "333e6d575a289fed22155a2bf54c78a629be74d00bc00adf5883aeadd48daa70"
+    },
+    {
+      "path": "viewer/app/scene-reveal.ts",
+      "bytes": 1160,
+      "sha256": "be1b0db88064b332a045a618a9de8f69b699b314e513f953e3ef569dea52faeb"
+    },
+    {
+      "path": "viewer/app/scene-scale.ts",
+      "bytes": 320,
+      "sha256": "bbb8cbb224b1ced92d0a8c13bdd2658bdbd7f0b60d27d684dfbf0a141ac99dad"
+    },
+    {
+      "path": "viewer/app/selection-glow.ts",
+      "bytes": 3147,
+      "sha256": "77b7a8c2844ae97cafa94c75dd08bb3e95336c04fa44b8239e97c71a2c8b424c"
+    },
+    {
+      "path": "viewer/app/selection-region.ts",
+      "bytes": 3779,
+      "sha256": "4221bb8cbbb06a8b888335c7661c9a2a18e18cb696530c1c2892b5965f6281f1"
+    },
+    {
+      "path": "viewer/app/six-class-layer.ts",
+      "bytes": 2879,
+      "sha256": "298acae89b6d03208d90135df7b5a5e1169c447546ca2849eb726d0beac55b63"
+    },
+    {
+      "path": "viewer/app/six-class-preview.tsx",
+      "bytes": 6140,
+      "sha256": "6d9073b20aa91fb6c1bce578ae7c2b6b584e4f87228be5a9db5658fc719bf46f"
+    },
+    {
+      "path": "viewer/app/six-class-request.ts",
+      "bytes": 6557,
+      "sha256": "236b77be143316d0036777b0e185d1098ec14597ee186f7895cf0d60b1b78c00"
+    },
+    {
+      "path": "viewer/app/surface-query.ts",
+      "bytes": 4896,
+      "sha256": "55856bb043f7f44fdd35ab9be90161e747b17c3070ba2804c40a5c683f86ddf8"
+    },
+    {
+      "path": "viewer/app/terrain-analysis.ts",
+      "bytes": 6501,
+      "sha256": "312e3744350c83318b04027b0c6e4a376f603071bd6293f1b867ce366fd9a736"
+    },
+    {
+      "path": "viewer/app/terrain-boundary.ts",
+      "bytes": 2031,
+      "sha256": "f38a9071b23bc83d8a765caa223d3579f3d96497a15beded18d20ff2ff4c3229"
+    },
+    {
+      "path": "viewer/app/terrain-import.ts",
+      "bytes": 834,
+      "sha256": "af00ca41c8c92b6219ddbc4f0ff8ed9f410ea5a79ab5a7573816aa42ed780f13"
+    },
+    {
+      "path": "viewer/app/terrain-presentation.ts",
+      "bytes": 4679,
+      "sha256": "e43941735ca0daaffb6eacdea0e91cb05699384eac51267e40afe25dc491fa74"
+    },
+    {
+      "path": "viewer/app/terrain-profile.tsx",
+      "bytes": 4436,
+      "sha256": "0d83ece14292816b27847b62ff9a3ad4cd123dcdd0418a0f45044f5c2a62dbc3"
+    },
+    {
+      "path": "viewer/app/terrain-workspace.tsx",
+      "bytes": 205595,
+      "sha256": "49aedd9e4cb93929df793c6f08918497b019c9bab5eb922fe432bddf9724e108"
+    },
+    {
+      "path": "viewer/app/validation-comparison.tsx",
+      "bytes": 10153,
+      "sha256": "c81abd01247742e54f727f91eade8b046eecafae1b08ca1550bfc29f48adacd0"
+    },
+    {
+      "path": "viewer/app/walk-navigation.ts",
+      "bytes": 8808,
+      "sha256": "808f997085006855ec4306434c05e54bd7b32a092b4d7ac04cba68a09d731462"
+    },
+    {
+      "path": "viewer/eslint.config.mjs",
+      "bytes": 345,
+      "sha256": "5c697206f302dadc0c8b7b2f7a707257dab15129a2149872b0f84ea1ac17d263"
+    },
+    {
+      "path": "viewer/next.config.ts",
+      "bytes": 104,
+      "sha256": "d063bebef3a4878ae82f9f9547c2c9675b8b6945ab23702932dcb63a011a9fc9"
+    },
+    {
+      "path": "viewer/package-lock.json",
+      "bytes": 323139,
+      "sha256": "1680fcc8db39a6b86e2483b91ee43ba1bfe850602083515446b9997ebb7403ee"
+    },
+    {
+      "path": "viewer/package.json",
+      "bytes": 1084,
+      "sha256": "331a8cd5374de210efb52917dcced4ae2e5082fee4713436e5e51c265f521b62"
+    },
+    {
+      "path": "viewer/public/demo/copenhagen_building_probability.tif",
+      "bytes": 3688043,
+      "sha256": "7447e484225b5cb5542f64f5be14b3a94f9862f655342607cbef6ba51224a988"
+    },
+    {
+      "path": "viewer/public/demo/copenhagen_height_m.tif",
+      "bytes": 3735533,
+      "sha256": "487b5a38bf75e8addc6f56af1a17825250159e0cbf67bfd9e86ca852e1a0523f"
+    },
+    {
+      "path": "viewer/public/demo/copenhagen_prediction_confidence.tif",
+      "bytes": 3172146,
+      "sha256": "c20268e9a81d7de241ed6bbe9f55e1f063ad3a3a08e383bf4fe2c6a1fb77d1d7"
+    },
+    {
+      "path": "viewer/public/demo/copenhagen_presentation_mesh_m.tif",
+      "bytes": 3082503,
+      "sha256": "9ca92685adb56addc8c9d66c8a412df57279a40224a8d269293cd3a869c97a2a"
+    },
+    {
+      "path": "viewer/public/demo/copenhagen_rgb.jpg",
+      "bytes": 394657,
+      "sha256": "2aa79584b87eee34149bd38ca5089fc1b11e14edd1b778708530bdd3e2948c51"
+    },
+    {
+      "path": "viewer/public/demo/copenhagen_structures.json",
+      "bytes": 164069,
+      "sha256": "d311dc53d16638164cd82c8935e585da02f9e17bcda23a06b8a9b6c2b7e98bdd"
+    },
+    {
+      "path": "viewer/public/demo/copenhagen_vegetation_probability.tif",
+      "bytes": 3687701,
+      "sha256": "1969bc7526a96f0a8881a8722da3ca9e60b06d9dc71cdb238ce389db15b93b13"
+    },
+    {
+      "path": "viewer/public/demo/forest_validation/evidence_metadata.json",
+      "bytes": 954,
+      "sha256": "66a5b23d678e1fa530ead011a90be538c942b1d2e97dccd5b55806027b8503c6"
+    },
+    {
+      "path": "viewer/public/demo/forest_validation/lidar_reference_m.tif",
+      "bytes": 166122,
+      "sha256": "8ff4ceb9d68ab84974635b2a06a8270c42fcedb06b512a0d9eea5368f3afa3b9"
+    },
+    {
+      "path": "viewer/public/demo/forest_validation/metrics.json",
+      "bytes": 411,
+      "sha256": "2b2ff74d8b66c565f80b764d8e77c290f2d87be7ca0a0e6111c1658647c76f96"
+    },
+    {
+      "path": "viewer/public/demo/forest_validation/model_prediction_m.tif",
+      "bytes": 529734,
+      "sha256": "2085523ff5051ef8e1966ede457fbaf2c486e7378180eeba983542c8d99b3867"
+    },
+    {
+      "path": "viewer/public/demo/forest_validation/satellite_rgb.jpg",
+      "bytes": 62836,
+      "sha256": "e7d3196d9689eec2781772b29b98320a9238d04aa88b29f8d5751ae9ccec5dce"
+    },
+    {
+      "path": "viewer/public/demo/forest_validation/signed_error_m.tif",
+      "bytes": 542306,
+      "sha256": "21e4ce182a7ecf01fbe270810beea43daf922edce4b772706bd128c1427a576b"
+    },
+    {
+      "path": "viewer/public/demo/forest_validation/source.json",
+      "bytes": 1112,
+      "sha256": "0d166e749ce03bf689111de8bbfa62b019a2ca67a4c6328eb36da25b7f67d0b0"
+    },
+    {
+      "path": "viewer/public/demo/forest_validation/structures.json",
+      "bytes": 23,
+      "sha256": "4ba501752d0b99e08834d19c4248d6ee38c73f730ef5fe701658463b06f0dc76"
+    },
+    {
+      "path": "viewer/public/demo/hilly_validation/metrics.json",
+      "bytes": 1076,
+      "sha256": "4d33e259427f3d80f95c2d432a93aca49e95e74b7f9d5e8fadd4b7a39eba28f0"
+    },
+    {
+      "path": "viewer/public/demo/hilly_validation/model_prediction_m.tif",
+      "bytes": 1958988,
+      "sha256": "d32797bd7a585654d11014e3c4e617fb08dd46e0dbb6c130dac016d65ffb5080"
+    },
+    {
+      "path": "viewer/public/demo/hilly_validation/satellite_rgb.jpg",
+      "bytes": 218168,
+      "sha256": "61ba07b9cda342d5eef77c68b46f12680d2b3a02cddb261edd17329511952c60"
+    },
+    {
+      "path": "viewer/public/demo/hilly_validation/signed_error_m.tif",
+      "bytes": 1762072,
+      "sha256": "d189e6121531384cc173cb5f83dc31181a78dc192343b23054446301aea5e706"
+    },
+    {
+      "path": "viewer/public/demo/hilly_validation/source.json",
+      "bytes": 311,
+      "sha256": "f4151eec89e7bfc2ed7a80680b8576826bbc4fccb905254fe4dabeec9cd7db55"
+    },
+    {
+      "path": "viewer/public/demo/hilly_validation/srtm_reference_aligned_m.tif",
+      "bytes": 1957038,
+      "sha256": "085f784708c6c56532790eeb8fdcce50d574e18cc29d088b7461ac6a8f96ccf4"
+    },
+    {
+      "path": "viewer/public/demo/landscapes/hilly/absolute_dsm_m.tif",
+      "bytes": 1959420,
+      "sha256": "7d08d8efc522660ede32b9d8e9614b86777161dc5a70d6927f73a08d814e2cef"
+    },
+    {
+      "path": "viewer/public/demo/landscapes/hilly/absolute_dsm_raw_m.tif",
+      "bytes": 1885053,
+      "sha256": "9af666f101657e673683978b5cb63613a398d70f81c1fefadd25d94abe1bf226"
+    },
+    {
+      "path": "viewer/public/demo/landscapes/hilly/building_probability.tif",
+      "bytes": 1938677,
+      "sha256": "1825e662eb41d73f3829ceb757422690e97077077901a2b6a67051f0fb2cace1"
+    },
+    {
+      "path": "viewer/public/demo/landscapes/hilly/object_height_ndsm_m.tif",
+      "bytes": 2031711,
+      "sha256": "32b9e7264c10600e536603e8930da2b99206f0fac9c03726acb015309a01e072"
+    },
+    {
+      "path": "viewer/public/demo/landscapes/hilly/prediction_confidence.tif",
+      "bytes": 1607163,
+      "sha256": "8f6287985af86e25b81dcd8594fe561de3b3f16e94f9b5b463c1d53c11c999f9"
+    },
+    {
+      "path": "viewer/public/demo/landscapes/hilly/semantic_surface_class.tif",
+      "bytes": 18725,
+      "sha256": "1db40a1e50fcaae39e6afc278a458045848b180afcd469c57706423e9469f8e4"
+    },
+    {
+      "path": "viewer/public/demo/landscapes/hilly/structures.json",
+      "bytes": 23,
+      "sha256": "4ba501752d0b99e08834d19c4248d6ee38c73f730ef5fe701658463b06f0dc76"
+    },
+    {
+      "path": "viewer/public/demo/landscapes/hilly/terrain_dem_m.tif",
+      "bytes": 1959458,
+      "sha256": "a9c98507f7984d451c8b3abd455a644ef250f456985b5c45192b9427c64e5927"
+    },
+    {
+      "path": "viewer/public/demo/landscapes/hilly/texture.jpg",
+      "bytes": 218168,
+      "sha256": "61ba07b9cda342d5eef77c68b46f12680d2b3a02cddb261edd17329511952c60"
+    },
+    {
+      "path": "viewer/public/demo/landscapes/hilly/vegetation_probability.tif",
+      "bytes": 1992939,
+      "sha256": "c0cc4140f2614a4ef608ca17c96106b748d302425cb54c61b169d3b34aadaae0"
+    },
+    {
+      "path": "viewer/public/demo/landscapes/sparse/analysis_height_m.tif",
+      "bytes": 3679240,
+      "sha256": "8f8b740eeb76f2e449347c7d16c87209f38ae41e664c2dd851e842c3adfeb745"
+    },
+    {
+      "path": "viewer/public/demo/landscapes/sparse/building_probability.tif",
+      "bytes": 3635271,
+      "sha256": "8aef738dc6ba9e13cf737e99962d53fd2c7bb6df2e8b82bc2f124772a3e0bdc8"
+    },
+    {
+      "path": "viewer/public/demo/landscapes/sparse/prediction_confidence.tif",
+      "bytes": 3204644,
+      "sha256": "2e4959084c407f5c4724819931fa765a7d1c5335d5c66a3c6d2d7b22583d9d56"
+    },
+    {
+      "path": "viewer/public/demo/landscapes/sparse/presentation_height_m.tif",
+      "bytes": 3555965,
+      "sha256": "833b199e01588274bbe614097343c1860d97f5daaa5f5b6b433da4c387285f51"
+    },
+    {
+      "path": "viewer/public/demo/landscapes/sparse/semantic_surface_class.tif",
+      "bytes": 48786,
+      "sha256": "07908499a699de99e1ecaadce03683d06dc8d23cb6b16ab0d60ba41ad4d20a6c"
+    },
+    {
+      "path": "viewer/public/demo/landscapes/sparse/structures.json",
+      "bytes": 142740,
+      "sha256": "800d1e27490110c3a3d49a6ed89e1be789eb850c798f72c4a007d5cd253ca027"
+    },
+    {
+      "path": "viewer/public/demo/landscapes/sparse/texture.jpg",
+      "bytes": 413377,
+      "sha256": "4aa1752c5a96a9a7ef1d2b2979527b3efdc14647249f0f47bc96761020b570dd"
+    },
+    {
+      "path": "viewer/public/demo/landscapes/sparse/validation_metrics.json",
+      "bytes": 418,
+      "sha256": "964f28c2b1ed93c0a35b43623a453ee6fefe009785fea4634406eaf8bb1cce58"
+    },
+    {
+      "path": "viewer/public/demo/landscapes/sparse/validation_reference_m.tif",
+      "bytes": 11580,
+      "sha256": "2d6133c71382df9b10917727713804df04c243aea7fe2434fcbd29d71798051b"
+    },
+    {
+      "path": "viewer/public/demo/landscapes/sparse/validation_signed_error_m.tif",
+      "bytes": 3687056,
+      "sha256": "bd68c6583d9dc6a81f54d3eb19419d284e302d3859f29529d47ea64c87e55d06"
+    },
+    {
+      "path": "viewer/public/demo/landscapes/sparse/vegetation_probability.tif",
+      "bytes": 3674043,
+      "sha256": "d7cb3ceecdfd093178acb34f881dad5188801aa47f8c3cf94d85aa6c26563691"
+    },
+    {
+      "path": "viewer/public/demo/originals/01_URBAN_Copenhagen_original_RGB.jpg",
+      "bytes": 394657,
+      "sha256": "2aa79584b87eee34149bd38ca5089fc1b11e14edd1b778708530bdd3e2948c51"
+    },
+    {
+      "path": "viewer/public/demo/originals/02_SPARSE_Amsterdam_original_RGB.jpg",
+      "bytes": 423892,
+      "sha256": "c2fa53cb26e0acaef77f629b1f58710bdf95b6f0dd2737aa3a955721aab6ef0d"
+    },
+    {
+      "path": "viewer/public/demo/originals/02_SPARSE_Amsterdam_reference_nDSM_m.tif",
+      "bytes": 6274,
+      "sha256": "7a6f652c2156991ee8154bf25020f15cf3f4bd27c0a90f6ebe9aa2c993c47ed1"
+    },
+    {
+      "path": "viewer/public/demo/originals/03_HILLY_Manali_Copernicus_GLO30_terrain_datum_m.tif",
+      "bytes": 1959190,
+      "sha256": "4e8d2693e1c1f4bb873a143a9a49c1e7cc4fe706e7b2f7ac068c6420c76a51cf"
+    },
+    {
+      "path": "viewer/public/demo/originals/03_HILLY_Manali_original_RGB_preview.jpg",
+      "bytes": 234695,
+      "sha256": "2adb20efad392011394b27a8b007588c901705b5ded5ed0d167328b654cd4c51"
+    },
+    {
+      "path": "viewer/public/demo/originals/03_HILLY_Manali_original_georeferenced_RGB.tif",
+      "bytes": 1379521,
+      "sha256": "62d0813c7205cef4aeadeece98f8d4abd01fa8955c60db7a0a3015e83cb05701"
+    },
+    {
+      "path": "viewer/public/demo/originals/README.md",
+      "bytes": 1998,
+      "sha256": "4824dc2a0f8057674e012da190377ba0af08c0d5cf687a3b8e4aef134bd5d99f"
+    },
+    {
+      "path": "viewer/public/demo/originals/index.html",
+      "bytes": 4094,
+      "sha256": "5eba904b68dacea4f3066b6ce19d8dedc623564e97366a56c8754c0d054569ea"
+    },
+    {
+      "path": "viewer/public/demo/pipeline_metadata.json",
+      "bytes": 626,
+      "sha256": "60376b620c7834e05ef5c56348a6df81a14549786a5e06ed081917739b0c1b54"
+    },
+    {
+      "path": "viewer/public/demo/urban_validation/metrics.json",
+      "bytes": 413,
+      "sha256": "232b81f915cb8d0ca19a6afc656dd5a0ac9f6a0ce506f29c592e972fa8c03c8e"
+    },
+    {
+      "path": "viewer/public/favicon.svg",
+      "bytes": 712,
+      "sha256": "e6d2e59b7b5bbb0342e0fb496dfc262decbfe4426bbb7b047aec8d467d1dc6f7"
+    },
+    {
+      "path": "viewer/scripts/verify-browser.mjs",
+      "bytes": 7765,
+      "sha256": "e2566bfc6343b2e504b589fcd9707a0b61cc3e2972af34c912e1d557b28dd64e"
+    },
+    {
+      "path": "viewer/tests/building-facades.test.mjs",
+      "bytes": 2175,
+      "sha256": "59e64d4a303f5e7227f0a97e113704bee3879160ee64d22c15cb35ec47dc7d87"
+    },
+    {
+      "path": "viewer/tests/class-focus.test.mjs",
+      "bytes": 3556,
+      "sha256": "31d4893989856c5c72b4f4767ff4c1f95e1a21416e779b93f92fa55edfb76964"
+    },
+    {
+      "path": "viewer/tests/explore-map.test.mjs",
+      "bytes": 4170,
+      "sha256": "c656583dba53301bd967f80976fe83843b4fd8388cfdb8428b70b43c883ea72b"
+    },
+    {
+      "path": "viewer/tests/flight-navigation.test.mjs",
+      "bytes": 1439,
+      "sha256": "b3ea2768057885655657bcf1deeec0572fc0564fc23ff7b98c8b4be20d1416e8"
+    },
+    {
+      "path": "viewer/tests/fullscreen-navigation.test.mjs",
+      "bytes": 1401,
+      "sha256": "9e6d5b6c407a2f01575d039ab185e845cb93cebc95a001e8e7eddf02e83f0779"
+    },
+    {
+      "path": "viewer/tests/image-import.test.mjs",
+      "bytes": 2128,
+      "sha256": "576455e3a47e67e8d4da4fdad6d075bf5b7bf1dbd97ede2eca22c526cf76a778"
+    },
+    {
+      "path": "viewer/tests/image-reference-view.test.mjs",
+      "bytes": 1387,
+      "sha256": "058c20de6320b9683bdfdc7bf0f90e4eb0685e036cc0d3dab8f9212f7310f504"
+    },
+    {
+      "path": "viewer/tests/inspection-readout.test.mjs",
+      "bytes": 4177,
+      "sha256": "59269538e1edc6fbfb38177a3db4404cd9587251bdea58ae9b2e4e6dadd60aea"
+    },
+    {
+      "path": "viewer/tests/metric-grid.test.mjs",
+      "bytes": 6486,
+      "sha256": "7108f9ab5792a1ab23fc3c13d69f92511e67171642305c0b586c9bdb1380f827"
+    },
+    {
+      "path": "viewer/tests/roof-geometry.test.mjs",
+      "bytes": 3473,
+      "sha256": "eafc486912245691dcbedf45e8b17d63ab92bb0382b23ea1de9e73c3637ff22f"
+    },
+    {
+      "path": "viewer/tests/roof-reconstruction.test.mjs",
+      "bytes": 7802,
+      "sha256": "ee52015894a350a07cee3c5681bfde933f5615d0f6e74521a7a974e97eafcf56"
+    },
+    {
+      "path": "viewer/tests/scene-reveal.test.mjs",
+      "bytes": 1507,
+      "sha256": "4296fa8258bac9b958ae0e39d9e2d5101545a679fa483d1ea73563b856e74bc0"
+    },
+    {
+      "path": "viewer/tests/selection-glow.test.mjs",
+      "bytes": 4672,
+      "sha256": "23d577e937339041b811e130cd9a0dde32cf96cd67517d7def9c0ece542aa19d"
+    },
+    {
+      "path": "viewer/tests/six-class-layer.test.mjs",
+      "bytes": 2593,
+      "sha256": "07e6c251230c5e30ce023e5d1c8c39611e9bdbcf47c5aea0068e060c67a0b651"
+    },
+    {
+      "path": "viewer/tests/six-class-request.test.mjs",
+      "bytes": 4188,
+      "sha256": "ef181fe515694eeb6739d2dc00ee531b12e33262863d87bef872757d2a50ce78"
+    },
+    {
+      "path": "viewer/tests/surface-query.test.mjs",
+      "bytes": 2909,
+      "sha256": "991643d28328d9967b44a95312b2ca27d660de82aa980404d028f6e6e03bafdf"
+    },
+    {
+      "path": "viewer/tests/terrain-analysis.test.mjs",
+      "bytes": 4780,
+      "sha256": "cc4d7a24d6bc30ef31f7a820cf23b161e216ab9ecd74b704f8399327a046888f"
+    },
+    {
+      "path": "viewer/tests/terrain-boundary.test.mjs",
+      "bytes": 971,
+      "sha256": "8e3bedb3aee5fd6ea795efc65dd365da2d44c60e5e9b0bfb7394a507badb773b"
+    },
+    {
+      "path": "viewer/tests/terrain-import.test.mjs",
+      "bytes": 1472,
+      "sha256": "bff14a380a6fc5152f691b2564433336c74ce5eb11ffad07b7cf159d94746900"
+    },
+    {
+      "path": "viewer/tests/terrain-presentation.test.mjs",
+      "bytes": 5742,
+      "sha256": "0d4032edac31e4276f3b5c7cb6036d6f4237ce62711727027048f0e4c97ffb3b"
+    },
+    {
+      "path": "viewer/tests/walk-navigation.test.mjs",
+      "bytes": 6644,
+      "sha256": "95c9eca4b0e15010271b196f89839b347917020b2eed1132c8d42464d7c567d4"
+    },
+    {
+      "path": "viewer/tsconfig.json",
+      "bytes": 749,
+      "sha256": "664061adf00cb85ea2700c83e789b31ec5eca7cfefc47005b7597c5b66dc1453"
+    },
+    {
+      "path": "viewer/vite.config.ts",
+      "bytes": 222,
+      "sha256": "40fdf1fe232f11d28b949845b92d412f7d6001e52f25462fb71deda9f9e4d2f0"
+    }
+  ]
+}

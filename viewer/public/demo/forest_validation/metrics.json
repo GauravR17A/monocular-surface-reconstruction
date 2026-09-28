@@ -1,0 +1,14 @@
+{
+  "pixel_count": 147456,
+  "rmse_m": 4.221455128914408,
+  "mae_m": 2.8560520831625684,
+  "bias_m": -2.027306752088609,
+  "median_ae_m": 1.3218995183706284,
+  "p90_ae_m": 7.7297667264938354,
+  "p95_ae_m": 9.375677824020386,
+  "correlation": 0.780453766961439,
+  "r2": 0.40943854192797247,
+  "reference_kind": "ndsm",
+  "prediction_product": "height_above_ground_ndsm",
+  "alignment": "exact_geospatial_grid"
+}

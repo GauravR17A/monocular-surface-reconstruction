@@ -1,0 +1,15 @@
+{
+  "schema": "msr.semantic_expert_height_proof.v1",
+  "output_root": "D:/MSRData/experiments/semantic_expert_height_proof_v1",
+  "parent_proof_config": "configs/class_assisted_height_proof_v1.json",
+  "parent_proof_run": "D:/MSRData/experiments/class_assisted_height_proof_v1/20260919T161049828458Z",
+  "parent_outcome_sha256": "2791ad11f6490e8d8ec9ca84360ed654b16e256bf1732187ecfab0c6281d38b1",
+  "optimizer_updates": 64,
+  "minimum_loss_reduction": 0.10,
+  "model_type": "soft_six_class_expert_height_v1",
+  "training_only": true,
+  "validation_used": false,
+  "test_used": false,
+  "automatic_promotion": false,
+  "proof_weights_reused": false
+}

@@ -1,0 +1,230 @@
+{
+  "status_date": "2026-09-28",
+  "transport": "Playwright route interception; production request handler + FastAPI TestClient; no application listener",
+  "checks": [
+    {
+      "name": "API health",
+      "passed": true,
+      "status": "ready",
+      "device": "cuda"
+    },
+    {
+      "name": "Production SSR, hydration and scientific identity",
+      "passed": true
+    },
+    {
+      "name": "Urban demo and WebGL canvas",
+      "passed": true
+    },
+    {
+      "name": "Hilly georeferenced DSM demo",
+      "passed": true
+    },
+    {
+      "name": "Forest demo",
+      "passed": true
+    },
+    {
+      "name": "Real RGB upload and protected model reconstruction",
+      "passed": true,
+      "response_keys": [
+        "job_id",
+        "uploaded_bytes",
+        "texture_url",
+        "height_url",
+        "raw_height_url",
+        "rdsm_url",
+        "relative_depth_url",
+        "building_probability_url",
+        "vegetation_probability_url",
+        "semantic_class_url",
+        "prediction_confidence_url",
+        "structures_url",
+        "aligned_dem_url",
+        "public_terrain_url",
+        "absolute_dsm_url",
+        "gcp_surface_url",
+        "validation_metrics_url",
+        "validation_reference_url",
+        "validation_error_url",
+        "validation",
+        "metadata_url",
+        "metadata"
+      ]
+    },
+    {
+      "name": "Real six-category classification and generated result retrieval",
+      "passed": true
+    },
+    {
+      "name": "Missing upload rejected with 422",
+      "passed": true
+    },
+    {
+      "name": "Mobile layout width",
+      "passed": true,
+      "width": 390,
+      "scroll": 390
+    },
+    {
+      "name": "No browser errors",
+      "passed": true
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "seconds": 0.004149900021729991
+    },
+    {
+      "method": "POST",
+      "path": "/api/classify",
+      "status": 200,
+      "seconds": 3.076379200007068
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "seconds": 0.004008299991255626
+    },
+    {
+      "method": "GET",
+      "path": "/results/classification_JOB/classes.bin",
+      "status": 200,
+      "seconds": 0.06597989998408593
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "seconds": 0.003906300000380725
+    },
+    {
+      "method": "POST",
+      "path": "/api/classify",
+      "status": 200,
+      "seconds": 0.2014420999912545
+    },
+    {
+      "method": "GET",
+      "path": "/results/classification_JOB/classes.bin",
+      "status": 200,
+      "seconds": 0.016194800002267584
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "seconds": 0.004524599993601441
+    },
+    {
+      "method": "POST",
+      "path": "/api/classify",
+      "status": 200,
+      "seconds": 0.33603219999349676
+    },
+    {
+      "method": "GET",
+      "path": "/results/classification_JOB/classes.bin",
+      "status": 200,
+      "seconds": 0.016460199985885993
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "seconds": 0.003446799993980676
+    },
+    {
+      "method": "POST",
+      "path": "/api/predict",
+      "status": 200,
+      "seconds": 3.8964191999984905
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/presentation_mesh_height_m.tif",
+      "status": 200,
+      "seconds": 0.028355599992210045
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/height_above_ground_m.tif",
+      "status": 200,
+      "seconds": 0.031438799982424825
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/building_solids.json",
+      "status": 200,
+      "seconds": 0.018129800009774044
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/building_probability.tif",
+      "status": 200,
+      "seconds": 0.030248099996242672
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/vegetation_probability.tif",
+      "status": 200,
+      "seconds": 0.039331600011792034
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/semantic_surface_class.tif",
+      "status": 200,
+      "seconds": 0.015734199987491593
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/prediction_confidence.tif",
+      "status": 200,
+      "seconds": 0.03263820000574924
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/texture.jpg",
+      "status": 200,
+      "seconds": 0.01894390000961721
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "seconds": 0.0038632999930996448
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/texture.jpg",
+      "status": 200,
+      "seconds": 0.0058963999908883125
+    },
+    {
+      "method": "POST",
+      "path": "/api/classify",
+      "status": 200,
+      "seconds": 0.4008695000084117
+    },
+    {
+      "method": "GET",
+      "path": "/results/classification_JOB/classes.bin",
+      "status": 200,
+      "seconds": 0.01777030000812374
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "seconds": 0.0038477999914903194
+    }
+  ],
+  "console_errors": [],
+  "page_errors": [],
+  "passed": true,
+  "height_artifact_sha256": "602cc3e31c10320f25c2a618336336f21312b122c06dab0358074175e7e90a3b"
+}

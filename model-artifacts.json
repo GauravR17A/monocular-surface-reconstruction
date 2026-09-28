@@ -1,0 +1,44 @@
+{
+  "version": "0.1.0",
+  "status_date": "2026-09-28",
+  "usage": "non-commercial research/evaluation; see THIRD_PARTY_NOTICES.md",
+  "artifacts": [
+    {
+      "name": "classifier_model.pt",
+      "path": "models/release/classifier_model.pt",
+      "bytes": 14953075,
+      "sha256": "742d02b34dacbde82c983b46c742847d761478104a4e33a790470988ea724289",
+      "url": "https://github.com/GauravR17A/monocular-surface-reconstruction/releases/download/v0.1.0/classifier_model.pt"
+    },
+    {
+      "name": "height_model.pt",
+      "path": "models/release/height_model.pt",
+      "bytes": 125811181,
+      "sha256": "602cc3e31c10320f25c2a618336336f21312b122c06dab0358074175e7e90a3b",
+      "url": "https://github.com/GauravR17A/monocular-surface-reconstruction/releases/download/v0.1.0/height_model.pt"
+    }
+  ],
+  "foundation": {
+    "repository": "depth-anything/Depth-Anything-V2-Small-hf",
+    "path": "models/foundation/depth-anything-v2-small-hf",
+    "revision": "5426e4f0f36572d16453bbda7a8389317b1bef99",
+    "files": [
+      {
+        "name": "config.json",
+        "sha256": "c56698d3643dde1f83ea2212759e6b31a22b8f827246a36dd007ee8a22b3ff75"
+      },
+      {
+        "name": "model.safetensors",
+        "sha256": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70"
+      },
+      {
+        "name": "preprocessor_config.json",
+        "sha256": "d41175c0d889477ca8fc67191e540faef14baf6275157b3fdecf78469e6bbf84"
+      },
+      {
+        "name": "README.md",
+        "sha256": "319566441daaac0c5ed83e75a8fd19bae0863f3275e23f147c06fe0906edf6fb"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+record_generation:
+  output_dir: outputs/stage3_scene_router_records
+  seed: 20260912
+  patch_size: 384
+  crop: center
+  batch_size: 4
+  num_workers: 4
+  precision: bf16
+
+endpoints:
+  protected_checkpoint: experiments/20260829T203146Z_multidomain_surface_v2_guarded_vegetation/checkpoint_best_guarded_vegetation.pt
+  protected_checkpoint_sha256: e2d507fbe180988e000a91a873db047407fc15c0fac90446f7d5f05990c0d144
+  gamus_stage1_checkpoint: experiments/20260912T153331Z_multidomain_surface_gamus_stage1_heads/checkpoint_best_landscape.pt
+  gamus_stage1_checkpoint_sha256: 68cd85ebabcf642eb7986e61b9e9ce4f6e2c25f89e7ff1aa31683d053b1a826d
+  base_checkpoint_sha256: 792bcb3d3279a4c37316dfa28fdd22d4b1d25bb9ecc507de2402ea1246da1bce
+
+data:
+  gamus_root: D:/MSRData/GAMUS
+  gamus_relative_prior_root: D:/MSRData/GAMUS_relative_priors
+  require_complete_official_gamus_splits: true
+  legacy_train_manifest: data/multidomain_v2/manifests_with_priors/train.csv
+  legacy_val_manifest: data/multidomain_v2/manifests_with_priors/validation.csv
+  legacy_train_manifest_sha256: 0c9e4528a6916ef27f57c21f14b52c4958bb578ea916fde629a70339a1ea9fc5
+  legacy_val_manifest_sha256: c3d8c255e13e76a986d7d2e367c54a07378c3808ab345b8d72fd1d8487b086ed
+  legacy_train_expected_count: 1050
+  legacy_val_expected_count: 280
+  # Ordered path/size/mtime inventory locks for this verified local run.
+  gamus_train_inventory_sha256: 3f3da381f2f656316437e8ccab6794a27ca07b5074c56ff05a2f075d9c9ab003
+  gamus_val_inventory_sha256: 6ad297ece851040d2145f85c0656ec0715ebcc8488fa268c58d701437b22e741
+  legacy_train_inventory_sha256: 2fb6d59b59789019fb3baef8eb74c2e1db0622dcc262c705e51da6f215f5303a
+  legacy_val_inventory_sha256: ba83f2294612e3a0ea29415d417faf623ece3e6ff94e0fa985bcb25fa665769b
+  rgb_scale: 255.0
+  height_max_m: 200.0
+  building_threshold_m: 2.0
+  radiometric_policy: raw
+  legacy_relative_prior_policy: stored_01
+  # Audited deterministic 384px center crops with neither regression nor
+  # semantic reference support. No utility is fabricated for these scenes.
+  excluded_no_reference_record_keys:
+    - gamus/train/NYC_23371
+    - gamus/train/NYC_26939
+    - gamus/train/NYC_28048
+    - gamus/train/NYC_28140
+    - gamus/train/NYC_28325
+    - gamus/train/NYC_28971
+    - gamus/train/NYC_30468
+    - gamus/train/NYC_30653
+    - gamus/train/NYC_31575
+
+utility:
+  height_rmse_weight: 1.0
+  semantic_error_weight: 1.0
+  height_scale_m: 10.0
+  minimum_candidate_gain: 0.02

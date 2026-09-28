@@ -1,0 +1,23 @@
+{
+  "evidence_id": "open_canopy_oc_2021_728_6349",
+  "purpose": "Reviewer-facing dense canopy-height validation",
+  "split": "official held-out test",
+  "selection_rule": "Closest test chip to 50% reference vegetation coverage among chips with at least 90% valid labels; no prediction metric was inspected during selection.",
+  "vegetation_fraction": 0.4987860785590278,
+  "valid_fraction": 1.0,
+  "gsd_m": 1.5,
+  "input": "SPOT pansharpened optical RGB",
+  "reference": "IGN LiDAR-derived canopy height model",
+  "reference_usage": "evaluation only; never passed into model inference",
+  "source": "https://huggingface.co/datasets/AI4Forest/Open-Canopy",
+  "license": "Etalab Open Licence 2.0",
+  "metrics": {
+    "pixel_count": 147456,
+    "rmse_m": 4.221455128914408,
+    "mae_m": 2.8560520831625684,
+    "bias_m": -2.027306752088609,
+    "correlation": 0.780453766961439,
+    "r2": 0.40943854192797247,
+    "alignment": "exact_geospatial_grid"
+  }
+}

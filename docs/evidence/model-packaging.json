@@ -1,0 +1,33 @@
+{
+  "scope": "Inference-only packaging; optimizer/RNG/training path payloads omitted; no retraining or quantization. Historical source hashes and new artifact hashes are distinct.",
+  "checks": [
+    {
+      "artifact": "height_model.pt",
+      "tensors": 240,
+      "values": 31428489,
+      "all_tensor_values_identical": true
+    },
+    {
+      "artifact": "classifier_model.pt",
+      "tensors": 210,
+      "values": 3716205,
+      "all_tensor_values_identical": true
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "classifier_model.pt",
+      "path": "models/release/classifier_model.pt",
+      "bytes": 14953075,
+      "sha256": "742d02b34dacbde82c983b46c742847d761478104a4e33a790470988ea724289",
+      "url": "https://github.com/GauravR17A/monocular-surface-reconstruction/releases/download/v0.1.0/classifier_model.pt"
+    },
+    {
+      "name": "height_model.pt",
+      "path": "models/release/height_model.pt",
+      "bytes": 125811181,
+      "sha256": "602cc3e31c10320f25c2a618336336f21312b122c06dab0358074175e7e90a3b",
+      "url": "https://github.com/GauravR17A/monocular-surface-reconstruction/releases/download/v0.1.0/height_model.pt"
+    }
+  ]
+}

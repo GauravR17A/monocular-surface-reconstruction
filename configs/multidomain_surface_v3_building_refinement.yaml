@@ -1,0 +1,67 @@
+experiment:
+  name: multidomain_surface_v3_building_refinement
+  seed: 20260830
+  output_root: experiments
+data:
+  train_manifest: data/multidomain_v2/manifests_with_priors/train.csv
+  val_manifest: data/multidomain_v2/manifests_with_priors/validation.csv
+  test_manifest: data/multidomain_v2/manifests_with_priors/test.csv
+  patch_size: 384
+  validation_patch_size: 384
+  train_samples_per_epoch: 4096
+  balanced_landscape_sampling: true
+  num_workers: 4
+  rgb_scale: 255.0
+  height_max_m: 200.0
+  building_threshold_m: 2.0
+model:
+  base_checkpoint: experiments/20260826T192229Z_highbuild_full_convnext_tiny/checkpoint_best_rmse.pt
+  initial_checkpoint: experiments/20260829T130607Z_multidomain_surface_v2/checkpoint_best_landscape.pt
+  hidden_channels: 64
+  maximum_building_residual_m: 30.0
+  initial_canopy_height_m: 12.0
+  initial_refinement_strength: 0.05
+  fusion_mode: protected_vegetation
+  building_protection_power: 2.5
+training:
+  epochs: 12
+  batch_size: 4
+  gradient_accumulation: 2
+  learning_rate: 0.00015
+  base_learning_rate_multiplier: 0.0
+  freeze_base_epochs: 12
+  weight_decay: 0.02
+  max_gradient_norm: 1.0
+  precision: bf16
+  early_stopping_patience: 4
+  huber_delta_m: 2.0
+  semantic_weight: 2.0
+  semantic_class_weights:
+  - 1.0
+  - 2.5
+  - 2.0
+  building_weight: 1.0
+  building_mse_weight: 0.04
+  tall_building_weight: 0.75
+  tall_building_threshold_m: 20.0
+  fused_building_weight: 1.5
+  fused_building_mse_weight: 0.01
+  building_distillation_weight: 0.5
+  canopy_weight: 1.0
+  canopy_mse_weight: 0.03
+  tall_canopy_weight: 0.4
+  tall_canopy_threshold_m: 15.0
+  ground_suppression_weight: 0.1
+  refinement_weight: 1.0
+  uncertainty_weight: 0.005
+evaluation:
+  primary_metric: landscape_macro_rmse_m
+  building_expert_selection_weight: 0.5
+  vegetation_selection_weight: 0.1
+  max_urban_rmse_regression_m: 0.15
+  max_building_rmse_regression_m: 0.15
+  max_initial_overall_rmse_regression_m: 0.08
+  max_initial_urban_rmse_regression_m: 0.08
+  max_initial_forest_rmse_regression_m: 0.12
+  max_initial_building_rmse_regression_m: 0.08
+  max_initial_vegetation_rmse_regression_m: 0.12

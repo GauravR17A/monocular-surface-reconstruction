@@ -1,0 +1,168 @@
+schema: msr.height_scorecard.v1
+
+protocol:
+  purpose: immutable_same_protocol_development_height_scorecard
+  split: validation
+  official_test_used: false
+  primary_height_protocol: highbuild_measured_coco_intersection_v1
+  protocols:
+    - highbuild_all_annotated_positive_v1
+    - highbuild_measured_coco_intersection_v1
+    - open_canopy_v2
+  evaluation_contract:
+    highbuild_grid: full native 1024x1024 scenes
+    open_canopy_grid: full native 384x384 scenes
+    rgb: raw
+    relative_prior: target-independent cached stored_01 for both suites
+    outside_highbuild_coco_footprints: unknown_not_ground
+    highbuild_classification_support: positive_annotations_only
+    highbuild_detection_precision_and_count: unavailable
+    open_canopy_role: corrected forest validation
+
+baseline:
+  report: outputs/evaluation/corrected_legacy_triplet_v1/report.json
+  report_sha256: 0977bc90e034746df74dc6241c6676f15a6ea5f36dc0b422008a75c6767ab351
+  model_key: protected
+  checkpoint_sha256: e2d507fbe180988e000a91a873db047407fc15c0fac90446f7d5f05990c0d144
+  metrics:
+    combined.pixel_count: 31011260
+    combined.rmse_m: 10.16073195725383
+    combined.mae_m: 4.911234955655706
+    combined.bias_m: -1.6698003430651693
+    combined.correlation: 0.482029702087857
+    combined.r2: 0.20253473869798166
+    combined.landscapes.urban.rmse_m: 13.24255785947179
+    combined.landscapes.forest.rmse_m: 6.707373001250676
+    combined.domains.building.rmse_m: 13.24255785947179
+    combined.domains.vegetation.rmse_m: 8.361004305174088
+    combined.domains.ground.rmse_m: 4.894379864863861
+    highbuild.pixel_count: 13855690
+    highbuild.rmse_m: 13.24255785947179
+    highbuild.mae_m: 5.360863691455819
+    highbuild.bias_m: -2.7882163207303607
+    highbuild.correlation: 0.18619140162623
+    highbuild.r2: -0.06609524158002977
+    open_canopy.pixel_count: 17155570
+    open_canopy.rmse_m: 6.707373001250676
+    open_canopy.mae_m: 4.548092467336274
+    open_canopy.bias_m: -0.7665120770631758
+    open_canopy.correlation: 0.6591866760934862
+    open_canopy.r2: 0.4218353606266021
+    highbuild_instances.instance_height.measured.instance_count: 328
+    highbuild_instances.instance_height.measured.rmse_m: 11.15192278294849
+    highbuild_instances.instance_height.measured.mae_m: 4.418293653464898
+    highbuild_instances.instance_height.measured.bias_m: -1.5642664170846707
+    highbuild_instances.instance_height.measured.correlation: 0.24387551136665828
+    highbuild_instances.instance_height.measured.r2: 0.03656916038424851
+    highbuild_instances.outline.mean_iou: 0.7381048694563381
+    highbuild_instances.outline.mean_boundary_f1: 0.4884341321777417
+    highbuild_instances.detection.annotated_building_recall: 0.15497869043006587
+
+protected_application:
+  pointer: outputs/runtime/showcase_checkpoint.txt
+  pointer_sha256: a3d51c686ca2abee9cb7e622c600f5ded9eca3332638ccf56f6f3d8b2f72baa9
+  checkpoint: experiments/20260829T203146Z_multidomain_surface_v2_guarded_vegetation/checkpoint_best_guarded_vegetation.pt
+  checkpoint_sha256: e2d507fbe180988e000a91a873db047407fc15c0fac90446f7d5f05990c0d144
+
+input_identity:
+  coco_annotations_sha256: ebc9d1346a4b052a31b784f94370659b31e5a996fb46383ce4048b2781bed1e4
+  model_input_tensors_sha256: 3af6e59cf47ce859873404ff356cd0295c5190f9768bc64b45a046b04ff1cfce
+  ordered_sample_ids_sha256: 0b3444bc6c2cb4e818afc01bfc3a7cc632cdb3e5969511bdb9ac0c410a8ba2a0
+  supervision_tensors_sha256: aff4ead86ce4004e03429da6d7755f9731cb9f79abde98b8130112a294b245a9
+
+data_artifact_sha256:
+  highbuild_source_index: e0316769b912cbbdc28d759f7f263ab07572682419e7e3f8501373efc4bd5a87
+  manifest:highbuild_all_annotated_positive_v1: a8e0d0c249f43962329a7ec7d79ba5c0dd49e2e258905525815d62c7420ced86
+  contract:highbuild_all_annotated_positive_v1: c6e7dfd203548516ede750db07d8b8350ae5f65f86724de98512cd1b5a5d3187
+  manifest:highbuild_measured_coco_intersection_v1: 2e21024fb7d7562e51d91e219c9434087fadfee58b107a4eacdc2c04cd8fa118
+  contract:highbuild_measured_coco_intersection_v1: b919b02d50bbf5de4e7e69ff96c3887bbd0f5ab0f56fa0c6f7612b20c51e91e3
+  open_canopy_manifest: 0fdc8b1f6a0536ae84609a6d54c2dd8fe7dac3d371519285d905c7a45596277a
+
+truth_contract:
+  highbuild:
+    unit: metres_as_encoded_by_building_height_m_and_source_annotations
+    strict_height_support: COCO footprint AND finite positive raster height AND is_estimated_height=false
+    semantic_support: all_official_coco_building_footprints
+    outside_footprints: unknown_never_zero_ground
+    estimated_heights: excluded_from_primary_and_reported_separately
+    gsd_status: not_authenticated_for_area_reporting
+  open_canopy:
+    unit: metres
+    conversion: stored_uint16_decimetres_x_0.1
+    nominal_gsd_m: 1.5
+    height_support: independent_valid_mask
+    vegetation_support: independent_vegetation_mask
+    current_validation_isolation: region_disjoint_but_not_source_scene_disjoint
+  gamus:
+    height_unit: metre_assumed_not_publisher_verified
+    nominal_gsd_m: 0.33
+    per_tile_georeferencing: absent
+    height_cutoff_m_assumed: 200.0
+    masks: image_valid_classification_valid_height_valid_are_independent
+    official_test: previously_consumed_legacy_never_tune_or_repeat
+
+supporting_audits:
+  gamus_preparation:
+    path: outputs/data_audits/gamus_preparation_v1/audit_report.json
+    sha256: a7965c0354cf2e455fc635f6fe2c6f26f87c06bb2ed09c7077dc174cf4cc26fa
+  open_canopy_provenance:
+    path: outputs/data_audits/open_canopy_v2_provenance_v1.json
+    sha256: 3e7dac77cb9d9d63354fe0e61a44f062b01166ac056b571fcbcdcf10b396b01f
+  open_canopy_scene_geographic_plan:
+    path: outputs/data_audits/open_canopy_v2_holdout_scene_geographic_v1.json
+    sha256: 0ec239e2e7de0a33b7e0a77505ef0d4b8aafe2276cfccebfc040ad5ff8938bab
+
+gates:
+  maximum_regression:
+    combined.rmse_m: 0.15
+    combined.mae_m: 0.10
+    combined.landscapes.urban.rmse_m: 0.15
+    combined.landscapes.forest.rmse_m: 0.15
+    combined.domains.building.rmse_m: 0.15
+    combined.domains.vegetation.rmse_m: 0.15
+    combined.domains.ground.rmse_m: 0.15
+    highbuild_instances.instance_height.measured.rmse_m: 0.15
+    highbuild_instances.instance_height.measured.mae_m: 0.10
+  maximum_absolute_bias_regression:
+    combined.bias_m: 0.10
+    highbuild.bias_m: 0.10
+    open_canopy.bias_m: 0.10
+    highbuild_instances.instance_height.measured.bias_m: 0.10
+  nondecreasing_metrics:
+    - combined.correlation
+    - combined.r2
+    - highbuild.correlation
+    - highbuild.r2
+    - open_canopy.correlation
+    - open_canopy.r2
+    - combined.domains.building.correlation
+    - combined.domains.building.r2
+    - combined.domains.vegetation.correlation
+    - combined.domains.vegetation.r2
+    - combined.domains.ground.correlation
+    - combined.domains.ground.r2
+    - highbuild_instances.instance_height.measured.correlation
+    - highbuild_instances.instance_height.measured.r2
+    - highbuild_instances.outline.mean_iou
+    - highbuild_instances.outline.mean_boundary_f1
+    - highbuild_instances.detection.annotated_building_recall
+  material_improvement:
+    paths:
+      - combined.domains.building.rmse_m
+      - combined.domains.vegetation.rmse_m
+      - combined.domains.ground.rmse_m
+    minimum_absolute_m: 0.5
+    minimum_relative_fraction: 0.05
+    minimum_passing_paths: 1
+
+external_height_evidence:
+  required_for_production_eligibility: true
+  status: missing_not_yet_preregistered
+  current_evidence:
+    corrected_full_scene_validation: same_protocol_development_only
+    highbuild_test: previously_inspected_legacy_regression_only
+    open_canopy_validation: region_disjoint_but_source_mosaics_overlap_learning
+    open_canopy_locked_test: previously_inspected_not_fresh
+    gamus_nyc: excluded_from_new_classifier_training_but_not_system_unseen
+    christchurch_openearthmap: preregistered_design_only_classification_labels_no_height_truth_not_downloaded
+  requirement_for_v2_scorecard: genuinely_new_geography_with_independent_metric_height_reference_and_preregistered_one_shot_protocol

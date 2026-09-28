@@ -1,0 +1,23 @@
+{
+  "pixel_count": 589824,
+  "rmse_m": 15.02895307511556,
+  "mae_m": 10.244428290054202,
+  "bias_m": -4.951612202036712,
+  "median_ae_m": 7.4183349609375,
+  "p90_ae_m": 21.757006835937517,
+  "p95_ae_m": 29.634973144531244,
+  "correlation": 0.9995649150144258,
+  "r2": 0.9990240195450355,
+  "reference_kind": "dsm",
+  "prediction_product": "absolute_surface_dsm",
+  "alignment": "reprojected_to_prediction_grid",
+  "scene": "Manali, Himachal Pradesh",
+  "prediction_calibration": "Copernicus GLO-30 terrain datum",
+  "evaluation_reference": "Independent SRTM 1 arc-second elevation",
+  "reference_resolution": "approximately 30 m",
+  "reference_min_m": 1724.4879150390625,
+  "reference_max_m": 3834.53564453125,
+  "relief_normalized_rmse_percent": 0.7122565459091529,
+  "vertical_datum_note": "SRTM is EGM96-referenced while the Copernicus calibration source uses EGM2008; no post-hoc offset was fitted to the evaluation reference.",
+  "limitations": "Coarse DEM cross-check of final absolute surface elevation; not a survey-grade or LiDAR validation of individual objects."
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "file": "tests/test_audit_gamus_spatial_refined_geographic_checkpoint.py",
+    "test": "test_exact_geographic_comparator_recipe_passes_without_nyc_imagery"
+  },
+  {
+    "file": "tests/test_build_gamus_hierarchical_v4_config.py",
+    "test": "test_builder_changes_only_the_head_and_auxiliary_loss"
+  },
+  {
+    "file": "tests/test_compare_gamus_six_class_candidate.py",
+    "test": "test_protocol_pins_data_preparation_and_live_artifact_hashes"
+  },
+  {
+    "file": "tests/test_corrected_height_replay_v1_protocol.py",
+    "test": "test_protocol_trains_only_small_final_height_and_fusion_heads"
+  },
+  {
+    "file": "tests/test_external_height_holdout.py",
+    "test": "test_repository_external_height_contract_is_valid_and_sealed"
+  },
+  {
+    "file": "tests/test_gamus_decision_bias_calibration.py",
+    "test": "test_protocol_is_dc_phl_only_and_explicitly_not_confidence_calibration"
+  },
+  {
+    "file": "tests/test_gamus_decision_bias_calibration.py",
+    "test": "test_spatial_v3_calibration_protocol_is_valid_and_never_promotes"
+  },
+  {
+    "file": "tests/test_gamus_decision_bias_calibration.py",
+    "test": "test_spatial_v3_calibration_runner_pins_protocol_and_calibrator"
+  },
+  {
+    "file": "tests/test_gamus_decision_bias_calibration.py",
+    "test": "test_full_evaluation_requires_confirmation_before_any_data_access"
+  },
+  {
+    "file": "tests/test_gamus_geographic_candidate.py",
+    "test": "test_spatial_geographic_runner_pins_its_protocol_inputs"
+  },
+  {
+    "file": "tests/test_gamus_hierarchical_v4_protocol.py",
+    "test": "test_paired_independent_replay_is_exactly_bound_and_formula_checked"
+  },
+  {
+    "file": "tests/test_gamus_hierarchical_v4_protocol.py",
+    "test": "test_per_city_gates_cover_macro_all_classes_boundary_and_dark_water"
+  },
+  {
+    "file": "tests/test_gamus_spatial_refined_v3_protocol.py",
+    "test": "test_v3_recipe_is_exact_v2_contract_plus_spatial_head"
+  },
+  {
+    "file": "tests/test_gamus_spatial_refined_v3_protocol.py",
+    "test": "test_v3_auditor_report_never_claims_pointer_verification"
+  },
+  {
+    "file": "tests/test_gamus_spatial_refined_v3_protocol.py",
+    "test": "test_v3_runner_pins_inputs_and_never_promotes_the_app"
+  },
+  {
+    "file": "tests/test_preflight_gamus_hierarchical_v4.py",
+    "test": "test_preflight_accepts_builder_output_as_exact_paired_experiment"
+  },
+  {
+    "file": "tests/test_preflight_gamus_hierarchical_v4.py",
+    "test": "test_preflight_rejects_unfair_or_unsafe_drift"
+  },
+  {
+    "file": "tests/test_preflight_gamus_hierarchical_v4.py",
+    "test": "test_thresholds_are_fixed_from_all_six_baseline_classes"
+  },
+  {
+    "file": "tests/test_preflight_gamus_hierarchical_v4.py",
+    "test": "test_preflight_rejects_hand_edited_six_class_baseline"
+  },
+  {
+    "file": "tests/test_run_gamus_hierarchical_v4.py",
+    "test": "test_runner_pins_every_executable_training_input"
+  },
+  {
+    "file": "tests/test_train_residual_height.py",
+    "test": "test_config_is_authenticated_validation_only"
+  },
+  {
+    "file": "tests/test_watch_gamus_six_class_spatial_refined_v3.py",
+    "test": "test_v3_profile_uses_v3_inputs_and_real_v1_baseline"
+  }
+]

@@ -1,0 +1,37 @@
+stage4_dual_router_training:
+  record_store: outputs/stage4_dual_router_records_v3
+  output_dir: experiments/stage4_dual_router_guarded
+
+  batch_size: 64
+  hidden_features: 32
+  epochs: 40
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  huber_delta: 1.0
+  seed: 20260913
+  device: cuda
+
+  # Fit groups and calibration groups must be disjoint by source/group_id.
+  # GAMUS uses city, urban data uses exact city, and OpenCanopy uses an
+  # authenticated spatial block as group_id.
+  require_group_disjoint: true
+
+  height:
+    target_scale: 10.0
+    minimum_score: 0.0
+    minimum_candidate_gain: 0.25
+    minimum_precision: 0.98
+    minimum_candidate_selections: 32
+    minimum_stratum_support: 32
+    maximum_mean_utility_regression: 0.0
+    maximum_stratum_utility_regression: 0.0
+
+  semantic:
+    target_scale: 1.0
+    minimum_score: 0.0
+    minimum_candidate_gain: 0.01
+    minimum_precision: 0.98
+    minimum_candidate_selections: 32
+    minimum_stratum_support: 32
+    maximum_mean_utility_regression: 0.0
+    maximum_stratum_utility_regression: 0.0

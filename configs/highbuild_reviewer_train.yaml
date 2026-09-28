@@ -1,0 +1,38 @@
+experiment:
+  name: highbuild_reviewer_train
+  seed: 20260826
+  output_root: experiments
+
+data:
+  train_manifest: data/highbuild_reviewer/manifests/train.csv
+  val_manifest: data/highbuild_reviewer/manifests/validation.csv
+  test_manifest: data/highbuild_reviewer/manifests/test.csv
+  patch_size: 384
+  validation_patch_size: 512
+  train_samples_per_epoch: 2048
+  num_workers: 4
+  height_min_m: 0.0
+  height_max_m: 600.0
+
+model:
+  backbone: convnextv2_tiny.fcmae_ft_in22k_in1k
+  pretrained: true
+  decoder_channels: [256, 128, 64, 32]
+  auxiliary_building_head: true
+
+training:
+  epochs: 60
+  batch_size: 2
+  gradient_accumulation: 4
+  learning_rate: 0.0001
+  weight_decay: 0.01
+  precision: bf16
+  early_stopping_patience: 10
+  height_loss: huber
+  foreground_regression_weight: 1.0
+  gradient_loss_weight: 0.10
+  building_loss_weight: 0.05
+
+evaluation:
+  primary_metric: rmse_m
+  save_visualizations: true

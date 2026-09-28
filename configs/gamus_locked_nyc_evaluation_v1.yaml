@@ -1,0 +1,77 @@
+schema: msr.gamus.locked_geographic_evaluation.v1
+protocol_id: gamus-nyc-post-freeze-once-v1
+purpose: honest_unseen_city_evaluation_after_dc_phl_model_selection
+
+candidate:
+  experiment_name: multidomain_surface_gamus_six_class_head_only_geographic_v1
+  config: configs/multidomain_surface_gamus_six_class_head_only_geographic_v1.yaml
+  config_sha256: e14a7cd1189d697ea30c3c437792b73e7287ce2c3acda24219a418d9f9df46ca
+  required_checkpoint_name: checkpoint_best_landscape.pt
+  inherited_state_policy: bitwise_equal_to_protected_checkpoint
+  allowed_trained_tensors:
+    - fine_semantic_head.weight
+    - fine_semantic_head.bias
+
+protected_state:
+  checkpoint: experiments/20260829T203146Z_multidomain_surface_v2_guarded_vegetation/checkpoint_best_guarded_vegetation.pt
+  checkpoint_sha256: e2d507fbe180988e000a91a873db047407fc15c0fac90446f7d5f05990c0d144
+  live_pointer: outputs/runtime/showcase_checkpoint.txt
+  live_pointer_sha256: a3d51c686ca2abee9cb7e622c600f5ded9eca3332638ccf56f6f3d8b2f72baa9
+
+holdout:
+  contract: outputs/data_audits/gamus_geographic_holdout_city_nyc_v1/contract.json
+  contract_sha256: a8a5b0dfaa3a6338a590a12dc7eeab74734f26b465e526b05a15833e9cf02435
+  approved_index: outputs/data_audits/gamus_head_only_geographic_candidate_v1/nyc_holdout_approved_samples.json
+  approved_index_sha256: 98281b990b5ccddfda4349d0b43f0216455a8bebca085bf1232abab10f689417
+  source_split: train
+  city: NYC
+  expected_tiles: 1164
+  use: exactly_one_post_freeze_evaluation
+  tuning_after_opening: forbidden
+
+data:
+  root: D:/MSRData/GAMUS
+  relative_prior_root: D:/MSRData/GAMUS_relative_priors
+  require_relative_priors: true
+  patch_size: 1024
+  rgb_scale: 255.0
+  radiometric_policy: raw
+  height_max_m: 200.0
+  num_workers: 2
+
+reporting:
+  required_classes:
+    - ground
+    - buildings
+    - water
+    - roads
+    - low_vegetation
+    - trees
+  required_per_class_metrics: [precision, recall, iou, f1, support_pixels]
+  required_auxiliary_metrics:
+    - road_boundary_quality
+    - water_shadow_proxy
+    - height_rmse_mae_bias_correlation_r2
+  # These targets were declared before NYC was opened. Failure is reported,
+  # never hidden, and does not authorize tuning on NYC.
+  readiness_gates:
+    macro_f1_min: 0.45
+    macro_iou_min: 0.30
+    per_class_f1_min:
+      ground: 0.35
+      buildings: 0.60
+      water: 0.10
+      roads: 0.45
+      low_vegetation: 0.50
+      trees: 0.55
+    road_boundary_f1_min: 0.20
+  report_on_failure: true
+
+safety:
+  official_test_policy: never_constructed_or_discovered
+  confirmation_phrase: CONSUME_LOCKED_NYC_HOLDOUT_ONCE
+  create_consumption_lock_before_loading_holdout: true
+  refuse_second_evaluation: true
+  automatic_retry_after_consumption: false
+  auto_promotion: false
+  application_model_change: forbidden

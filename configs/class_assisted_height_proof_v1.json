@@ -1,0 +1,42 @@
+{
+  "schema": "msr.class_assisted_height_proof.v1",
+  "seed": 20260919,
+  "output_root": "D:/MSRData/experiments/class_assisted_height_proof_v1",
+  "train_manifest": "D:/MSRData/data/multidomain_v2/highbuild_measured_coco_intersection_v1/manifests/train.csv",
+  "train_manifest_sha256": "8f7f85997df53c2dae82d571c52db4ca8f10d4cb5638784e729b38632a1067e4",
+  "protected_checkpoint": "experiments/20260829T203146Z_multidomain_surface_v2_guarded_vegetation/checkpoint_best_guarded_vegetation.pt",
+  "protected_checkpoint_sha256": "e2d507fbe180988e000a91a873db047407fc15c0fac90446f7d5f05990c0d144",
+  "protected_pointer": "outputs/runtime/showcase_checkpoint.txt",
+  "protected_pointer_sha256": "a3d51c686ca2abee9cb7e622c600f5ded9eca3332638ccf56f6f3d8b2f72baa9",
+  "classifier_checkpoint": "experiments/20260919T142003929194Z_rgb_multiregion_v3/checkpoint_best_development.pt",
+  "classifier_checkpoint_sha256": "10fbb39c3d916695627e93d49f2115be18ecd163352b4daa96ba691c0090470c",
+  "dav2_directory": "models/foundation/depth-anything-v2-small-hf",
+  "dav2_files_sha256": {
+    "config.json": "c56698d3643dde1f83ea2212759e6b31a22b8f827246a36dd007ee8a22b3ff75",
+    "preprocessor_config.json": "d41175c0d889477ca8fc67191e540faef14baf6275157b3fdecf78469e6bbf84",
+    "model.safetensors": "3152477ce0d8d6978d76b995120de97cb5b928701fd0f817769f59e249a16b70"
+  },
+  "training": {
+    "optimizer_updates": 64,
+    "batch_size": 2,
+    "gradient_accumulation": 2,
+    "patch_size": 384,
+    "hidden_channels": 32,
+    "maximum_correction_m": 80,
+    "learning_rate": 0.0001,
+    "decoder_learning_rate": 0.00002,
+    "weight_decay": 0.01,
+    "max_gradient_norm": 1.0,
+    "huber_delta_m": 2.0,
+    "mse_weight": 0.02,
+    "minimum_loss_reduction": 0.10,
+    "precision": "bf16",
+    "augment": false
+  },
+  "selection": "two HighBuild tiles per training city: lexicographic first with >=64 supported pixels at (0,20] m and >20 m respectively; first ten distinct OpenCanopy training groups with ground and vegetation support",
+  "prior_replay": {"maximum_abs_difference": 0.005, "mean_abs_difference": 0.0005},
+  "validation_used": false,
+  "test_used": false,
+  "automatic_promotion": false,
+  "proof_weights_reused": false
+}

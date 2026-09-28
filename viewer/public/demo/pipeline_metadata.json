@@ -1,0 +1,17 @@
+{
+  "georeferenced": false,
+  "input_grid": {
+    "original_width": 1024,
+    "original_height": 1024,
+    "processing_width": 1024,
+    "processing_height": 1024,
+    "resampled_for_interactive_processing": false
+  },
+  "display_product": "semantic_solid_scene_18_buildings_187912_vegetation_pixels",
+  "checkpoint": "experiments/20260828T175822Z_multidomain_surface_pilot/checkpoint_best_landscape.pt",
+  "relative_model": "models/foundation/depth-anything-v2-small-hf",
+  "calibration": null,
+  "warnings": [
+    "Presentation ground and building solids are semantic visualization, not the metric evaluation raster."
+  ]
+}

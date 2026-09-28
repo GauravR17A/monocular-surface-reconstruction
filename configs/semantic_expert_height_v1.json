@@ -1,0 +1,29 @@
+{
+  "schema": "msr.semantic_expert_height_development.v1",
+  "output_root": "D:/MSRData/experiments/semantic_expert_height_v1",
+  "model_type": "soft_six_class_expert_height_v1",
+  "epochs": 4,
+  "pairs_per_epoch": 600,
+  "checkpoint_every_updates": 50,
+  "arms": ["uniform", "predicted"],
+  "arm_labels": {"uniform": "A: neutral routing", "predicted": "B: SIX-CLASS routing"},
+  "dashboard_title": "Six classes guiding height corrections",
+  "comparison_summary": "A = uniform router. B = actual frozen six-class predictions. Six correction outputs in both; identical original sampling, loss, initial weights and budget.",
+  "conditioning": "actual six-class predictions in B; uniform in A",
+  "loss": "original_source_balanced",
+  "sampler": "sealed_original_control_plans_in_both_arms",
+  "automatic_promotion": false,
+  "test_used": false,
+  "gamus_height_evaluated": false,
+  "parent_sampler_config": "configs/height_band_sampling_v1.json",
+  "proof_config": "configs/semantic_expert_height_proof_v1.json",
+  "proof_run": "D:/MSRData/experiments/semantic_expert_height_proof_v1/20260919T180155574728Z",
+  "proof_outcome_sha256": "871091ca0da68a0e1bae5b0e11adf35a2b010fd622dc76071cddb6ef5b2ed5c0",
+  "comparison_baseline": "D:/MSRData/experiments/height_band_sampling_v1/20260919T173241288352Z/baseline.json",
+  "comparison_baseline_sha256": "69a9f457a03d081bfe80b81361fd11911d43ed54ff22190bddb61d6f6e949bc7",
+  "guards": {
+    "rmse_m": 0.15, "mae_m": 0.10, "absolute_bias_m": 0.10,
+    "correlation_r2_tolerance": 0.000001,
+    "improvement_m": 0.5, "improvement_fraction": 0.05
+  }
+}

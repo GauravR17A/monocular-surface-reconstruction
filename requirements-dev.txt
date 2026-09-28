@@ -1,0 +1,7 @@
+-r requirements.txt
+pytest==8.3.5
+httpx==0.28.1
+h5py==3.16.0
+matplotlib==3.10.3
+webdataset==1.0.2
+scikit-learn==1.6.1

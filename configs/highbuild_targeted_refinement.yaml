@@ -1,0 +1,63 @@
+experiment:
+  name: highbuild_targeted_refinement
+  seed: 20260828
+  output_root: experiments
+
+data:
+  format: webdataset
+  train_manifest: data/highbuild_full/msr_splits/train.csv
+  val_manifest: data/highbuild_full/msr_splits/validation.csv
+  test_manifest: data/highbuild_full/msr_splits/test.csv
+  train_shards: data/highbuild_full/msr_splits/shards/train/*.tar
+  validation_shards: data/highbuild_full/msr_splits/shards/validation/*.tar
+  city_balanced_train_shards:
+    Berlin: data/highbuild_full/msr_splits/balanced_train/Berlin/*.tar
+    Toronto: data/highbuild_full/msr_splits/balanced_train/Toronto/*.tar
+    Paris: data/highbuild_full/msr_splits/balanced_train/Paris/*.tar
+    Toulouse: data/highbuild_full/msr_splits/balanced_train/Toulouse/*.tar
+    Aarhus: data/highbuild_full/msr_splits/balanced_train/Aarhus/*.tar
+  city_sampling_weights:
+    Berlin: 0.27
+    Toronto: 0.27
+    Paris: 0.27
+    Toulouse: 0.095
+    Aarhus: 0.095
+  patch_size: 384
+  validation_patch_size: 512
+  train_samples_per_epoch: 8192
+  num_workers: 6
+  height_min_m: 0.0
+  height_max_m: 1000.0
+  foreground_crop_probability: 0.80
+  tall_crop_probability: 0.40
+  tall_threshold_m: 20.0
+
+model:
+  backbone: convnextv2_tiny.fcmae_ft_in22k_in1k
+  pretrained: true
+  decoder_channels: [256, 128, 64, 32]
+  auxiliary_building_head: true
+
+training:
+  epochs: 12
+  initial_checkpoint: experiments/20260826T192229Z_highbuild_full_convnext_tiny/checkpoint_best_rmse.pt
+  batch_size: 8
+  gradient_accumulation: 1
+  learning_rate: 0.00003
+  encoder_learning_rate_multiplier: 0.05
+  weight_decay: 0.03
+  max_gradient_norm: 1.0
+  precision: bf16
+  early_stopping_patience: 5
+  height_loss: huber
+  huber_delta_m: 3.0
+  foreground_regression_weight: 1.25
+  foreground_mse_weight: 0.03
+  tall_regression_weight: 0.20
+  tall_threshold_m: 20.0
+  gradient_loss_weight: 0.10
+  building_loss_weight: 0.15
+
+evaluation:
+  primary_metric: rmse_m
+  save_visualizations: true

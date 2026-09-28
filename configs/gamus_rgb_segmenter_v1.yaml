@@ -1,0 +1,106 @@
+experiment:
+  name: gamus_rgb_segmenter_v1
+  seed: 20260915
+  output_root: experiments
+
+# Standalone classification experiment. No production inference import/pointer
+# changes, no height supervision, no official test or external holdout access.
+protocol:
+  schema: msr.gamus_rgb_segmenter.v1
+  development_only: true
+  auto_promotion: false
+  learning_cities: [DC, PHL]
+  development_validation_cities: [DC, PHL]
+  expected_counts: {learning: 3837, development_validation: 859}
+  official_test_policy: previously_consumed_forbidden_for_reuse
+  nyc_policy: excluded_from_new_training_not_system_unseen
+  protected_checkpoint: experiments/20260829T203146Z_multidomain_surface_v2_guarded_vegetation/checkpoint_best_guarded_vegetation.pt
+  protected_checkpoint_sha256: e2d507fbe180988e000a91a873db047407fc15c0fac90446f7d5f05990c0d144
+  live_pointer_file: outputs/runtime/showcase_checkpoint.txt
+  live_pointer_file_sha256: a3d51c686ca2abee9cb7e622c600f5ded9eca3332638ccf56f6f3d8b2f72baa9
+  fixed_v3_independent_replay: outputs/evaluation/gamus_dcphl_independent_replay_v1/v3_baseline_report.json
+  fixed_v3_independent_replay_sha256: 6160848c7ee94fe1a3a6a6e183e9bb9ae7a61e1198801561fa2434c4ef145f34
+  classification_acceptance:
+    six_class_macro_f1_min: 0.6
+    ground_f1_min: 0.4431400649874097
+    buildings_f1_min: 0.8347680537571219
+    water_f1_min: 0.45
+    roads_f1_min: 0.65
+    low_vegetation_f1_min: 0.58
+    trees_f1_min: 0.62
+    road_boundary_f1_min: 0.26946838919412636
+    dark_non_water_false_water_rate_max: 0.08466366578224195
+  classification_acceptance_by_city:
+    DC:
+      six_class_macro_f1_min: 0.5079704106208668
+      ground_f1_min: 0.4206111582826355
+      buildings_f1_min: 0.8279196732373338
+      water_f1_min: 0.38387604901209754
+      roads_f1_min: 0.6688796678230027
+      low_vegetation_f1_min: 0.10266251818641105
+      trees_f1_min: 0.6438733971837199
+      road_boundary_f1_min: 0.32015436553483045
+      dark_non_water_false_water_rate_max: 0.08319497537475005
+    PHL:
+      six_class_macro_f1_min: 0.5514073684135661
+      ground_f1_min: 0.45521819172761746
+      buildings_f1_min: 0.8417533792664992
+      water_f1_min: 0.3889990952929053
+      roads_f1_min: 0.5078646174881484
+      low_vegetation_f1_min: 0.5777486525484343
+      trees_f1_min: 0.5368602741577915
+      road_boundary_f1_min: 0.20424498740464367
+      dark_non_water_false_water_rate_max: 0.08928481966932623
+
+data:
+  root: D:/MSRData/GAMUS
+  approved_index_path: outputs/data_audits/gamus_geographic_holdout_city_nyc_v1/learning_approved_samples.json
+  approved_index_file_sha256: d56764bc9a3cde31760189b1da40cf207de1b9142c7531b24190ed6e2312e5d9
+  fine_class_sampling_index_path: outputs/data_audits/gamus_head_only_geographic_candidate_v1/gamus_learning_six_class_sampling_index_v1.jsonl
+  fine_class_sampling_index_sha256: 32a71cc1cb2d9da75ce8774db5e4db342512991ebb37e4b461f776fe7196eedf
+  water_sampling_boost: 2.0
+  preserve_city_sampling_mass: true
+  patch_size: 384
+  validation_patch_size: 1024
+  num_workers: 2
+  rgb_scale: 255.0
+  train_radiometric_policy: raw
+  validation_radiometric_policy: raw
+  dark_pixel_threshold: 0.15
+
+model:
+  pretrained_directory: D:/MSRData/models/segformer-mit-b0-imagenet
+  pretrained_repository: nvidia/mit-b0
+  pretrained_revision: 80983a413c30d36a39c20203974ae7807835e2b4
+  pretrained_files_sha256:
+    config.json: e2378ac7c7a6981d6bdd1d9ccf29b611264c382afce89c561f39c9291164ff91
+    pytorch_model.bin: 4af8348c2a802bf76115d34797ff5ce1d9f110bb8593c22d9b66d8bd7fa227fc
+
+training:
+  epochs: 8
+  batch_size: 4
+  gradient_accumulation: 1
+  encoder_learning_rate: 0.00006
+  decoder_learning_rate: 0.0006
+  weight_decay: 0.01
+  warmup_optimizer_steps: 100
+  minimum_learning_rate_factor: 0.1
+  max_gradient_norm: 1.0
+  precision: bf16
+  fine_semantic_class_weights: [0.7, 0.6, 3.0, 0.7, 0.6, 0.4]
+  fine_semantic_focal_gamma: 1.5
+  early_stopping_patience: 3
+  early_stopping_min_epochs: 4
+
+proof:
+  minimum_steps: 48
+  minimum_loss_reduction_fraction: 0.15
+  overfit_report: outputs/diagnostics/gamus_rgb_segmenter_v1/overfit_report.json
+  validation_smoke_report: outputs/diagnostics/gamus_rgb_segmenter_v1/validation_smoke_report.json
+  validation_content_cache: outputs/diagnostics/gamus_rgb_segmenter_v1/validation_content_cache.json
+
+evaluation:
+  promotion_eligible: false
+  height_evidence: not_evaluated_standalone_classifier_does_not_change_height_path
+  external_geography: sealed_and_unused
+  checkpoint_selection: six_class_macro_f1

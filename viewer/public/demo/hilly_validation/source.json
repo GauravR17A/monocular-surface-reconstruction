@@ -1,0 +1,8 @@
+{
+  "dataset": "SRTM-style HGT from the AWS Terrain Tiles public dataset",
+  "tile": "N32E077",
+  "download_url": "https://s3.amazonaws.com/elevation-tiles-prod/skadi/N32/N32E077.hgt.gz",
+  "used_for_inference": false,
+  "used_for_calibration": false,
+  "role": "independent coarse elevation evaluation only"
+}

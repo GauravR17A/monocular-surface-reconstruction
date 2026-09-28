@@ -1,0 +1,28 @@
+{
+  "schema": "msr.class_assisted_height_development.v1",
+  "proof_config": "configs/class_assisted_height_proof_v1.json",
+  "proof_outcome": "D:/MSRData/experiments/class_assisted_height_proof_v1/20260919T161049828458Z/outcome.json",
+  "proof_outcome_sha256": "2791ad11f6490e8d8ec9ca84360ed654b16e256bf1732187ecfab0c6281d38b1",
+  "output_root": "D:/MSRData/experiments/class_assisted_height_development_v1",
+  "validation_manifest": "D:/MSRData/data/multidomain_v2/highbuild_measured_coco_intersection_v1/manifests/validation.csv",
+  "validation_manifest_sha256": "2e21024fb7d7562e51d91e219c9434087fadfee58b107a4eacdc2c04cd8fa118",
+  "epochs": 2,
+  "pairs_per_epoch": 600,
+  "checkpoint_every_updates": 50,
+  "training": "inherit proof optimizer, batch=2, accumulation=2, patch=384; reset both arms from protected start; no proof weights reused",
+  "sampling": "each epoch all 600 forest tiles and all 450 urban tiles plus 150 urban repeats; identical shuffled source-paired order and deterministic supervised crop per arm",
+  "evaluation": "native 1024 HighBuild / 384 OpenCanopy, bf16, fixed valid pixels; development, not untouched final geography",
+  "gamus_height_evaluated": false,
+  "gamus_limitation": "Height units unresolved. This pilot cannot certify GAMUS height safety or release eligibility.",
+  "guards": {
+    "rmse_m": 0.15,
+    "mae_m": 0.10,
+    "absolute_bias_m": 0.10,
+    "correlation_r2_tolerance": 0.000001,
+    "improvement_m": 0.50,
+    "improvement_fraction": 0.05
+  },
+  "selection": "report both paired epochs; eligible review candidate requires legacy safety and priority benefit beating same-epoch control; rank mean building/canopy RMSE",
+  "automatic_promotion": false,
+  "test_used": false
+}

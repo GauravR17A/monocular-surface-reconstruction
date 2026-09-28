@@ -1,0 +1,133 @@
+protocol:
+  schema: msr.corrected_legacy_triplet_plan.v1
+  report_schema: msr.corrected_legacy_triplet.v1
+  split: validation
+  official_test_used: false
+  primary_height_protocol: highbuild_measured_coco_intersection_v1
+  output: outputs/evaluation/corrected_legacy_triplet_v1/report.json
+  work_dir: outputs/evaluation/corrected_legacy_triplet_v1/partials
+  live_pointer: outputs/runtime/showcase_checkpoint.txt
+  live_pointer_sha256: a3d51c686ca2abee9cb7e622c600f5ded9eca3332638ccf56f6f3d8b2f72baa9
+  comparison_report: outputs/evaluation/gamus_six_class_comparison_v1/report.json
+  comparison_report_sha256: c487424ddd1bb5032a8a0d3e719254b819623cd64d7940333c53cb9269127e09
+  promotion_permitted: false
+
+models:
+  protected:
+    checkpoint: experiments/20260829T203146Z_multidomain_surface_v2_guarded_vegetation/checkpoint_best_guarded_vegetation.pt
+    checkpoint_sha256: e2d507fbe180988e000a91a873db047407fc15c0fac90446f7d5f05990c0d144
+    epoch: 20
+    model_type: domain_gated_surface_v2
+    comparison_section: protected_baseline
+    expected_model_config:
+      base_checkpoint: experiments/20260826T192229Z_highbuild_full_convnext_tiny/checkpoint_best_rmse.pt
+      hidden_channels: 64
+      maximum_building_residual_m: 30.0
+      initial_canopy_height_m: 12.0
+      initial_refinement_strength: 0.05
+      fusion_mode: protected_vegetation
+      building_protection_power: 2.5
+      vegetation_fusion_temperature: 0.8
+      vegetation_expert_fusion_threshold: 0.85
+      vegetation_expert_fusion_strength: 0.10
+  height_pilot:
+    checkpoint: experiments/20260912T222619Z_multidomain_surface_gamus_direct_height_pilot/checkpoint_latest.pt
+    checkpoint_sha256: a5325e1a8c53ff6d825fe7bc312642491c63c137bbc16bccf2773c9ac483c34c
+    epoch: 4
+    model_type: domain_gated_surface_v1
+    comparison_section: height_focused_pilot
+    saved_config: experiments/20260912T222619Z_multidomain_surface_gamus_direct_height_pilot/config.yaml
+    saved_config_sha256: b18c0a2f6c6328a23dc1b826c1c86811ae0dde7e75b2f0b827c1c893dec84d8f
+    expected_model_config:
+      base_checkpoint: experiments/20260826T192229Z_highbuild_full_convnext_tiny/checkpoint_best_rmse.pt
+      initial_checkpoint: experiments/20260829T203146Z_multidomain_surface_v2_guarded_vegetation/checkpoint_best_guarded_vegetation.pt
+      hidden_channels: 64
+      maximum_building_residual_m: 30.0
+      initial_canopy_height_m: 12.0
+      initial_refinement_strength: 0.05
+      fusion_mode: legacy
+      building_protection_power: 2.5
+      vegetation_fusion_temperature: 0.8
+      vegetation_expert_fusion_threshold: 1.0
+      vegetation_expert_fusion_strength: 0.0
+  expanded_candidate:
+    checkpoint: experiments/20260912T230020Z_multidomain_surface_gamus_six_class_candidate_v1/checkpoint_latest.pt
+    checkpoint_sha256: 487210a696cb262392b30af5dde2470e60c0a926965ce527144d53a04ebd4ea4
+    epoch: 4
+    model_type: domain_gated_surface_v4_six_class
+    comparison_section: expanded_six_class_candidate
+    saved_config: experiments/20260912T230020Z_multidomain_surface_gamus_six_class_candidate_v1/config.yaml
+    saved_config_sha256: 6ec7f801b423d20a59a6385c908f316b7621b08b35856b2da2a9f3100dd0c3a6
+    expected_model_config:
+      base_checkpoint: experiments/20260826T192229Z_highbuild_full_convnext_tiny/checkpoint_best_rmse.pt
+      initial_checkpoint: experiments/20260829T203146Z_multidomain_surface_v2_guarded_vegetation/checkpoint_best_guarded_vegetation.pt
+      hidden_channels: 64
+      maximum_building_residual_m: 30.0
+      initial_canopy_height_m: 12.0
+      initial_refinement_strength: 0.05
+      fusion_mode: legacy
+      building_protection_power: 2.5
+      vegetation_fusion_temperature: 0.8
+      vegetation_expert_fusion_threshold: 1.0
+      vegetation_expert_fusion_strength: 0.0
+      fine_semantic_classes: 6
+
+data:
+  rgb_scale: 255.0
+  height_max_m: 200.0
+  building_threshold_m: 2.0
+  radiometric_policy: raw
+  relative_prior_policy: stored_01
+  require_highbuild_relative_prior: true
+  open_canopy_relative_prior_policy: require_enriched_cached_stored_01
+  highbuild_patch_size: 1024
+  open_canopy_patch_size: 384
+  expected_highbuild_samples: 160
+  expected_open_canopy_samples: 120
+  highbuild_source_index: D:/MSRData/data/highbuild_full/msr_splits/validation.csv
+  highbuild_source_index_sha256: e0316769b912cbbdc28d759f7f263ab07572682419e7e3f8501373efc4bd5a87
+  highbuild_split_root: D:/MSRData/data/highbuild_full/msr_splits
+  open_canopy:
+    protocol_name: open_canopy_v2
+    manifest: D:/MSRData/data/open_canopy_v2/manifests/validation.csv
+    manifest_sha256: 0fdc8b1f6a0536ae84609a6d54c2dd8fe7dac3d371519285d905c7a45596277a
+  highbuild_protocols:
+    highbuild_all_annotated_positive_v1:
+      height_protocol: inclusive_annotated
+      manifest: D:/MSRData/data/multidomain_v2/highbuild_all_annotated_positive_v1/manifests/validation.csv
+      manifest_sha256: a8e0d0c249f43962329a7ec7d79ba5c0dd49e2e258905525815d62c7420ced86
+      contract_report: D:/MSRData/data/multidomain_v2/highbuild_all_annotated_positive_v1/contract_report.json
+      contract_report_sha256: c6e7dfd203548516ede750db07d8b8350ae5f65f86724de98512cd1b5a5d3187
+    highbuild_measured_coco_intersection_v1:
+      height_protocol: strict_measured
+      manifest: D:/MSRData/data/multidomain_v2/highbuild_measured_coco_intersection_v1/manifests/validation.csv
+      manifest_sha256: 2e21024fb7d7562e51d91e219c9434087fadfee58b107a4eacdc2c04cd8fa118
+      contract_report: D:/MSRData/data/multidomain_v2/highbuild_measured_coco_intersection_v1/contract_report.json
+      contract_report_sha256: b919b02d50bbf5de4e7e69ff96c3887bbd0f5ab0f56fa0c6f7612b20c51e91e3
+
+runtime:
+  device: cuda
+  precision: bf16
+  num_workers: 0
+  building_probability_source: protected_building_logits
+  building_probability_threshold: 0.5
+  instance_iou_threshold: 0.5
+  minimum_predicted_instance_pixels: 1
+  minimum_height_pixels: 1
+  boundary_tolerance_pixels: 2
+
+gates:
+  candidate_vs_protected_max_regression:
+    rmse_m: 0.15
+    mae_m: 0.10
+    landscapes.urban.rmse_m: 0.15
+    landscapes.forest.rmse_m: 0.15
+    domains.building.rmse_m: 0.15
+    domains.vegetation.rmse_m: 0.15
+  candidate_vs_height_pilot_max_regression:
+    rmse_m: 0.15
+    mae_m: 0.10
+    landscapes.urban.rmse_m: 0.15
+    landscapes.forest.rmse_m: 0.15
+    domains.building.rmse_m: 0.15
+    domains.vegetation.rmse_m: 0.15

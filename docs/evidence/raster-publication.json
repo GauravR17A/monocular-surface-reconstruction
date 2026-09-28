@@ -1,0 +1,155 @@
+{
+  "scope": "Metadata prefix normalization only; all arrays, validity masks, CRS and affine transforms compared before/after. File bytes may change.",
+  "rasters": [
+    {
+      "path": "viewer/public/demo/copenhagen_building_probability.tif",
+      "array_sha256": "6955c956f26b4b135d0e68e68fa66c4395ced17e4c85e92174eac353353adca9",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/copenhagen_height_m.tif",
+      "array_sha256": "2e3975ae28d4dce0da977fa1f85309a2ef6a0b298e9eca94f280fd57aa330d22",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/copenhagen_prediction_confidence.tif",
+      "array_sha256": "b4875befd3ecb94617839441136036ff87ebc7901b2a4d47dcdad36efc7f09b4",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/copenhagen_presentation_mesh_m.tif",
+      "array_sha256": "64646c38d459d594dc4ae0b57be826bb940bfdec0cac0d9fa8f1bdb05d960763",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/copenhagen_vegetation_probability.tif",
+      "array_sha256": "d15fa70effed820014e487af2e7055a73d23045dc821a4afa77883620df0aeee",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/forest_validation/lidar_reference_m.tif",
+      "array_sha256": "18877c9f7151e073c84aeeb9efa0af29caa0c9e1f0b0de453fcbd0be4efe2f9a",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/forest_validation/model_prediction_m.tif",
+      "array_sha256": "5e558d9d8e3c902a7e0c8234abd36342fe5b344affebe45ec80931e959bd4737",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/forest_validation/signed_error_m.tif",
+      "array_sha256": "d0edcf713d2a83602d18b555ae847b0e02b4a52de1ddf81cd48ac7020f981a72",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/hilly_validation/model_prediction_m.tif",
+      "array_sha256": "e113ca653836abd82a3b22b062df0413bff55069e05d7800a7782b0165204e93",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/hilly_validation/signed_error_m.tif",
+      "array_sha256": "e9c9b3a7dfc16fd1900f7231e4b09e23ced101cedc79aaeebb58c039685c9518",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/hilly_validation/srtm_reference_aligned_m.tif",
+      "array_sha256": "bf96dfc858ae0a7a2ab69f7d63ca980e7652379812f9c6870704d1f53c3fe5ee",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/landscapes/hilly/absolute_dsm_m.tif",
+      "array_sha256": "e113ca653836abd82a3b22b062df0413bff55069e05d7800a7782b0165204e93",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/landscapes/hilly/absolute_dsm_raw_m.tif",
+      "array_sha256": "eb3505a659881706b78df83e761affe9500550a565d8b602baa27cf6a7ff79d5",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/landscapes/hilly/building_probability.tif",
+      "array_sha256": "38e4c77b1438afae9d032af195d880be09d486a15fe65d8cddba5260486b736a",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/landscapes/hilly/object_height_ndsm_m.tif",
+      "array_sha256": "2242680370d5f5afb6d04c8b7bcccad04d0e0d54adfe5e713ee558e3b4dc8dc0",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/landscapes/hilly/prediction_confidence.tif",
+      "array_sha256": "6f88e21446448994657657085d322938d1aabd1fb133c7c8db0dedb0028f6812",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/landscapes/hilly/semantic_surface_class.tif",
+      "array_sha256": "a3b9485374faba4067bc543f466e9f8e2ecfe0941f6f1cdc2fc31ba6bfe77482",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/landscapes/hilly/terrain_dem_m.tif",
+      "array_sha256": "734e0bfe9b35a88774bf2bd7541ef849654a0477689fb858568676fa335aca8b",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/landscapes/hilly/vegetation_probability.tif",
+      "array_sha256": "e2dc87fb9680a1d371ef1db2c648afab4d6fa874111dc9385b38d77af8f552ef",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/landscapes/sparse/analysis_height_m.tif",
+      "array_sha256": "c2fc962f2fff2c42809b36f1ba374eb1f179f611ddf6c2ccc20a5a95a4b0a14c",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/landscapes/sparse/building_probability.tif",
+      "array_sha256": "718afc665149ed4159777fd2c939a26369f600d8442a46bdc0b0f596db89ae02",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/landscapes/sparse/prediction_confidence.tif",
+      "array_sha256": "b0e8a2a8113caa9bdbd89df2e402490c10bad4e2b4a257baca02f3b8a60de8e7",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/landscapes/sparse/presentation_height_m.tif",
+      "array_sha256": "0a7497dfd1a8fecebc05946affcbdacb768b368aad59e9e452d21151d3eb1e72",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/landscapes/sparse/semantic_surface_class.tif",
+      "array_sha256": "3520032291430068bf520e2ec32b627deb5b2ea7da6db9d6c6767df2bb728c1a",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/landscapes/sparse/validation_reference_m.tif",
+      "array_sha256": "2595868881a4eb06747c468b344ffc507dfd0627e292ceccd4e6dda81f2cb862",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/landscapes/sparse/validation_signed_error_m.tif",
+      "array_sha256": "e379371c53f4bc8d9b04aa37478a354295d88c50618eb4532541248b445eb740",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/landscapes/sparse/vegetation_probability.tif",
+      "array_sha256": "9c948ce4b4bd6b9c54f7863cedb2ed92739c692df1585ff6e2afbfc85f0c0a2a",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/originals/02_SPARSE_Amsterdam_reference_nDSM_m.tif",
+      "array_sha256": "2595868881a4eb06747c468b344ffc507dfd0627e292ceccd4e6dda81f2cb862",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/originals/03_HILLY_Manali_Copernicus_GLO30_terrain_datum_m.tif",
+      "array_sha256": "734e0bfe9b35a88774bf2bd7541ef849654a0477689fb858568676fa335aca8b",
+      "values_mask_crs_transform_unchanged": true
+    },
+    {
+      "path": "viewer/public/demo/originals/03_HILLY_Manali_original_georeferenced_RGB.tif",
+      "array_sha256": "daf99fd73679ddfe7e784e71d1c4a173f9da59a044e9daa51c544b4c03b79733",
+      "values_mask_crs_transform_unchanged": true
+    }
+  ]
+}

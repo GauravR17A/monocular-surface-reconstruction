@@ -1,0 +1,45 @@
+experiment:
+  name: highbuild_full_convnext_tiny
+  seed: 20260826
+  output_root: experiments
+
+data:
+  format: webdataset
+  train_manifest: data/highbuild_full/msr_splits/train.csv
+  val_manifest: data/highbuild_full/msr_splits/validation.csv
+  test_manifest: data/highbuild_full/msr_splits/test.csv
+  train_shards: data/highbuild_full/msr_splits/shards/train/*.tar
+  validation_shards: data/highbuild_full/msr_splits/shards/validation/*.tar
+  patch_size: 384
+  validation_patch_size: 512
+  train_samples_per_epoch: 8192
+  num_workers: 6
+  height_min_m: 0.0
+  height_max_m: 1000.0
+
+model:
+  backbone: convnextv2_tiny.fcmae_ft_in22k_in1k
+  pretrained: true
+  decoder_channels: [256, 128, 64, 32]
+  auxiliary_building_head: true
+
+training:
+  epochs: 40
+  initial_checkpoint: experiments/20260826T135412Z_highbuild_reviewer_train/checkpoint_best_rmse.pt
+  batch_size: 8
+  gradient_accumulation: 1
+  learning_rate: 0.0001
+  encoder_learning_rate_multiplier: 0.10
+  weight_decay: 0.05
+  max_gradient_norm: 1.0
+  precision: bf16
+  early_stopping_patience: 8
+  height_loss: huber
+  huber_delta_m: 3.0
+  foreground_regression_weight: 1.0
+  gradient_loss_weight: 0.10
+  building_loss_weight: 0.05
+
+evaluation:
+  primary_metric: rmse_m
+  save_visualizations: true

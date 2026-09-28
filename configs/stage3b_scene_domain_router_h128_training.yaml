@@ -1,0 +1,26 @@
+router_training:
+  records: outputs/stage3_scene_router_records/records.jsonl
+  record_provenance: outputs/stage3_scene_router_records/provenance.json
+  record_completion: outputs/stage3_scene_router_records/completion.json
+  output_dir: experiments/stage3b_scene_domain_router_h128_seed20260915
+
+  target_mode: source_gamus
+  epochs: 160
+  batch_size: 64
+  hidden_features: 128
+  learning_rate: 0.0005
+  weight_decay: 0.0001
+  minimum_candidate_gain: 0.02
+  fallback_weight: 1.0
+  candidate_weight: 1.0
+  brier_weight: 0.05
+
+  minimum_threshold: 0.50
+  minimum_precision: 0.99
+  maximum_mean_utility_regression: 0.0
+  minimum_candidate_selections: 1
+  minimum_gamus_coverage: 0.80
+  minimum_gamus_selections: 400
+
+  seed: 20260915
+  device: cuda

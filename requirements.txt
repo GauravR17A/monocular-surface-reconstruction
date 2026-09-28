@@ -1,0 +1,12 @@
+# Tested direct dependencies. Install the matching torch/torchvision pair first.
+numpy==1.26.4
+Pillow==11.2.1
+PyYAML==6.0.2
+rasterio==1.4.3
+tqdm==4.67.1
+scipy==1.15.3
+timm==1.0.15
+transformers==5.16.1
+fastapi==0.141.1
+uvicorn==0.52.4
+python-multipart==0.0.32

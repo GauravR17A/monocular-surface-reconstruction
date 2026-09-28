@@ -1,0 +1,355 @@
+{
+  "status_date": "2026-09-28",
+  "file": "docs/Monocular_Surface_Reconstruction_Technical_Documentation.pdf",
+  "chapters": 86,
+  "sha256": "cfc6f067a91c4a6be4c6426a240a35d55bf2c7054b5b11836f2de9010da297d3",
+  "bytes": 3990896,
+  "sources": [
+    {
+      "path": "docs/OVERVIEW.md",
+      "sha256": "7b13ccdb68db358537533ca34f982ed337d201162ab901e3ce0cf1cf7db9fa81"
+    },
+    {
+      "path": "docs/USER_GUIDE.md",
+      "sha256": "e90ba5711a61521d939c3f7aeab8b70237c55ca5e47eb9c0ea8045d75124c436"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "sha256": "6da18c9ac9977076d15c8f7b7bfb9663c4c192a5c2d9f9e233aaae6388f08dc8"
+    },
+    {
+      "path": "docs/SCIENTIFIC_CONTRACTS.md",
+      "sha256": "38057564ff0818f90397e45d5e3fa7b40c0e2cf8e32c9e500ff2be112e885592"
+    },
+    {
+      "path": "docs/METHODS.md",
+      "sha256": "e2cf5a47edff9d82ad1f5743c47311ae1664c784319df76aab8b9f9f4929f228"
+    },
+    {
+      "path": "docs/CODE_MAP.md",
+      "sha256": "7b1b71f1126662e517e46e655a125aaf27f1741709c330c7b142c7bef6e81fa5"
+    },
+    {
+      "path": "docs/DATA.md",
+      "sha256": "8eb884218bf7883d7430cb2d08f56527b6475fe283514bbd0f56339f9e38b72d"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "sha256": "9aef5b610493d754d02b5c0aa9bc4cc387eb9f816531132903b221015463fc57"
+    },
+    {
+      "path": "docs/RESULTS.md",
+      "sha256": "b519e6fc53c44e6da088fd706d298ee3f53e47fbb5799768981c4e972664e888"
+    },
+    {
+      "path": "docs/EXPERIMENTS.md",
+      "sha256": "f539492a1d7c8546b44a8efd3c0074706616ff8610fb9485bf41b8632854cc30"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "sha256": "4f190c225bd2ad9a28e1dced0c34becc77876c2b92851ef3c15cbcf93a695363"
+    },
+    {
+      "path": "docs/FEATURES.md",
+      "sha256": "867df4eab6cf87dacd53b40fc9bcca3172ed3273ea8b26628097fd6f395fc0ad"
+    },
+    {
+      "path": "docs/MODEL_CARDS.md",
+      "sha256": "6a7c739228694bdb5f974b163561ac33c6560504afad7ef3a34fc34614c3eae1"
+    },
+    {
+      "path": "docs/API.md",
+      "sha256": "53e8d4fec8c8d8ce4820fa06884d2ea0f2431af7351c8c8d413752acdf3b0636"
+    },
+    {
+      "path": "docs/SETUP.md",
+      "sha256": "bca45f3e6685790626a0bfcd210f61215937377319ce377e2501977735ec258d"
+    },
+    {
+      "path": "docs/PERFORMANCE.md",
+      "sha256": "07992fbbaadbd6f183862982c1f260bafdee887334ea780fda55c5715963e346"
+    },
+    {
+      "path": "docs/SECURITY_REVIEW.md",
+      "sha256": "d5fd49dd1282dd92ad47f1ccf653b1a16d912327629043708717b464ee47baed"
+    },
+    {
+      "path": "docs/RELEASE.md",
+      "sha256": "f6839411663b4e85b89b6ba1ddcb839866983b78b22fb26e488815bb333d7953"
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "sha256": "14c9e0addf14ce38ff6e9f02f67644d73902f4849ef8c79acc2b3eca33ead0ba"
+    },
+    {
+      "path": "docs/GLOSSARY.md",
+      "sha256": "ce3ad0f5a690da6a90489900c7a3b5d237e60e63157ce899e4bc9d48935fc616"
+    },
+    {
+      "path": "docs/REFERENCES.md",
+      "sha256": "6e8163025f0d230d4778f05f7253d0cc5ae302d4e34a05eb006fd3e185011b89"
+    },
+    {
+      "path": "docs/SOURCE_INVENTORY.md",
+      "sha256": "11fe32535541d229c0937e554b622cd5eca00f347b1fc1bbc5a7849668c658da"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "e5c424a3eb3dbe97e40f414fb9df12cf6c20aa42c41325a50cd76f82d89429d5"
+    },
+    {
+      "path": "docs/history/ACCURACY_RECOVERY_2026_09_15.md",
+      "sha256": "0c77fd980bf77286fae53086e2aed6d423088f223e935a783500e76419e54488"
+    },
+    {
+      "path": "docs/history/BENCHMARK_PROTOCOL.md",
+      "sha256": "6d0a3707024789cfbf998b7983d60fa2f8c9a0945722a887b81b7a7b9c7022e0"
+    },
+    {
+      "path": "docs/history/CLASS_ASSISTED_HEIGHT_FAST_V2_20260919.md",
+      "sha256": "fbbb35fb81719351ab453954ec35677ab594ac1487a519f833e6b0dc4fa46729"
+    },
+    {
+      "path": "docs/history/CLASS_ASSISTED_HEIGHT_FAST_V2_OUTCOME.md",
+      "sha256": "f86b9b17f15966290ff16cc2531911c9a04550e00cbb10054116de8567e1da73"
+    },
+    {
+      "path": "docs/history/CLASS_ASSISTED_HEIGHT_LAUNCH_20260919.md",
+      "sha256": "bfdfe10a604d4eb9178e143aaf6b9443ca22232adf9210d49dbdb32b600ab6f8"
+    },
+    {
+      "path": "docs/history/CLASS_ASSISTED_HEIGHT_LOW_SURFACE_V3_OUTCOME.md",
+      "sha256": "7851b39ff629fdca4e79c1b084f05b510fa34f25a4ecb922d96fd0c29c3cfe6b"
+    },
+    {
+      "path": "docs/history/CLASS_ASSISTED_HEIGHT_LOW_SURFACE_V3_PROTOCOL.md",
+      "sha256": "1515b02dcfe51737ea53353f88589f3bd1153d184b05f666f658c464ef67d7ed"
+    },
+    {
+      "path": "docs/history/CLASS_ASSISTED_HEIGHT_PILOT_PROTOCOL.md",
+      "sha256": "bd704753d0c8f9822b4223da202d29f83d2a6eed56781b8b00f660ee63030fc2"
+    },
+    {
+      "path": "docs/history/DEMO_RUNBOOK.md",
+      "sha256": "1a545460417faaa455bca9b86eb26445568f7669ce9e2047d42c8fd7b54d9788"
+    },
+    {
+      "path": "docs/history/EXPANDED_GAMUS_PLAN.md",
+      "sha256": "c99ae51f2525c665a310ee0b01a3a2865ab24af3723e0b51d3ae79b889c3722a"
+    },
+    {
+      "path": "docs/history/EXPLORE_MAPPING_2026_09_27.md",
+      "sha256": "94686dd4f017633a5561dc5807566c65b4b2e380881eb35f54e749cde7c72499"
+    },
+    {
+      "path": "docs/history/EXPLORE_WALKTHROUGH_2026_09_19.md",
+      "sha256": "82d157fb200539f19e0d28544ecc1742f238ebe2c6531bb853ba27227021f874"
+    },
+    {
+      "path": "docs/history/EXTERNAL_METRIC_HEIGHT_HOLDOUT.md",
+      "sha256": "e541d07c1ddf1c427ff61d57f125a432685bc3199f6bd62bd195ff4c625ea4cb"
+    },
+    {
+      "path": "docs/history/FULLSCREEN_ESCAPE_2026_09_19.md",
+      "sha256": "2685a1c5453e7b0a26d10475deb74a08ec153849501d732c238fab73f7ada999"
+    },
+    {
+      "path": "docs/history/GAMUS_DIRECT_HEIGHT_PROTOCOL.md",
+      "sha256": "1f06af97647bcd28117a9d9a8dc3702a8979ca11915fd93a851d523fed287a84"
+    },
+    {
+      "path": "docs/history/GAMUS_GEOGRAPHIC_HOLDOUT.md",
+      "sha256": "9366159a4b2c074435138ecaf78adea54679d82bedf6a2e862d2b1b12edd8995"
+    },
+    {
+      "path": "docs/history/GAMUS_HEIGHT_SAFE_V2_PROTOCOL.md",
+      "sha256": "14667b3055f5cdb54c70845e657c78ab29d9e5655aedc84fd2695a0e83babf5b"
+    },
+    {
+      "path": "docs/history/GAMUS_PREPARATION_AUDIT.md",
+      "sha256": "c39ec10ecc6c0f4977d454061dd00ed68cccd40ca8c3eda9e3c84f0bb8e53311"
+    },
+    {
+      "path": "docs/history/GAMUS_SIX_CLASS_DECISION_BIAS_CALIBRATION.md",
+      "sha256": "d7ec8191aa920142b98cc1b35d6155264e95b8985665a414005a7fec8cbe53a1"
+    },
+    {
+      "path": "docs/history/GAMUS_SIX_CLASS_EXPANSION_PROTOCOL.md",
+      "sha256": "a1290c061a663aa18f88d543aba2d1481fa27e4046b4c4d4a49652cb60da7307"
+    },
+    {
+      "path": "docs/history/GAMUS_SIX_CLASS_EXPERIMENT_STATUS.md",
+      "sha256": "9d14672d2890c91507b23115e91c172ff6d7ceb27cd7dbc8620422f0de3d9845"
+    },
+    {
+      "path": "docs/history/GAMUS_SIX_CLASS_V4_HIERARCHICAL_HEAD_DESIGN.md",
+      "sha256": "c70150ea7be9e48377cece14f4f7e88131bf7586a0bc41cc2b297659231c5d1d"
+    },
+    {
+      "path": "docs/history/HEIGHT_BAND_SAMPLING_V1_HANDOFF.md",
+      "sha256": "d15eca5ddde2d42980f5d754543e973fcdf882ba92c6b35901aaceb023427d98"
+    },
+    {
+      "path": "docs/history/HEIGHT_BAND_SAMPLING_V1_OUTCOME.md",
+      "sha256": "c598fa950b16bbbf479f08ecf2098a71ca0ef06deb1d2c5c588ea58b010bbd0b"
+    },
+    {
+      "path": "docs/history/HEIGHT_BAND_SAMPLING_V1_PROTOCOL.md",
+      "sha256": "7f3e08f35524f67717bc8ae6bea655b46a37d8bf488808a37a903610f49a2c4d"
+    },
+    {
+      "path": "docs/history/HEIGHT_PROMOTION_SCORECARD.md",
+      "sha256": "1e210c3887e54143256d4de7ddf9bdf8322bfcaa27535b303af3d862d5af3d7b"
+    },
+    {
+      "path": "docs/history/HIGHBUILD_INSTANCE_EVALUATION.md",
+      "sha256": "025c8d175b2ef93500e6107a231c6859681e983c7a61678c0655ec2b3fd74d67"
+    },
+    {
+      "path": "docs/history/HIGHBUILD_RGB_CLASSIFICATION_AUDIT_2026_09_19.md",
+      "sha256": "edf02d8c3d151de3701a65543b3f6c2ee0dc9bfa2091de9c942dd2ce1f37cef1"
+    },
+    {
+      "path": "docs/history/INSPECT_CLASSES_AND_WALK_POLISH_2026_09_19.md",
+      "sha256": "7c8643a971b442a96ee8e2d358bab310465da90a0ef10598f8bcf6b5f04e5196"
+    },
+    {
+      "path": "docs/history/METRIC_GRID_VIEW_2026_09_19.md",
+      "sha256": "182f4436925073dfc105fc780f541ea84496d57f2614964f1135bacc48dd1119"
+    },
+    {
+      "path": "docs/history/OEM_ALL_SIX_CLASS_TEST_2026_09_19.md",
+      "sha256": "392d0eefde6fa58600eb214b1583d26b4859a94312bbfeac2c758ced847eb998"
+    },
+    {
+      "path": "docs/history/OPEN_CANOPY_RICH_LABELS_AND_HOLDOUTS.md",
+      "sha256": "718f1c61a6fba600e43b8e882c3e361b6558b08b98c277d2c1e40626139526ee"
+    },
+    {
+      "path": "docs/history/OPENEARTHMAP_CHRISTCHURCH_EXTERNAL_HOLDOUT.md",
+      "sha256": "3e68dc83f0b6466276fb1ab91de46261f8c467a4dcf6b50f74483bb6b01aa1f8"
+    },
+    {
+      "path": "docs/history/PROGRESS.md",
+      "sha256": "c1e73a47e0e0a37b8fde8ad95944f20fcb96c826be878ad17c8273149f0830ce"
+    },
+    {
+      "path": "docs/history/RESIDUAL_HEIGHT_POST_RUN.md",
+      "sha256": "1127e3e5f2db3fca449193f4302d6df30b713fc25d8d33d1fbbb783acdb65ad1"
+    },
+    {
+      "path": "docs/history/RESIDUAL_HEIGHT_V1_OUTCOME.md",
+      "sha256": "eace4039662dbb03c43a6c611160f7339114a8382979fa6ad2eb6f5a7be0f99b"
+    },
+    {
+      "path": "docs/history/RGB_MULTIREGION_V3_LAUNCH_2026_09_19.md",
+      "sha256": "49f27cfdc7832a9198ed6fb67ea1fbd6cb938291acb87d99fddce759c580d782"
+    },
+    {
+      "path": "docs/history/RGB_MULTIREGION_V3_OUTCOME.md",
+      "sha256": "330e2cd808801eded4d95521e3bfdd3bff88bf75ed03b69352a86a718b7a203c"
+    },
+    {
+      "path": "docs/history/RGB_MULTIREGION_V3_PROTOCOL.md",
+      "sha256": "7e1229e255d7776ba2146c583f8eb58fa57bb2b1a213710146ed84ffbbf9d815"
+    },
+    {
+      "path": "docs/history/RGB_SAMPLING_V2_OUTCOME.md",
+      "sha256": "7b88182d261806819bb24de70c819f2de49323dc046b824525bc361df88ad524"
+    },
+    {
+      "path": "docs/history/RGB_SAMPLING_V2_PROTOCOL.md",
+      "sha256": "524f50c20e892444bb1697818513094f59098a571efa7735f87faa6ac0f9f2d3"
+    },
+    {
+      "path": "docs/history/RGB_SEGMENTER_V1_CHRISTCHURCH_PROTOCOL.md",
+      "sha256": "3fdb860ab4efb3060327504a7fd427e5c1eeb96eab10c98d632c9d473db088eb"
+    },
+    {
+      "path": "docs/history/RGB_SEGMENTER_V1_CHRISTCHURCH_RESULTS.md",
+      "sha256": "77284a08041e296a6793216e9649402ef011705dbe8f4ce84df0c6d0b20750d0"
+    },
+    {
+      "path": "docs/history/RGB_SEGMENTER_V1_DC_VEGETATION_AUDIT.md",
+      "sha256": "c817107b5d37ced5a586cc1c732c4f8fc3bd42eb7a2f759ac71b25a2bc68b28d"
+    },
+    {
+      "path": "docs/history/RGB_SEGMENTER_V1_OUTCOME.md",
+      "sha256": "bf48d9a62840374bb076dbbd83efeeadca6eb25dd96703134529c79a4c914a70"
+    },
+    {
+      "path": "docs/history/RGB_SEGMENTER_V1_PROTOCOL.md",
+      "sha256": "2d1f0a7c9114877a8ecbea9836ec10374a040a972fcbc17fbf532e77781a5816"
+    },
+    {
+      "path": "docs/history/RGB_SEGMENTER_V1_TEST_REPORT.md",
+      "sha256": "e3a76ed9623f19dcfc9299d1c7028e70a3e3b456d30764d48c1244acbe10f11c"
+    },
+    {
+      "path": "docs/history/ROOF_RECONSTRUCTION_STAGE1_2026_09_19.md",
+      "sha256": "6c938cbeffea83d893053a111f50e4c5adc1c2b59e0cc9086c8dfdf33ef6f19a"
+    },
+    {
+      "path": "docs/history/ROOFTOP_RELIEF_2026_09_19.md",
+      "sha256": "f3f1296a325096b47c6ef276394312cb5223edf6f9e7c9beb86d7a302f9f54b4"
+    },
+    {
+      "path": "docs/history/SCENE_IMAGE_REFERENCE_2026_09_27.md",
+      "sha256": "243d6fff0ad3c26f0a2880813fee3184befdcd9128d9bc92246a4d0978f150a4"
+    },
+    {
+      "path": "docs/history/SELECTION_GLOW_2026_09_27.md",
+      "sha256": "4c5949a1b1c30c5dcf0a2629b36b045da597d0b567e4cd4932a6975311324793"
+    },
+    {
+      "path": "docs/history/SEMANTIC_EXPERT_HEIGHT_V1_HANDOFF.md",
+      "sha256": "9cccb34555374dd02c18ce076f0d443465243fbf5a5a75f791909d3eeecceadf"
+    },
+    {
+      "path": "docs/history/SEMANTIC_EXPERT_HEIGHT_V1_OUTCOME.md",
+      "sha256": "ea97238a24648d478cc778074bed46135d7c622c1347f05a1efa3d8e79d51839"
+    },
+    {
+      "path": "docs/history/SEMANTIC_EXPERT_HEIGHT_V1_PROTOCOL.md",
+      "sha256": "665e750c62aaac31ca1a33fee2b0104d663d57b19a75675bbc99b6bcf737ed68"
+    },
+    {
+      "path": "docs/history/SIX_CLASS_APP_PREVIEW_2026_09_19.md",
+      "sha256": "73908f7ae1bca16a2a52599a07202c405193b5c48b84a45f78efe31b1cf78f72"
+    },
+    {
+      "path": "docs/history/SIX_CLASS_DEFAULT_INTEGRATION_2026_09_20.md",
+      "sha256": "ea26d4fd9621d82205d405554cb77fe2bb2b918ddc6b549a10f043084bf89b96"
+    },
+    {
+      "path": "docs/history/SIX_CLASS_OFFLINE_EXPORT.md",
+      "sha256": "fb36a96ce8a24b645cc41a09d70805830f368ebdfac3fb7d9ee947582665c498"
+    },
+    {
+      "path": "docs/history/SIX_CLASS_SCANNER_AND_HEIGHT_AUDIT_20260919.md",
+      "sha256": "5fe2ae6e2da335786b51fcf784782a18fa09ab1a36611800e40f312ee37dc952"
+    },
+    {
+      "path": "docs/history/SMOOTHNESS_AND_ACCURACY_REVIEW_2026_09_26.md",
+      "sha256": "4deb657e975844302d4fb07e4e70485e9249569d774cfe7bb546d64ea18ed5f3"
+    },
+    {
+      "path": "docs/history/TERRAIN_IMPORT_AND_PROFILE_2026_09_26.md",
+      "sha256": "dcc2c6d394fccdb993df0fd2822d10378ef5aa832e9f377eb04bc8e34e923dd8"
+    },
+    {
+      "path": "docs/history/TERRAIN_VIDEO_STYLE_2026_09_26.md",
+      "sha256": "d27570c462cd4df5dd65672940190ea48ed434aad1dc8e677ba8d9a24f2dc7e5"
+    },
+    {
+      "path": "docs/history/VIEWER_CONTROLS_2026_09_19.md",
+      "sha256": "e8cd2cb12772b5a5cca2070d3a3f456e7b5b0d713f89ae532c4cfcac51afdcfd"
+    },
+    {
+      "path": "docs/history/VIEWPORT_DETAILS_ZOOM_2026_09_27.md",
+      "sha256": "ebe66908a79ac69078fc0a097877c2188dcd445bdaa88f53e575cc388ae35fc9"
+    }
+  ],
+  "pages": 203,
+  "bookmarks": 86
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "msr.height_band_sampling.v1",
+  "output_root": "D:/MSRData/experiments/height_band_sampling_v1",
+  "epochs": 4,
+  "pairs_per_epoch": 600,
+  "checkpoint_every_updates": 50,
+  "arms": ["control", "balanced"],
+  "arm_labels": {"control": "A: original sampling", "balanced": "B: height-balanced"},
+  "dashboard_title": "Can balanced examples improve heights?",
+  "comparison_summary": "A = original sampling. B = height-band-balanced sampling. Same model, original loss, budget and uniform class inputs. All training images covered within two epochs.",
+  "loss": "original_source_balanced",
+  "conditioning": "uniform_both_arms",
+  "automatic_promotion": false,
+  "test_used": false,
+  "gamus_height_evaluated": false,
+  "cache_source_run": "D:/MSRData/experiments/class_assisted_height_development_v1/20260919T162009394247Z",
+  "cache_bindings": {
+    "binding.json": "4cf950a5e54cddcf9ec355901bc47988a7df080f7bef84c1af6ecdae42581d1c",
+    "data_binding.json": "8c5f4e73aeafaa1b7c1e3b954ee0e302bf350e0fde5cf7808f5c88f132c1e35e",
+    "baseline.json": "bba832c05be2ba918fd78ce7a622400128751c4a7a14e2bedfdb5daa710a10b0"
+  },
+  "validation_manifest": "D:/MSRData/data/multidomain_v2/highbuild_measured_coco_intersection_v1/manifests/validation.csv",
+  "sampling_audit": "D:/MSRData/experiments/height_band_sampling_preparation_v1/audit.json",
+  "sampling_audit_sha256": "39168d78d3b2ca4809da9663e8a1d0071e6ee43c790f1e2aaa177568cf835b4d",
+  "sampling_plans": "D:/MSRData/experiments/height_band_sampling_preparation_v1/plans.json",
+  "sampling_plans_sha256": "8870f91c3cc4bc3f5f9ee626807d06bb71f2ec65c7c8b0b51b483c963fbde8f7",
+  "v1_classifier_checkpoint": "experiments/20260915T140116654177Z_gamus_rgb_segmenter_v1/checkpoint_best_guarded.pt",
+  "v1_classifier_checkpoint_sha256": "4940b2d4ae8817370384ccb54da9f73aee1b6bf3614435d8c077bf3e3363d021",
+  "guards": {
+    "rmse_m": 0.15, "mae_m": 0.10, "absolute_bias_m": 0.10,
+    "correlation_r2_tolerance": 0.000001,
+    "improvement_m": 0.5, "improvement_fraction": 0.05
+  },
+  "performance": {
+    "cpu_tensor_threads": 1,
+    "training_loader_workers": 4,
+    "training_prefetch_batches": 4,
+    "validation_loader_workers": 2,
+    "validation_prefetch_images": 2,
+    "pinned_memory": true,
+    "non_blocking_transfer": true
+  }
+}

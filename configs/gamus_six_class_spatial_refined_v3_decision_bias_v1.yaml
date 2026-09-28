@@ -1,0 +1,114 @@
+schema: msr.gamus_six_class_decision_bias_protocol.v1
+protocol_id: gamus-six-class-spatial-refined-v3-dc-phl-decision-bias-v1
+output_root: outputs/evaluation/gamus_six_class_spatial_refined_v3_decision_bias_dc_phl_v1
+
+# Development-only post-processing for the frozen best v3 checkpoint. This
+# changes only argmax(raw_six_class_logits + bias). It never mutates model
+# tensors, height outputs, the application pointer, or probability confidence.
+candidate:
+  training_config: configs/multidomain_surface_gamus_six_class_spatial_refined_v3.yaml
+  training_config_sha256: a91acb93ef8a9e6c376ba1b99b71e0a8390ab6132aeda71790e433e9bdf55946
+  required_checkpoint_name: checkpoint_best_landscape.pt
+  required_tensor_audit: outputs/evaluation/gamus_six_class_spatial_refined_v3/checkpoint_best_landscape_audit.json
+  required_tensor_audit_schema: msr.gamus_spatial_refined_head_checkpoint_audit.v1
+  allowed_trained_tensors:
+    - fine_semantic_head.spatial.weight
+    - fine_semantic_head.normalization.weight
+    - fine_semantic_head.normalization.bias
+    - fine_semantic_head.classifier.weight
+    - fine_semantic_head.classifier.bias
+
+protected_state:
+  checkpoint: experiments/20260829T203146Z_multidomain_surface_v2_guarded_vegetation/checkpoint_best_guarded_vegetation.pt
+  checkpoint_sha256: e2d507fbe180988e000a91a873db047407fc15c0fac90446f7d5f05990c0d144
+  live_pointer: outputs/runtime/showcase_checkpoint.txt
+  live_pointer_sha256: a3d51c686ca2abee9cb7e622c600f5ded9eca3332638ccf56f6f3d8b2f72baa9
+
+data:
+  dataset: gamus
+  source_split: val
+  allowed_cities: [DC, PHL]
+  forbidden_cities: [NYC]
+  expected_tiles: 859
+  root: D:/MSRData/GAMUS
+  relative_prior_root: D:/MSRData/GAMUS_relative_priors
+  require_relative_priors: true
+  approved_index: outputs/data_audits/gamus_geographic_holdout_city_nyc_v1/learning_approved_samples.json
+  approved_index_sha256: d56764bc9a3cde31760189b1da40cf207de1b9142c7531b24190ed6e2312e5d9
+  patch_size: 1024
+  batch_size: 1
+  num_workers: 2
+  rgb_scale: 255.0
+  radiometric_policy: raw
+  height_max_m: 200.0
+  dark_pixel_threshold: 0.15
+
+runtime:
+  device: cuda
+  precision: bf16
+
+sampling:
+  seed: 20260913
+  per_tile_class_cap: 64
+  maximum_pixels_per_class: 30000
+  hard_maximum_cached_pixels: 180000
+
+search:
+  method: deterministic_coordinate_search
+  identifiability_constraint: mean_zero
+  maximum_absolute_bias: 3.0
+  step_schedule: [0.5, 0.25, 0.1, 0.05]
+  maximum_sweeps_per_step: 6
+
+# The original v1 retained-class floor is encoded explicitly. Calibration is
+# accepted only when it improves macro F1 without sacrificing a v3 class by
+# more than 0.005, and all six classes clear their predeclared floor.
+acceptance:
+  objective: macro_f1
+  minimum_objective_gain: 0.001
+  absolute_minimums:
+    macro_f1: 0.4723
+    macro_iou: 0.33
+    per_class:
+      ground:
+        f1: 0.397372
+      buildings:
+        f1: 0.685038
+      water:
+        precision: 0.10
+        recall: 0.10
+        f1: 0.10
+      roads:
+        f1: 0.522058
+      low_vegetation:
+        f1: 0.568018
+      trees:
+        f1: 0.616105
+  maximum_drops_from_uncalibrated:
+    macro_f1: 0.0
+    per_class:
+      ground:
+        f1: 0.005
+      buildings:
+        f1: 0.005
+      roads:
+        f1: 0.005
+      low_vegetation:
+        f1: 0.005
+      trees:
+        f1: 0.005
+
+full_validation_boundary_gate:
+  minimum_f1: 0.20
+  maximum_drop_from_uncalibrated: 0.005
+
+safety:
+  official_test_policy: never_constructed_or_discovered
+  locked_nyc_policy: never_opened_or_used_for_fitting_or_full_validation
+  checkpoint_mutation: forbidden
+  application_model_change: forbidden
+  auto_promotion: false
+  decision_calibration_kind: additive_logit_bias_argmax_only
+  probability_confidence_calibration: false
+  full_validation_use: exactly_one_dc_phl_pass_per_fit
+  full_validation_confirmation_phrase: RUN_FULL_DC_PHL_SPATIAL_V3_DECISION_BIAS_EVALUATION_ONCE

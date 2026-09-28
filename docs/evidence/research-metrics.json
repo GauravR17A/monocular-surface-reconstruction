@@ -1,0 +1,48 @@
+{
+  "status_date": "2026-09-28",
+  "scope": "Historical corrected development measurements; rounded for handbook; not new runs",
+  "height_candidates": [
+    {
+      "label": "Protected reference",
+      "building_rmse_m": 13.2426,
+      "canopy_rmse_m": 8.361,
+      "source": "docs/history/HEIGHT_PROMOTION_SCORECARD.md",
+      "promoted": true
+    },
+    {
+      "label": "Residual V1 \u00b7 e5",
+      "building_rmse_m": 13.0121,
+      "canopy_rmse_m": 7.8565,
+      "source": "docs/history/RESIDUAL_HEIGHT_V1_OUTCOME.md",
+      "promoted": false
+    },
+    {
+      "label": "Class-assisted V2 \u00b7 e2",
+      "building_rmse_m": 12.7883,
+      "canopy_rmse_m": 7.6885,
+      "source": "docs/history/CLASS_ASSISTED_HEIGHT_FAST_V2_OUTCOME.md",
+      "promoted": false
+    },
+    {
+      "label": "Low-surface V3 \u00b7 e2",
+      "building_rmse_m": 13.076,
+      "canopy_rmse_m": 9.637,
+      "source": "docs/history/CLASS_ASSISTED_HEIGHT_LOW_SURFACE_V3_OUTCOME.md",
+      "promoted": false
+    },
+    {
+      "label": "Height-balanced \u00b7 e4",
+      "building_rmse_m": 13.094,
+      "canopy_rmse_m": 7.77,
+      "source": "docs/history/HEIGHT_BAND_SAMPLING_V1_OUTCOME.md",
+      "promoted": false
+    },
+    {
+      "label": "Semantic experts \u00b7 e4",
+      "building_rmse_m": 12.7558,
+      "canopy_rmse_m": 7.8238,
+      "source": "docs/history/SEMANTIC_EXPERT_HEIGHT_V1_OUTCOME.md",
+      "promoted": false
+    }
+  ]
+}

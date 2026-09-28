@@ -1,0 +1,14 @@
+{
+  "pixel_count": 1048576,
+  "rmse_m": 1.4800429094496625,
+  "mae_m": 0.7125934032699401,
+  "bias_m": 0.28392161209120736,
+  "median_ae_m": 0.3036738634109497,
+  "p90_ae_m": 1.5893492698669434,
+  "p95_ae_m": 3.4098132848739624,
+  "correlation": 0.8732458753121313,
+  "r2": 0.7515417700234649,
+  "reference_kind": "ndsm",
+  "prediction_product": "height_above_ground_ndsm",
+  "alignment": "pixel_aligned_same_shape"
+}

@@ -1,0 +1,232 @@
+{
+  "schema": "msr.external_metric_height_holdout_contract.v1",
+  "benchmark_id": "nz_bop_2018_2019_bc36_2314_v1",
+  "status": "preregistered_unconsumed",
+  "created_utc": "2026-09-15T00:00:00Z",
+  "purpose": "One-shot external metric-height generalisation evidence only",
+  "data_root": "D:\\MSRData\\external_holdouts\\nz_bop_2018_2019_bc36_2314_v1",
+  "geography": {
+    "country": "New Zealand",
+    "region": "Bay of Plenty",
+    "known_msr_training_overlap": false,
+    "claim_limit": "New to known Monocular Surface Reconstruction project training/evaluation inventories; absence from unknown upstream foundation-model pretraining is not claimed."
+  },
+  "selection_rule": {
+    "method": "first_lexicographic_complete_overlap",
+    "description": "The first lexicographic RGB STAC item in the fixed 2018-2019 urban collection whose complete footprint is contained by matching-season LiDAR DSM and DEM coverage.",
+    "rgb_item_id": "BC36_1000_2314",
+    "elevation_item_id": "BC36_10000_0302",
+    "visual_selection_permitted": false
+  },
+  "licence": {
+    "spdx": "CC-BY-4.0",
+    "licensor": "BOPLASS",
+    "host": "Toitu Te Whenua Land Information New Zealand",
+    "attribution": "Sourced from the LINZ Data Service and licensed by BOPLASS for re-use under the Creative Commons Attribution 4.0 International licence.",
+    "attribution_url": "https://www.linz.govt.nz/products-services/data/licensing-and-using-data/attributing-elevation-or-aerial-imagery-data"
+  },
+  "capture": {
+    "rgb_start_utc": "2018-07-11T12:00:00Z",
+    "rgb_end_utc": "2019-01-16T11:00:00Z",
+    "lidar_start_utc": "2018-11-30T11:00:00Z",
+    "lidar_end_utc": "2019-04-29T12:00:00Z",
+    "temporal_caveat": "The official capture ranges overlap but individual-pixel acquisition times are not supplied; real change between acquisitions remains possible."
+  },
+  "grid": {
+    "horizontal_crs": "EPSG:2193",
+    "horizontal_units": "metre",
+    "rgb_native_gsd_m": 0.1,
+    "reference_gsd_m": 1.0,
+    "prepared_width": 480,
+    "prepared_height": 720,
+    "prepared_transform_gdal": [
+      1858240.0,
+      1.0,
+      0.0,
+      5858160.0,
+      0.0,
+      -1.0
+    ],
+    "prepared_bounds": [
+      1858240.0,
+      5857440.0,
+      1858720.0,
+      5858160.0
+    ]
+  },
+  "height_reference": {
+    "kind": "ndsm",
+    "formula": "lidar_dsm_m - lidar_dem_m",
+    "value_units": "metre",
+    "vertical_datum_handling": "DSM and DEM are paired products from the same survey; subtraction removes the common absolute vertical datum. The source GeoTIFFs expose only the horizontal CRS.",
+    "negative_policy": "exclude",
+    "upper_height_cutoff_m": null,
+    "scoring_supports": {
+      "all_valid": {
+        "rule": "finite RGB and finite DSM and DEM and DSM-minus-DEM >= 0"
+      },
+      "object_only": {
+        "rule": "all_valid and reference_ndsm_m > 2.0",
+        "threshold_m": 2.0
+      },
+      "tall_object": {
+        "rule": "all_valid and reference_ndsm_m > 5.0",
+        "threshold_m": 5.0
+      }
+    }
+  },
+  "policy": {
+    "role": "external_test_only",
+    "one_shot_evaluation": true,
+    "training_permitted": false,
+    "validation_permitted": false,
+    "calibration_permitted": false,
+    "threshold_selection_permitted": false,
+    "model_selection_permitted": false,
+    "showcase_selection_permitted": false,
+    "official_test_reuse": false,
+    "model_inference_during_preparation": false,
+    "candidate_must_be_frozen_before_evaluation": true,
+    "consumption_marker": "CONSUMED.json",
+    "forbidden_sources": [
+      "GAMUS official test",
+      "DFC19 showcase"
+    ]
+  },
+  "sources": [
+    {
+      "role": "imagery_bucket_licence",
+      "filename": "imagery_LICENSE.txt",
+      "url": "https://nz-imagery.s3.ap-southeast-2.amazonaws.com/LICENSE",
+      "sha256": "97d24386ff776d7160b87031b259a942bd03c9939796cab6724ad5d17d2cf785",
+      "size_bytes": 18657
+    },
+    {
+      "role": "elevation_bucket_licence",
+      "filename": "elevation_LICENSE.txt",
+      "url": "https://nz-elevation.s3.ap-southeast-2.amazonaws.com/LICENSE",
+      "sha256": "97d24386ff776d7160b87031b259a942bd03c9939796cab6724ad5d17d2cf785",
+      "size_bytes": 18657
+    },
+    {
+      "role": "rgb_collection_metadata",
+      "filename": "rgb_collection.json",
+      "url": "https://nz-imagery.s3.ap-southeast-2.amazonaws.com/bay-of-plenty/bay-of-plenty_2018-2019_0.1m/rgb/2193/collection.json",
+      "sha256": "ac266b35866441d7e430f13aab629ab722ed43c2761a60b42a731c60394a78aa",
+      "size_bytes": 466722,
+      "stac_expectation": {
+        "type": "Collection",
+        "id": "01GYC6EZJB6CJVZKFXHBHEWD2V",
+        "title": "Bay of Plenty 0.1m Urban Aerial Photos (2018-2019)",
+        "license": "CC-BY-4.0",
+        "gsd": 0.1,
+        "linz:region": "bay-of-plenty",
+        "linz:geospatial_category": "urban-aerial-photos"
+      }
+    },
+    {
+      "role": "rgb_item_metadata",
+      "filename": "rgb_item.json",
+      "url": "https://nz-imagery.s3.ap-southeast-2.amazonaws.com/bay-of-plenty/bay-of-plenty_2018-2019_0.1m/rgb/2193/BC36_1000_2314.json",
+      "sha256": "e9b6b13f7ca1f2e5874a73b09be4a7ce15276791a27167c9dce9b9a3d02cba10",
+      "size_bytes": 1419,
+      "stac_expectation": {
+        "type": "Feature",
+        "id": "BC36_1000_2314",
+        "collection": "01GYC6EZJB6CJVZKFXHBHEWD2V",
+        "bbox": [175.9168853, -37.3938575, 175.9225524, -37.3872422],
+        "asset_sha256": "b7ae9b8132d1235328ea9dd31aaaa3da57575ae445020a45c2646b92e16882b1"
+      }
+    },
+    {
+      "role": "rgb",
+      "filename": "rgb_native_0p1m.tiff",
+      "url": "https://nz-imagery.s3.ap-southeast-2.amazonaws.com/bay-of-plenty/bay-of-plenty_2018-2019_0.1m/rgb/2193/BC36_1000_2314.tiff",
+      "sha256": "b7ae9b8132d1235328ea9dd31aaaa3da57575ae445020a45c2646b92e16882b1",
+      "size_bytes": 67290884
+    },
+    {
+      "role": "dsm_collection_metadata",
+      "filename": "dsm_collection.json",
+      "url": "https://nz-elevation.s3.ap-southeast-2.amazonaws.com/bay-of-plenty/bay-of-plenty_2018-2019/dsm_1m/2193/collection.json",
+      "sha256": "5d04276521fb34489ab1fb1d0f7eb51384546329f6426cfe81f182d1b6eadcd8",
+      "size_bytes": 18960,
+      "stac_expectation": {
+        "type": "Collection",
+        "id": "01HQS78YTAXVAHPSH3XDNG25TC",
+        "title": "Bay of Plenty LiDAR 1m DSM (2018-2019)",
+        "license": "CC-BY-4.0",
+        "gsd": 1.0,
+        "linz:region": "bay-of-plenty",
+        "linz:geospatial_category": "dsm"
+      }
+    },
+    {
+      "role": "dsm_item_metadata",
+      "filename": "dsm_item.json",
+      "url": "https://nz-elevation.s3.ap-southeast-2.amazonaws.com/bay-of-plenty/bay-of-plenty_2018-2019/dsm_1m/2193/BC36_10000_0302.json",
+      "sha256": "0066f4da21bfabc5acffe6dfa7a8639d1a1fb94622f964c9debd8b41f6138e26",
+      "size_bytes": 1166,
+      "stac_expectation": {
+        "type": "Feature",
+        "id": "BC36_10000_0302",
+        "collection": "01HQS78YTAXVAHPSH3XDNG25TC",
+        "bbox": [175.9001395, -37.4396287, 175.9568307, -37.3734715],
+        "asset_sha256": "d7163a00025b6345e393d30497d6b7045b8944671339bb5ab3a9d01edad7a4f5"
+      }
+    },
+    {
+      "role": "dsm",
+      "filename": "lidar_dsm_source_1m.tiff",
+      "url": "https://nz-elevation.s3.ap-southeast-2.amazonaws.com/bay-of-plenty/bay-of-plenty_2018-2019/dsm_1m/2193/BC36_10000_0302.tiff",
+      "sha256": "d7163a00025b6345e393d30497d6b7045b8944671339bb5ab3a9d01edad7a4f5",
+      "size_bytes": 15527125
+    },
+    {
+      "role": "dem_collection_metadata",
+      "filename": "dem_collection.json",
+      "url": "https://nz-elevation.s3.ap-southeast-2.amazonaws.com/bay-of-plenty/bay-of-plenty_2018-2019/dem_1m/2193/collection.json",
+      "sha256": "3a0b69498b30053f22692804324c0b7489052c8ae5e310943e86790e9ff9ea2b",
+      "size_bytes": 18962,
+      "stac_expectation": {
+        "type": "Collection",
+        "id": "01HQS6D00PR9DH3RPRDJBRC09V",
+        "title": "Bay of Plenty LiDAR 1m DEM (2018-2019)",
+        "license": "CC-BY-4.0",
+        "gsd": 1.0,
+        "linz:region": "bay-of-plenty",
+        "linz:geospatial_category": "dem"
+      }
+    },
+    {
+      "role": "dem_item_metadata",
+      "filename": "dem_item.json",
+      "url": "https://nz-elevation.s3.ap-southeast-2.amazonaws.com/bay-of-plenty/bay-of-plenty_2018-2019/dem_1m/2193/BC36_10000_0302.json",
+      "sha256": "e60a36a121fd39f3d06e3f684ab079049c8b95ef02bc843d1a732180fa052446",
+      "size_bytes": 1166,
+      "stac_expectation": {
+        "type": "Feature",
+        "id": "BC36_10000_0302",
+        "collection": "01HQS6D00PR9DH3RPRDJBRC09V",
+        "bbox": [175.9001395, -37.4396287, 175.9568307, -37.3734715],
+        "asset_sha256": "b46cfc52b050532f9159bdad9c5e0e95d7463c41ae75b137dfa07a1aa1ee6549"
+      }
+    },
+    {
+      "role": "dem",
+      "filename": "lidar_dem_source_1m.tiff",
+      "url": "https://nz-elevation.s3.ap-southeast-2.amazonaws.com/bay-of-plenty/bay-of-plenty_2018-2019/dem_1m/2193/BC36_10000_0302.tiff",
+      "sha256": "b46cfc52b050532f9159bdad9c5e0e95d7463c41ae75b137dfa07a1aa1ee6549",
+      "size_bytes": 13759359
+    }
+  ],
+  "prepared_outputs": [
+    "rgb_aligned_1m.tif",
+    "lidar_dsm_aligned_m.tif",
+    "lidar_dem_aligned_m.tif",
+    "reference_ndsm_m.tif",
+    "mask_all_valid.tif",
+    "mask_object_gt2m.tif",
+    "mask_tall_object_gt5m.tif"
+  ]
+}

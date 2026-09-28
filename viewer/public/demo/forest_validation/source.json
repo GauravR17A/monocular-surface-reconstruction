@@ -1,0 +1,27 @@
+{
+  "sample_id": "oc_2021_728_6349",
+  "official_split": "test",
+  "region": "open_canopy_r145_1269",
+  "year": 2021,
+  "image_name": "compressed_pansharpened_20210827371098.tif",
+  "bounds": [
+    728212.0,
+    6348212.0,
+    728788.0,
+    6348788.0
+  ],
+  "output_size": 384,
+  "gsd_m": 1.5,
+  "valid_fraction": 1.0,
+  "vegetation_fraction": 0.4987860785590278,
+  "vegetation_mean_height_m": 9.451605796813965,
+  "vegetation_p90_height_m": 15.300000190734863,
+  "vegetation_p99_height_m": 18.100000381469727,
+  "urls": {
+    "rgb": "https://huggingface.co/datasets/AI4Forest/Open-Canopy/resolve/main/canopy_height/2021/spot/compressed_pansharpened_20210827371098.tif",
+    "canopy": "https://huggingface.co/datasets/AI4Forest/Open-Canopy/resolve/main/canopy_height/2021/lidar/compressed_lidar_20210827371098.tif",
+    "classification": "https://huggingface.co/datasets/AI4Forest/Open-Canopy/resolve/main/canopy_height/2021/lidar_classification/compressed_lidar_classification_20210827371098.tif"
+  },
+  "source": "https://huggingface.co/datasets/AI4Forest/Open-Canopy",
+  "license": "Etalab Open Licence 2.0"
+}

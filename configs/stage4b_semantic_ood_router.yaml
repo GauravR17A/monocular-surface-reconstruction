@@ -1,0 +1,35 @@
+stage4b_semantic_ood_router:
+  stage3_record_store: outputs/stage3_scene_router_records
+  stage4_development_store: outputs/stage4_dual_router_records_v3
+  output_dir: experiments/stage4b_semantic_ood_router_v1
+
+  # This file is hashed only. Its contents are never loaded by Stage-4b.
+  app_pointer: outputs/runtime/showcase_checkpoint.txt
+  app_pointer_sha256: a3d51c686ca2abee9cb7e622c600f5ded9eca3332638ccf56f6f3d8b2f72baa9
+
+  required_gamus_cities: [dc, nyc, phl]
+  folds: 3
+  seeds: [20260913, 20260929, 20261007, 20261019, 20261031]
+  ensemble_std_multiplier: 2.0
+
+  classifier:
+    epochs: 60
+    learning_rate: 0.02
+    weight_decay: 0.01
+    batch_size: 256
+
+  ood:
+    shrinkage: 0.15
+    cutoff_quantile: 0.99
+    minimum_distance_margin: 0.0
+
+  # Locked development gates. The evidence is explicitly reused and cannot be
+  # called a fresh validation/test result or used for app promotion.
+  development_gates:
+    minimum_gamus_coverage: 0.85
+    minimum_gamus_selections: 400
+    minimum_global_exact_gain: 0.05
+    minimum_gamus_exact_gain: 0.08
+    minimum_stratum_support: 32
+    minimum_decision_consistency: 0.995
+    minimum_candidate_gain_for_reporting: 0.01

@@ -1,0 +1,447 @@
+{
+  "status_date": "2026-09-28",
+  "kind": "normalised public research records",
+  "records": [
+    {
+      "path": "docs/history/ACCURACY_RECOVERY_2026_09_15.md",
+      "title": "Accuracy recovery: 15 September 2026",
+      "bytes": 15056,
+      "words": 2085,
+      "sha256": "0c77fd980bf77286fae53086e2aed6d423088f223e935a783500e76419e54488"
+    },
+    {
+      "path": "docs/history/BENCHMARK_PROTOCOL.md",
+      "title": "Monocular Surface Reconstruction locked benchmark protocol",
+      "bytes": 8562,
+      "words": 995,
+      "sha256": "6d0a3707024789cfbf998b7983d60fa2f8c9a0945722a887b81b7a7b9c7022e0"
+    },
+    {
+      "path": "docs/history/CLASS_ASSISTED_HEIGHT_FAST_V2_20260919.md",
+      "title": "Faster class-assisted height comparison",
+      "bytes": 5073,
+      "words": 667,
+      "sha256": "fbbb35fb81719351ab453954ec35677ab594ac1487a519f833e6b0dc4fa46729"
+    },
+    {
+      "path": "docs/history/CLASS_ASSISTED_HEIGHT_FAST_V2_OUTCOME.md",
+      "title": "Class-assisted height comparison: completed, not promoted",
+      "bytes": 4891,
+      "words": 709,
+      "sha256": "f86b9b17f15966290ff16cc2531911c9a04550e00cbb10054116de8567e1da73"
+    },
+    {
+      "path": "docs/history/CLASS_ASSISTED_HEIGHT_LAUNCH_20260919.md",
+      "title": "Class-assisted height comparison: launch handoff",
+      "bytes": 3096,
+      "words": 365,
+      "sha256": "bfdfe10a604d4eb9178e143aaf6b9443ca22232adf9210d49dbdb32b600ab6f8"
+    },
+    {
+      "path": "docs/history/CLASS_ASSISTED_HEIGHT_LOW_SURFACE_V3_OUTCOME.md",
+      "title": "Low-surface protection outcome \u2014 not promoted",
+      "bytes": 5636,
+      "words": 758,
+      "sha256": "7851b39ff629fdca4e79c1b084f05b510fa34f25a4ecb922d96fd0c29c3cfe6b"
+    },
+    {
+      "path": "docs/history/CLASS_ASSISTED_HEIGHT_LOW_SURFACE_V3_PROTOCOL.md",
+      "title": "Low-surface protection: bounded matched experiment",
+      "bytes": 4542,
+      "words": 627,
+      "sha256": "1515b02dcfe51737ea53353f88589f3bd1153d184b05f666f658c464ef67d7ed"
+    },
+    {
+      "path": "docs/history/CLASS_ASSISTED_HEIGHT_PILOT_PROTOCOL.md",
+      "title": "Class-assisted height pilot \u2014 controlled experiment",
+      "bytes": 9372,
+      "words": 1239,
+      "sha256": "bd704753d0c8f9822b4223da202d29f83d2a6eed56781b8b00f660ee63030fc2"
+    },
+    {
+      "path": "docs/history/DEMO_RUNBOOK.md",
+      "title": "Monocular Surface Reconstruction research Prototype Runbook",
+      "bytes": 3184,
+      "words": 408,
+      "sha256": "1a545460417faaa455bca9b86eb26445568f7669ce9e2047d42c8fd7b54d9788"
+    },
+    {
+      "path": "docs/history/EXPANDED_GAMUS_PLAN.md",
+      "title": "Monocular Surface Reconstruction expanded GAMUS plan",
+      "bytes": 18194,
+      "words": 2441,
+      "sha256": "c99ae51f2525c665a310ee0b01a3a2865ab24af3723e0b51d3ae79b889c3722a"
+    },
+    {
+      "path": "docs/history/EXPLORE_MAPPING_2026_09_27.md",
+      "title": "Explore mapping \u2014 27 September 2026",
+      "bytes": 3861,
+      "words": 551,
+      "sha256": "94686dd4f017633a5561dc5807566c65b4b2e380881eb35f54e749cde7c72499"
+    },
+    {
+      "path": "docs/history/EXPLORE_WALKTHROUGH_2026_09_19.md",
+      "title": "Explore: Fly and Walk",
+      "bytes": 4953,
+      "words": 725,
+      "sha256": "82d157fb200539f19e0d28544ecc1742f238ebe2c6531bb853ba27227021f874"
+    },
+    {
+      "path": "docs/history/EXTERNAL_METRIC_HEIGHT_HOLDOUT.md",
+      "title": "External metric-height holdout: Bay of Plenty v1",
+      "bytes": 6269,
+      "words": 824,
+      "sha256": "e541d07c1ddf1c427ff61d57f125a432685bc3199f6bd62bd195ff4c625ea4cb"
+    },
+    {
+      "path": "docs/history/FULLSCREEN_ESCAPE_2026_09_19.md",
+      "title": "Two-step fullscreen Escape",
+      "bytes": 2154,
+      "words": 281,
+      "sha256": "2685a1c5453e7b0a26d10475deb74a08ec153849501d732c238fab73f7ada999"
+    },
+    {
+      "path": "docs/history/GAMUS_DIRECT_HEIGHT_PROTOCOL.md",
+      "title": "GAMUS direct-height experiment protocol",
+      "bytes": 5061,
+      "words": 731,
+      "sha256": "1f06af97647bcd28117a9d9a8dc3702a8979ca11915fd93a851d523fed287a84"
+    },
+    {
+      "path": "docs/history/GAMUS_GEOGRAPHIC_HOLDOUT.md",
+      "title": "GAMUS classifier-head geographic exclusion protocol",
+      "bytes": 8854,
+      "words": 1175,
+      "sha256": "9366159a4b2c074435138ecaf78adea54679d82bedf6a2e862d2b1b12edd8995"
+    },
+    {
+      "path": "docs/history/GAMUS_HEIGHT_SAFE_V2_PROTOCOL.md",
+      "title": "GAMUS height-safe v2 pilot",
+      "bytes": 3031,
+      "words": 441,
+      "sha256": "14667b3055f5cdb54c70845e657c78ab29d9e5655aedc84fd2695a0e83babf5b"
+    },
+    {
+      "path": "docs/history/GAMUS_PREPARATION_AUDIT.md",
+      "title": "GAMUS preparation audit v1",
+      "bytes": 4382,
+      "words": 624,
+      "sha256": "c39ec10ecc6c0f4977d454061dd00ed68cccd40ca8c3eda9e3c84f0bb8e53311"
+    },
+    {
+      "path": "docs/history/GAMUS_SIX_CLASS_DECISION_BIAS_CALIBRATION.md",
+      "title": "GAMUS six-class decision-bias calibration",
+      "bytes": 6513,
+      "words": 853,
+      "sha256": "d7ec8191aa920142b98cc1b35d6155264e95b8985665a414005a7fec8cbe53a1"
+    },
+    {
+      "path": "docs/history/GAMUS_SIX_CLASS_EXPANSION_PROTOCOL.md",
+      "title": "GAMUS six-class expansion protocol",
+      "bytes": 8171,
+      "words": 1069,
+      "sha256": "a1290c061a663aa18f88d543aba2d1481fa27e4046b4c4d4a49652cb60da7307"
+    },
+    {
+      "path": "docs/history/GAMUS_SIX_CLASS_EXPERIMENT_STATUS.md",
+      "title": "GAMUS six-class experiment status",
+      "bytes": 12954,
+      "words": 1771,
+      "sha256": "9d14672d2890c91507b23115e91c172ff6d7ceb27cd7dbc8620422f0de3d9845"
+    },
+    {
+      "path": "docs/history/GAMUS_SIX_CLASS_V4_HIERARCHICAL_HEAD_DESIGN.md",
+      "title": "GAMUS six-class v4: isolated hierarchical vegetation head",
+      "bytes": 10708,
+      "words": 1583,
+      "sha256": "c70150ea7be9e48377cece14f4f7e88131bf7586a0bc41cc2b297659231c5d1d"
+    },
+    {
+      "path": "docs/history/HEIGHT_BAND_SAMPLING_V1_HANDOFF.md",
+      "title": "Active height-band sampling experiment",
+      "bytes": 3645,
+      "words": 457,
+      "sha256": "d15eca5ddde2d42980f5d754543e973fcdf882ba92c6b35901aaceb023427d98"
+    },
+    {
+      "path": "docs/history/HEIGHT_BAND_SAMPLING_V1_OUTCOME.md",
+      "title": "Sampling comparison: no accepted replacement",
+      "bytes": 2840,
+      "words": 395,
+      "sha256": "c598fa950b16bbbf479f08ecf2098a71ca0ef06deb1d2c5c588ea58b010bbd0b"
+    },
+    {
+      "path": "docs/history/HEIGHT_BAND_SAMPLING_V1_PROTOCOL.md",
+      "title": "Height-band sampling: fixed four-epoch matched experiment",
+      "bytes": 4894,
+      "words": 701,
+      "sha256": "7f3e08f35524f67717bc8ae6bea655b46a37d8bf488808a37a903610f49a2c4d"
+    },
+    {
+      "path": "docs/history/HEIGHT_PROMOTION_SCORECARD.md",
+      "title": "Monocular Surface Reconstruction metric-height scorecard v1",
+      "bytes": 7415,
+      "words": 1017,
+      "sha256": "1e210c3887e54143256d4de7ddf9bdf8322bfcaa27535b303af3d862d5af3d7b"
+    },
+    {
+      "path": "docs/history/HIGHBUILD_INSTANCE_EVALUATION.md",
+      "title": "HighBuild per-building evaluation",
+      "bytes": 5437,
+      "words": 667,
+      "sha256": "025c8d175b2ef93500e6107a231c6859681e983c7a61678c0655ec2b3fd74d67"
+    },
+    {
+      "path": "docs/history/HIGHBUILD_RGB_CLASSIFICATION_AUDIT_2026_09_19.md",
+      "title": "HighBuild classification: what works and what needs improvement",
+      "bytes": 8277,
+      "words": 1083,
+      "sha256": "edf02d8c3d151de3701a65543b3f6c2ee0dc9bfa2091de9c942dd2ce1f37cef1"
+    },
+    {
+      "path": "docs/history/INSPECT_CLASSES_AND_WALK_POLISH_2026_09_19.md",
+      "title": "Inspect class isolation, faster Walk and stable import grid",
+      "bytes": 4288,
+      "words": 592,
+      "sha256": "7c8643a971b442a96ee8e2d358bab310465da90a0ef10598f8bcf6b5f04e5196"
+    },
+    {
+      "path": "docs/history/METRIC_GRID_VIEW_2026_09_19.md",
+      "title": "Metric grid view \u2014 19 September 2026",
+      "bytes": 5103,
+      "words": 718,
+      "sha256": "182f4436925073dfc105fc780f541ea84496d57f2614964f1135bacc48dd1119"
+    },
+    {
+      "path": "docs/history/OEM_ALL_SIX_CLASS_TEST_2026_09_19.md",
+      "title": "All-six-class mixed-scene test \u2014 completed",
+      "bytes": 6897,
+      "words": 946,
+      "sha256": "392d0eefde6fa58600eb214b1583d26b4859a94312bbfeac2c758ced847eb998"
+    },
+    {
+      "path": "docs/history/OPEN_CANOPY_RICH_LABELS_AND_HOLDOUTS.md",
+      "title": "OpenCanopy richer-label and holdout contract",
+      "bytes": 7069,
+      "words": 981,
+      "sha256": "718f1c61a6fba600e43b8e882c3e361b6558b08b98c277d2c1e40626139526ee"
+    },
+    {
+      "path": "docs/history/OPENEARTHMAP_CHRISTCHURCH_EXTERNAL_HOLDOUT.md",
+      "title": "External six-class holdout: Christchurch OpenEarthMap v1",
+      "bytes": 4623,
+      "words": 642,
+      "sha256": "3e68dc83f0b6466276fb1ab91de46261f8c467a4dcf6b50f74483bb6b01aa1f8"
+    },
+    {
+      "path": "docs/history/PROGRESS.md",
+      "title": "Monocular Surface Reconstruction progress and recovery record",
+      "bytes": 27972,
+      "words": 3676,
+      "sha256": "c1e73a47e0e0a37b8fde8ad95944f20fcb96c826be878ad17c8273149f0830ce"
+    },
+    {
+      "path": "docs/history/RESIDUAL_HEIGHT_POST_RUN.md",
+      "title": "Residual-height evaluation handoff",
+      "bytes": 4684,
+      "words": 535,
+      "sha256": "1127e3e5f2db3fca449193f4302d6df30b713fc25d8d33d1fbbb783acdb65ad1"
+    },
+    {
+      "path": "docs/history/RESIDUAL_HEIGHT_V1_OUTCOME.md",
+      "title": "Residual-height V1: completed outcome",
+      "bytes": 8633,
+      "words": 1238,
+      "sha256": "eace4039662dbb03c43a6c611160f7339114a8382979fa6ad2eb6f5a7be0f99b"
+    },
+    {
+      "path": "docs/history/RGB_MULTIREGION_V3_LAUNCH_2026_09_19.md",
+      "title": "Multi-region V3 launched \u2014 19 September 2026",
+      "bytes": 2724,
+      "words": 332,
+      "sha256": "49f27cfdc7832a9198ed6fb67ea1fbd6cb938291acb87d99fddce759c580d782"
+    },
+    {
+      "path": "docs/history/RGB_MULTIREGION_V3_OUTCOME.md",
+      "title": "RGB multi-region V3: completion and error analysis",
+      "bytes": 3860,
+      "words": 471,
+      "sha256": "330e2cd808801eded4d95521e3bfdd3bff88bf75ed03b69352a86a718b7a203c"
+    },
+    {
+      "path": "docs/history/RGB_MULTIREGION_V3_PROTOCOL.md",
+      "title": "Multi-region RGB classification V3",
+      "bytes": 7004,
+      "words": 938,
+      "sha256": "7e1229e255d7776ba2146c583f8eb58fa57bb2b1a213710146ed84ffbbf9d815"
+    },
+    {
+      "path": "docs/history/RGB_SAMPLING_V2_OUTCOME.md",
+      "title": "RGB sampling V2: completed experiment and decision",
+      "bytes": 5641,
+      "words": 797,
+      "sha256": "7b88182d261806819bb24de70c819f2de49323dc046b824525bc361df88ad524"
+    },
+    {
+      "path": "docs/history/RGB_SAMPLING_V2_PROTOCOL.md",
+      "title": "RGB V2: controlled crop-sampling continuation",
+      "bytes": 7129,
+      "words": 894,
+      "sha256": "524f50c20e892444bb1697818513094f59098a571efa7735f87faa6ac0f9f2d3"
+    },
+    {
+      "path": "docs/history/RGB_SEGMENTER_V1_CHRISTCHURCH_PROTOCOL.md",
+      "title": "RGB segmenter V1: Christchurch external-transfer protocol",
+      "bytes": 5888,
+      "words": 771,
+      "sha256": "3fdb860ab4efb3060327504a7fd427e5c1eeb96eab10c98d632c9d473db088eb"
+    },
+    {
+      "path": "docs/history/RGB_SEGMENTER_V1_CHRISTCHURCH_RESULTS.md",
+      "title": "RGB segmenter V1: completed Christchurch transfer test",
+      "bytes": 5817,
+      "words": 764,
+      "sha256": "77284a08041e296a6793216e9649402ef011705dbe8f4ce84df0c6d0b20750d0"
+    },
+    {
+      "path": "docs/history/RGB_SEGMENTER_V1_DC_VEGETATION_AUDIT.md",
+      "title": "RGB segmenter V1: DC low-vegetation audit",
+      "bytes": 2578,
+      "words": 369,
+      "sha256": "c817107b5d37ced5a586cc1c732c4f8fc3bd42eb7a2f759ac71b25a2bc68b28d"
+    },
+    {
+      "path": "docs/history/RGB_SEGMENTER_V1_OUTCOME.md",
+      "title": "RGB-only six-class pilot: completed outcome",
+      "bytes": 5189,
+      "words": 755,
+      "sha256": "bf48d9a62840374bb076dbbd83efeeadca6eb25dd96703134529c79a4c914a70"
+    },
+    {
+      "path": "docs/history/RGB_SEGMENTER_V1_PROTOCOL.md",
+      "title": "Independent RGB six-class identification experiment",
+      "bytes": 9104,
+      "words": 1181,
+      "sha256": "2d1f0a7c9114877a8ecbea9836ec10374a040a972fcbc17fbf532e77781a5816"
+    },
+    {
+      "path": "docs/history/RGB_SEGMENTER_V1_TEST_REPORT.md",
+      "title": "Independent saved-checkpoint test",
+      "bytes": 4284,
+      "words": 572,
+      "sha256": "e3a76ed9623f19dcfc9299d1c7028e70a3e3b456d30764d48c1244acbe10f11c"
+    },
+    {
+      "path": "docs/history/ROOF_RECONSTRUCTION_STAGE1_2026_09_19.md",
+      "title": "Roof reconstruction: stage 1, 19 September 2026",
+      "bytes": 9892,
+      "words": 1228,
+      "sha256": "6c938cbeffea83d893053a111f50e4c5adc1c2b59e0cc9086c8dfdf33ef6f19a"
+    },
+    {
+      "path": "docs/history/ROOFTOP_RELIEF_2026_09_19.md",
+      "title": "Predicted rooftop relief \u2014 19 September 2026",
+      "bytes": 4732,
+      "words": 647,
+      "sha256": "f3f1296a325096b47c6ef276394312cb5223edf6f9e7c9beb86d7a302f9f54b4"
+    },
+    {
+      "path": "docs/history/SCENE_IMAGE_REFERENCE_2026_09_27.md",
+      "title": "Original-image reference in the 3D viewport",
+      "bytes": 2051,
+      "words": 280,
+      "sha256": "243d6fff0ad3c26f0a2880813fee3184befdcd9128d9bc92246a4d0978f150a4"
+    },
+    {
+      "path": "docs/history/SELECTION_GLOW_2026_09_27.md",
+      "title": "Active inspection boundary",
+      "bytes": 2877,
+      "words": 380,
+      "sha256": "4c5949a1b1c30c5dcf0a2629b36b045da597d0b567e4cd4932a6975311324793"
+    },
+    {
+      "path": "docs/history/SEMANTIC_EXPERT_HEIGHT_V1_HANDOFF.md",
+      "title": "Active six-class guided height experiment",
+      "bytes": 3832,
+      "words": 442,
+      "sha256": "9cccb34555374dd02c18ce076f0d443465243fbf5a5a75f791909d3eeecceadf"
+    },
+    {
+      "path": "docs/history/SEMANTIC_EXPERT_HEIGHT_V1_OUTCOME.md",
+      "title": "Six-class-guided height experiment: completion and error analysis",
+      "bytes": 5052,
+      "words": 711,
+      "sha256": "ea97238a24648d478cc778074bed46135d7c622c1347f05a1efa3d8e79d51839"
+    },
+    {
+      "path": "docs/history/SEMANTIC_EXPERT_HEIGHT_V1_PROTOCOL.md",
+      "title": "Six-class soft-routed height corrections: prospective experiment",
+      "bytes": 3947,
+      "words": 532,
+      "sha256": "665e750c62aaac31ca1a33fee2b0104d663d57b19a75675bbc99b6bcf737ed68"
+    },
+    {
+      "path": "docs/history/SIX_CLASS_APP_PREVIEW_2026_09_19.md",
+      "title": "Six-class application preview \u2014 19 September 2026",
+      "bytes": 5286,
+      "words": 704,
+      "sha256": "73908f7ae1bca16a2a52599a07202c405193b5c48b84a45f78efe31b1cf78f72"
+    },
+    {
+      "path": "docs/history/SIX_CLASS_DEFAULT_INTEGRATION_2026_09_20.md",
+      "title": "Six-class default integration \u2014 20 September 2026",
+      "bytes": 6582,
+      "words": 868,
+      "sha256": "ea26d4fd9621d82205d405554cb77fe2bb2b918ddc6b549a10f043084bf89b96"
+    },
+    {
+      "path": "docs/history/SIX_CLASS_OFFLINE_EXPORT.md",
+      "title": "Offline six-class export",
+      "bytes": 4435,
+      "words": 581,
+      "sha256": "fb36a96ce8a24b645cc41a09d70805830f368ebdfac3fb7d9ee947582665c498"
+    },
+    {
+      "path": "docs/history/SIX_CLASS_SCANNER_AND_HEIGHT_AUDIT_20260919.md",
+      "title": "Six-class scanning and height-training audit \u2014 19 September 2026",
+      "bytes": 5544,
+      "words": 733,
+      "sha256": "5fe2ae6e2da335786b51fcf784782a18fa09ab1a36611800e40f312ee37dc952"
+    },
+    {
+      "path": "docs/history/SMOOTHNESS_AND_ACCURACY_REVIEW_2026_09_26.md",
+      "title": "Smoothness and accuracy review \u2014 26 September 2026",
+      "bytes": 6440,
+      "words": 858,
+      "sha256": "4deb657e975844302d4fb07e4e70485e9249569d774cfe7bb546d64ea18ed5f3"
+    },
+    {
+      "path": "docs/history/TERRAIN_IMPORT_AND_PROFILE_2026_09_26.md",
+      "title": "Terrain imports and measured profiles \u2014 26 September 2026",
+      "bytes": 10583,
+      "words": 1409,
+      "sha256": "dcc2c6d394fccdb993df0fd2822d10378ef5aa832e9f377eb04bc8e34e923dd8"
+    },
+    {
+      "path": "docs/history/TERRAIN_VIDEO_STYLE_2026_09_26.md",
+      "title": "Terrain presentation matched toward the supplied video",
+      "bytes": 5762,
+      "words": 831,
+      "sha256": "d27570c462cd4df5dd65672940190ea48ed434aad1dc8e677ba8d9a24f2dc7e5"
+    },
+    {
+      "path": "docs/history/VIEWER_CONTROLS_2026_09_19.md",
+      "title": "Viewer controls update \u2014 19 September 2026",
+      "bytes": 4247,
+      "words": 568,
+      "sha256": "e8cd2cb12772b5a5cca2070d3a3f456e7b5b0d713f89ae532c4cfcac51afdcfd"
+    },
+    {
+      "path": "docs/history/VIEWPORT_DETAILS_ZOOM_2026_09_27.md",
+      "title": "Compact scene details and original-image zoom",
+      "bytes": 2006,
+      "words": 290,
+      "sha256": "ebe66908a79ac69078fc0a097877c2188dcd445bdaa88f53e575cc388ae35fc9"
+    }
+  ]
+}

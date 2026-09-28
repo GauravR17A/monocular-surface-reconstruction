@@ -1,0 +1,90 @@
+experiment:
+  name: residual_height_v1
+  seed: 20260915
+  output_root: experiments
+
+contracts:
+  purpose: direct_final_height_correction_from_frozen_multiscale_features
+  official_test_used: false
+  external_holdout_used_for_training_or_selection: false
+  height_unit_status: gamus_metre_assumed_highbuild_and_open_canopy_metres
+  gamus_regression_source_class_ids: [1, 2, 3, 6]
+  gamus_excluded_regression_source_class_ids: [0, 4, 5]
+  highbuild_height_support: measured_coco_intersection_only
+  missing_height_policy: ignored_never_zero
+  prior_policy: cached_stored_01_independent_of_labels
+  classification_policy: byte_identical_frozen_protected_outputs
+
+data:
+  dataset: mixed_replay
+  root: D:/MSRData/GAMUS
+  relative_prior_root: D:/MSRData/GAMUS_relative_priors
+  require_relative_priors: true
+  approved_index_path: D:/MSRData/GAMUS_quality_contract_v1_1/approved_samples.json
+  approved_index_file_sha256: 5320d2e97be357b1e1725d7f2d9640493522ae3d13f1a051b63de55b530c05aa
+  require_approved_index: true
+  require_complete_official_splits: true
+  train_manifest: D:/MSRData/data/multidomain_v2/highbuild_measured_coco_intersection_v1/manifests/train.csv
+  train_manifest_file_sha256: 8f7f85997df53c2dae82d571c52db4ca8f10d4cb5638784e729b38632a1067e4
+  val_manifest: D:/MSRData/data/multidomain_v2/highbuild_measured_coco_intersection_v1/manifests/validation.csv
+  val_manifest_file_sha256: 2e21024fb7d7562e51d91e219c9434087fadfee58b107a4eacdc2c04cd8fa118
+  highbuild_contract_report: D:/MSRData/data/multidomain_v2/highbuild_measured_coco_intersection_v1/contract_report.json
+  highbuild_contract_report_sha256: b919b02d50bbf5de4e7e69ff96c3887bbd0f5ab0f56fa0c6f7612b20c51e91e3
+  patch_size: 384
+  # Validation scores all native pixels, never just an easier centre crop.
+  validation_patch_size: 1024
+  highbuild_validation_patch_size: 1024
+  open_canopy_validation_patch_size: 384
+  train_samples_per_epoch: 6000
+  gamus_train_fraction: 0.50
+  balanced_legacy_landscape_sampling: true
+  legacy_supervised_crop_probability: 1.0
+  legacy_relative_prior_policy: stored_01
+  num_workers: 2
+  rgb_scale: 255.0
+  height_max_m: 200.0
+  building_threshold_m: 2.0
+  gamus_train_radiometric_policy: raw
+  legacy_train_radiometric_policy: raw
+  validation_radiometric_policy: raw
+
+model:
+  protected_checkpoint: experiments/20260829T203146Z_multidomain_surface_v2_guarded_vegetation/checkpoint_best_guarded_vegetation.pt
+  protected_checkpoint_sha256: e2d507fbe180988e000a91a873db047407fc15c0fac90446f7d5f05990c0d144
+  hidden_channels: 32
+  maximum_correction_m: 80.0
+
+training:
+  epochs: 6
+  batch_size: 4
+  gradient_accumulation: 2
+  learning_rate: 0.0001
+  decoder_learning_rate: 0.00002
+  weight_decay: 0.01
+  precision: bf16
+  max_gradient_norm: 1.0
+  learning_rate_schedule: warmup_cosine_steps
+  warmup_optimizer_steps: 100
+  minimum_learning_rate_factor: 0.1
+  early_stopping_patience: 3
+  early_stopping_min_epochs: 3
+  huber_delta_m: 2.0
+  mse_weight: 0.02
+  gradient_weight: 0.0
+  overfit_steps: 48
+  overfit_minimum_relative_loss_reduction: 0.15
+  # Equal sources, then equal domains, then equal samples with valid labels.
+  reduction: source_domain_sample_balanced
+
+evaluation:
+  promotion_eligible: false
+  protocol: full_native_pixels_bf16_paired_frozen_protected
+  protected_pointer: outputs/runtime/showcase_checkpoint.txt
+  protected_pointer_sha256: a3d51c686ca2abee9cb7e622c600f5ded9eca3332638ccf56f6f3d8b2f72baa9
+  maximum_domain_rmse_regression_m: 0.15
+  maximum_mae_regression_m: 0.10
+  maximum_absolute_bias_regression_m: 0.10
+  minimum_material_improvement_m: 0.50
+  minimum_material_improvement_fraction: 0.05
+  require_classification_identity: true
+  final_external_holdout: configs/external_metric_height_nz_bop_v1.json

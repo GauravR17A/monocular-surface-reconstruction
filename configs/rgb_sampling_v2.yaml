@@ -1,0 +1,43 @@
+schema: msr.rgb_sampling_paired.v2
+base_config: configs/gamus_rgb_segmenter_v1.yaml
+initial_checkpoint: experiments/20260915T140116654177Z_gamus_rgb_segmenter_v1/checkpoint_best_guarded.pt
+initial_checkpoint_sha256: 4940b2d4ae8817370384ccb54da9f73aee1b6bf3614435d8c077bf3e3363d021
+fixed_v1_replay: outputs/evaluation/gamus_rgb_segmenter_v1_independent_replay/report.json
+fixed_v1_replay_sha256: b471f67f5948a6c62299059054043c0ea93ad8ba8f8ffd9c3582d51fb49f06c3
+sampling:
+  index_path: outputs/data_audits/rgb_targeted_v2_training/top_quartile/targeted_crop_index_v2.json
+  index_sha256: fc439c45e852b65135c791652cb38e460a5a2e1a8295223247c557997374cafa
+  control_probability: 0.0
+  targeted_probability: 0.5
+training:
+  seed: 20260916
+  epochs: 4
+  batch_size: 4
+  samples_per_epoch: 3837
+  num_workers: 2
+  encoder_learning_rate: 0.00002
+  decoder_learning_rate: 0.0002
+  weight_decay: 0.01
+  warmup_optimizer_steps: 50
+  minimum_learning_rate_factor: 0.1
+  precision: bf16
+  max_gradient_norm: 1.0
+  early_stopping: false
+proof:
+  steps_per_arm: 24
+  minimum_loss_reduction_fraction: 0.05
+evaluation:
+  tolerances:
+    class_f1: 0.01
+    macro_f1: 0.005
+    road_boundary_f1: 0.01
+    dark_non_water_false_water_rate: 0.001
+  benefit:
+    dc_low_vegetation_f1_gain: 0.05
+    dc_ground_low_vegetation_mean_f1_gain: 0.025
+  control_benefit:
+    dc_low_vegetation_f1_gain: 0.02
+    dc_ground_low_vegetation_mean_f1_gain: 0.01
+  primary_comparison_epoch: 4
+  app_promotion: false
+  external_data_policy: forbidden_in_this_experiment

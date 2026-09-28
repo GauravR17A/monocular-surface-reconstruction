@@ -1,0 +1,120 @@
+protocol:
+  schema: msr.gamus_six_class_comparison.v1
+  output_dir: outputs/evaluation/gamus_six_class_comparison_v1
+  protected_checkpoint: experiments/20260829T203146Z_multidomain_surface_v2_guarded_vegetation/checkpoint_best_guarded_vegetation.pt
+  protected_checkpoint_sha256: e2d507fbe180988e000a91a873db047407fc15c0fac90446f7d5f05990c0d144
+  live_pointer: outputs/runtime/showcase_checkpoint.txt
+  live_pointer_file_sha256: a3d51c686ca2abee9cb7e622c600f5ded9eca3332638ccf56f6f3d8b2f72baa9
+  approved_index: D:/MSRData/GAMUS_quality_contract_v1_1/approved_samples.json
+  approved_index_sha256: 5320d2e97be357b1e1725d7f2d9640493522ae3d13f1a051b63de55b530c05aa
+  quality_report: D:/MSRData/GAMUS_quality_contract_v1_1/qc_report.json
+  quality_report_sha256: 720c4244a17062f80f3634cdf144ec1c72e258a20189868d99cb301fc15b0309
+  preparation_artifact_index: outputs/data_audits/gamus_preparation_v1/artifact_hashes.json
+  preparation_artifact_index_sha256: b272de00aa70eb0bfc31f504a3fc8134842455a9a1c132ac149521dae1f3688e
+  preparation_report: outputs/data_audits/gamus_preparation_v1/audit_report.json
+  preparation_report_sha256: a7965c0354cf2e455fc635f6fe2c6f26f87c06bb2ed09c7077dc174cf4cc26fa
+  dav2_identity_manifest: outputs/data_audits/gamus_preparation_v1/dav2_prior_identity.jsonl
+  dav2_identity_manifest_sha256: 2c7dc8da6864659fd86e132a43c15ab7b7e77316e6bcd38521635d04a00e7d7b
+  height_outlier_manifest: outputs/data_audits/gamus_preparation_v1/height_outliers.jsonl
+  height_outlier_manifest_sha256: a1a5b315c37ace283b4c231500c0c5d4f576e3290a254ffc6e639a60234a8007
+  height_pilot_config: configs/multidomain_surface_gamus_direct_height_pilot.yaml
+  height_pilot_config_sha256: 26417a447b5d70514708fd8d5f0aa8696a0917f1d5d4c1a17fdb8543d31b0501
+  expanded_candidate_config: configs/multidomain_surface_gamus_six_class_candidate_v1.yaml
+  expanded_candidate_config_sha256: 6213accf5334ec1d7cfb394fc6322810242af0d5bab3dc7be3ebba8584b8d01a
+  approved_train_count: 5001
+  approved_validation_count: 859
+  official_test_constructed: false
+  promotion_permitted: false
+
+six_class:
+  class_names:
+    - ground
+    - buildings
+    - water
+    - roads
+    - low_vegetation
+    - trees
+  required_per_class_metrics:
+    - precision
+    - recall
+    - iou
+    - f1
+  require_positive_support: true
+  road_boundary_tolerance_pixels: 2
+  water_dark_diagnostic_is_proxy_only: true
+
+# Candidate-versus-protected gates match the frozen direct-height pilot.
+protected_height_gates:
+  rmse_m: {direction: min_improvement, limit: 0.20}
+  mae_m: {direction: min_improvement, limit: 0.10}
+  correlation: {direction: max_drop, limit: 0.01}
+  r2: {direction: max_drop, limit: 0.02}
+  region_macro_rmse_m: {direction: min_improvement, limit: 0.20}
+  object_domain_macro_rmse_m: {direction: min_improvement, limit: 0.20}
+  regions.GAMUS_DC.rmse_m: {direction: max_regression, limit: 0.10}
+  regions.GAMUS_PHL.rmse_m: {direction: max_regression, limit: 0.10}
+  domains.ground.rmse_m: {direction: max_regression, limit: 0.05}
+  domains.building.rmse_m: {direction: max_regression, limit: 0.10}
+  domains.vegetation.rmse_m: {direction: max_regression, limit: 0.10}
+  tall_objects.building.rmse_m: {direction: max_regression, limit: 0.20}
+  tall_objects.vegetation.rmse_m: {direction: max_regression, limit: 0.20}
+
+# The expanded model must also preserve the stronger result found by the
+# height-only pilot. These are no-regression caps, not post-hoc targets.
+height_pilot_protection_gates:
+  rmse_m: {direction: max_regression, limit: 0.10}
+  mae_m: {direction: max_regression, limit: 0.10}
+  correlation: {direction: max_drop, limit: 0.01}
+  r2: {direction: max_drop, limit: 0.02}
+  region_macro_rmse_m: {direction: max_regression, limit: 0.10}
+  object_domain_macro_rmse_m: {direction: max_regression, limit: 0.10}
+  regions.GAMUS_DC.rmse_m: {direction: max_regression, limit: 0.10}
+  regions.GAMUS_PHL.rmse_m: {direction: max_regression, limit: 0.10}
+  domains.ground.rmse_m: {direction: max_regression, limit: 0.05}
+  domains.building.rmse_m: {direction: max_regression, limit: 0.10}
+  domains.vegetation.rmse_m: {direction: max_regression, limit: 0.10}
+  tall_objects.building.rmse_m: {direction: max_regression, limit: 0.20}
+  tall_objects.vegetation.rmse_m: {direction: max_regression, limit: 0.20}
+
+corrected_legacy:
+  required_for_manual_promotion_review: true
+  report_schema: msr.corrected_legacy_triplet.v1
+  required_protocols:
+    - highbuild_all_annotated_positive_v1
+    - highbuild_measured_coco_intersection_v1
+    - open_canopy_v2
+  required_model_names:
+    - protected
+    - height_pilot
+    - expanded_candidate
+  required_metric_paths:
+    - rmse_m
+    - mae_m
+    - landscapes.urban.rmse_m
+    - landscapes.forest.rmse_m
+    - domains.building.rmse_m
+    - domains.vegetation.rmse_m
+  candidate_vs_protected_max_regression:
+    rmse_m: 0.15
+    mae_m: 0.10
+    landscapes.urban.rmse_m: 0.15
+    landscapes.forest.rmse_m: 0.15
+    domains.building.rmse_m: 0.15
+    domains.vegetation.rmse_m: 0.15
+  candidate_vs_height_pilot_max_regression:
+    rmse_m: 0.15
+    mae_m: 0.10
+    landscapes.urban.rmse_m: 0.15
+    landscapes.forest.rmse_m: 0.15
+    domains.building.rmse_m: 0.15
+    domains.vegetation.rmse_m: 0.15
+
+unseen_geography:
+  required_for_manual_promotion_review: true
+  report_schema: msr.unseen_geography_triplet.v1
+  official_gamus_test_allowed: false
+  require_predeclared_guards_passed: true
+
+decision:
+  auto_promote: false
+  explicit_human_approval_required: true

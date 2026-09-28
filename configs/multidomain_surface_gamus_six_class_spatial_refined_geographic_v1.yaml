@@ -1,0 +1,167 @@
+experiment:
+  name: multidomain_surface_gamus_six_class_spatial_refined_geographic_v1
+  seed: 20260913
+  output_root: experiments
+
+# Classifier-only geographic repeat of the frozen spatial-refined v3 recipe.
+# Every NYC GAMUS tile is excluded from this new head's fitting and epoch
+# selection. NYC is not described as system-unseen because earlier experiments
+# and the protected HighBuild-derived model have NYC exposure. Official GAMUS
+# test remains unused, and a separate external location is still required for a
+# genuinely new system-level generalisation check.
+protocol:
+  schema: msr.gamus_six_class_spatial_refined_geographic.v1
+  purpose: fair_dc_phl_spatial_classifier_baseline_with_classifier_excluded_nyc
+  source_recipe_config: configs/multidomain_surface_gamus_six_class_spatial_refined_v3.yaml
+  source_recipe_config_sha256: a91acb93ef8a9e6c376ba1b99b71e0a8390ab6132aeda71790e433e9bdf55946
+  holdout_contract: outputs/data_audits/gamus_geographic_holdout_city_nyc_v1/contract.json
+  holdout_contract_sha256: a8a5b0dfaa3a6338a590a12dc7eeab74734f26b465e526b05a15833e9cf02435
+  locked_holdout_approved_index: outputs/data_audits/gamus_head_only_geographic_candidate_v1/nyc_holdout_approved_samples.json
+  locked_holdout_approved_index_sha256: 98281b990b5ccddfda4349d0b43f0216455a8bebca085bf1232abab10f689417
+  learning_cities: [DC, PHL]
+  development_validation_cities: [DC, PHL]
+  locked_holdout_city: NYC
+  locked_holdout_interpretation: excluded_from_this_classifier_training_not_system_unseen
+  external_system_unseen_geography: pending_separate_dataset
+  expected_counts:
+    learning: 3837
+    development_validation: 859
+    locked_geographic_holdout: 1164
+  protected_checkpoint_sha256: e2d507fbe180988e000a91a873db047407fc15c0fac90446f7d5f05990c0d144
+  live_pointer_file: outputs/runtime/showcase_checkpoint.txt
+  live_pointer_file_sha256: a3d51c686ca2abee9cb7e622c600f5ded9eca3332638ccf56f6f3d8b2f72baa9
+  official_test_policy: never_constructed_or_discovered
+  holdout_policy: one_post_freeze_pass_no_tuning_or_reselection
+  auto_promotion: false
+  classification_acceptance:
+    comparison_report: outputs/evaluation/gamus_six_class_comparison_v1/report.json
+    macro_f1_min: 0.4723
+    water_recall_min: 0.10
+    water_f1_min: 0.10
+    road_f1_min: 0.5220
+    max_f1_drop_other_classes: 0.005
+
+data:
+  dataset: gamus
+  root: D:/MSRData/GAMUS
+  relative_prior_root: D:/MSRData/GAMUS_relative_priors
+  require_relative_priors: true
+  approved_index_path: outputs/data_audits/gamus_geographic_holdout_city_nyc_v1/learning_approved_samples.json
+  approved_index_file_sha256: d56764bc9a3cde31760189b1da40cf207de1b9142c7531b24190ed6e2312e5d9
+  require_approved_index: true
+  require_complete_official_splits: true
+  fine_class_sampling_index_path: outputs/data_audits/gamus_head_only_geographic_candidate_v1/gamus_learning_six_class_sampling_index_v1.jsonl
+  fine_class_sampling_index_sha256: 32a71cc1cb2d9da75ce8774db5e4db342512991ebb37e4b461f776fe7196eedf
+  water_sampling_boost: 2.0
+  preserve_city_sampling_mass: true
+  patch_size: 384
+  validation_patch_size: 1024
+  num_workers: 4
+  rgb_scale: 255.0
+  train_radiometric_policy: raw
+  validation_radiometric_policy: raw
+  height_max_m: 200.0
+
+model:
+  base_checkpoint: experiments/20260826T192229Z_highbuild_full_convnext_tiny/checkpoint_best_rmse.pt
+  initial_checkpoint: experiments/20260829T203146Z_multidomain_surface_v2_guarded_vegetation/checkpoint_best_guarded_vegetation.pt
+  hidden_channels: 64
+  maximum_building_residual_m: 30.0
+  initial_canopy_height_m: 12.0
+  initial_refinement_strength: 0.05
+  fusion_mode: protected_vegetation
+  building_protection_power: 2.5
+  vegetation_fusion_temperature: 0.8
+  vegetation_expert_fusion_threshold: 0.85
+  vegetation_expert_fusion_strength: 0.10
+  fine_semantic_classes: 6
+  fine_semantic_head_type: spatial_refined
+
+training:
+  epochs: 8
+  batch_size: 4
+  gradient_accumulation: 1
+  drop_last: false
+  freeze_base_epochs: 0
+  parameter_groups:
+    - name: fine_semantic_head_only
+      prefixes:
+        - fine_semantic_head.
+      learning_rate: 0.001
+      weight_decay: 0.0
+  learning_rate_schedule: warmup_cosine_steps
+  warmup_optimizer_steps: 100
+  minimum_learning_rate_factor: 0.1
+  weight_decay: 0.0
+  max_gradient_norm: 1.0
+  precision: bf16
+  early_stopping_patience: 3
+  early_stopping_min_epochs: 4
+  huber_delta_m: 2.0
+  height_weight: 0.0
+  semantic_weight: 0.0
+  fine_semantic_weight: 1.0
+  fine_semantic_class_weights: [0.7, 0.6, 3.0, 0.7, 0.6, 0.4]
+  fine_semantic_focal_gamma: 1.5
+  building_weight: 0.0
+  building_mse_weight: 0.0
+  tall_building_weight: 0.0
+  canopy_weight: 0.0
+  canopy_mse_weight: 0.0
+  tall_canopy_weight: 0.0
+  fused_building_weight: 0.0
+  fused_building_mse_weight: 0.0
+  fused_vegetation_weight: 0.0
+  fused_tall_building_weight: 0.0
+  fused_tall_vegetation_weight: 0.0
+  building_distillation_weight: 0.0
+  ground_suppression_weight: 0.0
+  refinement_weight: 0.0
+  uncertainty_weight: 0.0
+
+evaluation:
+  promotion_eligible: false
+  promotion_blockers:
+    - classification targets and unseen-geography evaluation must pass
+    - corrected HighBuild and OpenCanopy comparison must pass
+    - explicit human approval is required
+  recompute_initial_metrics_on_current_validation: true
+  initial_model_overrides:
+    fusion_mode: protected_vegetation
+    building_protection_power: 2.5
+    vegetation_fusion_temperature: 0.8
+    vegetation_expert_fusion_threshold: 0.85
+    vegetation_expert_fusion_strength: 0.10
+  primary_selection:
+    suite: gamus
+    metric: six_class_identification.macro_f1
+    mode: max
+  validation_guards:
+    gamus:
+      rmse_m:
+        max_regression: 0.0001
+        baseline: initial
+      mae_m:
+        max_regression: 0.0001
+        baseline: initial
+      domains.ground.rmse_m:
+        max_regression: 0.0001
+        baseline: initial
+      domains.building.rmse_m:
+        max_regression: 0.0001
+        baseline: initial
+      domains.vegetation.rmse_m:
+        max_regression: 0.0001
+        baseline: initial
+      tall_objects.building.rmse_m:
+        max_regression: 0.0001
+        baseline: initial
+      tall_objects.vegetation.rmse_m:
+        max_regression: 0.0001
+        baseline: initial
+  max_urban_rmse_regression_m: 0.0001
+  max_building_rmse_regression_m: 0.0001
+  max_initial_overall_rmse_regression_m: 0.0001
+  max_initial_ground_rmse_regression_m: 0.0001
+  max_initial_building_rmse_regression_m: 0.0001
+  max_initial_vegetation_rmse_regression_m: 0.0001
