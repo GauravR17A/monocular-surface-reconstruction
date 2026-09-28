@@ -1,5 +1,7 @@
 # Monocular Surface Reconstruction
 
+<img src="docs/assets/seifuku-logo.png" alt="Team Seifuku" width="125" align="right" />
+
 **Technical Documentation — Status as of 28 September 2026**
 
 [![Verify research package](https://github.com/GauravR17A/monocular-surface-reconstruction/actions/workflows/verify.yml/badge.svg)](https://github.com/GauravR17A/monocular-surface-reconstruction/actions/workflows/verify.yml)
@@ -8,6 +10,8 @@ A research workspace for turning one overhead RGB image into an estimated surfac
 inspecting it in 3D, identifying six land-cover categories, and checking predictions
 against an independent reference. The project combines a trained height model,
 geospatial calibration, explicit evaluation contracts and an interactive viewer.
+
+Created by **[Team Seifuku](docs/TEAM.md)** — an independent team in Pune, India.
 
 **Active research prototype.** Height estimates are not survey measurements. The
 current classifier has documented regional regressions. Completed work, rejected
@@ -109,6 +113,20 @@ The initial public history contains the prepared source package. Local datasets,
 training checkpoints, private development logs and earlier repository history are
 not included. Historical protocols retain their scientific limitations; original
 sealed experiments are not silently rebound to renamed public files.
+
+## Team Seifuku
+
+| Member | Confirmed responsibility |
+| --- | --- |
+| Adwita Kurle | Team leader |
+| Gaurav Ranade | Website creator and operator |
+| Anushree Dixit | Team member |
+| Spruha Kurle | Team member |
+| Hrishikesh Tarade | Team member |
+| Tanisha Natrajan | Team member |
+
+Independent research project, Pune, Maharashtra, India. Public contact:
+**ranadegaurav30@gmail.com**. [Team details and logo](docs/TEAM.md).
 
 No blanket open-source licence has been selected for the original application
 code. Public availability does not override the separate terms of models, source

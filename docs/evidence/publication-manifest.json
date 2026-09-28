@@ -24,8 +24,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 778,
-      "sha256": "3b94ca8aed6678771b243b0d698f99b0019cf54774542cacc9dd00bca30981e0"
+      "bytes": 1208,
+      "sha256": "cdb086e8f5ded6eb4856a378c2e2231fa72d71b9b3bdc23e52e353aee4039d5a"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -34,8 +34,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5997,
-      "sha256": "60eb19af0a1d7154ead1bce292dc3b2324e831b327368f86b635a2018c61c686"
+      "bytes": 6598,
+      "sha256": "3775de4387985c16beb19a8adc9be5069efb55b13a65a2daaf0e2fc8bf6855de"
     },
     {
       "path": "SECURITY.md",
@@ -379,8 +379,8 @@
     },
     {
       "path": "docs/Monocular_Surface_Reconstruction_Technical_Documentation.pdf",
-      "bytes": 3990896,
-      "sha256": "cfc6f067a91c4a6be4c6426a240a35d55bf2c7054b5b11836f2de9010da297d3"
+      "bytes": 8068262,
+      "sha256": "5ccad39165d0d3930d3a8d7ec7e0ec2307018f3e125a5415b327a7694de5f4d5"
     },
     {
       "path": "docs/OVERVIEW.md",
@@ -394,8 +394,8 @@
     },
     {
       "path": "docs/README.md",
-      "bytes": 2839,
-      "sha256": "7491af2c9c8b9b59bb3a55deb988df872ee97861d9cfd82c8b206574f70461d9"
+      "bytes": 2928,
+      "sha256": "2814a78d9e0072157d448426840d9c09069e530ec0164edcee4e9bcbbbdf728d"
     },
     {
       "path": "docs/REFERENCES.md",
@@ -404,8 +404,8 @@
     },
     {
       "path": "docs/RELEASE.md",
-      "bytes": 3675,
-      "sha256": "f6839411663b4e85b89b6ba1ddcb839866983b78b22fb26e488815bb333d7953"
+      "bytes": 3988,
+      "sha256": "ade56480342a8c524008df0033d538e068c16a8a7e7799c5a34146dec64c8a93"
     },
     {
       "path": "docs/RESULTS.md",
@@ -436,6 +436,11 @@
       "path": "docs/SOURCE_INVENTORY.md",
       "bytes": 9431,
       "sha256": "11fe32535541d229c0937e554b622cd5eca00f347b1fc1bbc5a7849668c658da"
+    },
+    {
+      "path": "docs/TEAM.md",
+      "bytes": 1067,
+      "sha256": "48e243e9f120bf7e4f8398a28a99177f757ed3bd27dfc16af64db54345a091dd"
     },
     {
       "path": "docs/USER_GUIDE.md",
@@ -473,6 +478,11 @@
       "sha256": "b27b53181da7eae61ff927329486e7e56b8e8255457674e7428b4d2c24f0dd61"
     },
     {
+      "path": "docs/assets/seifuku-logo.png",
+      "bytes": 1693209,
+      "sha256": "1cb5c2eea669519d5cdf09dcfef0f24ebfaf86651d249d6970f932fe2efe84f9"
+    },
+    {
       "path": "docs/assets/upload-workspace.png",
       "bytes": 1106901,
       "sha256": "deb03214c49b0de5e192b8d70821e1e14c5f54991961339a9b0a2fbaf443fec9"
@@ -494,13 +504,13 @@
     },
     {
       "path": "docs/evidence/documentation-build.json",
-      "bytes": 13465,
-      "sha256": "f44634d7be8d81b783844bdea2281236da49dacac39da242c50a659e2339e16c"
+      "bytes": 13591,
+      "sha256": "2f6c80a66012afbfc0fc9e9845ebbe439f132621fcf8541b0778f1200e73e121"
     },
     {
       "path": "docs/evidence/model-packaging.json",
       "bytes": 1162,
-      "sha256": "bfa35ad6fc3168c399d0bd23ce6862a3dd653e7150ba05114dfcdab4f6aa80c3"
+      "sha256": "ab95fa39e96175ac85ca761087d799af3788e59899e219699f226180497c46a9"
     },
     {
       "path": "docs/evidence/numerical-verification.json",
@@ -860,12 +870,12 @@
     {
       "path": "model-artifacts.json",
       "bytes": 1586,
-      "sha256": "7ba12f3abb753169042ee7013beb901fc8a493ce0fe0d1e61a1036b314516fb7"
+      "sha256": "57d9bade990e5b639ea13aee8e444a361907b9f9384371f72169df366730fa3d"
     },
     {
       "path": "pyproject.toml",
-      "bytes": 992,
-      "sha256": "5340e02ca80d204da5ed4fdc0a7b71b188b5b245866832b741ec359c1ee8bd3d"
+      "bytes": 1015,
+      "sha256": "ebe3c60d4f071bdc3d9aa8ea94c299ad711b7e12206386579ce27d77f083195a"
     },
     {
       "path": "requirements-dev.txt",
@@ -874,8 +884,8 @@
     },
     {
       "path": "requirements.txt",
-      "bytes": 259,
-      "sha256": "aa5a7778e762aea9e902654ebb5b8e4c0d211e71e40aca2a1a8a5620a0f8d102"
+      "bytes": 276,
+      "sha256": "eb0097bd0c7b54cecf272c27e04564431da40bafd88738256e433f77a29f5251"
     },
     {
       "path": "scripts/analyze_building_errors.py",
@@ -1014,8 +1024,8 @@
     },
     {
       "path": "scripts/build_documentation.py",
-      "bytes": 13365,
-      "sha256": "a02512eee998f70d98b6eaf405a00d184f54cd079418d17da692cb22cf8c4306"
+      "bytes": 13894,
+      "sha256": "f858ee5bdd4c1832ea4f010b67ceb41404a80a26b8823826d1373231b467fd1b"
     },
     {
       "path": "scripts/build_figures.py",
@@ -3065,12 +3075,12 @@
     {
       "path": "viewer/package-lock.json",
       "bytes": 323139,
-      "sha256": "1680fcc8db39a6b86e2483b91ee43ba1bfe850602083515446b9997ebb7403ee"
+      "sha256": "8d0063ca8da81be1384b032f926285672bdeb62d20795c895e39874d6abff65a"
     },
     {
       "path": "viewer/package.json",
       "bytes": 1084,
-      "sha256": "331a8cd5374de210efb52917dcced4ae2e5082fee4713436e5e51c265f521b62"
+      "sha256": "d5c0cf78cf588763745f9561b6e5b3896d262eecdb227c5b32e8676048b3edf7"
     },
     {
       "path": "viewer/public/demo/copenhagen_building_probability.tif",

@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.1 — 28 September 2026
+
+- Added the confirmed Team Seifuku logo, membership, responsibilities and public
+  contact to the handbook and repository.
+- Declared Requests explicitly after the clean GitHub CPU environment exposed
+  its missing dependency in the backbone-acquisition tests.
+- Updated the 204-page handbook, 87 bookmarks, publication manifest and release
+  source identity. Learned model weights are unchanged.
+
 ## 0.1.0 — 28 September 2026
 
 - Scientific source release with dated technical handbook, decision ledger,

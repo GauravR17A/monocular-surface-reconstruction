@@ -11,6 +11,7 @@ recorded dates. A historical plan does not establish a currently enabled feature
 | Chapter | Contents |
 | --- | --- |
 | [Overview and scope](OVERVIEW.md) | Purpose, users, contributions, completed and open work |
+| [Team Seifuku](TEAM.md) | Team logo, members, confirmed responsibilities and contact |
 | [User guide](USER_GUIDE.md) | Sample workflow, uploads, inspection, calibration and exports |
 | [Architecture](ARCHITECTURE.md) | Components, data flow, runtime and model boundaries |
 | [Scientific contracts](SCIENTIFIC_CONTRACTS.md) | Units, validity, source/presentation separation and metric scope |

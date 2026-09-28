@@ -1,13 +1,17 @@
 {
   "status_date": "2026-09-28",
   "file": "docs/Monocular_Surface_Reconstruction_Technical_Documentation.pdf",
-  "chapters": 86,
-  "sha256": "cfc6f067a91c4a6be4c6426a240a35d55bf2c7054b5b11836f2de9010da297d3",
-  "bytes": 3990896,
+  "chapters": 87,
+  "sha256": "5ccad39165d0d3930d3a8d7ec7e0ec2307018f3e125a5415b327a7694de5f4d5",
+  "bytes": 8068262,
   "sources": [
     {
       "path": "docs/OVERVIEW.md",
       "sha256": "7b13ccdb68db358537533ca34f982ed337d201162ab901e3ce0cf1cf7db9fa81"
+    },
+    {
+      "path": "docs/TEAM.md",
+      "sha256": "48e243e9f120bf7e4f8398a28a99177f757ed3bd27dfc16af64db54345a091dd"
     },
     {
       "path": "docs/USER_GUIDE.md",
@@ -75,7 +79,7 @@
     },
     {
       "path": "docs/RELEASE.md",
-      "sha256": "f6839411663b4e85b89b6ba1ddcb839866983b78b22fb26e488815bb333d7953"
+      "sha256": "ade56480342a8c524008df0033d538e068c16a8a7e7799c5a34146dec64c8a93"
     },
     {
       "path": "docs/ROADMAP.md",
@@ -350,6 +354,6 @@
       "sha256": "ebe66908a79ac69078fc0a097877c2188dcd445bdaa88f53e575cc388ae35fc9"
     }
   ],
-  "pages": 203,
-  "bookmarks": 86
+  "pages": 204,
+  "bookmarks": 87
 }

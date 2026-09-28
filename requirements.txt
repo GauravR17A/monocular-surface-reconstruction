@@ -1,5 +1,6 @@
 # Tested direct dependencies. Install the matching torch/torchvision pair first.
 numpy==1.26.4
+requests==2.34.2
 Pillow==11.2.1
 PyYAML==6.0.2
 rasterio==1.4.3

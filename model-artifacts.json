@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.1.1",
   "status_date": "2026-09-28",
   "usage": "non-commercial research/evaluation; see THIRD_PARTY_NOTICES.md",
   "artifacts": [
@@ -8,14 +8,14 @@
       "path": "models/release/classifier_model.pt",
       "bytes": 14953075,
       "sha256": "742d02b34dacbde82c983b46c742847d761478104a4e33a790470988ea724289",
-      "url": "https://github.com/GauravR17A/monocular-surface-reconstruction/releases/download/v0.1.0/classifier_model.pt"
+      "url": "https://github.com/GauravR17A/monocular-surface-reconstruction/releases/download/v0.1.1/classifier_model.pt"
     },
     {
       "name": "height_model.pt",
       "path": "models/release/height_model.pt",
       "bytes": 125811181,
       "sha256": "602cc3e31c10320f25c2a618336336f21312b122c06dab0358074175e7e90a3b",
-      "url": "https://github.com/GauravR17A/monocular-surface-reconstruction/releases/download/v0.1.0/height_model.pt"
+      "url": "https://github.com/GauravR17A/monocular-surface-reconstruction/releases/download/v0.1.1/height_model.pt"
     }
   ],
   "foundation": {

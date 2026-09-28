@@ -2,7 +2,7 @@
 
 ## Snapshot identity
 
-Version 0.1.0 is a research prototype snapshot with technical documentation as of
+Version 0.1.1 is a research prototype snapshot with technical documentation as of
 28 September 2026. Source, documentation and inference artifacts are versioned
 together. The Git tag identifies the published source; the artifact manifest
 independently identifies weight files and the pinned foundation revision.
@@ -63,3 +63,8 @@ performance limitation, not suppressed to imply a clean optimisation result.
 Run `scripts/verify_publication.py` for source/PDF identity, link, size and manifest
 checks. Rebuild documentation from its included source before changing a dated
 release. Never edit a historical result merely to make a check pass.
+
+The first clean hosted CPU check exposed an omitted direct Requests dependency:
+824 tests passed and two backbone-acquisition import checks failed. Version 0.1.1
+declares Requests explicitly. The per-commit GitHub workflow checks the corrected
+installation independently of the original workstation environment.
