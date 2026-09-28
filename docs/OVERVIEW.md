@@ -1,6 +1,6 @@
 # Project overview and current scope
 
-Technical documentation — status as of 28 September 2026. Version 0.1.2 updates
+Technical documentation — status as of 28 September 2026. Version 0.1.3 updates
 the public handbook and presentation; the development history predates publication.
 
 ## The problem

@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Monocular Surface Reconstruction',
+  title: 'DepthWizard · Surface Intelligence',
   description: 'Single-view satellite imagery to interactive 3D surface intelligence.',
 };
 

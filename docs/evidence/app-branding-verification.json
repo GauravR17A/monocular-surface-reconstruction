@@ -1,0 +1,236 @@
+{
+  "status_date": "2026-09-28",
+  "version": "0.1.3",
+  "app_display_name": "DepthWizard",
+  "transport": "Actual local HTTP: production viewer on 127.0.0.1:3000 and GPU API on 127.0.0.1:8000",
+  "checks": [
+    {
+      "name": "Local GPU API ready",
+      "passed": true
+    },
+    {
+      "name": "Application identity and production page",
+      "passed": true
+    },
+    {
+      "name": "Urban scene and real six-class classification",
+      "passed": true
+    },
+    {
+      "name": "Sparse scene and real six-class classification",
+      "passed": true
+    },
+    {
+      "name": "Hilly scene and real six-class classification",
+      "passed": true
+    },
+    {
+      "name": "Forest scene and real six-class classification",
+      "passed": true
+    },
+    {
+      "name": "New-image GPU inference and rendered results",
+      "passed": true
+    },
+    {
+      "name": "Mobile layout without horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "No browser console or page errors",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/assets/workspace.png",
+      "app_heading": "DepthWizard",
+      "sha256": "3e24a8e330023db08c93bf4163ce2f2380ee0ec932d996d6be80bc05e9fbf008"
+    },
+    {
+      "path": "docs/assets/sparse-workspace.png",
+      "app_heading": "DepthWizard",
+      "sha256": "ae09932b2df31a82ce8b216f7a87c35b6820924e27ff23e7a441a584543e87a0"
+    },
+    {
+      "path": "docs/assets/hilly-workspace.png",
+      "app_heading": "DepthWizard",
+      "sha256": "4e1feeec5bcffa90988bb7df2eb21df2bcd91906f66630649a7361fd40fe9871"
+    },
+    {
+      "path": "docs/assets/forest-workspace.png",
+      "app_heading": "DepthWizard",
+      "sha256": "6ba9c832afd195ae892e3616f77fc1098ea094be088b71fd8a665974e0367191"
+    },
+    {
+      "path": "docs/assets/upload-workspace.png",
+      "app_heading": "DepthWizard",
+      "sha256": "4ed4b59356bbe3112804dd3d665185e309be6cf08e2cdd0a819ee8fd15ed2581"
+    },
+    {
+      "path": "docs/assets/mobile-workspace.png",
+      "app_heading": "DepthWizard",
+      "sha256": "2ddc0150e22159b7d51582eb95cb298efd55fb242b6f301603f93d9e93ae18ce"
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/classify",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/classification_JOB/classes.bin",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/classify",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/classification_JOB/classes.bin",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/classify",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/classification_JOB/classes.bin",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/classify",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/classification_JOB/classes.bin",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/predict",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/presentation_mesh_height_m.tif",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/height_above_ground_m.tif",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/semantic_surface_class.tif",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/building_solids.json",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/building_probability.tif",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/vegetation_probability.tif",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/prediction_confidence.tif",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/texture.jpg",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/texture.jpg",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200
+    }
+  ],
+  "console_errors": [],
+  "page_errors": [],
+  "passed": true
+}

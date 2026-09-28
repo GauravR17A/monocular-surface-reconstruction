@@ -2,27 +2,30 @@
 
 ## Snapshot identity
 
-Version 0.1.2 is a research prototype snapshot with technical documentation as of
+Version 0.1.3 is a research prototype snapshot with technical documentation as of
 28 September 2026. Source, documentation and inference artifacts are versioned
 together. The Git tag identifies the published source; the artifact manifest
 independently identifies weight files and the pinned foundation revision.
 
-This is a fresh publication repository under the scientific name Monocular
-Surface Reconstruction. Original development history is not imported. Public
+This is a fresh publication repository under the scientific title shown on GitHub.
+Original development history is not imported. Public
 historical records carry a banner explaining name/path normalisation; they are
 not represented as untouched original source seals.
 
-Version 0.1.2 revises document readability, team-role wording and the four-mode
-showcase. It uses the same verified height and classifier artifacts as 0.1.1;
-the model download manifest retains the existing versioned URLs and hashes.
+Version 0.1.3 restores the application branding in the interface and handbook,
+with fresh captures of all four modes. It retains the larger document typography
+and the same verified height and classifier artifacts as 0.1.1; the model
+download manifest keeps the existing versioned URLs and hashes.
 
 ## Publication transformations
 
-The package namespace is `msr`. Frontend metadata, UI branding, environment names,
-Python imports, commands, notebook-independent scripts and current documentation
-use the scientific identity. The development application remains separately
-available in its original workspace. Generated outputs, private data, model
-caches, local environments and credentials are excluded from Git.
+The package namespace is `msr`. Repository naming and written GitHub
+presentation use the scientific title. The application interface and downloadable
+handbook retain the application branding. The PDF builder renders that display
+name from the same source chapters; measurements and research content are retained.
+Competition/problem-statement identifiers and private workstation references are
+excluded. Generated outputs, private data, model caches, local environments and
+credentials are excluded from Git.
 
 The height bundle embeds the base architecture and all protected tensors so its
 loader does not require an old workstation checkpoint path. The classifier

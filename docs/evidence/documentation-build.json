@@ -2,12 +2,12 @@
   "status_date": "2026-09-28",
   "file": "docs/Monocular_Surface_Reconstruction_Technical_Documentation.pdf",
   "chapters": 87,
-  "sha256": "dcc50d7f808aaa96afda830c5236058e757bcbc0e89232076af0a6bb2a71e1fd",
-  "bytes": 11031487,
+  "sha256": "b404fd16e1f6b54dba2fa707f0c94e041adc96e7c39445ae39ff2fccec97865b",
+  "bytes": 11018949,
   "sources": [
     {
       "path": "docs/OVERVIEW.md",
-      "sha256": "093614c76838fc7e932f240a9677785562e51200ee98d249988cbe65d3a86b92"
+      "sha256": "5384caba72a434a9068175bf0a9b5e4facba6e0f76bf6055f2a165e1f3fb0c2d"
     },
     {
       "path": "docs/TEAM.md",
@@ -71,7 +71,7 @@
     },
     {
       "path": "docs/PERFORMANCE.md",
-      "sha256": "e4a3d7f9c9b59c41575738ae9cb545adb11b0ac98441244cde947b0fd6d1a486"
+      "sha256": "fca76e359b6702332a43c7925a932865ee35534bbab14ddda1bbd62a489b7a81"
     },
     {
       "path": "docs/SECURITY_REVIEW.md",
@@ -79,7 +79,7 @@
     },
     {
       "path": "docs/RELEASE.md",
-      "sha256": "13c8c2c7973d64abcac425eb3a496e1bee6921fbfb3e10c0dd81aa8e5b5e7c0f"
+      "sha256": "fd0d185447c1acb155aa37e4a18df47fc23bc19b97c99ece674f5194313835b2"
     },
     {
       "path": "docs/ROADMAP.md",
@@ -354,6 +354,6 @@
       "sha256": "ebe66908a79ac69078fc0a097877c2188dcd445bdaa88f53e575cc388ae35fc9"
     }
   ],
-  "pages": 189,
+  "pages": 188,
   "bookmarks": 87
 }

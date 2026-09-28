@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.3 — 28 September 2026
+
+- Restored the original application branding in the interface and downloadable
+  handbook while retaining the scientific repository title and written presentation.
+- Recaptured every application screenshot from the actual running local app,
+  covering all four terrain modes, uploaded reconstruction and mobile layout.
+- Retained larger document typography, team responsibilities, dated status,
+  classification evidence and research content. Learned model weights are unchanged.
+
 ## 0.1.2 — 28 September 2026
 
 - Corrected Gaurav Ranade's responsibility to App developer and operator.

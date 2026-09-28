@@ -66,8 +66,8 @@ async function screenshot(name) { await page.screenshot({path:path.join(assetDir
 try {
   const health=await api('GET','/api/health'); assert.equal(health.status,200); check('API health',JSON.parse(Buffer.from(health.body,'base64')));
   await page.goto('http://msr.test/',{waitUntil:'networkidle'});
-  await page.getByRole('heading',{name:'Monocular Surface Reconstruction',exact:true}).waitFor();
-  check('Production SSR, hydration and scientific identity');
+  await page.getByRole('heading',{name:'DepthWizard',exact:true}).waitFor();
+  check('Production SSR, hydration and DepthWizard app identity');
   await page.getByRole('button',{name:'Load Urban demonstration',exact:true}).click();
   await page.waitForFunction(() => document.querySelector('canvas')?.width > 0);
   await page.waitForTimeout(6000);

@@ -24,8 +24,8 @@
     },
     {
       "path": "CHANGELOG.md",
-      "bytes": 1730,
-      "sha256": "5aaafcbdc6cc1b0804ae747faed4d810f09925a6ff8b04756a0b200178aa458e"
+      "bytes": 2243,
+      "sha256": "48ec5b86166f2364195dd067a1c0ccf9a601acd9d46a9680338a978196c29df7"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -35,7 +35,7 @@
     {
       "path": "README.md",
       "bytes": 11092,
-      "sha256": "c1082519bdc57b2ffce8e06320252e07ff0a6e12ba656e651f036836e210ed3a"
+      "sha256": "aa55039d52b6488b2b24b6434632ee702cd386460f317ecacd48ccaae128330c"
     },
     {
       "path": "SECURITY.md",
@@ -379,23 +379,23 @@
     },
     {
       "path": "docs/Monocular_Surface_Reconstruction_Technical_Documentation.pdf",
-      "bytes": 11031487,
-      "sha256": "dcc50d7f808aaa96afda830c5236058e757bcbc0e89232076af0a6bb2a71e1fd"
+      "bytes": 11018949,
+      "sha256": "b404fd16e1f6b54dba2fa707f0c94e041adc96e7c39445ae39ff2fccec97865b"
     },
     {
       "path": "docs/OVERVIEW.md",
       "bytes": 4781,
-      "sha256": "093614c76838fc7e932f240a9677785562e51200ee98d249988cbe65d3a86b92"
+      "sha256": "5384caba72a434a9068175bf0a9b5e4facba6e0f76bf6055f2a165e1f3fb0c2d"
     },
     {
       "path": "docs/PERFORMANCE.md",
-      "bytes": 4588,
-      "sha256": "e4a3d7f9c9b59c41575738ae9cb545adb11b0ac98441244cde947b0fd6d1a486"
+      "bytes": 4749,
+      "sha256": "fca76e359b6702332a43c7925a932865ee35534bbab14ddda1bbd62a489b7a81"
     },
     {
       "path": "docs/README.md",
-      "bytes": 2928,
-      "sha256": "2814a78d9e0072157d448426840d9c09069e530ec0164edcee4e9bcbbbdf728d"
+      "bytes": 3008,
+      "sha256": "93907d148f2cc23ae16a925975aa4bb9fe539de82f8aefe41fe7f83d55f2cbcf"
     },
     {
       "path": "docs/REFERENCES.md",
@@ -404,8 +404,8 @@
     },
     {
       "path": "docs/RELEASE.md",
-      "bytes": 4223,
-      "sha256": "13c8c2c7973d64abcac425eb3a496e1bee6921fbfb3e10c0dd81aa8e5b5e7c0f"
+      "bytes": 4399,
+      "sha256": "fd0d185447c1acb155aa37e4a18df47fc23bc19b97c99ece674f5194313835b2"
     },
     {
       "path": "docs/RESULTS.md",
@@ -464,8 +464,8 @@
     },
     {
       "path": "docs/assets/forest-workspace.png",
-      "bytes": 804789,
-      "sha256": "9c7ea8d3bfb1b74ff13a00e6bcb4dbabb7b3fc6b99369aa928a04c228b3b47f1"
+      "bytes": 801810,
+      "sha256": "6ba9c832afd195ae892e3616f77fc1098ea094be088b71fd8a665974e0367191"
     },
     {
       "path": "docs/assets/height-experiments.png",
@@ -474,13 +474,13 @@
     },
     {
       "path": "docs/assets/hilly-workspace.png",
-      "bytes": 970485,
-      "sha256": "b9b4b91cb66099db3ae2f60537f84d46c2fe30c5c8a13df59b6a88e34e3f3f21"
+      "bytes": 967355,
+      "sha256": "4e1feeec5bcffa90988bb7df2eb21df2bcd91906f66630649a7361fd40fe9871"
     },
     {
       "path": "docs/assets/mobile-workspace.png",
-      "bytes": 270118,
-      "sha256": "b27b53181da7eae61ff927329486e7e56b8e8255457674e7428b4d2c24f0dd61"
+      "bytes": 240486,
+      "sha256": "2ddc0150e22159b7d51582eb95cb298efd55fb242b6f301603f93d9e93ae18ce"
     },
     {
       "path": "docs/assets/readme-hero.svg",
@@ -494,23 +494,28 @@
     },
     {
       "path": "docs/assets/sparse-workspace.png",
-      "bytes": 1119367,
-      "sha256": "f086f0e4c77d95835c5ebda24b0a5db73982fb2763a0a2051836684e90fd60e9"
+      "bytes": 1116507,
+      "sha256": "ae09932b2df31a82ce8b216f7a87c35b6820924e27ff23e7a441a584543e87a0"
     },
     {
       "path": "docs/assets/upload-workspace.png",
-      "bytes": 1106901,
-      "sha256": "deb03214c49b0de5e192b8d70821e1e14c5f54991961339a9b0a2fbaf443fec9"
+      "bytes": 579957,
+      "sha256": "4ed4b59356bbe3112804dd3d665185e309be6cf08e2cdd0a819ee8fd15ed2581"
     },
     {
       "path": "docs/assets/workspace.png",
-      "bytes": 1043219,
-      "sha256": "a5d3c1a719854111ca8b2fc7119988fb08859a587e56f604827e37487053c395"
+      "bytes": 1035771,
+      "sha256": "3e24a8e330023db08c93bf4163ce2f2380ee0ec932d996d6be80bc05e9fbf008"
     },
     {
       "path": "docs/evidence/README.md",
-      "bytes": 1684,
-      "sha256": "39f19901f4afc9b9906535079ae0d41f348b8893e6cd73efccd11a5f1a43834a"
+      "bytes": 1831,
+      "sha256": "efc06bb39d4b9f6c7b9cbfbca2fa1732489b52443833fa6f467e5a6c5acebf25"
+    },
+    {
+      "path": "docs/evidence/app-branding-verification.json",
+      "bytes": 5208,
+      "sha256": "53afd5fa39dbe1fa0b9bb424072bd1132fb89edab75cd1680f3fd88e57e76e55"
     },
     {
       "path": "docs/evidence/browser-verification.json",
@@ -520,7 +525,7 @@
     {
       "path": "docs/evidence/documentation-build.json",
       "bytes": 13592,
-      "sha256": "a78b7d9df0b593d89d965805f6090bcd71d81700518d8bc278e2256e8427aba1"
+      "sha256": "dac7b983400757cff7eb4f60ad1ae0cd9a702af9681ef4ef1c1b3af96719b570"
     },
     {
       "path": "docs/evidence/gallery-verification.json",
@@ -895,12 +900,12 @@
     {
       "path": "model-artifacts.json",
       "bytes": 1586,
-      "sha256": "323603b60bdb71e1922a14c12485b08e9de8dfe78caecfa07c341899012af0e2"
+      "sha256": "a087892cf8e6514a3fe3b640c5818c8c85f9319e211aefa17efa581e2156fc68"
     },
     {
       "path": "pyproject.toml",
       "bytes": 1015,
-      "sha256": "fde4ed2eb77d1811a4ec2ab79a1c85d109de891b7c9afcd5fe20d824508b34a0"
+      "sha256": "c6cc6f182a66ba7f93dafe65e46ce0d51de1234856a560deb1fa8cfb3c0c28fc"
     },
     {
       "path": "requirements-dev.txt",
@@ -1049,8 +1054,8 @@
     },
     {
       "path": "scripts/build_documentation.py",
-      "bytes": 14370,
-      "sha256": "2402d7ec5807139a4e0597e174d51cb204f3db976b2f387b1bf0cf7a26fd8de2"
+      "bytes": 14473,
+      "sha256": "d4bfd2d3d117921b380763bbc940fe14bf74052dde4433ec73a37daabea00b17"
     },
     {
       "path": "scripts/build_figures.py",
@@ -1910,7 +1915,7 @@
     {
       "path": "src/msr/__init__.py",
       "bytes": 102,
-      "sha256": "9999b6eb5d3ec0854987654145723e165ec2feb77506fd28c23047b2bbe786a2"
+      "sha256": "1b95995c94524784fd3b1f24427a9e9a9709cf98ba1602b1fee989bef28a79fa"
     },
     {
       "path": "src/msr/api/__init__.py",
@@ -1919,8 +1924,8 @@
     },
     {
       "path": "src/msr/api/app.py",
-      "bytes": 29221,
-      "sha256": "e9d057b5e93b626c1ff3ef838c3bbd105e8ef9f9dde1a61cc9898969cbff5d4d"
+      "bytes": 29200,
+      "sha256": "6e3d3227bba808755143665635e22d03c9e74e011bc5a27ecfc44c578d1b5900"
     },
     {
       "path": "src/msr/api/classification.py",
@@ -2984,8 +2989,8 @@
     },
     {
       "path": "viewer/app/layout.tsx",
-      "bytes": 747,
-      "sha256": "52bd81eefde3e836b42295e9ec3bbdb43eee3f6e5afcff41687d1f2a0eb47683"
+      "bytes": 750,
+      "sha256": "181b3051dd5123a85da7d671152a9caa3d6af905ff57854b083ef07eed9c8dc3"
     },
     {
       "path": "viewer/app/metric-grid.ts",
@@ -3074,8 +3079,8 @@
     },
     {
       "path": "viewer/app/terrain-workspace.tsx",
-      "bytes": 205595,
-      "sha256": "49aedd9e4cb93929df793c6f08918497b019c9bab5eb922fe432bddf9724e108"
+      "bytes": 205552,
+      "sha256": "59834c998611699552c329ab51018a2b2765c0476fda8957562793b915643baf"
     },
     {
       "path": "viewer/app/validation-comparison.tsx",
@@ -3100,12 +3105,12 @@
     {
       "path": "viewer/package-lock.json",
       "bytes": 323139,
-      "sha256": "55b9c26584998d07b52bd151a7b7eab570b1609e7337daccf7756a598878a3f7"
+      "sha256": "7e1c1ae1a6df98f6380a8dbe3510d445875fc870f01e68bd4082309afa4186a6"
     },
     {
       "path": "viewer/package.json",
       "bytes": 1084,
-      "sha256": "0ed9eafb5fcf5877c8baa3baa6bcdae9f5ef7c35222453bc9e605feb1775a2bd"
+      "sha256": "e1b3e0ce5910d98008893fdda221bf83af57a5c320f5a57674e7a97f154c664f"
     },
     {
       "path": "viewer/public/demo/copenhagen_building_probability.tif",
@@ -3374,8 +3379,8 @@
     },
     {
       "path": "viewer/scripts/verify-browser.mjs",
-      "bytes": 7765,
-      "sha256": "e2566bfc6343b2e504b589fcd9707a0b61cc3e2972af34c912e1d557b28dd64e"
+      "bytes": 7749,
+      "sha256": "0782c6ac6304440cacfaff4c8c09cda89243c37c8ddfb90fb980533991945ec4"
     },
     {
       "path": "viewer/tests/building-facades.test.mjs",

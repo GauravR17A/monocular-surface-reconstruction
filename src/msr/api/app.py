@@ -479,7 +479,7 @@ def create_app(
 
     root = Path(results_root).resolve()
     root.mkdir(parents=True, exist_ok=True)
-    app = FastAPI(title="Monocular Surface Reconstruction Local GPU API", version="0.1.0")
+    app = FastAPI(title="DepthWizard Local GPU API", version="0.1.3")
     app.add_middleware(
         CORSMiddleware,
         allow_origins=[origin.strip() for origin in os.environ.get("MSR_VIEWER_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000").split(",") if origin.strip()],

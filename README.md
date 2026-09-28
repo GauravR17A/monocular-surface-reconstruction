@@ -9,7 +9,7 @@
 Explore **Urban, Sparse, Hilly and Forest** scenes with estimated height, geospatial terrain and six-category scene understanding.
 
 [![Verify research package](https://github.com/GauravR17A/monocular-surface-reconstruction/actions/workflows/verify.yml/badge.svg?branch=main)](https://github.com/GauravR17A/monocular-surface-reconstruction/actions/workflows/verify.yml)
-[![Release 0.1.2](https://img.shields.io/badge/release-0.1.2-25bda3?style=flat-square)](https://github.com/GauravR17A/monocular-surface-reconstruction/releases/tag/v0.1.2)
+[![Release 0.1.3](https://img.shields.io/badge/release-0.1.3-25bda3?style=flat-square)](https://github.com/GauravR17A/monocular-surface-reconstruction/releases/tag/v0.1.3)
 [![Research prototype](https://img.shields.io/badge/status-active_research-477b9b?style=flat-square)](docs/ROADMAP.md)
 
 **[Read the handbook](docs/Monocular_Surface_Reconstruction_Technical_Documentation.pdf) · [Explore the evidence](docs/RESULTS.md) · [Run locally](#run-locally) · [Meet the team](#team-seifuku)**
@@ -90,7 +90,7 @@ PyTorch inference, raster processing, calibration and result artifacts.
 
 ## The research behind the interface
 
-**189 pages · 87 bookmarked chapters · 63 dated development records**
+**188 pages · 87 bookmarked chapters · 63 dated development records**
 
 The handbook explains how the system works and how it reached its current state:
 the decisions, attempted improvements, retained baselines and unresolved questions.
@@ -210,6 +210,6 @@ code. [Third-party notices and attribution](THIRD_PARTY_NOTICES.md).
 
 **Research continues. This is the documented state as of 28 September 2026.**
 
-[Current roadmap](docs/ROADMAP.md) · [Release downloads](https://github.com/GauravR17A/monocular-surface-reconstruction/releases/tag/v0.1.2)
+[Current roadmap](docs/ROADMAP.md) · [Release downloads](https://github.com/GauravR17A/monocular-surface-reconstruction/releases/tag/v0.1.3)
 
 </div>

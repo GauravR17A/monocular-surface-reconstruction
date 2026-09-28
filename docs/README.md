@@ -34,7 +34,8 @@ recorded dates. A historical plan does not establish a currently enabled feature
 | [References](REFERENCES.md) | Papers, dataset providers, software and attribution |
 | [Source inventory](SOURCE_INVENTORY.md) | Current sources and the complete historical appendix |
 
-The same source chapters build the PDF. Its linked contents, bookmarks, page
+The same source chapters build the PDF with the application display name;
+repository text retains its scientific title. Its linked contents, bookmarks, page
 numbers and source labels support both a first read and detailed review. Machine
 evidence is indexed in [evidence/README.md](evidence/README.md). Documentation is
 not a claim of independent certification or a guarantee of future results.

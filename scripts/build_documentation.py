@@ -22,6 +22,8 @@ from reportlab.platypus.tableofcontents import TableOfContents
 
 ROOT=Path(__file__).resolve().parents[1]
 DOCS=ROOT/'docs'
+DOCUMENT_NAME='DepthWizard'
+REPOSITORY_NAME='Monocular Surface Reconstruction'
 OUTPUT=DOCS/'Monocular_Surface_Reconstruction_Technical_Documentation.pdf'
 CHAPTERS=['OVERVIEW','TEAM','USER_GUIDE','ARCHITECTURE','SCIENTIFIC_CONTRACTS','METHODS','CODE_MAP','DATA','VALIDATION','RESULTS','EXPERIMENTS','DECISIONS','FEATURES','MODEL_CARDS','API','SETUP','PERFORMANCE','SECURITY_REVIEW','RELEASE','ROADMAP','GLOSSARY','REFERENCES','SOURCE_INVENTORY']
 WIDTH,HEIGHT=A4
@@ -56,11 +58,12 @@ class Cover(Flowable):
         c=self.canv;w=self.width;h=self.height
         c.setFillColor(INK);c.rect(-MARGIN,-60,WIDTH,HEIGHT,stroke=0,fill=1)
         c.setFillColor(colors.HexColor('#4bdcc9'));c.setFont(FONT,10);c.drawString(0,h-25,'RESEARCH SYSTEMS  /  TECHNICAL HANDBOOK')
-        c.setFillColor(colors.white);c.setFont(FONT,40)
-        for i,line in enumerate(['Monocular','Surface','Reconstruction']):c.drawString(0,h-104-i*47,line)
+        c.setFillColor(colors.white);c.setFont(FONT,66)
+        c.drawString(0,h-136,DOCUMENT_NAME)
+        c.setFont(FONT,29);c.drawString(0,h-189,'Technical Documentation')
         c.setFont(FONT,13);c.setFillColor(colors.HexColor('#c4dddf'));c.drawString(0,h-260,'Single-image geometry, metric height and semantic analysis')
         c.setFillColor(colors.HexColor('#4bdcc9'));c.setFont(FONT,14);c.drawString(0,h-310,'Technical Documentation — Status as of 28 September 2026')
-        c.setFont(FONT,11);c.setFillColor(colors.white);c.drawString(0,h-334,'Version 0.1.2   •   Active research prototype')
+        c.setFont(FONT,11);c.setFillColor(colors.white);c.drawString(0,h-334,'Version 0.1.3   •   Active research prototype')
         c.drawImage(str(DOCS/'assets/seifuku-logo.png'),0,190,width=166,height=166,mask='auto',preserveAspectRatio=True)
         c.setFont(FONT,21);c.drawString(195,315,'TEAM SEIFUKU')
         c.setFont(FONT,10);c.setFillColor(colors.HexColor('#c4dddf'))
@@ -85,14 +88,14 @@ class Cover(Flowable):
 
 class Handbook(BaseDocTemplate):
     def __init__(self,filename):
-        super().__init__(str(filename),pagesize=A4,leftMargin=MARGIN,rightMargin=MARGIN,topMargin=45,bottomMargin=43,title='Monocular Surface Reconstruction — Technical Documentation — 28 September 2026',author='Team Seifuku',subject='Research prototype: methods, implementation, decisions and measured evidence',pageCompression=1)
+        super().__init__(str(filename),pagesize=A4,leftMargin=MARGIN,rightMargin=MARGIN,topMargin=45,bottomMargin=43,title=DOCUMENT_NAME+' — Technical Documentation — 28 September 2026',author='Team Seifuku',subject='Research prototype: methods, implementation, decisions and measured evidence',pageCompression=1)
         self.addPageTemplates(PageTemplate(id='main',frames=[Frame(MARGIN,43,CONTENT,HEIGHT-88,id='normal',leftPadding=0,rightPadding=0,topPadding=0,bottomPadding=0)],onPage=self.decorate))
         self.heading='Technical handbook'
     def beforeDocument(self):self.heading='Technical handbook'
     def decorate(self,c,doc):
         if doc.page==1:return
         c.saveState();c.setStrokeColor(colors.HexColor('#d5e2e5'));c.setLineWidth(.5);c.line(MARGIN,HEIGHT-33,WIDTH-MARGIN,HEIGHT-33)
-        c.setFont(FONT,7.3);c.setFillColor(MUTED);c.drawString(MARGIN,HEIGHT-25,'MONOCULAR SURFACE RECONSTRUCTION  /  TECHNICAL DOCUMENTATION')
+        c.setFont(FONT,7.3);c.setFillColor(MUTED);c.drawString(MARGIN,HEIGHT-25,DOCUMENT_NAME.upper()+'  /  TECHNICAL DOCUMENTATION')
         c.drawString(MARGIN,28,'TEAM SEIFUKU  •  STATUS AS OF 28 SEPTEMBER 2026  •  RESEARCH PROTOTYPE')
         c.drawRightString(WIDTH-MARGIN,28,str(doc.page));c.restoreState()
     def afterFlowable(self,flow):
@@ -118,7 +121,7 @@ def inline(node):
 
 def chapter(file,index):
     result=[]
-    source=file.read_text(encoding='utf-8')
+    source=file.read_text(encoding='utf-8').replace(REPOSITORY_NAME,DOCUMENT_NAME)
     soup=BeautifulSoup(markdown.markdown(source,extensions=['tables','fenced_code','sane_lists']),'html.parser')
     first=True
     for el in soup.children:
@@ -183,7 +186,7 @@ def main():
     sources=[DOCS/(name+'.md') for name in CHAPTERS]+[ROOT/'THIRD_PARTY_NOTICES.md']+sorted((DOCS/'history').glob('*.md'))
     missing=[str(p) for p in sources if not p.exists()]
     if missing:raise FileNotFoundError('\n'.join(missing))
-    story=[Cover(),PageBreak(),Paragraph('How to use this handbook',ST['Chapter']),Paragraph('This is a dated technical snapshot of an active research prototype. Current chapters explain the implemented system, scientific boundaries and available evidence. The historical section preserves protocols, outcomes and decisions that led to that state. A failed experiment is retained as evidence; a planned feature is not presented as complete.',ST['Text']),Paragraph('Read Overview and User guide for the system; Scientific contracts and Validation for interpretation; Results, Experiments and Decisions for what was learned; Setup and Release for reproduction. The source repository is the editable companion to this PDF.',ST['Text']),Paragraph('Historical records use normalised public names and paths. Exact old source hashes describe their original archive, not renamed files. Full private data/run archives are not bundled. See the source inventory and evidence directory for the included records and verification scope.',ST['Text']),Paragraph('Publication identity: version 0.1.2 • 28 September 2026. No blanket open-source or commercial-use licence is granted; third-party notices apply.',ST['SmallText']),Paragraph('Contents',ST['ContentsHeading'])]
+    story=[Cover(),PageBreak(),Paragraph('How to use this handbook',ST['Chapter']),Paragraph('This is a dated technical snapshot of an active research prototype. Current chapters explain the implemented system, scientific boundaries and available evidence. The historical section preserves protocols, outcomes and decisions that led to that state. A failed experiment is retained as evidence; a planned feature is not presented as complete.',ST['Text']),Paragraph('Read Overview and User guide for the system; Scientific contracts and Validation for interpretation; Results, Experiments and Decisions for what was learned; Setup and Release for reproduction. The source repository is the editable companion to this PDF.',ST['Text']),Paragraph('Historical records use normalised public names and paths. Exact old source hashes describe their original archive, not renamed files. Full private data/run archives are not bundled. See the source inventory and evidence directory for the included records and verification scope.',ST['Text']),Paragraph('Publication identity: version 0.1.3 • 28 September 2026. No blanket open-source or commercial-use licence is granted; third-party notices apply.',ST['SmallText']),Paragraph('Contents',ST['ContentsHeading'])]
     toc=TableOfContents(tableStyle=TableStyle([('LEFTPADDING',(0,0),(-1,-1),0),('RIGHTPADDING',(0,0),(-1,-1),0),('TOPPADDING',(0,0),(-1,-1),2),('BOTTOMPADDING',(0,0),(-1,-1),2)]))
     toc.levelStyles=[ParagraphStyle('ContentsEntry',fontName=FONT,fontSize=10.5,leading=14.5,textColor=INK,spaceBefore=0,leftIndent=0,firstLineIndent=0)]
     story.extend([toc,Spacer(1,12)])

@@ -2925,7 +2925,7 @@ export default function TerrainWorkspace() {
       const message = reason instanceof Error ? reason.message : String(reason);
       setError(
         message.includes('fetch')
-          ? 'The local inference service is not running. Start Monocular Surface Reconstruction API, then retry.'
+          ? 'The local inference service is not running. Start DepthWizard API, then retry.'
           : message,
       );
       setStatus('Upload inference unavailable');
@@ -3047,7 +3047,7 @@ export default function TerrainWorkspace() {
   return (
     <main className="app-shell">
       <header className="topbar">
-        <div className="brand-block"><span className="brand-mark">MSR</span><div><p className="eyebrow">Single-view surface intelligence</p><h1>Monocular Surface Reconstruction</h1></div></div>
+        <div className="brand-block"><span className="brand-mark">DW</span><div><p className="eyebrow">Single-view surface intelligence</p><h1>DepthWizard</h1></div></div>
         <div className="run-strip"><span className="pulse" /><span>LOCAL INFERENCE SERVICE</span><strong>{engineStatus === 'ready' ? 'ENGINE READY' : engineStatus === 'offline' ? 'ENGINE OFFLINE' : 'CHECKING…'}</strong></div>
         <button className="evidence-button" onClick={() => setLandscapeEvaluationOpen(true)} type="button"><span>EVAL</span> 4 categories</button>
         <button className={`reference-button${referenceFile ? ' attached' : ''}`} onClick={() => referenceInputRef.current?.click()} title={referenceFile ? `Attached: ${referenceFile.name}. Upload the matching RGB image to run validation.` : 'Attach a LiDAR-derived nDSM before uploading the matching RGB image.'} type="button">

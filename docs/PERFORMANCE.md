@@ -27,9 +27,11 @@ overflow. Browser console/page errors: zero.
 
 ![Forest canopy workspace](assets/forest-workspace.png)
 
-The four figures cover Urban, Sparse, Hilly and Forest. The additional Sparse
-and Forest captures use the same production handler and real local API; their
-focused rendering checks are recorded in `evidence/gallery-verification.json`.
+The four figures cover Urban, Sparse, Hilly and Forest. Version 0.1.3 recaptures
+these figures, the upload result and the mobile view from the actual running
+application over local HTTP, with its original interface branding. Those checks
+are recorded in `evidence/app-branding-verification.json`. The timings below
+belong to the earlier in-process verification, not the later screenshot capture.
 
 The bridge measured the following sequential request durations during that check:
 
