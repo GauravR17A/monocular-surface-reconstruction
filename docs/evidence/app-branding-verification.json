@@ -65,12 +65,12 @@
     {
       "path": "docs/assets/upload-workspace.png",
       "app_heading": "DepthWizard",
-      "sha256": "4ed4b59356bbe3112804dd3d665185e309be6cf08e2cdd0a819ee8fd15ed2581"
+      "sha256": "46f58e99bc0626805f8194c5ede4f16e80c831739b178090a4003e1f2580bb5e"
     },
     {
       "path": "docs/assets/mobile-workspace.png",
       "app_heading": "DepthWizard",
-      "sha256": "2ddc0150e22159b7d51582eb95cb298efd55fb242b6f301603f93d9e93ae18ce"
+      "sha256": "61c16a42538b9f126214694772d7cc62b3a26f6191b7966dc8c525ff4df3d065"
     }
   ],
   "requests": [
@@ -228,9 +228,95 @@
       "method": "GET",
       "path": "/api/health",
       "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/predict",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/presentation_mesh_height_m.tif",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/height_above_ground_m.tif",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/building_solids.json",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/building_probability.tif",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/vegetation_probability.tif",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/semantic_surface_class.tif",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/prediction_confidence.tif",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/texture.jpg",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/JOB/texture.jpg",
+      "status": 200
+    },
+    {
+      "method": "POST",
+      "path": "/api/classify",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/results/classification_JOB/classes.bin",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200
     }
   ],
   "console_errors": [],
   "page_errors": [],
-  "passed": true
+  "passed": true,
+  "upload_capture_state": "Recaptured after visual reveal completed, classification ready, and source image loaded."
 }

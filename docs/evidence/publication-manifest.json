@@ -479,8 +479,8 @@
     },
     {
       "path": "docs/assets/mobile-workspace.png",
-      "bytes": 240486,
-      "sha256": "2ddc0150e22159b7d51582eb95cb298efd55fb242b6f301603f93d9e93ae18ce"
+      "bytes": 268398,
+      "sha256": "61c16a42538b9f126214694772d7cc62b3a26f6191b7966dc8c525ff4df3d065"
     },
     {
       "path": "docs/assets/readme-hero.svg",
@@ -499,8 +499,8 @@
     },
     {
       "path": "docs/assets/upload-workspace.png",
-      "bytes": 579957,
-      "sha256": "4ed4b59356bbe3112804dd3d665185e309be6cf08e2cdd0a819ee8fd15ed2581"
+      "bytes": 1101089,
+      "sha256": "46f58e99bc0626805f8194c5ede4f16e80c831739b178090a4003e1f2580bb5e"
     },
     {
       "path": "docs/assets/workspace.png",
@@ -514,8 +514,8 @@
     },
     {
       "path": "docs/evidence/app-branding-verification.json",
-      "bytes": 5208,
-      "sha256": "53afd5fa39dbe1fa0b9bb424072bd1132fb89edab75cd1680f3fd88e57e76e55"
+      "bytes": 7020,
+      "sha256": "7fe8f2aba80186c0692b9153262c480ff5169c25f2226142cf800e5b1fa63181"
     },
     {
       "path": "docs/evidence/browser-verification.json",
