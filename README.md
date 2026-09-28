@@ -6,10 +6,10 @@
 
 **One image. An inspectable surface.**
 
-A research workspace for estimated height, geospatial terrain and six-category scene understanding.
+Explore **Urban, Sparse, Hilly and Forest** scenes with estimated height, geospatial terrain and six-category scene understanding.
 
 [![Verify research package](https://github.com/GauravR17A/monocular-surface-reconstruction/actions/workflows/verify.yml/badge.svg?branch=main)](https://github.com/GauravR17A/monocular-surface-reconstruction/actions/workflows/verify.yml)
-[![Release 0.1.1](https://img.shields.io/badge/release-0.1.1-25bda3?style=flat-square)](https://github.com/GauravR17A/monocular-surface-reconstruction/releases/tag/v0.1.1)
+[![Release 0.1.2](https://img.shields.io/badge/release-0.1.2-25bda3?style=flat-square)](https://github.com/GauravR17A/monocular-surface-reconstruction/releases/tag/v0.1.2)
 [![Research prototype](https://img.shields.io/badge/status-active_research-477b9b?style=flat-square)](docs/ROADMAP.md)
 
 **[Read the handbook](docs/Monocular_Surface_Reconstruction_Technical_Documentation.pdf) · [Explore the evidence](docs/RESULTS.md) · [Run locally](#run-locally) · [Meet the team](#team-seifuku)**
@@ -19,6 +19,16 @@ Technical Documentation — Status as of **28 September 2026**
 </div>
 
 ![From pixels to an inspectable surface](docs/assets/readme-hero.svg)
+
+<div align="center">
+
+**83.20% six-class macro F1** · Active RGB V3 classifier · GAMUS development validation
+
+Ground · Buildings · Water · Roads · Low vegetation · Trees
+
+[Classification results and regional comparisons](docs/RESULTS.md#classification-results-belong-to-named-models)
+
+</div>
 
 ## A different way to read an overhead image
 
@@ -34,11 +44,15 @@ failed experiments and ongoing work alongside the working application.
 <table>
 <tr>
 <td width="50%"><a href="docs/assets/workspace.png"><img src="docs/assets/workspace.png" alt="Actual Copenhagen reconstruction with buildings, vegetation and the six-class inspector" /></a><br/><strong>Urban · structure and semantics</strong><br/>Explore the scene, inspect source values and distinguish class labels from height.</td>
+<td width="50%"><a href="docs/assets/sparse-workspace.png"><img src="docs/assets/sparse-workspace.png" alt="Actual sparse Amsterdam workspace with separated structures and open ground" /></a><br/><strong>Sparse · structures in open ground</strong><br/>Inspect separated buildings, vegetation and low-relief surroundings.</td>
+</tr>
+<tr>
 <td width="50%"><a href="docs/assets/hilly-workspace.png"><img src="docs/assets/hilly-workspace.png" alt="Actual georeferenced Manali terrain workspace" /></a><br/><strong>Hilly · terrain in context</strong><br/>Read a georeferenced surface with its terrain datum and resolution made explicit.</td>
+<td width="50%"><a href="docs/assets/forest-workspace.png"><img src="docs/assets/forest-workspace.png" alt="Actual forest workspace with canopy relief and six-class scene interpretation" /></a><br/><strong>Forest · canopy and ground</strong><br/>Explore vegetation height, canopy structure and the underlying reference contract.</td>
 </tr>
 </table>
 
-*Screenshots from the verified application. Click either image for the full view.*
+*All four terrain modes, captured from the actual application. Click any image for the full view.*
 
 ## Take a short tour
 
@@ -76,7 +90,7 @@ PyTorch inference, raster processing, calibration and result artifacts.
 
 ## The research behind the interface
 
-**204 pages · 87 bookmarked chapters · 63 dated development records**
+**189 pages · 87 bookmarked chapters · 63 dated development records**
 
 The handbook explains how the system works and how it reached its current state:
 the decisions, attempted improvements, retained baselines and unresolved questions.
@@ -96,6 +110,7 @@ the decisions, attempted improvements, retained baselines and unresolved questio
 | --- | ---: | --- |
 | Protected height · measured building pixels | **13.24 m RMSE** | Corrected full-scene development support. |
 | Protected height · vegetation-only pixels | **8.36 m RMSE** | A different masked population; not a universal error bound. |
+| Active RGB V3 · GAMUS development | **83.20% macro F1** | Six-class classification on reused development validation. |
 | Active RGB V3 · OEM equal-region development | **69.42% macro F1** | Some predeclared retention gates failed. |
 | Older RGB V1 · Christchurch external test | **61.63% macro F1** | A separate completed transfer test; this is not a V3 result. |
 
@@ -176,7 +191,7 @@ presented as untouched original experiment seals.
 | Member | Confirmed responsibility |
 | --- | --- |
 | Adwita Kurle | Team leader |
-| Gaurav Ranade | Website creator and operator |
+| Gaurav Ranade | App developer and operator |
 | Anushree Dixit | Team member |
 | Spruha Kurle | Team member |
 | Hrishikesh Tarade | Team member |
@@ -195,6 +210,6 @@ code. [Third-party notices and attribution](THIRD_PARTY_NOTICES.md).
 
 **Research continues. This is the documented state as of 28 September 2026.**
 
-[Current roadmap](docs/ROADMAP.md) · [Release downloads](https://github.com/GauravR17A/monocular-surface-reconstruction/releases/tag/v0.1.1)
+[Current roadmap](docs/ROADMAP.md) · [Release downloads](https://github.com/GauravR17A/monocular-surface-reconstruction/releases/tag/v0.1.2)
 
 </div>

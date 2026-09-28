@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.2 — 28 September 2026
+
+- Corrected Gaurav Ranade's responsibility to App developer and operator.
+- Featured the active classifier's 83.20% GAMUS development macro F1 with its
+  evaluation scope and retained regional comparisons.
+- Expanded the repository and handbook gallery to Urban, Sparse, Hilly and Forest.
+- Increased handbook body text from 9.5 to 12 pt and table text from 7.6 to
+  9.5 pt; reduced margins and removed routine chapter page breaks.
+- Learned models and application behavior are unchanged.
+
 ## 0.1.1 — 28 September 2026
 
 - Added the confirmed Team Seifuku logo, membership, responsibilities and public

@@ -25,7 +25,7 @@ DOCS=ROOT/'docs'
 OUTPUT=DOCS/'Monocular_Surface_Reconstruction_Technical_Documentation.pdf'
 CHAPTERS=['OVERVIEW','TEAM','USER_GUIDE','ARCHITECTURE','SCIENTIFIC_CONTRACTS','METHODS','CODE_MAP','DATA','VALIDATION','RESULTS','EXPERIMENTS','DECISIONS','FEATURES','MODEL_CARDS','API','SETUP','PERFORMANCE','SECURITY_REVIEW','RELEASE','ROADMAP','GLOSSARY','REFERENCES','SOURCE_INVENTORY']
 WIDTH,HEIGHT=A4
-MARGIN=48
+MARGIN=40
 CONTENT=WIDTH-2*MARGIN
 INK=colors.HexColor('#18313d');TEAL=colors.HexColor('#087f83');MUTED=colors.HexColor('#526975');LIGHT=colors.HexColor('#edf4f5')
 
@@ -40,13 +40,15 @@ def fonts():
 
 FONT=fonts()
 ST=getSampleStyleSheet()
-ST.add(ParagraphStyle('Text',fontName=FONT,fontSize=9.5,leading=14.1,textColor=INK,spaceAfter=7,splitLongWords=True,allowWidows=0,allowOrphans=0))
-ST.add(ParagraphStyle('SmallText',parent=ST['Text'],fontSize=8,leading=11,textColor=MUTED))
-ST.add(ParagraphStyle('Cell',parent=ST['Text'],fontSize=7.6,leading=10.4,spaceAfter=0))
-ST.add(ParagraphStyle('CodeCell',parent=ST['Text'],fontName='Courier',fontSize=7,leading=10,backColor=LIGHT,borderPadding=7,spaceBefore=4,spaceAfter=10))
-ST.add(ParagraphStyle('Chapter',parent=ST['Text'],fontSize=23,leading=28,textColor=INK,spaceBefore=9,spaceAfter=19,keepWithNext=True))
-ST.add(ParagraphStyle('Sub',parent=ST['Text'],fontSize=13,leading=17,textColor=TEAL,spaceBefore=12,spaceAfter=7,keepWithNext=True))
-ST.add(ParagraphStyle('Minor',parent=ST['Text'],fontSize=10.5,leading=14,textColor=INK,spaceBefore=10,spaceAfter=5,keepWithNext=True))
+ST.add(ParagraphStyle('Text',fontName=FONT,fontSize=12,leading=15.8,textColor=INK,spaceAfter=6,splitLongWords=True,allowWidows=0,allowOrphans=0))
+ST.add(ParagraphStyle('SmallText',parent=ST['Text'],fontSize=9.5,leading=12.5,textColor=MUTED))
+ST.add(ParagraphStyle('Source',parent=ST['SmallText'],keepWithNext=True,spaceAfter=8))
+ST.add(ParagraphStyle('Cell',parent=ST['Text'],fontSize=9.5,leading=12.4,spaceAfter=0))
+ST.add(ParagraphStyle('CodeCell',parent=ST['Text'],fontName='Courier',fontSize=9,leading=11.7,backColor=LIGHT,borderPadding=6,spaceBefore=4,spaceAfter=8))
+ST.add(ParagraphStyle('Chapter',parent=ST['Text'],fontSize=21,leading=25,textColor=INK,spaceBefore=18,spaceAfter=10,keepWithNext=True))
+ST.add(ParagraphStyle('Sub',parent=ST['Text'],fontSize=14.5,leading=18,textColor=TEAL,spaceBefore=11,spaceAfter=6,keepWithNext=True))
+ST.add(ParagraphStyle('Minor',parent=ST['Text'],fontSize=12.5,leading=16,textColor=INK,spaceBefore=9,spaceAfter=5,keepWithNext=True))
+ST.add(ParagraphStyle('ContentsHeading',parent=ST['Chapter'],keepWithNext=False))
 
 class Cover(Flowable):
     def __init__(self):Flowable.__init__(self);self.width=CONTENT;self.height=HEIGHT-114
@@ -58,7 +60,7 @@ class Cover(Flowable):
         for i,line in enumerate(['Monocular','Surface','Reconstruction']):c.drawString(0,h-104-i*47,line)
         c.setFont(FONT,13);c.setFillColor(colors.HexColor('#c4dddf'));c.drawString(0,h-260,'Single-image geometry, metric height and semantic analysis')
         c.setFillColor(colors.HexColor('#4bdcc9'));c.setFont(FONT,14);c.drawString(0,h-310,'Technical Documentation — Status as of 28 September 2026')
-        c.setFont(FONT,10);c.setFillColor(colors.white);c.drawString(0,h-334,'Version 0.1.1   •   Active research prototype')
+        c.setFont(FONT,11);c.setFillColor(colors.white);c.drawString(0,h-334,'Version 0.1.2   •   Active research prototype')
         c.drawImage(str(DOCS/'assets/seifuku-logo.png'),0,190,width=166,height=166,mask='auto',preserveAspectRatio=True)
         c.setFont(FONT,21);c.drawString(195,315,'TEAM SEIFUKU')
         c.setFont(FONT,10);c.setFillColor(colors.HexColor('#c4dddf'))
@@ -83,8 +85,8 @@ class Cover(Flowable):
 
 class Handbook(BaseDocTemplate):
     def __init__(self,filename):
-        super().__init__(str(filename),pagesize=A4,leftMargin=MARGIN,rightMargin=MARGIN,topMargin=49,bottomMargin=48,title='Monocular Surface Reconstruction — Technical Documentation — 28 September 2026',author='Team Seifuku',subject='Research prototype: methods, implementation, decisions and measured evidence',pageCompression=1)
-        self.addPageTemplates(PageTemplate(id='main',frames=[Frame(MARGIN,48,CONTENT,HEIGHT-97,id='normal',leftPadding=0,rightPadding=0,topPadding=0,bottomPadding=0)],onPage=self.decorate))
+        super().__init__(str(filename),pagesize=A4,leftMargin=MARGIN,rightMargin=MARGIN,topMargin=45,bottomMargin=43,title='Monocular Surface Reconstruction — Technical Documentation — 28 September 2026',author='Team Seifuku',subject='Research prototype: methods, implementation, decisions and measured evidence',pageCompression=1)
+        self.addPageTemplates(PageTemplate(id='main',frames=[Frame(MARGIN,43,CONTENT,HEIGHT-88,id='normal',leftPadding=0,rightPadding=0,topPadding=0,bottomPadding=0)],onPage=self.decorate))
         self.heading='Technical handbook'
     def beforeDocument(self):self.heading='Technical handbook'
     def decorate(self,c,doc):
@@ -105,7 +107,7 @@ def inline(node):
     inside=''.join(inline(c) for c in node.children)
     if node.name in ('strong','b'):return '<b>'+inside+'</b>'
     if node.name in ('em','i'):return '<i>'+inside+'</i>'
-    if node.name=='code':return '<font name="Courier" size="8">'+inside+'</font>'
+    if node.name=='code':return '<font name="Courier" size="9.5">'+inside+'</font>'
     if node.name=='a':
         link=node.get('href','')
         if link.startswith(('https://','http://')):return '<a href="'+html.escape(link,quote=True)+'" color="#087f83">'+inside+'</a>'
@@ -127,7 +129,7 @@ def chapter(file,index):
                 title=f'{index:02d}  {el.get_text(" ")}'
                 p=Paragraph(html.escape(title),ST['Chapter']);p.chapter_key=f'chapter-{index}'
                 result.append(p);first=False
-                result.append(Paragraph('SOURCE  '+html.escape(file.relative_to(ROOT).as_posix()),ST['SmallText']))
+                result.append(Paragraph('SOURCE  '+html.escape(file.relative_to(ROOT).as_posix()),ST['Source']))
             else:result.append(Paragraph(inline(el),ST['Sub'] if tag in ('h1','h2') else ST['Minor']))
         elif tag=='table':
             rows=[]
@@ -147,8 +149,8 @@ def chapter(file,index):
                 scores.append(max(8,min(65,lengths[int((len(lengths)-1)*.75)]))**.55)
             widths=[CONTENT*s/sum(scores) for s in scores]
             t=Table(rows,colWidths=widths,repeatRows=1,hAlign='LEFT',splitByRow=1)
-            t.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),LIGHT),('VALIGN',(0,0),(-1,-1),'TOP'),('LINEBELOW',(0,0),(-1,0),.8,TEAL),('LINEBELOW',(0,1),(-1,-1),.25,colors.HexColor('#dce6e9')),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),6),('BOTTOMPADDING',(0,0),(-1,-1),6)]))
-            result.extend([t,Spacer(1,10)])
+            t.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),LIGHT),('VALIGN',(0,0),(-1,-1),'TOP'),('LINEBELOW',(0,0),(-1,0),.8,TEAL),('LINEBELOW',(0,1),(-1,-1),.25,colors.HexColor('#dce6e9')),('LEFTPADDING',(0,0),(-1,-1),5),('RIGHTPADDING',(0,0),(-1,-1),5),('TOPPADDING',(0,0),(-1,-1),5),('BOTTOMPADDING',(0,0),(-1,-1),5)]))
+            result.extend([t,Spacer(1,8)])
         elif tag=='pre':
             text=el.get_text().rstrip()
             if text.startswith('graph ') or text.startswith('flowchart '):
@@ -169,7 +171,7 @@ def chapter(file,index):
                 asset=(file.parent/img.get('src','')).resolve()
                 if asset.suffix.lower() in ('.png','.jpg','.jpeg') and asset.exists():
                     from PIL import Image as PILImage
-                    iw,ih=PILImage.open(asset).size;w=148 if asset.name=='seifuku-logo.png' else CONTENT;h=w*ih/iw
+                    iw,ih=PILImage.open(asset).size;w=110 if asset.name=='seifuku-logo.png' else CONTENT;h=w*ih/iw
                     if h>365:w*=365/h;h=365
                     result.append(Image(str(asset),width=w,height=h,hAlign='LEFT'))
                     if img.get('alt'):result.append(Paragraph(html.escape(img['alt']),ST['SmallText']))
@@ -181,11 +183,13 @@ def main():
     sources=[DOCS/(name+'.md') for name in CHAPTERS]+[ROOT/'THIRD_PARTY_NOTICES.md']+sorted((DOCS/'history').glob('*.md'))
     missing=[str(p) for p in sources if not p.exists()]
     if missing:raise FileNotFoundError('\n'.join(missing))
-    story=[Cover(),PageBreak(),Paragraph('How to use this handbook',ST['Chapter']),Paragraph('This is a dated technical snapshot of an active research prototype. Current chapters explain the implemented system, scientific boundaries and available evidence. The historical section preserves protocols, outcomes and decisions that led to that state. A failed experiment is retained as evidence; a planned feature is not presented as complete.',ST['Text']),Paragraph('Read Overview and User guide for the system; Scientific contracts and Validation for interpretation; Results, Experiments and Decisions for what was learned; Setup and Release for reproduction. The source repository is the editable companion to this PDF.',ST['Text']),Paragraph('Historical records use normalised public names and paths. Exact old source hashes describe their original archive, not renamed files. Full private data/run archives are not bundled. See the source inventory and evidence directory for the included records and verification scope.',ST['Text']),Paragraph('Publication identity: version 0.1.1 • 28 September 2026. No blanket open-source or commercial-use licence is granted; third-party notices apply.',ST['SmallText']),PageBreak(),Paragraph('Contents',ST['Chapter'])]
-    toc=TableOfContents();toc.levelStyles=[ParagraphStyle('ContentsEntry',fontName=FONT,fontSize=9,leading=13.5,textColor=INK,spaceBefore=3,leftIndent=0,firstLineIndent=0)]
-    story.extend([toc,PageBreak()])
+    story=[Cover(),PageBreak(),Paragraph('How to use this handbook',ST['Chapter']),Paragraph('This is a dated technical snapshot of an active research prototype. Current chapters explain the implemented system, scientific boundaries and available evidence. The historical section preserves protocols, outcomes and decisions that led to that state. A failed experiment is retained as evidence; a planned feature is not presented as complete.',ST['Text']),Paragraph('Read Overview and User guide for the system; Scientific contracts and Validation for interpretation; Results, Experiments and Decisions for what was learned; Setup and Release for reproduction. The source repository is the editable companion to this PDF.',ST['Text']),Paragraph('Historical records use normalised public names and paths. Exact old source hashes describe their original archive, not renamed files. Full private data/run archives are not bundled. See the source inventory and evidence directory for the included records and verification scope.',ST['Text']),Paragraph('Publication identity: version 0.1.2 • 28 September 2026. No blanket open-source or commercial-use licence is granted; third-party notices apply.',ST['SmallText']),Paragraph('Contents',ST['ContentsHeading'])]
+    toc=TableOfContents(tableStyle=TableStyle([('LEFTPADDING',(0,0),(-1,-1),0),('RIGHTPADDING',(0,0),(-1,-1),0),('TOPPADDING',(0,0),(-1,-1),2),('BOTTOMPADDING',(0,0),(-1,-1),2)]))
+    toc.levelStyles=[ParagraphStyle('ContentsEntry',fontName=FONT,fontSize=10.5,leading=14.5,textColor=INK,spaceBefore=0,leftIndent=0,firstLineIndent=0)]
+    story.extend([toc,Spacer(1,12)])
     for i,file in enumerate(sources,1):
-        if i>1:story.append(PageBreak())
+        # Only the historical appendix starts a new part; short chapters flow.
+        if file.parent.name=='history' and sources[i-2].parent.name!='history':story.append(PageBreak())
         story.extend(chapter(file,i))
     doc=Handbook(OUTPUT);doc.multiBuild(story)
     result={'status_date':'2026-09-28','file':OUTPUT.relative_to(ROOT).as_posix(),'chapters':len(sources),'sha256':hashlib.sha256(OUTPUT.read_bytes()).hexdigest(),'bytes':OUTPUT.stat().st_size,'sources':[{'path':p.relative_to(ROOT).as_posix(),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in sources]}
@@ -193,7 +197,7 @@ def main():
         import fitz
         with fitz.open(OUTPUT) as pdf:result.update(pages=len(pdf),bookmarks=len(pdf.get_toc()))
     except ImportError:pass
-    (DOCS/'evidence/documentation-build.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
+    (DOCS/'evidence/documentation-build.json').write_bytes((json.dumps(result,indent=2)+'\n').encode('utf-8'))
     print(json.dumps({k:v for k,v in result.items() if k!='sources'},indent=2))
 
 if __name__=='__main__':main()

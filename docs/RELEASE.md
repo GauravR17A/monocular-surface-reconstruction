@@ -2,7 +2,7 @@
 
 ## Snapshot identity
 
-Version 0.1.1 is a research prototype snapshot with technical documentation as of
+Version 0.1.2 is a research prototype snapshot with technical documentation as of
 28 September 2026. Source, documentation and inference artifacts are versioned
 together. The Git tag identifies the published source; the artifact manifest
 independently identifies weight files and the pinned foundation revision.
@@ -11,6 +11,10 @@ This is a fresh publication repository under the scientific name Monocular
 Surface Reconstruction. Original development history is not imported. Public
 historical records carry a banner explaining name/path normalisation; they are
 not represented as untouched original source seals.
+
+Version 0.1.2 revises document readability, team-role wording and the four-mode
+showcase. It uses the same verified height and classifier artifacts as 0.1.1;
+the model download manifest retains the existing versioned URLs and hashes.
 
 ## Publication transformations
 

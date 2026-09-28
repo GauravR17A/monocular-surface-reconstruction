@@ -53,6 +53,12 @@ better supervision and context checks rather than unsupported accuracy claims.
 
 ## Classification results belong to named models
 
+**The active RGB V3 classifier records 83.20% six-class macro F1 on GAMUS
+development validation.** Macro F1 averages the six class F1 scores; this is a
+classification benchmark with a named dataset and split. Regional transfer is
+reported separately below. The earlier V1 model recorded 83.83% on its reused
+DC/Philadelphia development validation.
+
 | Model and evaluation | Six-class macro F1 | Scope |
 | --- | ---: | --- |
 | RGB V1, DC/Philadelphia development | 83.83% | Reused model-selection validation |

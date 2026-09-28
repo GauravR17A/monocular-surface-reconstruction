@@ -21,7 +21,15 @@ overflow. Browser console/page errors: zero.
 
 ![Packaged urban workspace](assets/workspace.png)
 
+![Sparse Amsterdam workspace](assets/sparse-workspace.png)
+
 ![Georeferenced hilly workspace](assets/hilly-workspace.png)
+
+![Forest canopy workspace](assets/forest-workspace.png)
+
+The four figures cover Urban, Sparse, Hilly and Forest. The additional Sparse
+and Forest captures use the same production handler and real local API; their
+focused rendering checks are recorded in `evidence/gallery-verification.json`.
 
 The bridge measured the following sequential request durations during that check:
 

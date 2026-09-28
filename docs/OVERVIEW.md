@@ -1,7 +1,7 @@
 # Project overview and current scope
 
-Technical documentation — status as of 28 September 2026. Version 0.1.0 is the
-initial public research package; the development history predates this release.
+Technical documentation — status as of 28 September 2026. Version 0.1.2 updates
+the public handbook and presentation; the development history predates publication.
 
 ## The problem
 
@@ -47,6 +47,11 @@ contribution is the implemented integration, training/evaluation work, failure
 analysis and traceable handling of scientific outputs.
 
 ## Current delivery
+
+The workspace includes **Urban, Sparse, Hilly and Forest** demonstrations. Its
+active RGB V3 classifier records **83.20% six-class macro F1 on GAMUS development
+validation**. The Results chapter provides the comparison protocols, regional
+scores and remaining retention regressions.
 
 | Area | Status in this snapshot |
 | --- | --- |

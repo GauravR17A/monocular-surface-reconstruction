@@ -1,0 +1,81 @@
+{
+  "status_date": "2026-09-28",
+  "transport": "Playwright route interception; production request handler + FastAPI TestClient; no application listener",
+  "checks": [
+    {
+      "name": "Sparse saved scene rendered",
+      "passed": true,
+      "asset": "docs/assets/sparse-workspace.png"
+    },
+    {
+      "name": "Forest saved scene rendered",
+      "passed": true,
+      "asset": "docs/assets/forest-workspace.png"
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "seconds": 0.0033617999870330095
+    },
+    {
+      "method": "POST",
+      "path": "/api/classify",
+      "status": 200,
+      "seconds": 5.2422262999753
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "seconds": 0.006792000000132248
+    },
+    {
+      "method": "GET",
+      "path": "/results/classification_JOB/classes.bin",
+      "status": 200,
+      "seconds": 0.12481659997138195
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "seconds": 0.004577500018058345
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "seconds": 0.005291199981002137
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "seconds": 0.006165300001157448
+    },
+    {
+      "method": "POST",
+      "path": "/api/classify",
+      "status": 200,
+      "seconds": 0.4448497999983374
+    },
+    {
+      "method": "GET",
+      "path": "/results/classification_JOB/classes.bin",
+      "status": 200,
+      "seconds": 0.020286799990572035
+    },
+    {
+      "method": "GET",
+      "path": "/api/health",
+      "status": 200,
+      "seconds": 0.005337599985068664
+    }
+  ],
+  "console_errors": [],
+  "page_errors": [],
+  "passed": true
+}

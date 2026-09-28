@@ -11,7 +11,7 @@ in this edition were confirmed on 28 September 2026.
 | Member | Confirmed responsibility |
 | --- | --- |
 | Adwita Kurle | Team leader |
-| Gaurav Ranade | Website creator and operator |
+| Gaurav Ranade | App developer and operator |
 | Anushree Dixit | Team member |
 | Spruha Kurle | Team member |
 | Hrishikesh Tarade | Team member |

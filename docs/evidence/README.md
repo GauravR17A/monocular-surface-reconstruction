@@ -7,6 +7,7 @@ Dates distinguish earlier research from publication checks on 28 September 2026.
 - [Model packaging](model-packaging.json): tensor-preserving model repackaging.
 - [Raster publication](raster-publication.json): exact raster values/masks/CRS/transform through metadata cleanup; excludes omitted restricted source assets from redistribution.
 - [Browser verification](browser-verification.json): actual UI, API and artifact checks with in-process transport.
+- [Four-mode gallery](gallery-verification.json): additional Sparse and Forest captures from the actual application.
 - [Verification summary](verification-summary.json): test/build counts, dependency audit and scope.
 - [Source inventory](source-inventory.json): dated research records, hashes and sizes.
 - [Research metrics](research-metrics.json): curated numerical tables with source-record references.

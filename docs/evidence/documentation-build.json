@@ -2,16 +2,16 @@
   "status_date": "2026-09-28",
   "file": "docs/Monocular_Surface_Reconstruction_Technical_Documentation.pdf",
   "chapters": 87,
-  "sha256": "5ccad39165d0d3930d3a8d7ec7e0ec2307018f3e125a5415b327a7694de5f4d5",
-  "bytes": 8068262,
+  "sha256": "dcc50d7f808aaa96afda830c5236058e757bcbc0e89232076af0a6bb2a71e1fd",
+  "bytes": 11031487,
   "sources": [
     {
       "path": "docs/OVERVIEW.md",
-      "sha256": "7b13ccdb68db358537533ca34f982ed337d201162ab901e3ce0cf1cf7db9fa81"
+      "sha256": "093614c76838fc7e932f240a9677785562e51200ee98d249988cbe65d3a86b92"
     },
     {
       "path": "docs/TEAM.md",
-      "sha256": "48e243e9f120bf7e4f8398a28a99177f757ed3bd27dfc16af64db54345a091dd"
+      "sha256": "1936a99dcf9c8da130c4bd02bcb9b281ed2f96f4f8d1c43ac60e85c89d2a77f9"
     },
     {
       "path": "docs/USER_GUIDE.md",
@@ -43,7 +43,7 @@
     },
     {
       "path": "docs/RESULTS.md",
-      "sha256": "b519e6fc53c44e6da088fd706d298ee3f53e47fbb5799768981c4e972664e888"
+      "sha256": "21e75c08527a4947077939cf129111bfd0789137adab5ed0b76c23fe51c09a76"
     },
     {
       "path": "docs/EXPERIMENTS.md",
@@ -71,7 +71,7 @@
     },
     {
       "path": "docs/PERFORMANCE.md",
-      "sha256": "07992fbbaadbd6f183862982c1f260bafdee887334ea780fda55c5715963e346"
+      "sha256": "e4a3d7f9c9b59c41575738ae9cb545adb11b0ac98441244cde947b0fd6d1a486"
     },
     {
       "path": "docs/SECURITY_REVIEW.md",
@@ -79,7 +79,7 @@
     },
     {
       "path": "docs/RELEASE.md",
-      "sha256": "ade56480342a8c524008df0033d538e068c16a8a7e7799c5a34146dec64c8a93"
+      "sha256": "13c8c2c7973d64abcac425eb3a496e1bee6921fbfb3e10c0dd81aa8e5b5e7c0f"
     },
     {
       "path": "docs/ROADMAP.md",
@@ -354,6 +354,6 @@
       "sha256": "ebe66908a79ac69078fc0a097877c2188dcd445bdaa88f53e575cc388ae35fc9"
     }
   ],
-  "pages": 204,
+  "pages": 189,
   "bookmarks": 87
 }
