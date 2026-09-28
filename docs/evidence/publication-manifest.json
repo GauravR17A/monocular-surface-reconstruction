@@ -14,8 +14,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 336,
-      "sha256": "6b499d90f24cfa9182d0ab20d04fe88e282431a7581b45fe148ec1173efc7dc5"
+      "bytes": 377,
+      "sha256": "20ed1b81c6dd514be07974fa88bb3872864932ddb19eaa3979c1aff2b2c90d86"
     },
     {
       "path": ".python-version",
@@ -494,8 +494,8 @@
     },
     {
       "path": "docs/evidence/README.md",
-      "bytes": 1150,
-      "sha256": "1058dcb9c03c4b90e4a86586b8bdd643b3fe63198b6c8857e6a2ffc4dcd077c1"
+      "bytes": 1567,
+      "sha256": "abdf40bc907fdd833c2e248cb9be9238a4e49927ddc48a418d3da53470b022dc"
     },
     {
       "path": "docs/evidence/browser-verification.json",
@@ -531,6 +531,11 @@
       "path": "docs/evidence/source-inventory.json",
       "bytes": 16980,
       "sha256": "42a64499cf3b4fe84c264e3ea5700420b0a06edc6faf52f660b058e33b5380c2"
+    },
+    {
+      "path": "docs/evidence/verification-summary.json",
+      "bytes": 2154,
+      "sha256": "9f0e6e0a1c1588bb4436898d3abd95ec1795ddbc6c978502de83247a89edfe74"
     },
     {
       "path": "docs/history/ACCURACY_RECOVERY_2026_09_15.md",
@@ -1774,8 +1779,8 @@
     },
     {
       "path": "scripts/verify_publication.py",
-      "bytes": 5554,
-      "sha256": "1c05be588e0f3c63f60bed3ceb5c6fa69baa8d870a1ec72a5cbedb3bf69b246b"
+      "bytes": 5596,
+      "sha256": "eaf21bbdab5f871dd53b23d1f92677f216c2fae86955b5ab85fb1b38a945e538"
     },
     {
       "path": "scripts/verify_scene_image_reference.mjs",

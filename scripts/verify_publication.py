@@ -70,7 +70,7 @@ def main():
  for entry in manifest['artifacts']:
   if not re.fullmatch('[a-f0-9]{64}',entry['sha256']):errors.append('Invalid model SHA-256')
   if not entry['url'].startswith('https://github.com/GauravR17A/monocular-surface-reconstruction/releases/download/'):errors.append('Unexpected artifact origin')
- required=['README.md','docs/README.md','THIRD_PARTY_NOTICES.md','licenses/SEGFORMER.txt','licenses/CONVNEXT_MODEL.txt','docs/Monocular_Surface_Reconstruction_Technical_Documentation.pdf']
+ required=['README.md','docs/README.md','THIRD_PARTY_NOTICES.md','licenses/SEGFORMER.txt','licenses/CONVNEXT_MODEL.txt','docs/evidence/verification-summary.json','docs/Monocular_Surface_Reconstruction_Technical_Documentation.pdf']
  for name in required:
   if name not in candidates:errors.append(f'Missing publication file: {name}')
  if args.write_manifest:

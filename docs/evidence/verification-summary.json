@@ -1,0 +1,75 @@
+{
+  "status_date": "2026-09-28",
+  "original_workspace_python": {
+    "passed": 852,
+    "failed": 0,
+    "warnings": 13,
+    "scope": "Original development workspace and its archives"
+  },
+  "public_package_python": {
+    "passed": 826,
+    "skipped": 26,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 67.124,
+    "scope": "Public source with established Python environment; 26 exact historical source/archive cases explicitly skipped"
+  },
+  "viewer_tests": {
+    "passed": 155,
+    "failed": 0
+  },
+  "typescript": "passed",
+  "production_build": "passed; bundle-size notice and static route classification limitation",
+  "browser": "passed; actual production request handler and FastAPI TestClient; no application listener",
+  "npm_audit": {
+    "counts": {
+      "info": 0,
+      "low": 1,
+      "moderate": 4,
+      "high": 0,
+      "critical": 0,
+      "total": 5
+    },
+    "affected": [
+      {
+        "package": "@vercel/og",
+        "severity": "moderate",
+        "advisories": []
+      },
+      {
+        "package": "esbuild",
+        "severity": "low",
+        "advisories": [
+          "https://github.com/advisories/GHSA-g7r4-m6w7-qqqr"
+        ]
+      },
+      {
+        "package": "fflate",
+        "severity": "moderate",
+        "advisories": [
+          "https://github.com/advisories/GHSA-px8p-9vwx-vf98"
+        ]
+      },
+      {
+        "package": "satori",
+        "severity": "moderate",
+        "advisories": []
+      },
+      {
+        "package": "vinext",
+        "severity": "moderate",
+        "advisories": []
+      }
+    ]
+  },
+  "python": "3.10.11",
+  "operating_system": "Windows",
+  "numerical_packaging": "Exact model tensors, exact deterministic synthetic forward outputs, and finite generated raster exports",
+  "eslint": "passed with zero warnings",
+  "initial_clean_cpu_ci": {
+    "result": "824 passed, 2 failed, 26 skipped",
+    "cause": "Requests omitted from direct dependencies; two backbone preparation imports failed",
+    "correction": "Requests 2.34.2 explicitly declared; rerun required",
+    "run": "https://github.com/GauravR17A/monocular-surface-reconstruction/actions/runs/36401098106"
+  }
+}
